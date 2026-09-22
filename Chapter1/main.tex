@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage{lmodern}
+
+% ---------- Layout ----------
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+
+% ---------- Math & text ----------
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{pdflscape} % Required for Table A.3
+
+% ---------- Figures & tables ----------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+
+% ---------- Links ----------
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+% ---------- Bibliography (choose one) ----------
+% If you use biblatex:
+% \usepackage[backend=biber,style=authoryear]{biblatex}
+% \addbibresource{references.bib}
+
+% If you use natbib:
+\usepackage[authoryear]{natbib}
+
+
+
+% ---------- Title block ----------
+\title{Critical Replication of Shaikh's Capacity Utilization Measure\thanks{This paper benefited from AI-assisted editing using Qwen3.6 Plus for syntax refinement, structural suggestions, and stylistic consistency checks. All analytical arguments, historical interpretations, and substantive content remain the author's sole responsibility.}\\
+\begin{large}
+\textbf{WORK IN PROGRESS / PLEASE DO NOT CIRCULATE}     
+\end{large}
+}
+\author{Diego Polanco\thanks{Doctoral Candidate in Economics, Department of Economics, University of Massachusetts Amherst.}\\
+Department of Economics, University of Massachusetts Amherst\\
+\texttt{dpolanconeco@umass.edu}}
+\date{\today}
+
+
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+Identifying a productive capacity ceiling requires estimating an unobserved  benchmark, a task that risks conflating technical engineering limits with the institutional realities of capitalist accumulation. This chapter critically replicates Anwar Shaikh’s accounting-based capacity measure for the post-war US corporate sector (1947–2011), reinterpreting the long-run output–capital coefficient as a capacity transformation elasticity ($\theta$) under conditions of unbalanced growth. Testing this relation across a combinatorial grid of 500 single-equation specifications and a system-level Vector Error Correction Model (VECM), we demonstrate that the standalone bivariate output-capital relation fails to cointegrate. System-level stability emerges exclusively when the rate of exploitation ($e_t$) enters the cointegrating vector, yielding an estimated transformation elasticity ($\hat{\theta} < 1$) indicative of structural overaccumulation. This evidence suggests that the productive ceiling is not a neutral engineering constraint. Rather, it is a contingent outcome of decentralized accumulation, structurally conditioned by the distributive conflict and the labor process within and beyond the workplace, which physically dictate the conversion of accumulated capital into active productive capacity.
+\end{abstract}
+
+
+\vspace{1cm}
+
+\noindent\textbf{Keywords:} Capacity Utilization; Critical Replication; Shaikh; Transformation Elasticity; Cointegration; ARDL; VECM; Distribution.
+
+\noindent\textbf{JEL Codes:} B51; C32; E01; E22; E32; P16.
+
+\pagebreak
+
+\input{section1}
+\input{section2}
+\input{section3}
+\input{section4}
+\input{section5}
+
+% ---------- Bibliography ----------%
+\pagebreak
+\bibliographystyle{apalike} % or your preferred style
+\bibliography{references}
+
+% ---------- Appendix ----------%
+\pagebreak
+\appendix
+\input{AppendixODE/AppendixODE}
+\pagebreak
+\input{appendixA/appendixA}
+
+\end{document}
