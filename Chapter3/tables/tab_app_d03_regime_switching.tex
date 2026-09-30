@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Endogenous Regime Switching Probabilities: Shift in Adverse State Likelihood ($\Delta P(\Delta s_{t+h-1} \le \gamma)$)}
+\label{tab:app_d03_regime_switching}
+\vspace{0.2em}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrl}
+\toprule
+Structural Shock ($u_t$) & Historical Starting State & $h = 1$ & $h = 3$ & $h = 6$ & $h = 9$ & $h = 12$ & 12-Month Dynamic Trajectory \\
+\midrule
+World Gold Price ($g^{gold}$) & Non-Adverse State & 0.000 & 0.000 & +0.100 & +0.100 & +0.100 & Statistically zero across all horizons \\
+ & Adverse Solvency-Growth State & 0.000 & -0.300 & -0.400 & -0.400 & -0.350 & Ineffective de-escalation; bounds cross zero \\
+\midrule
+Structural Imbalance ($\Delta\ln\Theta$) & Non-Adverse State & -0.100 & -0.100 & 0.000 & 0.000 & 0.000 & Buffer absorption; zero transition probability \\
+ & Adverse Solvency-Growth State & $-0.800^*$ & $-0.600^*$ & -0.600 & -0.600 & -0.600 & Initial dampening; bounds cross zero by $h=5$ \\
+\midrule
+Foreign Reserve Flows ($g^F$) & Non-Adverse State & $+1.900^*$ & $+1.100^*$ & $+0.900^*$ & $+0.800^*$ & $+0.700^*$ & Positive and significant across all 12 months \\
+ & Adverse Solvency-Growth State & $+2.200^*$ & $+3.300^*$ & $+3.900^*$ & $+4.400^*$ & $+4.500^*$ & Statistically positive; locks in insolvency \\
+\midrule
+Consumer Price Inflation ($\pi_m$) & Non-Adverse State & -0.200 & 0.000 & +0.100 & +0.100 & +0.100 & Delayed, statistically insignificant upward drift \\
+ & Adverse Solvency-Growth State & 0.000 & +0.200 & +0.400 & +0.500 & +0.600 & Upward drift toward lock-in; bounds cross zero \\
+\midrule
+Base-Money Growth ($g^H$) & Non-Adverse State & $-0.400^*$ & -0.300 & -0.200 & -0.200 & -0.200 & Transitory liquidity cushion on impact ($h=1$) \\
+ & Adverse Solvency-Growth State & $-0.900^*$ & -0.450 & -0.300 & -0.200 & -0.100 & Immediate emergency relief; decays to zero by $h=6$ \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Change in simulated state probability of occupying the adverse solvency-growth state ($\Delta P(\Delta s_{t+h-1} \le \gamma) \equiv P(\Delta s_{t+h-1}^{\text{shocked}} \le \gamma) - P(\Delta s_{t+h-1}^{\text{baseline}} \le \gamma)$), expressed in percentage points, following a one-standard-deviation structural shock ($u_t$). Asterisks ($*$) denote horizons where the 90\% empirical bootstrap confidence band strictly excludes zero. Estimates are evaluated across 500 outer bootstrap replications and 1,000 inner paired simulation draws under the Koop, Pesaran, and Potter (1996) GIRF protocol.
+\end{minipage}
+\end{table}

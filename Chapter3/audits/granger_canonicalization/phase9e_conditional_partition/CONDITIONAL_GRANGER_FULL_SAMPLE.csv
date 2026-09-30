@@ -1,0 +1,41 @@
+System,Relation,Cause,Effect,Lag_k,N_eff,DF_num,DF_den,Cond_F_stat,Cond_Wald_chisq,Cond_p_value,Cond_Sum_Beta,Cond_SE_Sum,Cond_t_stat,Cond_Sign,Cond_Sig_05
+Step 1: Master Nominal Core,pi_t -> g_H,pi_t,g_H,3,248,3,241,20.3181,60.9543,0,0.5948,0.0782,7.6094,+,TRUE
+Step 1: Master Nominal Core,g_H -> pi_t,g_H,pi_t,3,248,3,241,5.5436,16.6309,0.001074,0.4213,0.1044,4.0352,+,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),g_M1 -> g_H,g_M1,g_H,1,179,1,175,17.2549,17.2549,5.1e-5,0.4185,0.1007,4.1539,+,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),g_H -> g_M1,g_H,g_M1,1,179,1,175,12.1971,12.1971,6.06e-4,0.2459,0.0704,3.4924,+,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),pi_t -> g_M1,pi_t,g_M1,1,179,1,175,10.7223,10.7223,0.001276,0.1453,0.0444,3.2745,+,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),g_M1 -> pi_t,g_M1,pi_t,1,179,1,175,3.9803,3.9803,0.047587,0.2627,0.1317,1.9951,+,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),d_ln_m -> pi_t,d_ln_m,pi_t,1,179,1,175,3.9803,3.9803,0.047587,0.2627,0.1317,1.9951,+,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),pi_t -> d_ln_m,pi_t,d_ln_m,1,179,1,175,1.3709,1.3709,0.243254,-0.0567,0.0484,-1.1708,-,FALSE
+Step 4: Unified Real Dual Economy,g_H -> g_Manuf,g_H,g_Manuf,2,249,2,238,5.0815,10.1631,0.006901,-0.4614,0.1509,-3.0583,-,TRUE
+Step 4: Unified Real Dual Economy,g_Manuf -> g_H,g_Manuf,g_H,2,249,2,238,2.7776,5.5552,0.064206,-0.0083,0.0546,-0.1528,-,FALSE
+Step 4: Unified Real Dual Economy,g_H -> g_Mining,g_H,g_Mining,2,249,2,238,0.1138,0.2277,0.892449,-0.0703,0.158,-0.4451,-,FALSE
+Step 4: Unified Real Dual Economy,g_Mining -> g_H,g_Mining,g_H,2,249,2,238,0.2939,0.5878,0.745606,0.034,0.056,0.6073,+,FALSE
+Step 4: Unified Real Dual Economy,d_theta -> g_Manuf,d_theta,g_Manuf,2,249,2,238,1.1787,2.3575,0.309454,0.0286,0.0268,1.0688,+,FALSE
+Step 4: Unified Real Dual Economy,g_Manuf -> d_theta,g_Manuf,d_theta,2,249,2,238,0.2264,0.4528,0.797563,-0.2557,0.383,-0.6676,-,FALSE
+Step 4: Unified Real Dual Economy,d_theta -> g_Mining,d_theta,g_Mining,2,249,2,238,0.086,0.172,0.91763,-0.0037,0.0281,-0.1302,-,FALSE
+Step 4: Unified Real Dual Economy,g_Mining -> d_theta,g_Mining,d_theta,2,249,2,238,1.418,2.836,0.244238,-0.1685,0.3925,-0.4293,-,FALSE
+Step 4: Unified Real Dual Economy,g_Mining -> g_Manuf,g_Mining,g_Manuf,2,249,2,238,0.9265,1.8529,0.397375,-0.0497,0.1009,-0.4926,-,FALSE
+Step 4: Unified Real Dual Economy,g_Manuf -> pi_t,g_Manuf,pi_t,2,249,2,238,5.9223,11.8446,0.00309,-0.1845,0.0568,-3.2492,-,TRUE
+Step 4: Unified Real Dual Economy,pi_t -> g_Manuf,pi_t,g_Manuf,2,249,2,238,2.1159,4.2318,0.122785,0.2248,0.123,1.8281,+,FALSE
+Step 5: Unified External Cost-Push Belt,g_H -> g_gold,g_H,g_gold,1,250,1,244,4.766,4.766,0.02998,0.1095,0.0502,2.1831,+,TRUE
+Step 5: Unified External Cost-Push Belt,pi_t -> g_gold,pi_t,g_gold,1,250,1,244,0.1755,0.1755,0.67566,0.0307,0.0732,0.4189,+,FALSE
+Step 5: Unified External Cost-Push Belt,d_theta -> g_gold,d_theta,g_gold,1,250,1,244,2.3891,2.3891,0.123481,0.0102,0.0066,1.5457,+,FALSE
+Step 5: Unified External Cost-Push Belt,g_e -> g_gold,g_e,g_gold,1,250,1,244,2.9205,2.9205,0.08873,-0.0854,0.05,-1.709,-,FALSE
+Step 5: Unified External Cost-Push Belt,g_gold -> pi_t,g_gold,pi_t,1,250,1,244,0.0083,0.0083,0.927523,0.0069,0.076,0.0911,+,FALSE
+Step 5: Unified External Cost-Push Belt,g_H -> d_theta,g_H,d_theta,1,250,1,244,0.0622,0.0622,0.803279,-0.1095,0.4393,-0.2494,-,FALSE
+Step 5: Unified External Cost-Push Belt,d_theta -> g_H,d_theta,g_H,1,250,1,244,0.0434,0.0434,0.835055,0.0017,0.0083,0.2084,+,FALSE
+Step 5: Unified External Cost-Push Belt,d_theta -> pi_t,d_theta,pi_t,1,250,1,244,3.159,3.159,0.076753,-0.0151,0.0085,-1.7774,-,FALSE
+Step 5: Unified External Cost-Push Belt,pi_t -> d_theta,pi_t,d_theta,1,250,1,244,0.0379,0.0379,0.845742,0.1248,0.6409,0.1948,+,FALSE
+Step 5: Unified External Cost-Push Belt,g_e -> pi_t,g_e,pi_t,1,250,1,244,1.5497,1.5497,0.214371,-0.0797,0.0641,-1.2449,-,FALSE
+Step 5: Unified External Cost-Push Belt,pi_t -> g_e,pi_t,g_e,1,250,1,244,19.02,19.02,1.9e-5,0.6382,0.1463,4.3612,+,TRUE
+Step 5: Unified External Cost-Push Belt,g_e -> g_H,g_e,g_H,1,250,1,244,0,0,0.998354,1e-4,0.0628,0.0021,+,FALSE
+Step 5: Unified External Cost-Push Belt,g_H -> g_e,g_H,g_e,1,250,1,244,3.4524,3.4524,0.064365,0.1864,0.1003,1.8581,+,FALSE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> g_H,g_SolvR_H,g_H,1,250,1,244,1.2904,1.2904,0.25709,-0.0158,0.0139,-1.136,-,FALSE
+Step 6: Unified Central Bank Solvency System,g_H -> g_SolvR_H,g_H,g_SolvR_H,1,250,1,244,0.2627,0.2627,0.608746,-0.1452,0.2832,-0.5125,-,FALSE
+Step 6: Unified Central Bank Solvency System,pi_t -> g_SolvR_H,pi_t,g_SolvR_H,1,250,1,244,1.3131,1.3131,0.252958,0.4762,0.4156,1.1459,+,FALSE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> pi_t,g_SolvR_H,pi_t,1,250,1,244,1.3244,1.3244,0.250925,-0.0164,0.0143,-1.1508,-,FALSE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> g_e,g_SolvR_H,g_e,1,250,1,244,0.1442,0.1442,0.704462,-0.0084,0.0222,-0.3797,-,FALSE
+Step 6: Unified Central Bank Solvency System,g_e -> g_SolvR_H,g_e,g_SolvR_H,1,250,1,244,0.7747,0.7747,0.379637,0.2554,0.2901,0.8802,+,FALSE
+Step 6: Unified Central Bank Solvency System,g_gold -> g_SolvR_H,g_gold,g_SolvR_H,1,250,1,244,3e-4,3e-4,0.987263,0.0054,0.336,0.016,+,FALSE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> g_gold,g_SolvR_H,g_gold,1,250,1,244,0.0675,0.0675,0.795269,0.0029,0.0112,0.2598,+,FALSE

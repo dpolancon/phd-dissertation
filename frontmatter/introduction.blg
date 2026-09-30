@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: frontmatter/introduction.aux
+The style file: apalike.bst
+Database file #1: Chapter1/references.bib
+Database file #2: Chapter2/references.bib
+Repeated entry---line 237 of file Chapter2/references.bib
+ : @book{Okishio2022
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 325 of file Chapter2/references.bib
+ : @article{Kurz1986
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 425 of file Chapter2/references.bib
+ : @book{Vidal2022
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 466 of file Chapter2/references.bib
+ : @book{Shaikh2016
+ :                 ,
+I'm skipping whatever remains of this entry
+Database file #3: Chapter3/references.bib
+Repeated entry---line 1613 of file Chapter3/references.bib
+ : @incollection{Vidal2019
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2633 of file Chapter3/references.bib
+ : @article{Hansen2000
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2775 of file Chapter3/references.bib
+ : @article{BaiPerron2003
+ :                       ,
+I'm skipping whatever remains of this entry
+You've used 13 entries,
+            1935 wiz_defined-function locations,
+            562 strings with 5676 characters,
+and the built_in function-call counts, 4292 in all, are:
+= -- 419
+> -- 123
+< -- 13
++ -- 42
+- -- 36
+* -- 323
+:= -- 772
+add.period$ -- 40
+call.type$ -- 13
+change.case$ -- 77
+chr.to.int$ -- 13
+cite$ -- 13
+duplicate$ -- 183
+empty$ -- 338
+format.name$ -- 55
+if$ -- 835
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 17
+newline$ -- 68
+num.names$ -- 41
+pop$ -- 73
+preamble$ -- 1
+purify$ -- 81
+quote$ -- 0
+skip$ -- 135
+stack$ -- 0
+substring$ -- 294
+swap$ -- 12
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 68
+warning$ -- 0
+while$ -- 39
+width$ -- 0
+write$ -- 167
+(There were 7 error messages)

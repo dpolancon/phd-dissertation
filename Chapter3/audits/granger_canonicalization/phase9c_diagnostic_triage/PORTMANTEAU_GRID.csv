@@ -1,0 +1,25 @@
+System,K,Lag_k,Is_K_Star,PT_lags,PT_adj_stat,PT_adj_df,PT_adj_pval,PT_adj_pass_5pct,PT_asymp_stat,PT_asymp_df,PT_asymp_pval
+Step 1: Master Nominal Core,2,1,FALSE,16,151.357,60,0,FALSE,146.683,60,0
+Step 1: Master Nominal Core,2,2,FALSE,16,96.621,56,6e-4,FALSE,93.676,56,0.0012
+Step 1: Master Nominal Core,2,3,TRUE,16,71.79,52,0.0358,FALSE,69.205,52,0.0555
+Step 1: Master Nominal Core,2,4,FALSE,16,51.841,48,0.3265,TRUE,49.579,48,0.4101
+Step 2: Banking Bifurcation A (Credit Lead),3,1,TRUE,16,255.621,135,0,FALSE,242.89,135,0
+Step 2: Banking Bifurcation A (Credit Lead),3,2,FALSE,16,194.209,126,1e-4,FALSE,184.397,126,5e-4
+Step 2: Banking Bifurcation A (Credit Lead),3,3,FALSE,16,158.993,117,0.006,FALSE,149.662,117,0.0224
+Step 2: Banking Bifurcation A (Credit Lead),3,4,FALSE,16,138.765,108,0.0246,FALSE,130.099,108,0.0726
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,1,TRUE,16,255.621,135,0,FALSE,242.89,135,0
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,2,FALSE,16,194.209,126,1e-4,FALSE,184.397,126,5e-4
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,3,FALSE,16,158.993,117,0.006,FALSE,149.662,117,0.0224
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,4,FALSE,16,138.765,108,0.0246,FALSE,130.099,108,0.0726
+Step 4: Unified Real Dual Economy,5,1,FALSE,16,942.953,375,0,FALSE,909.705,375,0
+Step 4: Unified Real Dual Economy,5,2,TRUE,16,730.276,350,0,FALSE,703.04,350,0
+Step 4: Unified Real Dual Economy,5,3,FALSE,16,586.935,325,0,FALSE,563.458,325,0
+Step 4: Unified Real Dual Economy,5,4,FALSE,16,476.575,300,0,FALSE,456.202,300,0
+Step 5: Unified External Cost-Push Belt,5,1,TRUE,16,774.53,375,0,FALSE,749.814,375,0
+Step 5: Unified External Cost-Push Belt,5,2,FALSE,16,654.625,350,0,FALSE,632.559,350,0
+Step 5: Unified External Cost-Push Belt,5,3,FALSE,16,570.725,325,0,FALSE,550.4,325,0
+Step 5: Unified External Cost-Push Belt,5,4,FALSE,16,475.136,300,0,FALSE,456.59,300,0
+Step 6: Unified Central Bank Solvency System,5,1,TRUE,16,776.66,375,0,FALSE,753.139,375,0
+Step 6: Unified Central Bank Solvency System,5,2,FALSE,16,624.363,350,0,FALSE,604.523,350,0
+Step 6: Unified Central Bank Solvency System,5,3,FALSE,16,550.819,325,0,FALSE,531.67,325,0
+Step 6: Unified Central Bank Solvency System,5,4,FALSE,16,435.744,300,0,FALSE,419.011,300,0

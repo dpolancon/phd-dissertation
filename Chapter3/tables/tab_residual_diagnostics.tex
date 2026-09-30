@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.92}
+\caption{Diagnostic Test Battery on System Residuals at Optimal Lags ($k^*$)}
+\label{tab:residual_diagnostics}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Empirical System} & \textbf{Key Equation} & \textbf{Lag ($k^*$)} & \textbf{BG LM ($p$)} & \textbf{ARCH LM ($p$)} & \textbf{JB Normality ($p$)} & \textbf{White Het ($p$)} \\
+\midrule
+Step 1: Nominal Core & Base Money ($g_{H,t}$) & k = 3 & 0.467 & 0.000 & < 0.001 & 0.000 \\
+Step 2: Commercial Credit & Base Money ($g_{H,t}$) & k = 1 & 0.030 & 0.000 & < 0.001 & 0.000 \\
+Step 3: Multiplier Deconstruction & Multiplier ($\Delta \ln m_t$) & k = 1 & 0.072 & 0.000 & < 0.001 & 0.000 \\
+Step 4: Real Sector Dualism & Manufacturing ($g_{\text{Manuf},t}$) & k = 2 & 0.000 & 0.000 & 0.128 & 0.000 \\
+Step 5: External Cost-Push & CPI Inflation ($\pi_t$) & k = 1 & 0.000 & 0.003 & < 0.001 & 0.000 \\
+Step 6: Solvency Gate & Base Money ($g_{H,t}$) & k = 1 & 0.000 & 0.000 & < 0.001 & 0.000 \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textit{Notes:} Diagnostic tests evaluated on the OLS residuals of the key dependent variable equation at the SBIC-selected optimal lag ($k^*$) within each stationary VAR system. BG LM is the Breusch--Godfrey Lagrange Multiplier test for serial correlation (null: no serial correlation up to lag 4). ARCH LM tests for autoregressive conditional heteroskedasticity (null: no ARCH effects up to lag 4). JB is the Jarque--Bera normality test. White test evaluates multivariate heteroskedasticity. The nominal core and multiplier equations fail to reject no serial correlation at the 5\% level, while the remaining systems reject the null. ARCH and White tests detect heteroskedasticity in several equations during the sample period.
+\end{minipage}
+\end{table}

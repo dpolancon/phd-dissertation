@@ -1,0 +1,41 @@
+System,Relation,H0_Statement,Cause,Effect,Canonical_k,Existing_F,Repro_F,Existing_p,Repro_p,Diff_F,Pass
+Step 1: Master Nominal Core,pi_t -> g_H,H0 #1: Inflation does not Granger-cause Base Money,pi_t,g_H,3,20.318,20.318,8.992395861069986e-12,0,0,TRUE
+Step 1: Master Nominal Core,g_H -> pi_t,H0 #2: Base Money does not Granger-cause Inflation,g_H,pi_t,3,5.544,5.544,0.00107390395786763,0.001074,0,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),g_M1 -> g_H,H0 #1: Narrow Money does not Granger-cause Base Money,g_M1,g_H,1,21.453,21.453,7.027472726284778e-6,7e-6,0,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),g_H -> g_M1,H0 #2: Base Money does not Granger-cause Narrow Money,g_H,g_M1,1,15.834,15.834,1.0094884661581409e-4,1.01e-4,0,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),pi_t -> g_M1,H0 #1: Inflation does not Granger-cause Narrow Money,pi_t,g_M1,1,14.322,14.322,2.1097635838167114e-4,2.11e-4,0,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),g_M1 -> pi_t,H0 #2: Narrow Money does not Granger-cause Inflation,g_M1,pi_t,1,14.004,14.004,2.4671168408153414e-4,2.47e-4,0,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),d_ln_m -> pi_t,H0 #1: Multiplier does not Granger-cause Inflation,d_ln_m,pi_t,1,0.338,0.338,0.5616840671627334,0.561684,0,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),pi_t -> d_ln_m,H0 #2: Inflation does not Granger-cause Multiplier,pi_t,d_ln_m,1,2.367,2.367,0.12569075442420935,0.125691,0,TRUE
+Step 4: Unified Real Dual Economy,g_H -> g_Manuf,H0 #1: Base Money does not Granger-cause Manufacturing,g_H,g_Manuf,2,3.636,3.636,0.027804136338111518,0.027804,0,TRUE
+Step 4: Unified Real Dual Economy,g_Manuf -> g_H,H0 #2: Manufacturing does not Granger-cause Base Money,g_Manuf,g_H,2,2.306,2.306,0.10183390678094582,0.101834,0,TRUE
+Step 4: Unified Real Dual Economy,g_H -> g_Mining,H0 #1: Base Money does not Granger-cause Mining,g_H,g_Mining,2,0.042,0.042,0.9590014531787004,0.959001,0,TRUE
+Step 4: Unified Real Dual Economy,g_Mining -> g_H,H0 #2: Mining does not Granger-cause Base Money,g_Mining,g_H,2,0.214,0.214,0.8073906413471893,0.807391,0,TRUE
+Step 4: Unified Real Dual Economy,d_theta -> g_Manuf,H0 #1: Structural Imbalance does not Granger-cause Manufacturing,d_theta,g_Manuf,2,1.526,1.526,0.21946778974450276,0.219468,0,TRUE
+Step 4: Unified Real Dual Economy,g_Manuf -> d_theta,H0 #2: Manufacturing does not Granger-cause Structural Imbalance,g_Manuf,d_theta,2,0.328,0.328,0.7209887154571823,0.720989,0,TRUE
+Step 4: Unified Real Dual Economy,d_theta -> g_Mining,H0 #1: Structural Imbalance does not Granger-cause Mining,d_theta,g_Mining,2,0.185,0.185,0.8312240661765161,0.831224,0,TRUE
+Step 4: Unified Real Dual Economy,g_Mining -> d_theta,H0 #2: Mining does not Granger-cause Structural Imbalance,g_Mining,d_theta,2,1.38,1.38,0.25359722175863264,0.253597,0,TRUE
+Step 4: Unified Real Dual Economy,g_Mining -> g_Manuf,H0 #1: Mining does not Granger-cause Manufacturing,g_Mining,g_Manuf,2,1.187,1.187,0.30697074420206755,0.306971,0,TRUE
+Step 4: Unified Real Dual Economy,g_Manuf -> pi_t,H0 #1: Manufacturing Output does not Granger-cause Inflation,g_Manuf,pi_t,2,7.103,7.103,0.00100375445090531,0.001004,0,TRUE
+Step 4: Unified Real Dual Economy,pi_t -> g_Manuf,H0 #2: Inflation does not Granger-cause Manufacturing Output,pi_t,g_Manuf,2,0.434,0.434,0.6486889124327856,0.648689,0,TRUE
+Step 5: Unified External Cost-Push Belt,g_H -> g_gold,H0 #1: Base Money does not Granger-cause Gold,g_H,g_gold,1,2.913,2.913,0.08915011023604535,0.08915,0,TRUE
+Step 5: Unified External Cost-Push Belt,pi_t -> g_gold,H0 #1: Inflation does not Granger-cause Gold,pi_t,g_gold,1,0.489,0.489,0.4850181252639979,0.485018,0,TRUE
+Step 5: Unified External Cost-Push Belt,d_theta -> g_gold,H0 #1: Structural Imbalance does not Granger-cause Gold,d_theta,g_gold,1,1.326,1.326,0.2506436061874027,0.250644,0,TRUE
+Step 5: Unified External Cost-Push Belt,g_e -> g_gold,H0 #1: Exchange Rate does not Granger-cause Gold,g_e,g_gold,1,2.51,2.51,0.11438784332359797,0.114388,0,TRUE
+Step 5: Unified External Cost-Push Belt,g_gold -> pi_t,H0 #2: Gold does not Granger-cause Inflation,g_gold,pi_t,1,0.218,0.218,0.6409009289420649,0.640901,0,TRUE
+Step 5: Unified External Cost-Push Belt,g_H -> d_theta,H0 #1: Base Money does not Granger-cause Structural Imbalance,g_H,d_theta,1,0.445,0.445,0.505341555340545,0.505342,0,TRUE
+Step 5: Unified External Cost-Push Belt,d_theta -> g_H,H0 #2: Structural Imbalance does not Granger-cause Base Money,d_theta,g_H,1,0.692,0.692,0.40633807766141683,0.406338,0,TRUE
+Step 5: Unified External Cost-Push Belt,d_theta -> pi_t,H0 #1: Structural Imbalance does not Granger-cause Inflation,d_theta,pi_t,1,5.113,5.113,0.02461274117766182,0.024613,0,TRUE
+Step 5: Unified External Cost-Push Belt,pi_t -> d_theta,H0 #2: Inflation does not Granger-cause Structural Imbalance,pi_t,d_theta,1,1.269,1.269,0.26110753052241137,0.261108,0,TRUE
+Step 5: Unified External Cost-Push Belt,g_e -> pi_t,H0 #1: Exchange Rate does not Granger-cause Inflation,g_e,pi_t,1,1.697,1.697,0.19390510429956062,0.193905,0,TRUE
+Step 5: Unified External Cost-Push Belt,pi_t -> g_e,H0 #2: Inflation does not Granger-cause Exchange Rate,pi_t,g_e,1,23.305,23.305,2.424110169149369e-6,2e-6,0,TRUE
+Step 5: Unified External Cost-Push Belt,g_e -> g_H,H0 #1: Exchange Rate does not Granger-cause Base Money,g_e,g_H,1,17.037,17.037,5.0169915005436146e-5,5e-5,0,TRUE
+Step 5: Unified External Cost-Push Belt,g_H -> g_e,H0 #2: Base Money does not Granger-cause Exchange Rate,g_H,g_e,1,8.197,8.197,0.00455707345524582,0.004557,0,TRUE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> g_H,H0 #1: Solvency Ratio does not Granger-cause Base Money,g_SolvR_H,g_H,1,0.031,0.031,0.8605254485982781,0.860525,0,TRUE
+Step 6: Unified Central Bank Solvency System,g_H -> g_SolvR_H,H0 #2: Base Money does not Granger-cause Solvency Ratio,g_H,g_SolvR_H,1,0.162,0.162,0.6878527463705228,0.687853,0,TRUE
+Step 6: Unified Central Bank Solvency System,pi_t -> g_SolvR_H,H0 #1: Inflation does not Granger-cause Solvency Ratio,pi_t,g_SolvR_H,1,8.336,8.336,0.004231013861660724,0.004231,0,TRUE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> pi_t,H0 #2: Solvency Ratio does not Granger-cause Inflation,g_SolvR_H,pi_t,1,2.272,2.272,0.13297879316209585,0.13297900000000001,0,TRUE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> g_e,H0 #1: Solvency Ratio does not Granger-cause Exchange Rate,g_SolvR_H,g_e,1,0.262,0.262,0.6091404455934712,0.60914,0,TRUE
+Step 6: Unified Central Bank Solvency System,g_e -> g_SolvR_H,H0 #2: Exchange Rate does not Granger-cause Solvency Ratio,g_e,g_SolvR_H,1,7.979,7.979,0.0051173955262118305,0.005117,0,TRUE
+Step 6: Unified Central Bank Solvency System,g_gold -> g_SolvR_H,H0 #1: World Gold does not Granger-cause Solvency Ratio,g_gold,g_SolvR_H,1,0.001,0.001,0.9760067158205079,0.976007,0,TRUE
+Step 6: Unified Central Bank Solvency System,g_SolvR_H -> g_gold,H0 #2: Solvency Ratio does not Granger-cause World Gold,g_SolvR_H,g_gold,1,0.106,0.106,0.7451206584917699,0.745121,0,TRUE

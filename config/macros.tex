@@ -1,2 +1,30 @@
-% This file can be used to include macros that can be called up from connected TeX files.
-% It helps to summarize repeated code.
+% =============================================================
+% config/macros.tex
+% Shared macro definitions for the dissertation.
+% Chapter-specific macros are defined here to avoid redefinition
+% errors when integration wrappers include chapter content.
+% =============================================================
+
+% ---- Chapter 2 notation macros (Symbology and Notation Lock) ----
+% These must be available globally because section files reference them
+% and we cannot redefine them per-chapter without errors.
+
+\providecommand{\mut}{\mu_t}
+\providecommand{\chit}{\chi_t}
+\providecommand{\kapt}{\kappa_t}
+\providecommand{\knrc}{k^{\text{NRC}}}
+\providecommand{\kme}{k^{\text{ME}}}
+\providecommand{\Ypot}{Y^{p}}
+\providecommand{\mech}{q}
+\providecommand{\pkap}{p_t^{\kappa}}
+\providecommand{\impint}{\nu}
+\providecommand{\deprec}{\delta}
+\providecommand{\discard}{z}
+\providecommand{\stepD}{\boldsymbol{\gamma}'\mathbf{D}_t}
+\providecommand{\stepDsys}{\boldsymbol{\Gamma}\mathbf{D}_t}
+\providecommand{\MPF}{Mechanization Productive Frontier}
+
+% ---- Chapter 2 placeholder marker (draft utility) ---------------
+\providecommand{\PLACEHOLDER}[1]{%
+  \par\medskip\noindent\fbox{\parbox{0.96\linewidth}{%
+      \footnotesize\textbf{[PLACEHOLDER]}~#1}}\par\medskip}

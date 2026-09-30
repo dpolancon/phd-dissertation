@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Full-System PCMCI Momentary Conditional Independence (MCI) Directed Link Tests (1960--1980)}
+\label{tab:pcmci_monthly_gate}
+\label{tab:pcmci_mci_links}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{4.5cm}cc>{\RaggedRight}p{2.0cm}>{\RaggedRight}X}
+\toprule
+\textbf{Directed Link Tested} & \textbf{Lag ($\tau$)} & \textbf{MCI Partial Corr.} & \textbf{$p$-value} & \textbf{Causal Status (FDR $q < 0.05$)} \\
+\midrule
+$\pi_{t-3} \to g_{H,t}$ (Reverse Accomm.) & $\tau = 3$ & +0.247 & $0.0001$*** & Retained directed edge ($\pi \to g_H$) \\
+$g_{H,t-\tau} \to \pi_t$ (Forward Monetarist) & $\tau = 4$ & +0.138 & $0.0350$** & Excluded (FDR $q > 0.10$, zero direct link) \\
+$\Delta \ln \text{SolvR}^H_{t-3} \to g_{H,t}$ (Defensive Emission) & $\tau = 3$ & +0.264 & $< 0.0001$*** & Retained directed edge ($\text{SolvR}^H \to g_H$) \\
+$\Delta \ln \text{SolvR}^H_{t-3} \to \pi_t$ (Solvency Gate) & $\tau = 3$ & -0.165 & $0.0115$** & Retained directed edge ($\text{SolvR}^H \to \pi$) \\
+$g_{e, t-4} \to \pi_t$ (External Pass-Through) & $\tau = 4$ & +0.644 & $< 0.0001$*** & Retained directed edge ($g_e \to \pi$) \\
+$\pi_{t-4} \to g_{e, t}$ (Forced Devaluation) & $\tau = 4$ & -0.396 & $< 0.0001$*** & Retained directed edge ($\pi \to g_e$) \\
+$\Delta \ln \Theta_{t-1} \to g_{\text{Manuf}, t}$ (Import Constraint) & $\tau = 1$ & +0.142 & $0.0287$** & Retained directed edge ($\Theta \to \text{Manuf}$) \\
+$g_{H, t-3} \to g_{\text{Manuf}, t}$ (Idle Reactivation) & $\tau = 3$ & +0.177 & $0.0064$*** & Retained directed edge ($g_H \to \text{Manuf}$) \\
+$g_{\text{Manuf}, t-1} \to \pi_t$ (Price Suppression) & $\tau = 1$ & -0.168 & $0.0101$** & Retained directed edge ($\text{Manuf} \to \pi$) \\
+$g_{H, t-4} \to g_{\text{Mining}, t}$ (Enclave Decoupling) & $\tau = 4$ & -0.189 & $0.0035$*** & Retained directed edge ($g_H \to \text{Mining}$) \\
+$g_{P,\text{gold}, t-4} \to g_{e, t}$ (Gold Cost Push) & $\tau = 4$ & +0.163 & $0.0119$** & Retained directed edge ($P^{\text{gold}} \to g_e$) \\
+$g_{P,\text{gold}, t-3} \to \pi_t$ (Gold Inflation) & $\tau = 3$ & +0.146 & $0.0241$** & Retained directed edge ($P^{\text{gold}} \to \pi$) \\
+$\pi_{t-\tau} \to \Delta \ln \Theta_t$ (Exogeneity Check) & $\tau \in [1,4]$ & -0.074 & $0.2545$ & Block-exogenous ($p = 0.255$) \\
+$g_{H,t-\tau} \to g_{P,\text{gold}, t}$ (Exogeneity Check) & $\tau \in [1,4]$ & -0.107 & $0.1004$ & Block-exogenous ($p = 0.100$) \\
+$g_{H,t-\tau} \to \Delta \ln \text{SolvR}^H_t$ (Monetary Drain) & $\tau \in [1,4]$ & -0.131 & $0.0449$** & Excluded (zero direct link) \\
+\bottomrule
+\end{tabularx}
+\begin{minipage}{\textwidth}
+\vspace{0.3em}
+\footnotesize \textit{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). Estimated using Tigramite PCMCI \citep{Runge2019} on the 8-variable system with partial correlation conditional independence tests evaluated across lags $\tau \in \{1, \dots, 4\}$. Minimal conditioning parent sets $\widehat{\mathcal{P}}(X^j_t)$ and $\widehat{\mathcal{P}}(X^i_{t-\tau})$ are selected in the PC$_1$ phase. False discovery rates are controlled via the Benjamini--Hochberg procedure at FDR $q < 0.05$. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. Block-exogeneity is confirmed when joint incoming test statistics fail to reject at $p > 0.10$.
+\end{minipage}
+\end{table}

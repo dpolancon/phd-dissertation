@@ -1,0 +1,118 @@
+% =============================================================
+% integration/chapter3.tex
+% Integration wrapper for Chapter 3 (FROZEN SOURCE).
+%
+% This file adapts the standalone Chapter3/Chapter3_Paper.tex for
+% inclusion in the dissertation master document without modifying
+% the frozen source.
+%
+% Frozen source: Chapter3/Chapter3_Paper.tex
+% Standalone commands suppressed: \documentclass, \begin{document},
+%   \begin{titlepage}, standalone \tableofcontents, \end{document}
+% Package commands suppressed (all loaded globally in config/packages.tex).
+% Local settings scoped with \begingroup...\endgroup.
+%
+% INTEGRATION LEDGER: see docs/03_INTEGRATION_LEDGER.md
+% =============================================================
+
+% ---- Set graphics search path for this chapter --------------
+\graphicspath{%
+  {Chapter3/}%
+  {Chapter3/figures/}%
+  {Chapter3/appendix/}%
+  {Chapter3/sections/}%
+}
+
+% ---- Scope Ch3 paragraph rhythm locally ---------------------
+\begingroup
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+
+% ---- Chapter opening (replaces standalone \begin{titlepage}) ----
+\chapter[Essay 3 \textemdash{} Re-visiting the Political Economy of the Rise and Fall of the Unidad Popular: Towards a Global Political Economy Approach]%
+  {Re-visiting the Political Economy of the Rise\\
+   and Fall of the Unidad Popular:\\
+   Towards a Global Political Economy Approach}
+
+\vspace{0.8em}
+
+% Abstract (verbatim from frozen source)
+\begin{abstract}
+This chapter evaluates competing explanations of the macroeconomic crisis of
+Chile's Unidad Popular (1970--1973), examining the causal ordering between
+domestic monetary expansion, inflation, the external constraint, and
+central-bank accommodation. Advancing dependency theory as a research programme
+in the Lakatosian sense, it develops the programme's protective belt by
+specifying an empirically testable balance-sheet mechanism that links the
+international currency hierarchy, access to world money, the balance-of-payments
+constraint, peripheral central-bank solvency, and endogenous monetary
+accommodation. Historically, the analysis distinguishes the contingent exercise
+of U.S.\ hegemonic agency surrounding the breakdown of Bretton Woods, the
+targeted bilateral credit restrictions confronting Chile, and the constrained
+but real institutional agency of the Central Bank of Chile (BCCh). Using a
+multi-frequency empirical design, the empirical strategy deploys stationary
+vector-autoregressive Granger directional-precedence tests and a non-linear
+Threshold Vector Autoregression where the central bank's predetermined Solvency
+Growth Gap ($\Delta s_{t-1} \equiv g^F_{t-1} - g^H_{t-1}$) acts as the
+transition variable. The empirical analysis reveals that in the adverse
+solvency-growth state ($\Delta s_{t-1} \le -4.615\%$, reflecting conditions of
+central bank insolvency), forward monetary transmission (base-money shock to
+inflation) is statistically significant for 9 consecutive months with a
+cumulative 12-month response of 3.55 percentage points. In contrast, reverse
+accommodation (inflation shock to base-money growth) is statistically
+significant for 10 consecutive months, delivering a cumulative 12-month
+expansion of 6.54 percentage points. Reverse accommodation exceeds forward
+transmission in both duration and cumulative magnitude, with point-wise
+multiplier differences significant across 9 consecutive months
+($h=2,\dots,10$). These findings indicate that monetary transmission is
+state-dependent on external reserve solvency, providing evidence consistent
+with an endogenous accommodation mechanism under severe balance-of-payments
+constraints and challenging accounts that treat money creation as an autonomous
+driver of the Chilean inflation.
+\end{abstract}
+
+\vspace{0.8em}
+
+\noindent\textbf{Keywords:} Unidad Popular, Balance of Payments, Financial
+Subordination, Solvency Ratio, Endogenous Money, Threshold Vector
+Autoregression, International Currency Hierarchy, Dependency Theory.
+
+\vspace{0.4em}
+\noindent\textbf{JEL Codes:} B51, C32, E58, F33, N16.
+
+\clearpage
+
+% ---- Chapter body (frozen source sections) ------------------
+% Use Chapter3/ as base dir so that nested \input{sections/...},
+% \input{tables/...}, and \input{figures/...} paths within files
+% resolve correctly relative to Chapter3/ root.
+\subimport{Chapter3/}{sections/01_introduction}
+\subimport{Chapter3/}{sections/02_literature_review}
+\subimport{Chapter3/}{sections/03_macro_framework}
+\subimport{Chapter3/}{sections/04_data_architecture}
+\subimport{Chapter3/}{sections/05_historical_empirical_results}
+\subimport{Chapter3/}{sections/06_discussion_conclusion}
+
+% ---- Chapter bibliography -----------------------------------
+\clearpage
+{%
+\setlength{\bibsep}{2.5pt}
+\bibliographystyle{apalike}
+\bibliography{Chapter3/references}
+}
+
+% ---- Chapter appendices -------------------------------------
+\clearpage
+\begin{subappendices}
+\subimport{Chapter3/}{appendix/appendix_bop_levr}
+\clearpage
+\subimport{Chapter3/}{appendix/appendix_archival_codebook}
+\clearpage
+\subimport{Chapter3/}{appendix/appendix_causal_pcmci_ee1}
+\clearpage
+\subimport{Chapter3/}{appendix/appendix_tvar_girf_atlas}
+\clearpage
+\subimport{Chapter3/}{appendix/appendix_linear_var_diagnostics}
+\end{subappendices}
+
+\endgroup  % end Ch3 paragraph-rhythm scope

@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\centering
+\fontsize{8pt}{9.2pt}\selectfont
+\renewcommand{\arraystretch}{0.76}
+\caption{Sequential Granger Causality Tournament: Nominal Core and Private Banking Bifurcations (Steps 1--3)}
+\label{tab:granger_battery_panelA}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Dependent Variable (DV)} & \textbf{Regressor (INDV)} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$\chi^2$ (MWALD)} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Direction} \\
+\midrule
+\multicolumn{8}{l}{\textbf{Step 1: Master Nominal Core}} \\[0.15em]
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 1 & 28.324$^{***}$ & 28.324 & $< 0.0001$ & +0.298 & $\pi \to g_H$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 2 & 18.515$^{***}$ & 37.029 & $< 0.0001$ & +0.408 & $\pi \to g_H$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 3 & 20.318$^{***}$ & 60.954 & $< 0.0001$ & +0.595 & $\pi \to g_H$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 4 & 15.004$^{***}$ & 60.015 & $< 0.0001$ & +0.680 & $\pi \to g_H$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 14.557$^{***}$ & 14.557 & 0.0002 & +0.243 & $g_H \to \pi$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 2 & 9.284$^{***}$ & 18.568 & 0.0001 & +0.374 & $g_H \to \pi$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 3 & 5.544$^{***}$ & 16.631 & 0.0011 & +0.421 & $g_H \to \pi$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 4 & 2.718$^{**}$ & 10.872 & 0.0305 & +0.380 & $g_H \to \pi$ \\
+\multicolumn{8}{l}{\textbf{Step 2: Banking Bifurcation A (Credit Lead)}} \\[0.15em]
+Narrow Money Growth ($\Delta g_{M1,t}$) & Inflation ($\Delta \pi_t$) & 1 & 14.322$^{***}$ & 14.322 & 0.0002 & +0.171 & $\pi \to M1$ \\
+Inflation ($\Delta \pi_t$) & Narrow Money Growth ($\Delta g_{M1,t}$) & 1 & 14.004$^{***}$ & 14.004 & 0.0002 & +0.401 & No \\
+Base Money Growth ($\Delta g_{H,t}$) & Narrow Money Growth ($\Delta g_{M1,t}$) & 1 & 21.453$^{***}$ & 21.453 & $< 0.0001$ & +0.478 & $M1 \to H$ \\
+Narrow Money Growth ($\Delta g_{M1,t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 15.834$^{***}$ & 15.834 & 0.0001 & +0.284 & $H \to M1$ \\
+\multicolumn{8}{l}{\textbf{Step 3: Banking Bifurcation B (Multiplier Deconstruction)}} \\[0.15em]
+Inflation ($\Delta \pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 1 & 0.338 & 0.338 & 0.5617 & -0.064 & No \\
+Inflation ($\Delta \pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 3 & 0.145 & 0.434 & 0.9331 & -0.155 & No \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\Delta \pi_t$) & 3 & 5.127$^{***}$ & 15.382 & 0.0020 & -0.189 & $\pi \to m$ \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\Delta \pi_t$) & 4 & 4.134$^{***}$ & 16.537 & 0.0032 & -0.207 & $\pi \to m$ \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series for Step 1 span 1960:01--1980:12 ($N=250$); Steps 2 and 3 evaluate un-spliced observed narrow money ($M1$) spanning 1966:01--1980:12 ($N=180$). Evaluated via Toda--Yamamoto ($k+d_{\max}$) augmented levels VAR under $d_{\max}=1$. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$.
+\end{minipage}
+\end{table}

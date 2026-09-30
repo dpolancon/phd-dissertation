@@ -1,0 +1,9 @@
+Variable,Source_Series,Source,SA_Status,Evidence_Location,Confidence
+pi_t,ipc_monthly_var_pct_1928_2026 (F074.IPC.VAR.Z.Z.C.M),INE / Central Bank of Chile (Boletín Mensual),NOT_SEASONALLY_ADJUSTED,"DATA_DICTIONARY.md line 21; bcch_monthly/README.md line 60 ('IPC General histórico, variación mensual')",HIGH
+g_H,monetary_base_emision_1960_2026 (F021.BMO.STO.N.CLP.0.M),Central Bank of Chile (Boletín Mensual),NOT_SEASONALLY_ADJUSTED,DATA_DICTIONARY.md line 17; bcch_monthly/README.md line 63 ('Base Monetaria / Emisión'),HIGH
+d_theta,theta = eff_imp / cap_imp (Exports & Imports basic volume indices),"Díaz-Bahamonde (2023, IMEA) / DGE / INE / BCCh",NOT_SEASONALLY_ADJUSTED,"DATA_DICTIONARY.md lines 26-27, 37; imea_data.xlsx Hoja1 row 4 ('Series básicas')",HIGH
+g_Manuf,"manuf (Consumer manufacturing physical output index, base 1970=100)",ODEPLAN / INE / Díaz-Bahamonde (2023),NOT_SEASONALLY_ADJUSTED,DATA_DICTIONARY.md line 28; imea_data.xlsx Hoja1 row 4 ('Series básicas'),HIGH
+g_Mining,"mining (Mining physical extraction index, base 1970=100)",SERNAGEOMIN / ODEPLAN / Díaz-Bahamonde (2023),NOT_SEASONALLY_ADJUSTED,DATA_DICTIONARY.md line 29; imea_data.xlsx Hoja1 row 4 ('Series básicas'),HIGH
+g_gold,gold_price_usd_oz_1960_2026 (F019.PPB.PRE.44B.M),London Bullion Market Association (LBMA) / World Gold Council,NOT_SEASONALLY_ADJUSTED,DATA_DICTIONARY.md line 25; bcch_monthly/README.md line 67 ('Gold Price USD/oz'),HIGH
+g_e,usd_exchange_rate_observed_1960_2026 (F073.TCO.PRE.HIST.M),Central Bank of Chile (Boletín Mensual),NOT_SEASONALLY_ADJUSTED,DATA_DICTIONARY.md line 20; bcch_monthly/README.md line 62 ('USD Observed Exchange Rate'),HIGH
+g_SolvR_H,SolvR_H = (e * IR) / (H * 1000),Central Bank of Chile & IMF International Financial Statistics,NOT_SEASONALLY_ADJUSTED,DATA_DICTIONARY.md line 36; 05_4_threshold_var.tex eq (19) ('SolvR stock ratio'),HIGH

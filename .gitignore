@@ -1,33 +1,86 @@
-/tmp
-clear.sh
-conversion-eps-converted-to.pdf
-*.eps
+# phd-dissertation .gitignore
+# =====================================================
+# Compilation artifacts — generated during build
+# =====================================================
+
+# LaTeX root-level artifacts
+dissertation.aux
+dissertation.bbl
+dissertation.blg
+dissertation.fdb_latexmk
+dissertation.fls
+dissertation.log
+dissertation.out
+dissertation.synctex.gz
+dissertation.toc
+dissertation.lof
+dissertation.lot
+
+# Integration wrapper artifacts (chapterbib creates these)
+integration/chapter1.aux
+integration/chapter1.bbl
+integration/chapter1.blg
+integration/chapter2.aux
+integration/chapter2.bbl
+integration/chapter2.blg
+integration/chapter3.aux
+integration/chapter3.bbl
+integration/chapter3.blg
+
+# Build directory (if used)
+build/
+
+# Chapter-level artifacts (from standalone compilation)
+Chapter1/*.aux
+Chapter1/*.bbl
+Chapter1/*.blg
+Chapter1/*.fdb_latexmk
+Chapter1/*.fls
+Chapter1/*.log
+Chapter1/*.out
+Chapter1/*.synctex.gz
+Chapter1/*.toc
+# Preserve frozen standalone PDF (source artifact)
+!Chapter1/main.pdf
+!Chapter1/Chapter1_v3.0.pdf
+
+Chapter2/*.aux
+Chapter2/*.bbl
+Chapter2/*.blg
+Chapter2/*.fdb_latexmk
+Chapter2/*.fls
+Chapter2/*.log
+Chapter2/*.out
+Chapter2/*.synctex.gz
+Chapter2/*.toc
+# Preserve frozen standalone PDF
+!Chapter2/main.pdf
+
+Chapter3/*.aux
+Chapter3/*.bbl
+Chapter3/*.blg
+Chapter3/*.fdb_latexmk
+Chapter3/*.fls
+Chapter3/*.log
+Chapter3/*.out
+Chapter3/*.synctex.gz
+Chapter3/*.toc
+# Preserve frozen standalone PDF
+!Chapter3/Chapter3_Paper.pdf
+!Chapter3/Chapter3_Paper_compiled.pdf
+
+# Python cache
+__pycache__/
 *.pyc
-*.lyx~
-*.lyx#
-*.RDS
-*.RData
-*.Rhistory
-*.Rapp.history
-*.DS_Store
-*.aux
-*.nlo
-*.run.xml
-*.synctex*
-*.fls
-*.bbl
-*.log
-*.bcf*
-*.ilg
-*.blg
-*.nls
-*.brf
-*.fdb_latexmk
-*.lof
-*.lot
-*.nav
-*.snm
-*.toc
-*.out
-*.svn
-*.m~
+*.pyo
+
+# Editor artifacts
+*.txss2
+.claudeprism/
+.prism/
+_editing_ai_detrace/
+*.session
+
+# OS
+.DS_Store
+Thumbs.db

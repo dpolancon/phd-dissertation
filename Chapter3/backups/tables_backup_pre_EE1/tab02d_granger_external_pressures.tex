@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.92}
+\caption{Toda--Yamamoto Granger Causality: External Sector and Balance-of-Payments Pressures ($N=250$)}
+\label{tab:granger_external_pressures}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Dependent Variable (DV)} & \textbf{Regressor (INDV)} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$\chi^2$ (MWALD)} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Direction} \\
+\midrule
+World Gold Price ($g_{P,\text{gold},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 2 & 1.487 & 2.974 & 0.2281 & +0.079 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Inflation ($\Delta \pi_t$) & 2 & 2.027 & 4.053 & 0.1340 & +0.022 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.015 & 2.031 & 0.3638 & +0.015 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 2 & 1.579 & 3.158 & 0.2082 & -0.033 & No \\
+Inflation ($\Delta \pi_t$) & World Gold Price ($g_{P,\text{gold},t}$) & 2 & 0.259 & 0.519 & 0.7717 & +0.036 & $Gold \to \pi$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Base Money Growth ($\Delta g_{H,t}$) & 2 & 0.899 & 1.799 & 0.4081 & -0.648 & No \\
+Base Money Growth ($\Delta g_{H,t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.027 & 2.054 & 0.3597 & +0.022 & $\Theta \to g_H$ \\
+Inflation ($\Delta \pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 5.113$^{**}$ & 5.113 & 0.0246 & +0.082 & $\Theta \to \pi$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Inflation ($\Delta \pi_t$) & 1 & 1.269 & 1.269 & 0.2611 & -0.421 & No \\
+Inflation ($\Delta \pi_t$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 1 & 1.697 & 1.697 & 0.1939 & -0.086 & No \\
+Inflation ($\Delta \pi_t$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 4 & 37.025$^{***}$ & 148.100 & $< 0.0001$ & +0.504 & $g_e \to \pi$ \\
+Exchange Rate Growth ($\Delta g_{e,t}$) & Inflation ($\Delta \pi_t$) & 1 & 23.305$^{***}$ & 23.305 & $< 0.0001$ & +0.689 & $\pi \to g_e$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 1 & 17.037$^{***}$ & 17.037 & $< 0.0001$ & +0.161 & No \\
+Exchange Rate Growth ($\Delta g_{e,t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 8.197$^{***}$ & 8.197 & 0.0046 & +0.286 & No \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). 5-variable system $[g_{P,\text{gold},t}, g_{e,t}, \Delta \ln \Theta_t, g_{H,t}, \pi_t]'$ evaluated via Toda--Yamamoto ($k+d_{\max}$) augmented levels VAR ($d_{\max}=1$). Confirms strict block-exogeneity of London bullion prices ($p > 0.13$) and real structural imbalance ($p > 0.26$). Structural import imbalance directly drives inflation ($\Theta \to \pi$, $F = 5.113, p = 0.0246$). Nominal exchange rate devaluations exert massive cumulative pass-through into consumer prices ($g_e \to \pi$, $F = 37.025, p < 0.0001$), compelling subsequent official devaluations ($\pi \to g_e$, $F = 23.305, p < 0.0001$). Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$.
+\end{minipage}
+\end{table}

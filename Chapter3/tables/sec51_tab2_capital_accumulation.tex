@@ -1,0 +1,70 @@
+\begin{table}[H]
+	\centering
+	\footnotesize % Matched to Table 1
+	\setlength{\tabcolsep}{4pt}
+	
+	\caption{Capital Accumulation Response Across the Terminal Crisis Cycle, Chile, 1964--1975}
+	\label{tab:accumulation_accounting}
+	
+	\vspace{0.2em}
+	
+	% Reuse the custom column types defined in Table 1's preamble 
+	% OR define them here if they are local. 
+	% Assuming L{} and C{} are already defined globally in your preamble:
+	
+	% Total Width Calculation to match Table 1:
+	% Table 1: 3.5 + (6 * 1.75) = 3.5 + 10.5 = 14.0 cm
+	% Table 2: 3.5 + (5 * X) = 14.0 => 5X = 10.5 => X = 2.1 cm
+	% So we use C{2.1cm} for the numeric columns.
+	
+	\begin{tabular}{L{3.5cm} C{2.1cm} C{2.1cm} C{2.1cm} C{2.1cm} C{2.1cm}}
+		\toprule
+		\textbf{Episode / Year} 
+		& \textbf{Profit Rate} 
+		& \textbf{Accum.\ Ratio} 
+		& \textbf{Gross Acc.\ Rate} 
+		& \textbf{Depreciation Rate} 
+		& \textbf{Net Acc.\ Rate} \\
+		
+		& $\boldsymbol{r}$ (\%) 
+		& $\boldsymbol{\chi}$ (ratio) 
+		& $g^{\mathrm{gross}}_K$ (\%) 
+		& $\boldsymbol{\delta}$ (\%) 
+		& $g^n_K$ (\%) \\
+		\midrule
+		
+		\multicolumn{6}{l}{\underline{\textit{A. Christian Democratic Administration (1964--1970)}}} \\[0.3em]
+		
+		1964 (Baseline)       & 8.16  & 1.530 & 12.49 & 7.67 & 4.82 \\[0.2em]
+		1965                  & 8.59  & 1.244 & 10.69 & 6.94 & 3.75 \\[0.2em]
+		1966                  & 10.94 & 0.972 & 10.63 & 6.97 & 3.66 \\[0.2em]
+		1967                  & 10.14 & 1.066 & 10.81 & 7.06 & 3.75 \\[0.2em]
+		1968                  & 11.29 & 0.991 & 11.20 & 7.24 & 3.96 \\[0.2em]
+		1969 (Peak Profit.)   & 12.79 & 0.857 & 10.96 & 7.14 & 3.82 \\[0.2em]
+		1970 (Inherited)      & 12.23 & 0.951 & 11.63 & 7.40 & 4.23 \\[0.5em]
+		
+		\midrule
+		
+		\multicolumn{6}{l}{\underline{\textit{B. Unidad Popular Administration (1971--1973)}}} \\[0.3em]
+		
+		1971 (Reactivation)   & 10.62 & 0.953 & 10.12 & 6.78 & 3.34 \\[0.2em]
+		1972 (Squeeze)        & 6.57  & 1.162 & 7.64  & 5.78 & 1.85 \\[0.2em]
+		1973 (Coup year)      & 9.12  & 0.821 & 7.48  & 5.78 & 1.71 \\[0.5em]
+		
+		\midrule
+		
+		\multicolumn{6}{l}{\underline{\textit{C. Military Dictatorship \& Shock Therapy (1974--1975)}}} \\[0.3em]
+		
+		1974 (Compression)    & 10.67 & 0.811 & 8.65  & 6.27 & 2.38 \\[0.2em]
+		1975 (Collapse)       & 6.54  & 1.035 & 6.77  & 5.56 & 1.21 \\
+		
+		\bottomrule
+	\end{tabular}%
+	
+	\vspace{0.5em}
+	
+	\begin{minipage}{\textwidth}
+		\scriptsize
+		\textit{Notes.} Accumulation accounting for fixed capital assets ($K_t \equiv K_{\mathrm{ME},t} + K_{\mathrm{NRC},t}$), excluding residential construction. Gross accumulation is $g^{\mathrm{gross}}_{K,t} \equiv I^{\mathrm{gross}}_t/K_{t-1}$; physical depreciation is $\delta_t \equiv D_t/K_{t-1}$; net accumulation is $g^n_{K,t} \equiv I^{\mathrm{net}}_t/K_{t-1}$; and the gross investment-to-surplus ratio (accumulation ratio) is $\chi_t \equiv g^{\mathrm{gross}}_{K,t}/r_t$. All observations satisfy the exact identity $g^n_{K,t} \equiv \chi_t r_t - \delta_t$, subject to displayed rounding. The profit rate is a level, not its growth rate. Annual 1973 observations span the coup. Source: Author's own elaboration (Chapter 2).
+	\end{minipage}
+\end{table}

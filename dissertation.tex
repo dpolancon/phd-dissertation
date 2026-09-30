@@ -1,100 +1,84 @@
-\documentclass[twoside,11pt]{config/dissertation}
-\include{config/macros}
+% =============================================================
+% dissertation.tex
+% Master document for Diego Polanco's PhD dissertation.
+%
+% ARCHITECTURE:
+%   - Frozen chapters in Chapter1/, Chapter2/, Chapter3/
+%   - Integration wrappers in integration/
+%   - Shared configuration in config/
+%   - Working front matter in frontmatter/
+%   - Build artifacts go to build/ (via latexmkrc)
+%
+% BUILD:
+%   latexmk -pdf dissertation.tex
+%
+% IMMUTABILITY:
+%   Chapter1/, Chapter2/, Chapter3/ are frozen source directories.
+%   Do not edit files inside them during shell/integration work.
+% =============================================================
 
-\hbadness=10000
-\hfuzz=50pt
+\documentclass[11pt,oneside]{book}
 
-\usepackage[
-   backend=biber,
-   natbib=true,
-   style=apa,
-   doi=false,
-   refsection=chapter
-]{biblatex}
-\addbibresource{1_introduction/references.bib}
-\addbibresource{2_chapter/references.bib}
-\addbibresource{3_chapter/references.bib}
-\addbibresource{4_chapter/references.bib}
-\addbibresource{5_chapter/references.bib}
+% ---- Load shared configuration ------------------------------
+\input{config/packages}
+\input{config/macros}
+\input{config/style}
+\input{config/chapter-adapters}
 
-\title{Title of Dissertation}
-\subtitle{Subtitle of Dissertation}
-\author{John Doe}
-
-\pdfinfo{
-   /Author (John Doe)
-   /Title  (Title of Dissertation)
-   /CreationDate (D:202404151830)
-   /Subject (Economics)
-   /Keywords (keywords,keywords,keywords)
-}
-
+% =============================================================
+% BEGIN DOCUMENT
+% =============================================================
 \begin{document}
-\selectlanguage{english}
-\frontmatterSUecon
-\pagenumbering{gobble} % Turn off page numbering up to dedication page
-\halftitlepage
-\maketitle
 
-\newpage
-\noindent Doctoral Dissertation
-
-\noindent Department of Economics
-% \noindent Institute for International Economic Studies
-
-\noindent Stockholm University
-
-\phantom{.}
-\vspace{\stretch{1}}
-
-{\fontfamily{verdana}\selectfont
-{\scriptsize
-\noindent
-\copyright John Doe, Stockholm 20XX
-
-\vspace{5mm}
-\noindent
-ISBN print XXX-XX-XXXX-XXX-X\newline % Provided by the library
-ISBN PDF XXX-XX-XXXX-XXX-X\newline % Provided by the library
-ISSN XXXX-XXXX
-
-\vspace{5mm}
-\noindent
-Printed in Sweden by Universitetsservice US-AB, Stockholm 20XX % Change if use a different printing company
-
-\noindent
-%%% Name of department
-Distributor: Department of Economics, Stockholm University
-% Distributor: Institute for International Economic Studies, Stockholm University
-}
-}
-\cleardoublepage
-\input{0_frontmatter/abstract}
-\include{0_frontmatter/dedication}
+% ---- FRONT MATTER -------------------------------------------
+\frontmatter
 \pagenumbering{roman}
-\setcounter{page}{1}
-\include{0_frontmatter/acknowledgement}
 
-\setcounter{secnumdepth}{2}   % Organizational level that receives a numbers
-\setcounter{tocdepth}{2}      % Print table of contents for level 2
-{\sffamily\tableofcontents}   % Print the table of contents using the Arial font
-% Levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsubsection
+% Working title page (temporary — see frontmatter/working-title.tex)
+\input{frontmatter/working-title}
 
-\mainmatterSUecon
-\setcounter{page}{1}
-\include{1_introduction/main}
-\include{2_chapter/main}
-\include{3_chapter/main}
-\include{4_chapter/main}
-\include{5_chapter/main}
+% ============================================================
+% FUTURE FRONT MATTER
+% Abstract
+% Dedication
+% Acknowledgments
+% Institutional pages (committee, copyright, approval/signatures)
+% ============================================================
 
-\backmatterSUecon
-\include{6_backmatter/sammanfattning}
-\cleardoublepage
-\pagestyle{empty}
-\pagenumbering{gobble} % Turn off page numbering for dissertation series list
-%%% Add dissertation series list
-\include{6_backmatter/nek_monograph_series}
-% \include{6_backmatter/iies_monograph_series}
+% ---- Table of Contents --------------------------------------
+\clearpage
+{\setlength{\parskip}{1pt}
+\tableofcontents}
+
+% ---- List of Figures ----------------------------------------
+\clearpage
+\listoffigures
+
+% NOTE on List of Tables:
+% The three chapters contain a substantial number of tables (estimated 40+
+% across all chapters). A \listoftables would be useful and is recommended
+% for the next pass. It is not included in this minimal integration pass
+% because the chapter table captions use varied formats; a review pass
+% to ensure consistent caption formatting is preferable before adding it.
+
+% ---- MAIN MATTER -------------------------------------------
+\mainmatter
+\pagenumbering{arabic}
+
+% ---- Dissertation Introduction -----------------------------
+\include{frontmatter/introduction}
+
+% ---- Essay 1 -----------------------------------------------
+\include{integration/chapter1}
+
+% ---- Essay 2 -----------------------------------------------
+\include{integration/chapter2}
+
+% ---- Essay 3 -----------------------------------------------
+\include{integration/chapter3}
+
+% ============================================================
+% FUTURE CONSOLIDATED DISCUSSION / CONCLUSION
+% ============================================================
 
 \end{document}

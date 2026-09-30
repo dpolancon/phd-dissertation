@@ -1,0 +1,12 @@
+Component,File_Path,Verified_Content,Evidence_Status_Alignment,Retired_Phrases_Found,Sync_Status
+Abstract,paper/Version7/Chapter3_Paper.tex,"GIRF 3.55 pp (h=1..9) vs 6.54 pp (h=1..10); point-wise diff h=2..10; state-dependent accommodation","TVAR Insolvency Regime; Qualified Linear Granger",NONE,ALIGNED
+Introduction,paper/Version7/sections/01_introduction.tex,"Solvency threshold -4.615%; forward 3.55 pp vs reverse 6.54 pp; h=2..10 diff; balance-sheet accommodation",TVAR and Linear Architecture consistency,NONE,ALIGNED
+Macro Framework,paper/Version7/sections/03_macro_framework.tex,"Solvency ratio definition S_t = F_t / H_t; balance-sheet transmission; international currency hierarchy",Theoretical foundation for TVAR and linear VAR,NONE,ALIGNED
+Data Architecture,paper/Version7/sections/04_data_architecture.tex,"M1 and banking multiplier restricted to un-spliced 1966-1980; base money H used for core full sample",Matches System 2 sample 1966-1980,NONE,ALIGNED
+Empirical Results (§5.3),paper/Version7/sections/05_historical_empirical_results.tex,"Conditional VAR(3) estimates for System 2; frozen Systems 1 and 6; neutral bridge to §5.4","Qualified Linear (Sys 2), Robust Linear (Sys 1), Pre-73 (Sys 6)",NONE,ALIGNED
+Threshold VAR (§5.4),paper/Version7/sections/05_4_threshold_var.tex,"Calibrated claims on gold exogeneity, Hansen test, institutional exclusion, GIRF horizons, nominal paradox","Nonlinear TVAR, Hansen (1997/2000)",NONE,ALIGNED
+Discussion & Conclusion,paper/Version7/sections/06_discussion_conclusion.tex,"Precedence and multiplier results; explicit methodological identification boundaries; no causal overreach","Progressive dependency programme; macro time-series limits",NONE,ALIGNED
+Table 0 (System Definitions),paper/Version7/tables/tab00_system_variable_definitions.tex,"Definitions of Systems 1-6; stationary I(0) terminology",Aligned with empirical architecture lock,NONE,ALIGNED
+Table 2 (Core Granger),paper/Version7/tables/tab02_core_granger_evidence.tex,"Conditional VAR(3) estimates for System 2; retained non-significant g_M1 -> pi row; updated notes",Aligned with conditional VAR(3) and provenance,NONE,ALIGNED
+Table 3 (Solvency Unit Root),paper/Version7/tables/tab03_solvency_unit_root.tex,"Delta s_t stationary I(0) note",Corrected terminology,NONE,ALIGNED
+Table 4 (TVAR Estimates),paper/Version7/tables/tab04_tvar_estimates.tex,"Exclusion restriction based on institutional transmission; removed p=0.406",Calibrated note,NONE,ALIGNED

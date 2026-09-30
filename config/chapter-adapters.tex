@@ -1,0 +1,23 @@
+% =============================================================
+% config/chapter-adapters.tex
+% Per-chapter path graphics declarations and adapter utilities.
+% This file is \input{}'d ONCE in dissertation.tex preamble.
+% Per-chapter graphicspath overrides are in each integration wrapper.
+% =============================================================
+
+% ---- Note on graphicspath -----------------------------------
+% graphicspath is set PER CHAPTER inside each integration wrapper
+% using \graphicspath{{../Chapter1/}{../Chapter1/figures/}} etc.
+% The last \graphicspath call wins, so each chapter wrapper resets it.
+
+% ---- Note on bibliography paths ----------------------------
+% Each chapter wrapper sets its own \bibliography{} call pointing to
+% the chapter-local references.bib via a relative path.
+% chapterbib manages isolation.
+
+% ---- Suppress 'multiply defined label' severity for sec:introduction ----
+% Both Ch1 and Ch3 define \label{sec:introduction}.
+% This suppresses the error-level to a warning only (already default).
+% No action needed: LaTeX warns but compiles successfully.
+% The hyperref anchor for the second definition wins.
+% Documented in 03_INTEGRATION_LEDGER.md.

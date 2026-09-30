@@ -1,0 +1,25 @@
+System,K,Lag_k,Is_K_Star,Max_Root,Stability
+Step 1: Master Nominal Core,2,1,FALSE,0.5598,STABLE
+Step 1: Master Nominal Core,2,2,FALSE,0.8122,STABLE
+Step 1: Master Nominal Core,2,3,TRUE,0.8971,STABLE
+Step 1: Master Nominal Core,2,4,FALSE,0.9391,STABLE
+Step 2: Banking Bifurcation A (Credit Lead),3,1,TRUE,0.6543,STABLE
+Step 2: Banking Bifurcation A (Credit Lead),3,2,FALSE,0.8427,STABLE
+Step 2: Banking Bifurcation A (Credit Lead),3,3,FALSE,0.9193,STABLE
+Step 2: Banking Bifurcation A (Credit Lead),3,4,FALSE,0.9473,STABLE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,1,TRUE,0.6543,STABLE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,2,FALSE,0.8427,STABLE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,3,FALSE,0.9193,STABLE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,4,FALSE,0.9473,STABLE
+Step 4: Unified Real Dual Economy,5,1,FALSE,0.5843,STABLE
+Step 4: Unified Real Dual Economy,5,2,TRUE,0.8198,STABLE
+Step 4: Unified Real Dual Economy,5,3,FALSE,0.8959,STABLE
+Step 4: Unified Real Dual Economy,5,4,FALSE,0.9428,STABLE
+Step 5: Unified External Cost-Push Belt,5,1,TRUE,0.5752,STABLE
+Step 5: Unified External Cost-Push Belt,5,2,FALSE,0.8118,STABLE
+Step 5: Unified External Cost-Push Belt,5,3,FALSE,0.9082,STABLE
+Step 5: Unified External Cost-Push Belt,5,4,FALSE,0.9165,STABLE
+Step 6: Unified Central Bank Solvency System,5,1,TRUE,0.5707,STABLE
+Step 6: Unified Central Bank Solvency System,5,2,FALSE,0.82,STABLE
+Step 6: Unified Central Bank Solvency System,5,3,FALSE,0.9083,STABLE
+Step 6: Unified Central Bank Solvency System,5,4,FALSE,0.9102,STABLE

@@ -1,0 +1,84 @@
+% ==============================================================================
+% Appendix E: Linear VAR Diagnostic Space and Auxiliary Specifications
+% Preserves exploratory Systems 4, 5, and full-sample System 6
+% ==============================================================================
+\section{Linear VAR Diagnostic Space and Auxiliary Specifications}
+\label{app:linear_var_diagnostics}
+
+\subsection{Diagnostic Admissibility Criteria and Stopping Rule}
+In accordance with the empirical discipline of this chapter, linear vector autoregressive models are admitted to the main text's inferential core only when they satisfy three baseline econometric criteria:
+\begin{enumerate}
+    \item \textbf{Modulus Stability (Criterion A):} All characteristic roots of the companion matrix lie strictly within the unit circle ($\max |\lambda_i| < 1$).
+    \item \textbf{System Residual Whitening (Criterion B):} The multivariate Breusch--Godfrey Lagrange Multiplier test fails to reject the null of no residual autocorrelation at the 5\% level ($p > 0.05$).
+    \item \textbf{Equation Residual Whitening (Criterion C):} Individual equation Breusch--Godfrey tests fail to reject the null of no autocorrelation at the 5\% level ($p > 0.05$) across all equations.
+\end{enumerate}
+
+During the exploratory empirical battery, three modular systems failed to satisfy these criteria: System 4 (Real Sector Dualism), System 5 (External Cost-Push), and the full-sample specification of System 6 (Central Bank Solvency). Rather than searching over ad-hoc lag specifications, non-linear trend adjustments, or arbitrary sub-samples until confirming the preferred theoretical hypotheses, the empirical audit sequence established a formal stopping rule. This appendix documents the diagnostic investigations across the lag search space ($k = 1, \dots, 12$), historical partitions (pre- and post-October 1973), and month-of-year seasonal controls, preserving the empirical record for full transparency.
+
+\subsection{System 4: Real Sector Dualism (Descriptive Only)}
+System 4 specifies the five-variable vector:
+\begin{equation}
+    Y^{(4)}_t = \begin{bmatrix} \pi_t & g_{H,t} & \Delta \ln \Theta_t & g_{\text{Manuf},t} & g_{\text{Mining},t} \end{bmatrix}',
+\end{equation}
+estimated over the full monthly sample (1960:01--1980:12, $N=250$). Table~\ref{tab:app_system4_real_dual} reports the exploratory Granger causality tests evaluated at the SBIC-selected lag ($k^*=2$).
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.90}
+\caption{Exploratory Granger Tests: Real Sector Dualism ($N=250$, Full Sample)}
+\label{tab:app_system4_real_dual}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Dependent Variable} & \textbf{Predictor} & \textbf{Lag ($k^*$)} & \textbf{$F$-Statistic} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} \\
+\midrule
+Manufacturing Output ($g_{\text{Manuf},t}$) & Base Money Growth ($g_{H,t}$) & 2 & 3.636$^{**}$ & 0.0278 & $-0.333$ \\
+Base Money Growth ($g_{H,t}$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2 & 2.306 & 0.1018 & $+0.046$ \\
+Mining Output ($g_{\text{Mining},t}$) & Base Money Growth ($g_{H,t}$) & 2 & 0.908 & 0.4046 & $-0.096$ \\
+Base Money Growth ($g_{H,t}$) & Mining Output ($g_{\text{Mining},t}$) & 2 & 0.654 & 0.5211 & $+0.022$ \\
+Inflation ($\pi_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2 & 7.103$^{***}$ & 0.0010 & $-0.201$ \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.526 & 0.2195 & $+0.076$ \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.98\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Evaluated at $k^*=2$. Status: \textsc{Descriptive Only}. The system exhibits persistent residual autocorrelation (System Breusch--Godfrey $\chi^2 = 228.74, p < 0.0001$; minimum equation $p < 0.0001$). Residual autocorrelation persists when extending lags up to $k=12$, under historical calendar partitioning at October 1973, and with seasonal dummy controls. Accordingly, these statistics are not used for formal directional inference.
+\end{minipage}
+\end{table}
+
+\subsection{System 5: External Cost-Push Transmission (Inconclusive)}
+System 5 specifies the five-variable external transmission vector:
+\begin{equation}
+    Y^{(5)}_t = \begin{bmatrix} g_{P,\text{gold},t} & g_{e,t} & \Delta \ln \Theta_t & g_{H,t} & \pi_t \end{bmatrix}',
+\end{equation}
+estimated over 1960:01--1980:12 ($N=250$). Table~\ref{tab:app_system5_external} reports exploratory Granger tests at the SBIC-selected lag ($k^*=1$).
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.90}
+\caption{Exploratory Granger Tests: External Cost-Push Transmission ($N=250$, Full Sample)}
+\label{tab:app_system5_external}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Dependent Variable} & \textbf{Predictor} & \textbf{Lag ($k^*$)} & \textbf{$F$-Statistic} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} \\
+\midrule
+World Gold Price ($g_{P,\text{gold},t}$) & Domestic Aggregates & 1 & \dots & $> 0.10$ & \dots \\
+Inflation ($\pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 5.113$^{**}$ & 0.0246 & $-0.019$ \\
+Devaluation Rate ($g_{e,t}$) & Inflation ($\pi_t$) & 1 & 23.305$^{***}$ & $< 0.0001$ & $+0.689$ \\
+Base Money Growth ($g_{H,t}$) & Devaluation Rate ($g_{e,t}$) & 1 & 17.037$^{***}$ & $< 0.0001$ & $+0.161$ \\
+Inflation ($\pi_t$) & Devaluation Rate ($g_{e,t}$) & 1 & 1.697 & 0.1939 & $+0.046$ \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.98\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Evaluated at $k^*=1$. Status: \textsc{Inconclusive}. The system exhibits persistent residual autocorrelation (System Breusch--Godfrey $\chi^2 = 310.16, p < 0.0001$; minimum equation $p < 0.0001$). Extending lag length to $k=12$, calendar partitioning, and seasonal controls fail to whiten the residuals. Furthermore, key relations display sensitivity to multivariate conditioning. These results are retained for documentation but not used for directional inference.
+\end{minipage}
+\end{table}
+
+\subsection{System 6: Full-Sample Central Bank Solvency Diagnostics}
+In the full sample (1960:01--1980:12, $N=250$), System 6 fails residual whitening across all tested lags $k \in \{1, 2, 3, 4\}$ (System Breusch--Godfrey $p < 0.0001$). However, partitioning the sample at October 1973 reveals that residual autocorrelation is concentrated in the post-1973 period under the crawling-peg regime. In the pre-October 1973 subperiod, residual autocorrelation is fully resolved at lag $k=3$ (System Breusch--Godfrey $p = 0.1262$; minimum equation $p = 0.0557$). As reported in Section~\ref{sec:granger_solvency_pre73} and Table~\ref{tab:core_granger_evidence}, System 6 is admitted to the main text strictly as a qualified, historically specific result for the pre-1973 era.

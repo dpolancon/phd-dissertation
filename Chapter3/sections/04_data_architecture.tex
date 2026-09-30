@@ -1,0 +1,52 @@
+\section{Data Sources and Variable Construction}
+\label{sec:data_sources}
+
+\subsection{Monthly Panel: Sources and Sample Windows}
+\label{sec:monthly_panel}
+
+The empirical core spans the 252 raw calendar months between 1960:01 and 1980:12, yielding a transformed and usable monthly panel of $N = 250$ observations after initial differencing and lag construction, assembled programmatically from the Central Bank of Chile REST API (SieteRestWS). The API provides continuous monthly series for high-powered base money ($H_t$, recorded in thousands of millions of pesos [billions, \emph{miles de millones de pesos}]), the official nominal exchange rate ($e_t$, pesos per US dollar; pre-1975 escudo values retroactively converted at 1 peso = 1{,}000 escudos per the BCCh \textit{Indicadores Económicos y Sociales de Chile 1960--2000} convention), London Metal Exchange copper cash prices ($P^{\text{Cu}}_t$, USD/lb), London bullion gold prices ($P^{\text{gold}}_t$, USD/oz), the US Wholesale Price Index ($P^{\text{US}}_{W,t}$), the official Consumer Price Index ($\pi_t$), and the US Dow Jones Industrial Average. The Santiago Stock Exchange (IGPA) index is drawn from the replication files of \citet{GirardiBowles2018}. Gross international reserves ($IR_t$, millions of USD) come from the IMF \textit{International Financial Statistics}.
+
+Sectoral real activity uses the disaggregated monthly component series compiled by \citet{DiazBahamonde2023}: light industrial manufacturing ($Q^{\text{manuf}}_t$), copper mining extraction ($Q^{\text{mining}}_t$), and physical export and import volumes ($\text{Exports}_t$, $M_t$). I use the individual components, not his aggregated IMEA composite index. The components are harmonized from \textit{Estadística Chilena} (DGE/INE) and the BCCh \textit{Boletín Mensual} and are available from 1927 onward; I restrict the panel to 1960:01--1980:12 to align with the monetary and reserve series.
+
+Narrow money ($M1_t$, recorded in thousands of millions of pesos [billions, \emph{miles de millones de pesos}]) and the observed banking multiplier ($m_t \equiv M1_t / H_t$) are available only over the un-spliced window 1966:01--1980:12 ($N = 180$), which excludes pre-1966 commercial bank classification revisions. $M1_t$ enters the empirical specification exclusively in the commercial-banking bifurcation and multiplier deconstruction steps of the Granger causality tests (Section~\ref{sec:granger_tournament}); the primary solvency threshold and the full-panel TVAR use $H_t$ throughout.
+
+A supplementary annual tier ($T = 91$, 1920--2010) provides the long-run accumulation backdrop used in Sections~\ref{sec:historical_background} and~\ref{sec:stylized_facts}: the functional wage share ($\omega_t$) from \citet{Astorga2023}; the productive capital stock ($K_t \equiv K^{\text{ME}}_t + K^{\text{NRC}}_t$, excluding residential construction), the aggregate profit rate ($r_t$, nominal surplus on productive fixed capital at current replacement cost), and structural capacity utilization ($\mu_t$, estimated via cointegrating polynomial regression) from the GPIM dataset of Chapter~2; and balance-of-payments accounts from the World Historical Balance of Payments Database \citep{NievasPiketty2025}. Appendix~\ref{app:codebook} catalogs complete series identifiers and metadata.
+
+\subsection{Variable Construction}
+\label{sec:variable_construction}
+
+The primary Central Bank reserve solvency ratio, constructed over the full monthly panel, is
+\begin{equation}
+	\text{SolvR}^H_t \;\equiv\; \frac{e_t \cdot IR_t}{H_t \cdot 1000},
+	\label{eq:solvr_h}
+\end{equation}
+where $e_t$ is in pesos per dollar, $IR_t$ is in millions of dollars (yielding a numerator $e_t \cdot IR_t$ in millions of pesos), and $H_t$ is recorded in thousands of millions of pesos (billions, \emph{miles de millones de pesos}) in the official Central Bank statistical database. The factor of 1{,}000 converts $H_t$ to millions of pesos ($H_t \cdot 1000$), ensuring dimensional consistency between reserve assets and monetary liabilities. Base money is the appropriate primary liability because it is the Central Bank's direct obligation and is observed continuously from 1960:01. In the threshold specification, the estimated transition variable is the predetermined lagged Solvency Growth Gap ($\Delta s_{t-1} \equiv g^F_{t-1} - g^H_{t-1}$), with threshold estimation and inference following the grid-search procedure of \citet{Hansen1999}.
+
+For the commercial-banking decomposition ($N = 180$), I also construct
+\[
+\text{SolvR}^{M1}_t \;\equiv\; \frac{e_t \cdot IR_t}{M1_t \cdot 1000},
+\]
+which correlates with $\text{SolvR}^H_t$ at $\rho = 0.974$. This measure is not the primary solvency variable; it is used only to test whether the commercial credit channel alters the ordering between external backing and domestic liabilities.
+
+The Prebisch-ECLAC capacity to import measures the purchasing power of physical exports relative to imported manufactured inputs:
+\begin{equation}
+	M^{\text{cap}}_t \;\equiv\; \left(\frac{\text{Exports}_t}{\text{Exports}_{1970\text{:}11}}\right) \times \left[\frac{P^{\text{Cu}}_t / P^{\text{Cu}}_{1970\text{:}11}}{P^{\text{US}}_{W,t} / P^{\text{US}}_{W,1970\text{:}11}}\right] \times 100,
+	\label{eq:mcap}
+\end{equation}
+benchmarked to November 1970 ($1970\text{:}11 = 100$). The real structural imbalance ratio is
+\begin{equation}
+	\Theta_t \;\equiv\; \left(\frac{M_t}{M^{\text{cap}}_t}\right) \times 100.
+	\label{eq:theta}
+\end{equation}
+When $\Theta_t > 100\%$, physical import volumes exceed export purchasing power, generating a foreign-exchange deficit that must be financed through credit lines or reserve depletion.
+
+\subsection{Data Adjustments}
+\label{sec:data_adjustments}
+
+The raw customs import volume series exhibits a single-month administrative registration drop in April 1973: the recorded volume falls from $2.88$ (March) to $0.26$ (April), recovering to $2.63$ (May). The isolated drop is treated as an administrative registration anomaly consistent with a paperwork lag in clearing port arrivals into official records, not a collapse in physical trade. I replace the April observation with the monotonic linear midpoint, $2.76$, to prevent the registration artifact from triggering a spurious structural break in the VAR systems.
+
+\subsection{Integration Order of Variables Included in Empirical Exercises}
+
+The transformed series entering the vector autoregressive and threshold VAR specifications are stationary in levels ($I(0)$). Table~\ref{tab:adf_order_integration} reports the ADF diagnostics; the transformed series reject the unit-root null at conventional significance levels. 
+
+\input{tables/tab01_adf_tests}

@@ -1,0 +1,7 @@
+System,N,K,k_star,VAR_Params_Eq,TY_Params_Eq,Extra_Params_Eq,Rel_Cost_Pct_Eq,VAR_Params_Sys,TY_Params_Sys,Extra_Params_Sys
+Step 1: Master Nominal Core,250,2,3,7,9,2,28.6,14,18,4
+Step 2: Banking Bifurcation A (Credit Lead),180,3,1,4,7,3,75,12,21,9
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),180,3,1,4,7,3,75,12,21,9
+Step 4: Unified Real Dual Economy,250,5,2,11,16,5,45.5,55,80,25
+Step 5: Unified External Cost-Push Belt,250,5,1,6,11,5,83.3,30,55,25
+Step 6: Unified Central Bank Solvency System,250,5,1,6,11,5,83.3,30,55,25

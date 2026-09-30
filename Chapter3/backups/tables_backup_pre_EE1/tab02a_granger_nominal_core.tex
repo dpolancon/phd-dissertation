@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.92}
+\caption{Toda--Yamamoto Granger Causality: Master Nominal Core System (Lags 1--4, $N=250$)}
+\label{tab:granger_nominal_core}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Dependent Variable (DV)} & \textbf{Regressor (INDV)} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$\chi^2$ (MWALD)} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Direction} \\
+\midrule
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 1 & 28.324$^{***}$ & 28.324 & $< 0.0001$ & +0.298 & $\pi \to g_H$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 2 & 18.515$^{***}$ & 37.029 & $< 0.0001$ & +0.408 & $\pi \to g_H$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 3 & 20.318$^{***}$ & 60.954 & $< 0.0001$ & +0.595 & $\pi \to g_H$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Inflation ($\Delta \pi_t$) & 4 & 15.004$^{***}$ & 60.015 & $< 0.0001$ & +0.680 & $\pi \to g_H$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 14.557$^{***}$ & 14.557 & 0.0002 & +0.243 & $g_H \to \pi$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 2 & 9.284$^{***}$ & 18.568 & 0.0001 & +0.374 & $g_H \to \pi$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 3 & 5.544$^{***}$ & 16.631 & 0.0011 & +0.421 & $g_H \to \pi$ \\
+Inflation ($\Delta \pi_t$) & Base Money Growth ($\Delta g_{H,t}$) & 4 & 2.718$^{**}$ & 10.872 & 0.0305 & +0.380 & $g_H \to \pi$ \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). Evaluated via Toda--Yamamoto (1995) augmented levels VAR ($k + d_{\max}$ with $d_{\max} = 1$). $F$-statistics and asymptotic $\chi^2$ Modified Wald (MWALD) evaluate the null hypothesis of non-causality ($H_0: \beta_1 = \dots = \beta_k = 0$). $\sum \hat{\beta}_i$ is the sum of structural lagged coefficients indicating dynamic direction and sign. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. Reverse monetary accommodation ($\pi \to g_H$, $F = 28.324, p < 0.0001$) decisively dominates forward pass-through ($g_H \to \pi$, $F = 14.557, p = 0.0002$) across all lag lengths.
+\end{minipage}
+\end{table}

@@ -1,0 +1,7 @@
+System,Key_Equation,Selected_Lag,BG_LM_pval,ARCH_LM_pval,JB_Norm_pval,White_Het_pval,Verdict
+Step 1: Nominal Core,"Base Money ($g_{H,t}$)",k = 3,0.467,0,< 0.001,0,No serial correlation (5%)
+Step 2: Commercial Credit,"Base Money ($g_{H,t}$)",k = 1,0.03,0,< 0.001,0,Serial correlation detected (5%)
+Step 3: Multiplier Deconstruction,Multiplier ($\Delta \ln m_t$),k = 1,0.072,0,< 0.001,0,No serial correlation (5%)
+Step 4: Real Sector Dualism,"Manufacturing ($g_{\text{Manuf},t}$)",k = 2,0,0,0.128,0,Serial correlation detected (5%)
+Step 5: External Cost-Push,CPI Inflation ($\pi_t$),k = 1,0,0.003,< 0.001,0,Serial correlation detected (5%)
+Step 6: Solvency Gate,"Base Money ($g_{H,t}$)",k = 1,0,0,< 0.001,0,Serial correlation detected (5%)

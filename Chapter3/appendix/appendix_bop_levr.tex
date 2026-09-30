@@ -1,0 +1,144 @@
+% ============================================================
+% APPENDIX A: Balance-of-Payments Decomposition and Central Bank
+%             Solvency Ratio Formalization
+% ============================================================
+
+\section[Formalization of Solvency Ratio and Balance-of-Payments Accounting]{Formalization of the Central Bank Solvency Ratio and\\Balance-of-Payments Accounting}
+\label{app:bop_levr}
+
+\textbf{A.1} This appendix develops the formal balance-sheet accounting, the exact discrete law of motion, and the structural constraint-binding conditions governing the central bank \textbf{Solvency Ratio} ($\text{SolvR}_t$). Every accounting step is an exact discrete identity; no linear approximation or continuous-time distortion enters the derivation.
+
+\subsection{The Solvency Ratio in Nominal Terms}
+\label{app:solvr_nominal}
+
+\textbf{A.2} All variables are denominated in current domestic currency (Chilean pesos/escudos, CLP) at time $t$, with the nominal exchange rate convention defined as $e_t$ (CLP per USD), such that a nominal depreciation corresponds to $e_t \uparrow$.
+
+\textbf{A.3} The balance-sheet and external-account variables are defined as follows:
+\begin{itemize}[leftmargin=2em]
+	\item $M_t$: domestic monetary obligations (CLP), representing the liquid liabilities of the consolidated domestic financial system underwritten by the central bank.
+	\item $IR_t$: stock of gross international reserves in foreign currency (USD), representing liquid claims denominated in world money.
+	\item $e_t$: nominal exchange rate (CLP per USD).
+	\item $F_t \equiv e_t \cdot IR_t$: stock of world money held by the central bank, valued in domestic currency (CLP).
+	\item $\Delta IR_t$: net foreign-currency reserve flow (USD), determined by external balance-of-payments transactions.
+	\item $\Delta F_t$: net change in the domestic-currency value of foreign reserves (CLP).
+	\item $g^L_{M,t} \equiv \Delta M_t / M_{t-1}$: conventional lag-base simple growth rate of domestic monetary liabilities.
+	\item $X_t$: export volume of primary and manufactured goods.
+	\item $Q_t$: import volume of intermediate, consumption, and capital goods.
+	\item $P_{Q,t}^{USD}$: import price index in foreign currency (USD).
+	\item $\text{ToT}_t \equiv P_{X,t}^{USD} / P_{Q,t}^{USD}$: terms of trade.
+	\item $D_t^{ext}$: stock of external debt (USD).
+	\item $r_t$: average nominal interest rate on external debt.
+	\item $FDI_t^{USD}$: net foreign direct investment inflows (USD).
+	\item $\Pi_t^{USD}$: net foreign profit and dividend remittances (USD).
+	\item $T_t^{USD}$: net current external transfers (USD).
+	\item $EO_t^{USD}$: net errors and omissions in the external balance of payments (USD).
+	\item $SDR_t^{USD}$: net allocation of Special Drawing Rights (USD).
+\end{itemize}
+
+Import volumes carry the symbol $Q_t$ throughout to prevent notation collisions with domestic money $M_t$. Discrete level changes are denoted by $\Delta X_t \equiv X_t - X_{t-1}$.
+
+\textbf{A.4} I define the central bank Solvency Ratio ($\text{SolvR}_t$) in nominal terms as:
+\begin{equation}
+	\label{app:eq:solvr_def}
+	\text{SolvR}_t \;\equiv\; \frac{e_t \cdot IR_t}{M_t} \;=\; \frac{F_t}{M_t}
+\end{equation}
+The Solvency Ratio measures the stock of world-money assets held by the central bank per unit of unanchored domestic credit obligations underwritten by the monetary authority. Its algebraic inverse, $\text{LevR}_t \equiv 1/\text{SolvR}_t = M_t / (e_t \cdot IR_t)$, expresses the corresponding balance-sheet leverage ratio. I center the analytical framework on the Solvency Ratio because it directly formalizes central bank reserve backing and balance-sheet exposure, providing the balance-sheet foundation through which to examine peripheral financial fragility \citep{Foley2003,Chamorro2025} (Section~\ref{sec:B5_foley_chamorro_minsky}).
+
+\textbf{A.5} Taking continuous growth rates of Eq.~\eqref{app:eq:solvr_def} yields the continuous growth decomposition:
+\begin{equation}
+	\label{app:eq:solvr_growth}
+	g_{\text{SolvR},t} \;=\; g_{F,t} \;-\; g_{M,t} \;=\; g_{e,t} \;+\; g_{IR,t} \;-\; g_{M,t}
+\end{equation}
+Equation~\eqref{app:eq:solvr_growth} isolates three distinct structural channels driving peripheral balance-sheet solvency:
+\begin{enumerate}[leftmargin=2em]
+	\item \textbf{External Balance-of-Payments Channel} ($g_{IR,t}$, expanding solvency): Export revenues and net foreign capital inflows accumulate foreign exchange reserves, bolstering central bank solvency. Current account deficits, foreign debt service, and transnational profit repatriation drain reserves, pulling $\text{SolvR}_t$ downward.
+	\item \textbf{Valuation Channel} ($g_{e,t}$, expanding nominal solvency): Nominal currency depreciation ($e_t \uparrow$) increases the domestic-currency accounting valuation of foreign assets ($F_t = e_t \cdot IR_t$). While this mechanically cushions $\text{SolvR}_t$ in domestic currency units, it carries acute real macroeconomic costs by inflating imported intermediate input costs and triggering domestic wage-price defense spirals.
+	\item \textbf{Domestic Dilution Channel} ($g_{M,t}$, compressing solvency): Broad money creation, fiscal monetization, and emergency Lender-of-Last-Resort liquidity expand domestic obligations from below, continuously diluting the world-money backing of the monetary base.
+\end{enumerate}
+
+\subsection{Current and Capital Account Decomposition and Valuation Identity}
+\label{app:current_account}
+
+\textbf{A.6} The evolution of the central bank's foreign-currency reserve assets is governed by the external balance of payments. In foreign-currency units (USD), the current account ($CA_t^{USD}$) and capital account ($KA_t^{USD}$) are specified as:
+\begin{equation}
+	\label{app:eq:CA}
+	CA_t^{USD} \;=\; P_{Q,t}^{USD}\!\left(\text{ToT}_t \cdot X_t - Q_t\right) \;-\; r_t \cdot D_t^{ext} \;+\; T_t^{USD}
+\end{equation}
+\begin{equation}
+	\label{app:eq:KA}
+	KA_t^{USD} \;=\; \Delta D_t^{ext} \;+\; FDI_t^{USD} \;-\; \Pi_t^{USD}
+\end{equation}
+Under the standard balance-of-payments accounting identity utilized in the chapter's empirical ledger, the net flow of foreign-currency reserves is:
+\begin{equation}
+	\label{app:eq:bop_flow}
+	\Delta IR_t \;=\; CA_t^{USD} \;+\; KA_t^{USD} \;+\; EO_t^{USD} \;+\; SDR_t^{USD}
+\end{equation}
+Because the domestic-currency value of foreign reserves is $F_t \equiv e_t \cdot IR_t$, the exact discrete product identity yields the domestic-currency valuation:
+\begin{equation}
+	\label{app:eq:valuation}
+	\Delta F_t \;=\; e_t \Delta IR_t \;+\; IR_{t-1} \Delta e_t
+\end{equation}
+Equation~\eqref{app:eq:valuation} preserves the exact economic distinction between genuine net foreign-currency reserve flows ($e_t \Delta IR_t$) and the accounting valuation effect arising from exchange-rate adjustments ($IR_{t-1} \Delta e_t$).
+
+\subsection{Derivation of the Discrete Solvency Law of Motion}
+\label{app:solvr_substitution}
+
+\textbf{A.7} From Eq.~\eqref{app:eq:solvr_def}, the total stock of world-money assets held by the central bank decomposes into the product of the Solvency Ratio and domestic monetary obligations:
+\begin{equation}
+	\label{app:eq:solvr_sub}
+	F_t \;=\; \text{SolvR}_t \cdot M_t
+\end{equation}
+Applying the exact discrete product rule $\Delta(A_t B_t) = B_t \Delta A_t + A_{t-1} \Delta B_t$ with $A_t = \text{SolvR}_t$ and $B_t = M_t$ yields:
+\begin{equation}
+	\label{app:eq:solvr_expand}
+	\Delta F_t \;=\; M_t \cdot \Delta\text{SolvR}_t \;+\; \text{SolvR}_{t-1} \cdot \Delta M_t
+\end{equation}
+Dividing Eq.~\eqref{app:eq:solvr_expand} through by $M_t$ and rearranging terms isolates the exact discrete law of motion for the Solvency Ratio:
+\begin{equation}
+	\label{app:eq:solvr_lom}
+	\boxed{\;\Delta\text{SolvR}_t \;=\; \frac{\Delta F_t \;-\; \text{SolvR}_{t-1} \Delta M_t}{M_t}\;}
+\end{equation}
+In Eq.~\eqref{app:eq:solvr_lom}, the exact law of motion is expressed purely in level changes, eliminating any denominator ambiguity between contemporaneous and lag-base growth rates.
+
+\textbf{A.8} Equation~\eqref{app:eq:solvr_lom} delivers an intuitive and rigorous economic decomposition:
+\begin{itemize}[leftmargin=2em]
+	\item The first term, $\Delta F_t / M_t$, represents the \textbf{external liquidity injection rate}---net domestic-currency reserve expansion (combining foreign-currency transactions $e_t \Delta IR_t$ and exchange revaluation $IR_{t-1} \Delta e_t$) scaled directly by domestic monetary obligations $M_t$.
+	\item The second term, $\text{SolvR}_{t-1} \cdot (\Delta M_t / M_t)$, represents the \textbf{domestic dilution drag}. Rapid domestic money growth ($\Delta M_t > 0$) dilutes the inherited backing ratio. The presence of the lagged state variable $\text{SolvR}_{t-1}$ is an exact algebraic consequence of the discrete product rule: domestic credit expansion dilutes the preexisting stock of world-money cover.
+\end{itemize}
+
+\textbf{A.9} For completeness, the dual discrete law of motion for the leverage ratio ($\text{LevR}_t \equiv 1/\text{SolvR}_t$) follows symmetrically from $M_t = \text{LevR}_t \cdot F_t$:
+\begin{equation}
+	\label{app:eq:levr_lom}
+	\Delta\text{LevR}_t \;=\; \frac{\Delta M_t \;-\; \text{LevR}_{t-1} \Delta F_t}{F_t}
+\end{equation}
+Both laws express the identical balance-sheet reality: in solvency form (Eq.~\ref{app:eq:solvr_lom}), foreign-asset expansion drives recovery while domestic monetization acts as a dilution drag; in leverage form (Eq.~\ref{app:eq:levr_lom}), domestic money creation drives leverage expansion while reserve accumulation acts as an absorption multiplier.
+
+\subsection{Analytical Convexity and Non-Linear Reserve Exhaustion}
+\label{app:convexity}
+
+\textbf{A.10} The structural vulnerability of peripheral central banks is amplified by the non-linear curvature of balance-sheet solvency. Taking the partial derivatives of $\text{SolvR}_t$ with respect to domestic obligations $M_t$ and foreign assets $F_t$:
+\begin{equation}
+	\label{app:eq:solvr_derivatives}
+	\frac{\partial \text{SolvR}_t}{\partial M_t} \;=\; -\frac{F_t}{M_t^2} \;<\; 0, \qquad \frac{\partial^2 \text{SolvR}_t}{\partial M_t^2} \;=\; \frac{2 F_t}{M_t^3} \;>\; 0 \quad (\forall M_t > 0, F_t > 0)
+\end{equation}
+\begin{equation}
+	\frac{\partial \text{SolvR}_t}{\partial F_t} \;=\; \frac{1}{M_t} \;>\; 0, \qquad \frac{\partial^2 \text{SolvR}_t}{\partial F_t^2} \;=\; 0
+\end{equation}
+As gross international reserves approach exhaustion ($IR_t \to 0 \implies F_t \to 0$), the absolute buffer $\text{SolvR}_t$ approaches zero. In this depleted state, any incremental withdrawal of foreign currency or external import shock triggers an acute percentage collapse in central bank credibility, permanently crippling the authority's capacity to anchor expectations.
+
+\subsection{Constraint-Binding Conditions and Balance-Sheet Solvency Regimes}
+\label{app:constraint_cases}
+
+\textbf{A.11} The central bank's solvency position deteriorates ($\Delta\text{SolvR}_t < 0$) whenever domestic monetary expansion outpaces foreign asset growth. From Eq.~\eqref{app:eq:solvr_lom}, setting $\Delta\text{SolvR}_t < 0$ and noting that $\text{SolvR}_{t-1} = F_{t-1}/M_{t-1}$:
+\begin{equation}
+	\label{app:eq:binding}
+	\Delta\text{SolvR}_t \;<\; 0 \;\iff\; \Delta F_t \;<\; \text{SolvR}_{t-1} \Delta M_t \;\iff\; g^L_{M,t} \;>\; \frac{\Delta F_t}{F_{t-1}}
+\end{equation}
+where $g^L_{M,t} \equiv \Delta M_t / M_{t-1}$ is the conventional lag-base simple growth rate of domestic monetary liabilities. Solvency deteriorates whenever lag-base domestic money creation exceeds the simple growth rate of domestic-currency foreign assets ($\Delta F_t / F_{t-1}$). Even during an external commodity price boom ($\Delta F_t > 0$, such as the 1971--1972 copper price high), central bank solvency deteriorates if domestic credit expansion outpaces the growth rate of foreign reserves.
+
+\textbf{A.12} In this structural framework, monetization operates as an endogenous institutional response to distributive conflict and external foreign-exchange bottlenecks rather than an autonomous policy choice. The state-dependent absorption capacity of the peripheral monetary system is governed by the central bank's foreign-exchange solvency. Rather than imposing arbitrary prior thresholds, the Threshold Vector Autoregression (TVAR) estimated in Section~\ref{sec:historical_empirical_results} endogenously identifies the structural transition using the monthly Solvency Growth Gap ($\Delta s_{t-1} \equiv g^F_{t-1} - g^H_{t-1}$), yielding an estimated critical threshold at $\hat{\gamma} = -4.615\%$. This partitions macroeconomic dynamics into two distinct regimes:
+\begin{enumerate}[leftmargin=2em]
+	\item \textbf{Non-Adverse Solvency-Growth State ($\Delta s_{t-1} > -4.615\%$):} International reserve accumulation and foreign exchange buffers insulate the domestic economy. Liquidity expansion is absorbed through real capacity mobilization and transactions demand, while external nominal shocks are buffered at the border with minimal domestic price pass-through.
+	\item \textbf{Adverse Solvency-Growth State ($\Delta s_{t-1} \le -4.615\%$, reflecting conditions of central-bank insolvency):} Foreign exchange reserves are severely eroded relative to high-powered liabilities. Forward monetary transmission ($g^H \to \pi_m$) remains statistically significant for 9 consecutive months, delivering a cumulative 12-month response of 3.55 percentage points. In contrast, reverse accommodation ($\pi_m \to g^H$) persists for 10 consecutive months with a cumulative expansion of 6.54 percentage points, significantly dominating forward transmission in duration and magnitude (with point-wise multiplier differences significant across $h=2,\dots,10$). Emergency liquidity injection operates as a defensive accommodation valve to avert widespread enterprise insolvencies and payroll collapse under an acute external payments squeeze.
+\end{enumerate}
+This threshold formalization establishes that inflation and monetary expansion under the Unidad Popular were non-linear properties of balance-sheet solvency exhaustion under external financial subordination, challenging closed-economy monetarist accounts of autonomous monetary emission.

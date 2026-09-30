@@ -1,0 +1,114 @@
+% =============================================================
+% config/packages.tex
+% Unified package loading for the dissertation integration shell.
+% All packages loaded here ONCE for the entire document.
+% Frozen chapter preambles are bypassed by integration wrappers.
+% =============================================================
+
+% ---- Language & encoding ------------------------------------
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ---- Import (must be early — used in integration wrappers) --
+% \subimport{dir/}{file} changes the current dir for that input
+\usepackage{import}
+
+% ---- Layout --------------------------------------------------
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+
+% ---- Math ----------------------------------------------------
+\usepackage{amsmath,amssymb,bm}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+
+% ---- Microtypography -----------------------------------------
+\usepackage{microtype}
+
+% ---- Figures & floats ----------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}     % \FloatBarrier (used in Ch2)
+\usepackage{pdflscape}    % landscape pages (Ch1 App, Ch2)
+\usepackage{emptypage}    % truly empty blank pages between chapters
+
+% ---- Tables --------------------------------------------------
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{threeparttable}   % table notes (Ch2)
+\usepackage{siunitx}          % S columns (Ch2)
+\sisetup{group-separator={,}, group-minimum-digits=4}
+
+% ---- Captions ------------------------------------------------
+\usepackage{caption}
+\usepackage{subcaption}
+
+% ---- Lists ---------------------------------------------------
+\usepackage{enumitem}
+
+% ---- Special math fractions ----------------------------------
+\usepackage{xfrac}       % \sfrac (Ch3)
+
+% ---- Ragged text ---------------------------------------------
+\usepackage{ragged2e}    % Ch3
+
+% ---- Colors --------------------------------------------------
+\usepackage[dvipsnames]{xcolor}
+
+% Define Ch3 color palette (must be available globally for tikz figures)
+\colorlet{ink}{black}
+\colorlet{subink}{black!72}
+\colorlet{lightink}{black!45}
+\colorlet{guide}{black!28}
+\colorlet{panel}{black!4}
+\colorlet{panelb}{black!7}
+\colorlet{panelc}{black!10}
+\colorlet{stress}{black!12}
+\definecolor{navy}{HTML}{1D3557}
+\definecolor{crimson}{HTML}{9E2A2B}
+\definecolor{amber}{HTML}{E76F51}
+\definecolor{darkgreen}{HTML}{2A9D8F}
+\definecolor{slate}{HTML}{4A4E69}
+\definecolor{darkblue}{rgb}{0,0,0.8}
+
+% ---- TikZ (Ch3 causal DAG figures) --------------------------
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix}
+
+% ---- Column types (defined once to avoid redefinition) ------
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\usepackage{titlesec}    % used for chapter/section heading styling
+\usepackage{titletoc}    % used for TOC chapter entry styling
+
+% ---- Appendix ------------------------------------------------
+% The appendix package is loaded globally. Ch1 and Ch2 use the \appendix
+% command (compatible). Ch3 uses \begin{appendices}...\end{appendices}.
+\usepackage[titletoc,toc,title]{appendix}
+
+% ---- Bibliography — per-chapter architecture -----------------
+% chapterbib enables independent \bibliography{} calls per chapter.
+% natbib is loaded with sectionbib so per-chapter refs appear as sections.
+\usepackage{chapterbib}
+\usepackage[authoryear,sectionbib,sort&compress]{natbib}
+
+% ---- Hyperref (load near-last) --------------------------------
+\usepackage[
+  colorlinks  = true,
+  linkcolor   = blue,
+  citecolor   = blue,
+  urlcolor    = blue,
+  bookmarksnumbered = true,
+  pdfauthor   = {Diego Polanco},
+  pdftitle    = {PhD Dissertation -- Diego Polanco}
+]{hyperref}
+
+% ---- Cleveref (must be after hyperref) -----------------------
+\usepackage{cleveref}    % \cref, \Cref (used in Ch2)

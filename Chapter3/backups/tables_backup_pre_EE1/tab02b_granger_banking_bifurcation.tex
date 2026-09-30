@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.92}
+\caption{Toda--Yamamoto Granger Causality: Commercial Banking Bifurcation and Multiplier Breakdown ($N=180$)}
+\label{tab:granger_banking_bifurcation}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Dependent Variable (DV)} & \textbf{Regressor (INDV)} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$\chi^2$ (MWALD)} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Direction} \\
+\midrule
+\multicolumn{8}{l}{\textit{Panel A: Commercial Credit Lead ($K=3$, Lag 1)}} \\[0.15em]
+Narrow Money Growth ($\Delta g_{M1,t}$) & Inflation ($\Delta \pi_t$) & 1 & 14.322$^{***}$ & 14.322 & 0.0002 & +0.171 & $\pi \to M1$ \\
+Inflation ($\Delta \pi_t$) & Narrow Money Growth ($\Delta g_{M1,t}$) & 1 & 14.004$^{***}$ & 14.004 & 0.0002 & +0.401 & No \\
+Base Money Growth ($\Delta g_{H,t}$) & Narrow Money Growth ($\Delta g_{M1,t}$) & 1 & 21.453$^{***}$ & 21.453 & $< 0.0001$ & +0.478 & $M1 \to H$ \\
+Narrow Money Growth ($\Delta g_{M1,t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 15.834$^{***}$ & 15.834 & 0.0001 & +0.284 & $H \to M1$ \\
+\multicolumn{8}{l}{\textit{Panel B: Money Multiplier Deconstruction ($K=3$, Lags 1, 3, 4)}} \\[0.15em]
+Inflation ($\Delta \pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 1 & 0.338 & 0.338 & 0.5617 & -0.064 & No \\
+Inflation ($\Delta \pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 3 & 0.145 & 0.434 & 0.9331 & -0.155 & No \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\Delta \pi_t$) & 3 & 5.127$^{***}$ & 15.382 & 0.0020 & -0.189 & $\pi \to m$ \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\Delta \pi_t$) & 4 & 4.134$^{***}$ & 16.537 & 0.0032 & -0.207 & $\pi \to m$ \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series of official un-spliced narrow money ($M1$) and banking multiplier ($m \equiv M1/H$) spanning 1966:01--1980:12 ($N=180$). Evaluated via Toda--Yamamoto ($k+d_{\max}$) augmented levels VAR ($d_{\max}=1$). Panel A demonstrates that commercial credit leads base money ($M1 \to H$, $F = 21.453, p < 0.0001$), confirming Post-Keynesian horizontalism. Panel B refutes the textbook multiplier ($m \not\to \pi$, $p \ge 0.562$), showing that price inflation unidirectionally crushes the multiplier via cash flight ($\pi \to m$, $F = 5.127, p = 0.0020$). Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$.
+\end{minipage}
+\end{table}

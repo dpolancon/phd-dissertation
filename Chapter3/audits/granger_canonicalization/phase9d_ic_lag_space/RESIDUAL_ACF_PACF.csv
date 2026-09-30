@@ -1,0 +1,553 @@
+System,Canonical_k,Equation,Lag_h,ACF,PACF,Signif_Bound,Is_ACF_Sig,Is_PACF_Sig
+Step 1: Master Nominal Core,3,pi_t,1,-0.0497,-0.0497,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,2,-0.065,-0.0676,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,3,-0.0932,-0.1007,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,4,0.1489,0.1359,0.1245,TRUE,TRUE
+Step 1: Master Nominal Core,3,pi_t,5,0.0224,0.025,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,6,-0.0698,-0.0601,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,7,-0.1138,-0.0944,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,8,0.085,0.054,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,9,0.0577,0.0376,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,10,0.0021,0.0137,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,11,-0.0288,0.0193,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,12,0.1829,0.1825,0.1245,TRUE,TRUE
+Step 1: Master Nominal Core,3,pi_t,13,0.1385,0.1421,0.1245,TRUE,TRUE
+Step 1: Master Nominal Core,3,pi_t,14,0.068,0.1069,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,15,-0.0815,-0.0036,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,16,-0.0438,-0.0592,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,17,0.053,0.0105,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,18,0.0707,0.0595,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,19,-0.0414,0.0214,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,20,0.0928,0.148,0.1245,FALSE,TRUE
+Step 1: Master Nominal Core,3,pi_t,21,-8e-4,0.005,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,22,-0.0014,-0.0525,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,23,-0.0378,-0.0494,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,pi_t,24,-0.031,-0.1017,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,1,-0.0347,-0.0347,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,2,-0.0171,-0.0183,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,3,-0.0199,-0.0212,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,4,-0.0226,-0.0245,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,5,0.0987,0.0966,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,6,0.0175,0.0234,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,7,-0.0085,-0.0047,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,8,-0.1134,-0.1111,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,9,0.0985,0.0976,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,10,-0.0048,-0.0113,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,11,0.0637,0.0605,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,12,0.1771,0.185,0.1245,TRUE,TRUE
+Step 1: Master Nominal Core,3,g_H,13,-0.0336,0.0066,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,14,0.0619,0.0576,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,15,0.0586,0.0721,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,16,-0.0787,-0.0937,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,17,-0.0466,-0.0693,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,18,-0.0619,-0.0847,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,19,-0.0163,-0.0221,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,20,0.0446,0.0518,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,21,0.0314,0.012,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,22,-0.041,-0.0091,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,23,-0.0561,-0.068,0.1245,FALSE,FALSE
+Step 1: Master Nominal Core,3,g_H,24,0.1945,0.1478,0.1245,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,1,-0.103,-0.103,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,2,0.0138,0.0032,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,3,0.0211,0.0231,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,4,0.1408,0.1469,0.1465,FALSE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,5,0.0678,0.1005,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,6,0.0346,0.0522,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,7,-0.0283,-0.0292,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,8,0.1167,0.0862,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,9,0.0954,0.0972,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,10,0.0246,0.0325,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,11,0.0131,0.0156,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,12,0.1887,0.1711,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,13,0.1425,0.1611,0.1465,FALSE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,14,0.1184,0.1483,0.1465,FALSE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,15,-0.0465,-0.0197,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,16,-0.0365,-0.1151,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,17,0.0901,-0.0227,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,18,0.0703,0.0085,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,19,-0.019,-0.0185,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,20,0.1345,0.133,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,21,-0.0059,-0.0157,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,22,0.008,-0.0756,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,23,0.0196,-0.0467,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,pi_t,24,-0.0111,-0.0906,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,1,-0.1113,-0.1113,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,2,-0.1493,-0.1637,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,3,0.1445,0.1113,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,4,0.0769,0.0875,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,5,-0.0211,0.0378,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,6,-0.0161,-0.0087,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,7,0.0479,0.0261,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,8,0.0932,0.0947,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,9,0.1122,0.158,0.1465,FALSE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,10,-0.1953,-0.1576,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,11,0.0064,-0.038,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,12,0.5521,0.5122,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,13,-0.0624,0.1212,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,14,-0.1174,-0.0031,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,15,0.159,0.0275,0.1465,TRUE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,16,-0.007,-0.1019,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,17,0.0055,0.0586,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,18,-0.0505,-0.0477,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,19,0.0303,-0.0403,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,20,0.064,-0.066,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,21,0.1376,0.0944,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,22,-0.1753,0.0145,0.1465,TRUE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,23,-0.0158,-0.0622,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_M1,24,0.5078,0.2633,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,1,-0.1202,-0.1202,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,2,0.02,0.0056,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,3,-0.1475,-0.1466,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,4,0.0408,0.0061,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,5,0.1378,0.1499,0.1465,FALSE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,6,0.0571,0.0736,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,7,0.1517,0.184,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,8,-0.0074,0.0839,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,9,0.0158,0.0395,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,10,0.0467,0.0837,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,11,-0.0134,-0.0214,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,12,0.2672,0.237,0.1465,TRUE,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,13,-0.1271,-0.0858,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,14,0.1429,0.0907,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,15,-0.0485,0.0236,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,16,0.0116,-0.0645,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,17,-0.0169,-0.0745,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,18,0.1337,0.1106,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,19,0.0523,-0.0305,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,20,-0.0424,-0.0492,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,21,0.0474,0.0482,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,22,0.0113,0.0047,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,23,-0.0285,-0.0664,0.1465,FALSE,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),1,g_H,24,0.1789,0.1362,0.1465,TRUE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,1,-0.103,-0.103,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,2,0.0138,0.0032,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,3,0.0211,0.0231,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,4,0.1408,0.1469,0.1465,FALSE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,5,0.0678,0.1005,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,6,0.0346,0.0522,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,7,-0.0283,-0.0292,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,8,0.1167,0.0862,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,9,0.0954,0.0972,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,10,0.0246,0.0325,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,11,0.0131,0.0156,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,12,0.1887,0.1711,0.1465,TRUE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,13,0.1425,0.1611,0.1465,FALSE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,14,0.1184,0.1483,0.1465,FALSE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,15,-0.0465,-0.0197,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,16,-0.0365,-0.1151,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,17,0.0901,-0.0227,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,18,0.0703,0.0085,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,19,-0.019,-0.0185,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,20,0.1345,0.133,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,21,-0.0059,-0.0157,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,22,0.008,-0.0756,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,23,0.0196,-0.0467,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,pi_t,24,-0.0111,-0.0906,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,1,-0.1202,-0.1202,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,2,0.02,0.0056,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,3,-0.1475,-0.1466,0.1465,TRUE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,4,0.0408,0.0061,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,5,0.1378,0.1499,0.1465,FALSE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,6,0.0571,0.0736,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,7,0.1517,0.184,0.1465,TRUE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,8,-0.0074,0.0839,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,9,0.0158,0.0395,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,10,0.0467,0.0837,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,11,-0.0134,-0.0214,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,12,0.2672,0.237,0.1465,TRUE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,13,-0.1271,-0.0858,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,14,0.1429,0.0907,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,15,-0.0485,0.0236,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,16,0.0116,-0.0645,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,17,-0.0169,-0.0745,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,18,0.1337,0.1106,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,19,0.0523,-0.0305,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,20,-0.0424,-0.0492,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,21,0.0474,0.0482,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,22,0.0113,0.0047,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,23,-0.0285,-0.0664,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,g_H,24,0.1789,0.1362,0.1465,TRUE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,1,-0.0493,-0.0493,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,2,-0.1868,-0.1897,0.1465,TRUE,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,3,-0.0505,-0.0736,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,4,0.0053,-0.04,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,5,0.0362,0.0107,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,6,0.0251,0.0192,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,7,0.0358,0.0489,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,8,-0.0571,-0.0408,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,9,0.085,0.1032,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,10,-0.0984,-0.1056,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,11,0.0157,0.0358,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,12,0.1524,0.1294,0.1465,TRUE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,13,-0.1496,-0.1443,0.1465,TRUE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,14,0.019,0.061,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,15,0.0189,-0.0115,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,16,0.0083,-0.0039,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,17,-0.0656,-0.0524,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,18,0.148,0.1397,0.1465,TRUE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,19,-0.007,-0.0102,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,20,-0.0461,0.0157,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,21,0.0592,0.0395,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,22,-0.1009,-0.0547,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,23,0.0467,0.0161,0.1465,FALSE,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,d_ln_m,24,0.1264,0.1124,0.1465,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,1,-0.0513,-0.0513,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,2,-0.1519,-0.155,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,pi_t,3,0.0164,-5e-4,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,4,0.1584,0.1396,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,pi_t,5,0.022,0.0439,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,6,-0.036,0.0107,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,7,-0.1027,-0.1042,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,8,0.1098,0.0739,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,9,0.1371,0.1193,0.1242,TRUE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,10,-0.0098,0.0404,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,11,-0.0532,0.0066,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,12,0.1837,0.1679,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,pi_t,13,0.1713,0.1633,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,pi_t,14,0.0855,0.1603,0.1242,FALSE,TRUE
+Step 4: Unified Real Dual Economy,2,pi_t,15,-0.0438,0.0494,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,16,-0.056,-0.0616,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,17,0.078,0.0011,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,18,0.0741,0.0201,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,19,-0.0495,0.0046,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,20,0.0777,0.1225,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,21,0.03,-0.0117,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,22,-0.0114,-0.072,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,23,-0.0294,-0.0918,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,pi_t,24,0.0125,-0.0651,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,1,-0.0718,-0.0718,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,2,-0.1105,-0.1163,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,3,-0.0439,-0.0623,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,4,0.0093,-0.0127,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,5,0.0891,0.0783,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,6,0.0326,0.0454,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,7,-0.0134,0.0133,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,8,-0.0907,-0.0761,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,9,0.0883,0.0791,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,10,-0.0179,-0.0315,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,11,0.0887,0.0938,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,12,0.1494,0.1735,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_H,13,-0.02,0.0435,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,14,0.0478,0.0944,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,15,0.0687,0.1044,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,16,-0.063,-0.0554,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,17,-0.0577,-0.0679,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,18,-0.0264,-0.0769,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,19,-0.018,-0.0527,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,20,0.0772,0.0495,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,21,0.033,0.0222,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,22,-0.0609,-0.0241,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,23,-0.0385,-0.0592,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_H,24,0.1948,0.1439,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,d_theta,1,-0.0654,-0.0654,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,2,-0.0867,-0.0914,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,3,-0.1647,-0.1791,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,d_theta,4,0.0411,0.0062,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,5,-0.0254,-0.0565,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,6,0.116,0.0888,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,7,-0.1528,-0.1438,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,d_theta,8,-0.0053,-0.0204,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,9,0.0056,0.008,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,10,-0.0065,-0.0657,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,11,-0.0441,-0.041,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,12,0.2487,0.2339,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,d_theta,13,-0.0921,-0.0615,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,14,-0.0336,-0.026,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,15,0.0237,0.0897,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,16,0.0091,-0.019,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,17,-0.1313,-0.138,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,d_theta,18,-0.0179,-0.0771,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,19,-0.0072,0.0485,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,20,-0.0766,-0.1632,0.1242,FALSE,TRUE
+Step 4: Unified Real Dual Economy,2,d_theta,21,0.0965,0.0492,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,22,0.0108,0.0504,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,23,0.023,0.0319,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,d_theta,24,0.0826,0.02,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,1,-0.0341,-0.0341,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,2,-0.1098,-0.1111,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,3,-0.2108,-0.2218,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,4,-0.1555,-0.2019,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,5,0.1965,0.1299,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,6,-0.0404,-0.1173,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,7,0.21560000000000001,0.1935,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,8,-0.1176,-0.0869,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,9,-0.192,-0.1447,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,10,-0.156,-0.2019,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,11,-0.053900000000000003,-0.085,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,12,0.6771,0.5886,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,13,-0.0675,-0.1248,0.1242,FALSE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,14,-0.1162,-0.1179,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,15,-0.2287,-0.074,0.1242,TRUE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,16,-0.157,-0.0326,0.1242,TRUE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,17,0.1745,-0.0089,0.1242,TRUE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,18,-0.0668,-0.1051,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,19,0.1903,-0.0683,0.1242,TRUE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,20,-0.0883,-0.0211,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,21,-0.2129,-0.1319,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Manuf,22,-0.1376,-0.0099,0.1242,TRUE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,23,-0.0149,0.0378,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Manuf,24,0.5706,0.1258,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Mining,1,-0.0665,-0.0665,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,2,-0.1097,-0.1146,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,3,-0.2292,-0.2493,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Mining,4,0.0153,-0.0428,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,5,-0.0012,-0.0674,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,6,-0.0595,-0.1393,0.1242,FALSE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Mining,7,0.0122,-0.0287,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,8,-0.0403,-0.0953,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,9,-0.1262,-0.2174,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Mining,10,0.1799,0.1268,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Mining,11,-0.0691,-0.1484,0.1242,FALSE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Mining,12,0.1018,0.0296,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,13,-0.1762,-0.1471,0.1242,TRUE,TRUE
+Step 4: Unified Real Dual Economy,2,g_Mining,14,0.052,-0.0416,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,15,0.0424,0.0082,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,16,-4e-4,-0.0643,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,17,-0.0426,-0.094,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,18,-0.0398,-0.0592,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,19,0.0015,-0.0616,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,20,0.0467,-0.0544,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,21,-0.0234,-0.0385,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,22,0.0366,-0.0947,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,23,-0.0072,0.0299,0.1242,FALSE,FALSE
+Step 4: Unified Real Dual Economy,2,g_Mining,24,0.1573,0.1161,0.1242,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,1,0.0857,0.0857,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,2,-0.2282,-0.2373,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_gold,3,-0.0088,0.0381,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,4,0.0669,0.0103,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,5,-0.064,-0.0708,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,6,-0.0823,-0.0523,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,7,0.0325,0.0162,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,8,0.1707,0.1449,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_gold,9,0.1488,0.145,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_gold,10,-0.0017,0.0434,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,11,0.072,0.1371,0.124,FALSE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_gold,12,0.0989,0.0915,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,13,-0.0576,-0.0143,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,14,-0.2088,-0.1483,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_gold,15,-0.0652,-0.07,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,16,0.1272,0.0341,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,17,0.0408,-0.0326,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,18,-0.039,-0.0349,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,19,-0.0144,-0.0779,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,20,0.0173,-0.0773,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,21,-0.0304,-0.0572,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,22,-0.0067,0.0508,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,23,0.0384,0.0883,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_gold,24,-0.0225,-0.0051,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,1,-0.0604,-0.0604,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,2,0.0324,0.0289,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,3,0.0441,0.0479,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,4,0.3127,0.3193,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_e,5,-0.1374,-0.1095,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,6,-0.0136,-0.0544,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,7,-0.0326,-0.0721,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,8,-0.0118,-0.1108,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,9,-0.037,0.0484,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,10,0.1048,0.143,0.124,FALSE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_e,11,-0.0188,0.0315,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,12,0.0033,0.0207,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,13,-0.0103,-0.061,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,14,0.181,0.1076,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,15,-0.0247,0.0143,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,16,-0.0064,-0.0116,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,17,0.0372,0.0536,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,18,0.1081,0.0293,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,19,0.005,0.0502,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,20,-0.0025,-0.0019,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,21,0.0632,0.04,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,22,0.0775,0.0727,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,23,-0.067,-0.0814,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_e,24,-0.0066,-0.0447,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,1,-0.157,-0.157,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,d_theta,2,-0.3404,-0.3743,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,d_theta,3,0.0927,-0.0472,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,4,0.0015,-0.1376,0.124,FALSE,TRUE
+Step 5: Unified External Cost-Push Belt,1,d_theta,5,-0.0366,-0.054,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,6,0.1577,0.1211,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,7,-0.1542,-0.1386,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,d_theta,8,-0.0172,0.035,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,9,0.1079,0.0018,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,10,-0.1283,-0.1134,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,11,-0.0378,-0.0558,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,12,0.2793,0.1903,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,d_theta,13,-0.1193,-0.0237,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,14,-0.1256,-0.0094,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,15,0.1097,0.028,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,16,0.0465,0.0803,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,17,-0.1416,-0.1189,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,18,0.0139,-0.0774,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,19,0.0089,-0.0072,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,20,-0.0893,-0.1604,0.124,FALSE,TRUE
+Step 5: Unified External Cost-Push Belt,1,d_theta,21,0.1029,0.0164,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,22,-0.0235,-0.0496,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,23,-0.0126,0.0767,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,d_theta,24,0.1214,0.0377,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,1,-0.1137,-0.1137,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,2,0.0928,0.0809,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,3,-0.0339,-0.0153,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,4,0.05,0.0381,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,5,0.1391,0.1555,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_H,6,0.0596,0.0866,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,7,0.1082,0.108,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,8,-0.0488,-0.0303,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,9,0.1359,0.1068,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,10,0.0051,0.0181,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,11,0.1217,0.0799,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,12,0.2153,0.232,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,g_H,13,0.0177,0.0578,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,14,0.124,0.0944,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,15,0.0659,0.1079,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,16,-0.0236,-0.0804,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,17,0.0367,-0.0461,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,18,0.0165,-0.057,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,19,0.0417,-0.0484,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,20,0.0667,0.027,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,21,0.0629,0.0118,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,22,0.0401,0.0333,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,23,-0.0321,-0.0888,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,g_H,24,0.2687,0.1967,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,1,-0.1217,-0.1217,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,2,0.0154,6e-4,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,3,0.1136,0.1173,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,4,0.1527,0.1858,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,5,0.0871,0.1365,0.124,FALSE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,6,0.0623,0.0823,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,7,-0.0048,-0.029,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,8,0.1187,0.0589,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,9,0.1532,0.1384,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,10,0.0457,0.0715,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,11,0.0092,-0.0011,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,12,0.2027,0.1528,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,13,0.1456,0.15,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,14,0.1062,0.1271,0.124,FALSE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,15,0.0126,0.0037,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,16,-0.0109,-0.1127,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,17,0.1286,-0.0183,0.124,TRUE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,18,0.1036,0.0313,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,19,-0.002,0.004,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,20,0.1352,0.1243,0.124,TRUE,TRUE
+Step 5: Unified External Cost-Push Belt,1,pi_t,21,0.0282,-0.0131,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,22,0.0129,-0.0974,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,23,0.0279,-0.0964,0.124,FALSE,FALSE
+Step 5: Unified External Cost-Push Belt,1,pi_t,24,0.0267,-0.0775,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,1,-0.0603,-0.0603,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,2,-0.0583,-0.0621,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,3,0.2137,0.2078,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,4,0.0059,0.0279,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,5,-0.0534,-0.0306,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,6,0.2154,0.1771,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,7,-0.1447,-0.1469,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,8,-0.1085,-0.0954,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,9,0.0884,-0.0046,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,10,-0.0828,-0.0528,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,11,-0.0532,0.0056,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,12,0.084,0.0288,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,13,-0.113,-0.0492,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,14,-0.0756,-0.0493,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,15,0.069,-0.0031,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,16,-0.0917,-0.0558,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,17,-0.0467,-0.0234,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,18,0.0397,-0.0139,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,19,-0.0312,0.0283,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,20,-0.0343,-0.0081,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,21,0.1912,0.1601,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,22,-0.1017,-0.0734,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,23,-0.0029,0.0057,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_SolvR_H,24,0.0667,-0.0327,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,1,0.0872,0.0872,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,2,-0.221,-0.2303,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_gold,3,-0.0173,0.0282,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,4,0.0573,0.0056,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,5,-0.0553,-0.0642,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,6,-0.0877,-0.0636,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,7,0.0373,0.0283,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,8,0.1733,0.1418,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_gold,9,0.146,0.1426,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_gold,10,-0.007,0.0375,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,11,0.0817,0.1475,0.124,FALSE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_gold,12,0.0944,0.0862,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,13,-0.0568,-0.0069,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,14,-0.1998,-0.1405,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_gold,15,-0.0743,-0.077,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,16,0.1209,0.0317,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,17,0.0476,-0.0301,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,18,-0.0323,-0.0339,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,19,-0.0241,-0.0851,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,20,0.0238,-0.0671,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,21,-0.0348,-0.0679,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,22,-2e-4,0.0612,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,23,0.0398,0.0822,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_gold,24,-0.0223,-0.0019,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,1,-0.0597,-0.0597,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,2,0.0411,0.0377,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,3,0.0408,0.0456,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,4,0.3101,0.3158,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_e,5,-0.1379,-0.1119,0.124,TRUE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,6,-0.0067,-0.0508,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,7,-0.0337,-0.0682,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,8,-0.0094,-0.1059,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,9,-0.0433,0.0413,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,10,0.1029,0.1346,0.124,FALSE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_e,11,-0.0201,0.0277,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,12,0.004,0.0195,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,13,-0.015,-0.0569,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,14,0.18,0.111,0.124,TRUE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,15,-0.0332,0.0033,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,16,0.0132,0.006,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,17,0.0231,0.0392,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,18,0.1042,0.0221,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,19,0.001,0.0502,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,20,0.014,0.0018,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,21,0.0492,0.0404,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,22,0.0826,0.0779,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,23,-0.0667,-0.0801,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_e,24,-0.0061,-0.0494,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,1,-0.1254,-0.1254,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_H,2,0.1109,0.0967,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,3,-0.0555,-0.0316,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,4,0.0503,0.0307,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,5,0.1423,0.1642,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_H,6,0.0389,0.0667,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,7,0.1168,0.1086,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,8,-0.0649,-0.0371,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,9,0.1413,0.1066,0.124,TRUE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,10,0.0063,0.0296,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,11,0.1156,0.0735,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,12,0.2079,0.2291,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,g_H,13,0.0175,0.0629,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,14,0.1274,0.0923,0.124,TRUE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,15,0.054,0.1076,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,16,-0.0208,-0.0824,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,17,0.0279,-0.0483,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,18,0.0149,-0.0484,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,19,0.0409,-0.05,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,20,0.0641,0.0328,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,21,0.0535,0.0038,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,22,0.0428,0.0315,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,23,-0.0337,-0.0844,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,g_H,24,0.264,0.1912,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,pi_t,1,-0.1236,-0.1236,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,2,0.037,0.022,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,3,0.0994,0.1083,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,4,0.1406,0.1695,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,pi_t,5,0.0869,0.1271,0.124,FALSE,TRUE
+Step 6: Unified Central Bank Solvency System,1,pi_t,6,0.0663,0.0806,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,7,0.0029,-0.0166,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,8,0.1254,0.0761,0.124,TRUE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,9,0.1252,0.1173,0.124,TRUE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,10,0.0399,0.0494,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,11,0.0194,-0.0042,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,12,0.1992,0.1542,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,pi_t,13,0.135,0.1482,0.124,TRUE,TRUE
+Step 6: Unified Central Bank Solvency System,1,pi_t,14,0.0985,0.1135,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,15,-0.0185,-0.0393,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,16,0.0393,-0.0687,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,17,0.0978,-0.0181,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,18,0.0864,0.0261,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,19,-0.0029,-0.008,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,20,0.1492,0.1199,0.124,TRUE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,21,-4e-4,-0.034,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,22,0.0278,-0.0723,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,23,0.0269,-0.0568,0.124,FALSE,FALSE
+Step 6: Unified Central Bank Solvency System,1,pi_t,24,0.0189,-0.0627,0.124,FALSE,FALSE

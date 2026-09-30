@@ -1,0 +1,42 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.90}
+\caption{Granger Directional Precedence: Commercial Banking Bifurcation and Multiplier Breakdown ($N=180$)}
+\label{tab:granger_banking_bifurcation}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+\multicolumn{7}{l}{\textbf{Panel A: Primary Baseline at SBIC-Selected Lag ($k^*$)}} \\
+\midrule
+\textbf{Dependent Variable (DV)} & \textbf{Predictor (INDV)} & \textbf{Lag ($k^*$)} & \textbf{$F$-Statistic} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Granger Conclusion} \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A.1: Commercial Credit Lead ($K=3$, $k^*=1$)}} \\[0.15em]
+Base Money Growth ($g_{H,t}$) & Narrow Money Growth ($g_{M1,t}$) & 1 & 21.453$^{***}$ & $< 0.0001$ & +0.478 & $M1 \to H$ detected \\
+Narrow Money Growth ($g_{M1,t}$) & Base Money Growth ($g_{H,t}$) & 1 & 15.834$^{***}$ & 0.0001 & +0.284 & $H \to M1$ detected \\
+Narrow Money Growth ($g_{M1,t}$) & Inflation ($\pi_t$) & 1 & 14.322$^{***}$ & 0.0002 & +0.171 & $\pi \to M1$ detected \\
+Inflation ($\pi_t$) & Narrow Money Growth ($g_{M1,t}$) & 1 & 14.004$^{***}$ & 0.0002 & +0.401 & $M1 \to \pi$ detected \\
+\multicolumn{7}{l}{\textit{Panel A.2: Money Multiplier Deconstruction ($K=3$, $k^*=1$)}} \\[0.15em]
+Inflation ($\pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 1 & 0.338 & 0.5617 & -0.064 & Fail to reject non-causality \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\pi_t$) & 1 & 2.367 & 0.1257 & -0.070 & Fail to reject non-causality \\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel B: Lag Sensitivity and Horizon Persistence ($k = 1, \dots, 4$)}} \\
+\midrule
+\textbf{Hypothesis / Direction} & \textbf{$k = 1$} & \textbf{$k = 2$} & \textbf{$k = 3$} & \textbf{$k = 4$} & \multicolumn{2}{c}{\textbf{Persistence Summary}} \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A.1: Commercial Credit Lead ($K=3$, $k^*=1$)}} \\[0.15em]
+Narrow Money Growth ($g_{M1,t}$) $\to$ Base Money Growth ($g_{H,t}$) & 21.45$^{***}$$^a$ & 7.20$^{***}$ & 6.17$^{***}$ & 3.15$^{**}$ & \multicolumn{2}{c}{Robust at all horizons ($p < 0.05$)} \\
+Base Money Growth ($g_{H,t}$) $\to$ Narrow Money Growth ($g_{M1,t}$) & 15.83$^{***}$$^a$ & 12.98$^{***}$ & 5.17$^{***}$ & 5.50$^{***}$ & \multicolumn{2}{c}{Robust at all horizons ($p < 0.05$)} \\
+Inflation ($\pi_t$) $\to$ Narrow Money Growth ($g_{M1,t}$) & 14.32$^{***}$$^a$ & 15.19$^{***}$ & 8.95$^{***}$ & 8.17$^{***}$ & \multicolumn{2}{c}{Robust at all horizons ($p < 0.05$)} \\
+Narrow Money Growth ($g_{M1,t}$) $\to$ Inflation ($\pi_t$) & 14.00$^{***}$$^a$ & 7.93$^{***}$ & 5.61$^{***}$ & 2.31$^{*}$ & \multicolumn{2}{c}{Significant at 3/4 horizons} \\
+\multicolumn{7}{l}{\textit{Panel A.2: Money Multiplier Deconstruction ($K=3$, $k^*=1$)}} \\[0.15em]
+Multiplier Growth ($\Delta \ln m_t$) $\to$ Inflation ($\pi_t$) & 0.34$^a$ & 0.25 & 0.14 & 0.42 & \multicolumn{2}{c}{No predictive causality} \\
+Inflation ($\pi_t$) $\to$ Multiplier Growth ($\Delta \ln m_t$) & 2.37$^a$ & 1.92 & 5.13$^{***}$ & 4.13$^{***}$ & \multicolumn{2}{c}{Significant at 2/4 horizons} \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series of official un-spliced narrow money ($M1$) and banking multiplier ($m \equiv M1/H$) spanning 1966:01--1980:12 ($N=180$). Evaluated via standard Granger causality tests in stationary VAR($k$) specifications. In Panel~A, narrow money Granger-causes base money ($M1 \to H$, $F = 21.453, p < 0.0001$), consistent with an accommodative reserve response to transactions money. The multiplier channel is inactive across tested horizons ($m \not\to \pi$, $p \ge 0.562$), whereas inflation Granger-causes subsequent multiplier compression at multi-month horizons ($\pi \to m$, $F = 5.127, p = 0.0020$ at lag 3). Panel~A reports the primary baseline at the SBIC-selected optimal lag ($k^*$, denoted by $^a$). Panel~B reports finite-sample $F$-statistics across tested horizons $k = 1, \dots, 4$. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. In accordance with the chapter's methodological contract, Granger causality denotes incremental predictive precedence within a stationary VAR and does not by itself establish structural causal identification.
+\end{minipage}
+\end{table}

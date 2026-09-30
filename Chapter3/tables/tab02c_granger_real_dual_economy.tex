@@ -1,0 +1,48 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.90}
+\caption{Granger Directional Precedence: Real Sector Dual Economy (Manufacturing vs.\ Mining, $N=250$)}
+\label{tab:granger_sectoral_asymmetry}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+\multicolumn{7}{l}{\textbf{Panel A: Primary Baseline at SBIC-Selected Lag ($k^*$)}} \\
+\midrule
+\textbf{Dependent Variable (DV)} & \textbf{Predictor (INDV)} & \textbf{Lag ($k^*$)} & \textbf{$F$-Statistic} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Granger Conclusion} \\
+\midrule
+Manufacturing Output ($g_{\text{Manuf},t}$) & Base Money Growth ($g_{H,t}$) & 2 & 3.636$^{**}$ & 0.0278 & -0.333 & $g_H \to \text{Manuf}$ detected \\
+Base Money Growth ($g_{H,t}$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2 & 2.306 & 0.1018 & +0.035 & Fail to reject non-causality \\
+Mining Extraction ($g_{\text{Mining},t}$) & Base Money Growth ($g_{H,t}$) & 2 & 0.042 & 0.9590 & +0.016 & Fail to reject non-causality \\
+Base Money Growth ($g_{H,t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 2 & 0.214 & 0.8074 & +0.016 & Fail to reject non-causality \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.526 & 0.2195 & +0.040 & Fail to reject non-causality \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2 & 0.328 & 0.7210 & -0.198 & Fail to reject non-causality \\
+Mining Extraction ($g_{\text{Mining},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 0.185 & 0.8312 & -0.001 & Fail to reject non-causality \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Mining Extraction ($g_{\text{Mining},t}$) & 2 & 1.380 & 0.2536 & -0.197 & Fail to reject non-causality \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 2 & 1.187 & 0.3070 & -0.073 & Fail to reject non-causality \\
+Inflation ($\pi_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2 & 7.103$^{***}$ & 0.0010 & -0.201 & $\text{Manuf} \to \pi$ detected \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Inflation ($\pi_t$) & 2 & 0.434 & 0.6487 & +0.035 & Fail to reject non-causality \\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel B: Lag Sensitivity and Horizon Persistence ($k = 1, \dots, 4$)}} \\
+\midrule
+\textbf{Hypothesis / Direction} & \textbf{$k = 1$} & \textbf{$k = 2$} & \textbf{$k = 3$} & \textbf{$k = 4$} & \multicolumn{2}{c}{\textbf{Persistence Summary}} \\
+\midrule
+Base Money Growth ($g_{H,t}$) $\to$ Manufacturing Output ($g_{\text{Manuf},t}$) & 0.66 & 3.64$^{**}$$^a$ & 7.15$^{***}$ & 5.26$^{***}$ & \multicolumn{2}{c}{Significant at 3/4 horizons} \\
+Manufacturing Output ($g_{\text{Manuf},t}$) $\to$ Base Money Growth ($g_{H,t}$) & 1.83 & 2.31$^a$ & 2.77$^{**}$ & 3.60$^{***}$ & \multicolumn{2}{c}{Significant at 2/4 horizons} \\
+Base Money Growth ($g_{H,t}$) $\to$ Mining Extraction ($g_{\text{Mining},t}$) & 0.13 & 0.04$^a$ & 0.40 & 1.05 & \multicolumn{2}{c}{No predictive causality} \\
+Mining Extraction ($g_{\text{Mining},t}$) $\to$ Base Money Growth ($g_{H,t}$) & 0.02 & 0.21$^a$ & 1.36 & 0.94 & \multicolumn{2}{c}{No predictive causality} \\
+Structural Imbalance ($\Delta \ln \Theta_t$) $\to$ Manufacturing Output ($g_{\text{Manuf},t}$) & 3.42$^{*}$ & 1.53$^a$ & 1.10 & 2.07$^{*}$ & \multicolumn{2}{c}{No predictive causality} \\
+Manufacturing Output ($g_{\text{Manuf},t}$) $\to$ Structural Imbalance ($\Delta \ln \Theta_t$) & 2.12 & 0.33$^a$ & 0.50 & 2.25$^{*}$ & \multicolumn{2}{c}{No predictive causality} \\
+Structural Imbalance ($\Delta \ln \Theta_t$) $\to$ Mining Extraction ($g_{\text{Mining},t}$) & 0.02 & 0.18$^a$ & 0.02 & 0.06 & \multicolumn{2}{c}{No predictive causality} \\
+Mining Extraction ($g_{\text{Mining},t}$) $\to$ Structural Imbalance ($\Delta \ln \Theta_t$) & 2.08 & 1.38$^a$ & 1.03 & 0.80 & \multicolumn{2}{c}{No predictive causality} \\
+Mining Extraction ($g_{\text{Mining},t}$) $\to$ Manufacturing Output ($g_{\text{Manuf},t}$) & 0.44 & 1.19$^a$ & 1.56 & 1.19 & \multicolumn{2}{c}{No predictive causality} \\
+Manufacturing Output ($g_{\text{Manuf},t}$) $\to$ Inflation ($\pi_t$) & 10.02$^{***}$ & 7.10$^{***}$$^a$ & 4.96$^{***}$ & 3.72$^{***}$ & \multicolumn{2}{c}{Robust at all horizons ($p < 0.05$)} \\
+Inflation ($\pi_t$) $\to$ Manufacturing Output ($g_{\text{Manuf},t}$) & 0.13 & 0.43$^a$ & 1.27 & 3.40$^{***}$ & \multicolumn{2}{c}{Lag-specific predictive link} \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). 5-variable system $[\pi_t, g_{H,t}, \Delta \ln \Theta_t, g_{\text{Manuf},t}, g_{\text{Mining},t}]'$ evaluated via standard Granger causality tests in stationary VAR($k$) specifications. At the SBIC-selected lag ($k^*=2$), base-money growth Granger-causes subsequent manufacturing output growth with a negative sum of lag coefficients ($g_H \to \text{Manuf}$, $F = 3.636, p = 0.0278, \sum \hat{\beta}_i = -0.333$). Manufacturing output in turn Granger-causes consumer price inflation ($\text{Manuf} \to \pi$, $F = 7.103, p = 0.0010, \sum \hat{\beta}_i = -0.201$), while enclave mining output exhibits no statistically significant Granger feedback with domestic monetary or trade variables ($p > 0.40$). Panel~A reports the primary baseline at the SBIC-selected optimal lag ($k^*$, denoted by $^a$). Panel~B reports finite-sample $F$-statistics across tested horizons $k = 1, \dots, 4$. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. In accordance with the chapter's methodological contract, Granger causality denotes incremental predictive precedence within a stationary VAR and does not by itself establish structural causal identification.
+\end{minipage}
+\end{table}

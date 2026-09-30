@@ -1,32 +1,161 @@
-# su-econ-dissertation-template
+# phd-dissertation
 
-## About
+## Purpose
 
-Template for a doctoral dissertation in Economics that follows the Stockholm University [dissertation style guide](https://www.su.se/polopoly_fs/1.690436.1699960340!/menu/standard/file/Instructions%20for%20Word%20template%20doctoral%20thesis_2023-09-04.pdf).
+This repository assembles frozen versions of Diego Polanco's three dissertation
+chapters into a minimally integrated dissertation manuscript. The goal is to
+produce a clean, coherent dissertation PDF that preserves the visual identity of
+the frozen chapters while adding only the minimum structure required to read them
+as a single volume.
 
-A compiled version of the template can be found [here](./dissertation.pdf).
+This is an integration repository, not a formatting or editing repository.
 
-Adapted from the [Stockholm University PhD thesis template](https://www.overleaf.com/latex/templates/stockholm-university-phd-thesis-template/mrxkgjdpwrvn) in Overleaf.
+---
 
-## Using Arial font in TOC
+## Frozen Source Rule
 
-To use the Arial font in the table of contents, you need to download `getnonfreefonts` and then add the Arial font.
+```
+Chapter1/
+Chapter2/
+Chapter3/
+```
 
-You can do this by following these steps:
+These directories contain author-selected, frozen versions of each dissertation
+chapter. They are the **authoritative source material** and should not be
+casually edited during dissertation-shell work.
 
-1. Download the installer from [here](https://tug.org/fonts/getnonfreefonts/).
-2. Open a terminal, go to the folder where the installer was downloaded, and run `sudo texlua install-getnonfreefonts`.
-3. Download the Arial font by running `sudo getnonfreefonts --sys arial-urw`.
+- Do not modify prose.
+- Do not alter empirical results or citations.
+- Do not redesign chapters for visual consistency.
+- Do not recover deleted versions from Git history.
+- Do not search external repositories for "newer" versions.
 
-If you encounter problems with doing this, consider also using the Helvetica font (very similar to Arial) for the TOC.  
-To change the font, change [line 55 in `config/dissertation.cls`](./config/dissertation.cls#L55) to `\usepackage[scaled]{helvet}`.
+The author has already made the version-selection decision.
 
-## Using the template
+All integration work is performed through wrapper files in `integration/` and
+configuration in `config/`. See `docs/03_INTEGRATION_LEDGER.md` for a record
+of every technical intervention.
 
-The easiest way to compile [the dissertation TeX file](./dissertation.tex) is to run the script [`compile.py`](./compile.py).  
-Assuming the name of the Python 3 executable is `python`, open a terminal, go to the root of the repository, and run `python compile.py`.
+---
 
-Alternatively, if you have a Mac and use [TeXShop](https://en.wikipedia.org/wiki/TeXShop), you can use `pdflatexmk` to compile.  
-I have also confirmed that compiling works using VSCode and the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension.
+## Build
 
-You are free to use this template by downloading, forking, or cloning the repository.
+```bash
+latexmk -pdf dissertation.tex
+```
+
+Output: `build/dissertation.pdf`
+
+Requires: TeX Live 2020+ or equivalent with `pdflatex`, `bibtex`, and standard
+CTAN packages including `natbib`, `chapterbib`, `cleveref`, `siunitx`,
+`threeparttable`, `tikz`, `appendix`, `titlesec`.
+
+**Alternative (manual multi-pass):**
+
+```bash
+pdflatex -interaction=nonstopmode dissertation.tex
+bibtex build/chapter1
+bibtex build/chapter2
+bibtex build/chapter3
+pdflatex -interaction=nonstopmode dissertation.tex
+pdflatex -interaction=nonstopmode dissertation.tex
+```
+
+---
+
+## Architecture
+
+```
+phd-dissertation/
+│
+├── dissertation.tex          # Master document
+├── latexmkrc                 # Build configuration
+├── README.md
+│
+├── Chapter1/                 # FROZEN — Chapter 1 source
+├── Chapter2/                 # FROZEN — Chapter 2 source
+├── Chapter3/                 # FROZEN — Chapter 3 source
+│
+├── config/
+│   ├── packages.tex          # All packages loaded once (replaces per-chapter preambles)
+│   ├── macros.tex            # Global macro definitions
+│   ├── style.tex             # Dissertation-level presentation settings
+│   └── chapter-adapters.tex  # Notes and utilities for chapter integration
+│
+├── frontmatter/
+│   └── working-title.tex     # Temporary working title page (NOT final)
+│
+├── integration/
+│   ├── chapter1.tex          # Wrapper: adapts Ch1 for dissertation context
+│   ├── chapter2.tex          # Wrapper: adapts Ch2 for dissertation context
+│   └── chapter3.tex          # Wrapper: adapts Ch3 for dissertation context
+│
+├── docs/
+│   ├── 01_RECONNAISSANCE.md  # Phase A: frozen chapter inspection
+│   ├── 02_STYLE_FINGERPRINT.md # Phase B: inferred dissertation style
+│   ├── 03_INTEGRATION_LEDGER.md # Record of all technical interventions
+│   └── 04_BUILD_REPORT.md    # Build validation report
+│
+└── build/                    # Compilation artifacts (generated, not versioned)
+```
+
+**Integration wrappers** (`integration/*.tex`) handle the translation from
+standalone article format to dissertation chapter format:
+- Suppress `\documentclass`, `\begin{document}`, `\end{document}`
+- Suppress per-chapter `\maketitle` and `\tableofcontents`
+- Reproduce chapter title, abstract, keywords, JEL codes
+- Set per-chapter `\graphicspath`
+- Invoke chapter-local `\bibliography{}` (per-chapter references via `chapterbib`)
+- Handle `\subappendices` for per-chapter appendix sections
+
+---
+
+## Current Scope
+
+This minimal integration package currently contains:
+
+- ✅ Working title page (temporary)
+- ✅ Table of Contents
+- ✅ List of Figures
+- ✅ Chapter 1 — *Critical Replication of Shaikh's Capacity Utilization Measure*
+- ✅ Chapter 2 — *The Transformation of Accumulation into Productive Capacities*
+- ✅ Chapter 3 — *Re-visiting the Political Economy of the Unidad Popular*
+- ✅ Chapter-specific bibliographies (per-chapter, not merged)
+- ✅ Chapter-specific appendices
+
+---
+
+## Deferred Work
+
+The following elements are explicitly **out of scope** for this pass and will be
+constructed in later stages:
+
+- [ ] Final front matter (abstract, dedication, acknowledgments)
+- [ ] Committee page, copyright page, institutional approval pages
+- [ ] Consolidated dissertation introduction
+- [ ] Consolidated discussion / conclusion
+- [ ] Institutional submission formatting (margins, font requirements, etc.)
+- [ ] Final dissertation metadata
+- [ ] List of Tables (deferred — see `docs/04_BUILD_REPORT.md`)
+- [ ] AI-assistance consolidated disclosure statement
+- [ ] Final submission compliance review
+
+---
+
+## Chapter Titles
+
+| Chapter | Title |
+|---------|-------|
+| 1 | Critical Replication of Shaikh's Capacity Utilization Measure |
+| 2 | The Transformation of Accumulation into Productive Capacities: Capacity Utilization in the Center and Periphery |
+| 3 | Re-visiting the Political Economy of the Rise and Fall of the Unidad Popular: Towards a Global Political Economy Approach |
+
+---
+
+## Documentation
+
+See `docs/` for:
+- `01_RECONNAISSANCE.md` — detailed audit of each frozen chapter's LaTeX structure
+- `02_STYLE_FINGERPRINT.md` — inferred dissertation style and conflict analysis
+- `03_INTEGRATION_LEDGER.md` — record of every technical intervention
+- `04_BUILD_REPORT.md` — compilation results and validation

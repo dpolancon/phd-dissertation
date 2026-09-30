@@ -1,0 +1,70 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {2}Contested Approaches to the Political Economy of the Rise and Fall of the Unidad Popular}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Classical Dependency Theory: Interrupted Programme}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The Rise of the Chicago Boys and the Neo-liberal School}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The Neo-Structuralist School: Selective Sanitization}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Historical Political Economy: Methods Under Inherited Macro Theory}{12}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}The Revival of Dependency Theory as a Research Programme}{13}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Epistemological Critique: The Illusion of Causality, Narrative License, and Collider Traps}{15}{subsection.2.6}%
+\contentsline {section}{\numberline {3}World Money, Financial Subordination, and the Peripheral Central Bank Balance Sheet}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}World Money, the Universal Equivalent, and the Monetary Expression of Value}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The Bretton Woods Architecture and Peripheral Balance-of-Payments Constraints}{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}The Peripheral Central Bank Balance Sheet: From Reserve Adequacy to Balance-Sheet Solvency}{17}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Money Endogeneity vs. Exogeneity and the Peripheral Paradox}{17}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Financial Fragility Reinterpreted: State-Dependent Solvency of the Peripheral Central Bank}{18}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Data Sources and Variable Construction}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Monthly Panel: Sources and Sample Windows}{19}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Variable Construction}{20}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Data Adjustments}{21}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Integration Order of Variables Included in Empirical Excercises}{21}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Historical Background, Stylized Facts, and Empirical Results}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Historical Background: The Rise of the Unidad Popular}{21}{subsection.5.1}%
+\contentsline {paragraph}{Wave I: Selective incorporation and coercive backlash.}{22}{paragraph*.3}%
+\contentsline {paragraph}{Wave II: Coercive containment and urban recomposition.}{23}{paragraph*.5}%
+\contentsline {paragraph}{Wave III: The Long Sixties and the rise of the Unidad Popular.}{24}{paragraph*.6}%
+\contentsline {paragraph}{Wave IV: The UP project and the crisis of accumulation.}{25}{paragraph*.7}%
+\contentsline {subsection}{\numberline {5.2}Stylized Facts of Peripheral Accumulation, Distribution, and External Constraints}{28}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Empirical Excercise: \textit {Lakatosian} Granger Causality Tournament}{28}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Econometric Framework: Toda--Yamamoto Levels Augmentation}{28}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Univariate Stationarity and Integration Pre-testing Battery ($d_{\max } = 1$)}{28}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Sequential Tournament Architecture and Hypothesis Testing Rules}{28}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Empirical Findings}{28}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Residual Diagnostics and Dynamic Stability}{28}{subsubsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.4}Empirical Excercise: Non-Linear Dynamics under Peripheral Central Bank Solvency. A Threshold VAR Approach}{28}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}The Threshold VAR Specification and Structural Identification}{28}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Endogenous Threshold Estimation and Residual Bootstrap Linearity Testing}{28}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Regime Parameter Estimates and System Stability Forensics}{28}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}Dynamic Generalized Impulse Response Functions (GIRFs)}{28}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}Formal Multiplier Difference Hypothesis Tests}{28}{subsubsection.5.4.5}%
+\contentsline {section}{\numberline {6}Political Economy Discussion, Global Implications, and Concluding Synthesis}{28}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The Political Economy of Peripheral Solvency and Subordinated Money}{28}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}The Unidad Popular in the Global Structural Crisis of the 1970s}{29}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Policy Implications for Contemporary Peripheral Sovereignty}{29}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Concluding Synthesis: Toward a Progressive Research Programme}{30}{subsection.6.4}%
+\pagebreak 
+\contentsline {section}{Appendices}{38}{section*.10}%
+\contentsline {section}{Appendix \numberline {A}Formalization of Solvency Ratio and Balance-of-Payments Accounting}{38}{appendix.1.A}%
+\contentsline {subsection}{\numberline {A.1}The Solvency Ratio in Nominal Terms}{38}{subsection.1.A.1}%
+\contentsline {subsection}{\numberline {A.2}Current and Capital Account Decomposition}{39}{subsection.1.A.2}%
+\contentsline {subsection}{\numberline {A.3}Derivation of the Discrete Solvency Law of Motion}{39}{subsection.1.A.3}%
+\contentsline {subsection}{\numberline {A.4}Analytical Convexity and Non-Linear Reserve Exhaustion}{40}{subsection.1.A.4}%
+\contentsline {subsection}{\numberline {A.5}Constraint-Binding Conditions and Structural Minskian Regimes}{41}{subsection.1.A.5}%
+\contentsline {section}{Appendix \numberline {B}Monthly TVAR Impulse Response Atlas (1960--1980)}{41}{appendix.1.B}%
+\contentsline {section}{Appendix \numberline {C}Integration Order Diagnostics and Unit Root Battery}{48}{appendix.1.C}%
+\contentsline {section}{Appendix \numberline {D}Archival Data Provenance, Variable Dictionary, and Splicing Protocols}{51}{appendix.1.D}%
+\contentsline {subsection}{\numberline {D.1}Monthly High-Frequency Variable Ledger}{51}{subsection.1.D.1}%
+\contentsline {subsection}{\numberline {D.2}Monetary Reform Conversions and Splicing Mechanics}{51}{subsection.1.D.2}%
+\contentsline {section}{Appendix \numberline {E}Non-Parametric Causal Discovery (Runge et al., 2019) as Structural Robustness for the Monthly Threshold VAR Architecture}{53}{appendix.1.E}%
+\contentsline {subsection}{\numberline {E.1}The PCMCI Algorithmic Protocol}{53}{subsection.1.E.1}%
+\contentsline {subsection}{\numberline {E.2}Empirical Directed Acyclic Graph (DAG) Findings}{53}{subsection.1.E.2}%
+\contentsline {subsection}{\numberline {E.3}Topological Robustness Mapping to the Threshold VAR Architecture}{53}{subsection.1.E.3}%
+\contentsline {section}{Appendix \numberline {F}Extended Archival Ledgers of Inquilinaje, Agrarian Labor Petitions, and Union Density (1932--1975)}{56}{appendix.1.F}%
+\contentsline {subsection}{\numberline {F.1}Annual Archival Ledger of Agricultural Labor Petitions (1932--1950)}{56}{subsection.1.F.1}%
+\contentsline {subsection}{\numberline {F.2}Strike Typology and Legal Status (1960--1975)}{57}{subsection.1.F.2}%
+\contentsline {subsection}{\numberline {F.3}Trade Union Affiliation and Union Density Ledger (1932--1975)}{57}{subsection.1.F.3}%
+\contentsline {subsection}{\numberline {F.4}Urban Land Seizures in Santiago and Nationwide (1967--1971)}{57}{subsection.1.F.4}%
+\contentsline {subsection}{\numberline {F.5}Productive Capital Stock, Profit Rate, and Net Accumulation Framework (1960--1975)}{58}{subsection.1.F.5}%
+\contentsline {paragraph}{Productive Fixed Capital Stock Harmonization.}{58}{paragraph*.25}%
+\contentsline {paragraph}{The Weisskopf Decomposition.}{58}{paragraph*.26}%
+\contentsline {paragraph}{Implicit Physical Depreciation and Net Accumulation.}{60}{paragraph*.27}%

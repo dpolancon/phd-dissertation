@@ -1,0 +1,161 @@
+Step,DV_Code,INDV_Code,Relation,Lag_k,Is_Opt_SBIC,TY_F_stat,TY_Wald_chisq,TY_p_value,TY_Sum_Beta,TY_SE_Sum,TY_t_Sum,TY_Sig_05,VAR_F_stat,VAR_Wald_chisq,VAR_p_value,VAR_Sum_Beta,VAR_SE_Sum,VAR_t_Sum,VAR_Sig_05,Status,Sample,N_obs
+Step 1: Master Nominal Core,g_H,pi_t,\pi \to g_H,1,FALSE,6.449,6.449,0.01173,0.1505,0.0593,2.539,TRUE,28.324,28.324,0,0.2979,0.056,5.322,TRUE,UNCHANGED,full,251
+Step 1: Master Nominal Core,g_H,pi_t,\pi \to g_H,2,FALSE,9.142,18.285,1.5e-4,0.3028,0.0718,4.219,TRUE,18.515,37.029,0,0.4078,0.068,5.995,TRUE,UNCHANGED,full,251
+Step 1: Master Nominal Core,g_H,pi_t,\pi \to g_H,3,TRUE,15.956,47.869,0,0.5667,0.0848,6.683,TRUE,20.318,60.954,0,0.5948,0.0782,7.609,TRUE,UNCHANGED,full,251
+Step 1: Master Nominal Core,g_H,pi_t,\pi \to g_H,4,FALSE,11.635,46.538,0,0.6391,0.1011,6.32,TRUE,15.004,60.015,0,0.6803,0.0931,7.31,TRUE,UNCHANGED,full,251
+Step 1: Master Nominal Core,pi_t,g_H,g_H \to \pi,1,FALSE,7.592,7.592,0.0063,0.1771,0.0643,2.755,TRUE,14.557,14.557,1.7e-4,0.2433,0.0638,3.815,TRUE,UNCHANGED,full,251
+Step 1: Master Nominal Core,pi_t,g_H,g_H \to \pi,2,FALSE,4.475,8.95,0.01235,0.2686,0.0919,2.921,TRUE,9.284,18.568,1.3e-4,0.3741,0.0869,4.302,TRUE,UNCHANGED,full,251
+Step 1: Master Nominal Core,pi_t,g_H,g_H \to \pi,3,TRUE,2.015,6.046,0.11244,0.2536,0.1115,2.274,FALSE,5.544,16.631,0.00107,0.4213,0.1044,4.035,TRUE,SIGNIFICANCE_GAINED,full,251
+Step 1: Master Nominal Core,pi_t,g_H,g_H \to \pi,4,FALSE,1.843,7.373,0.12132,0.3309,0.1338,2.474,FALSE,2.718,10.872,0.03046,0.3805,0.1245,3.057,TRUE,SIGNIFICANCE_GAINED,full,251
+Step 2: Banking Bifurcation A (Credit Lead),g_H,g_M1,M1 \to H,1,TRUE,12.95,12.95,4.2e-4,0.3879,0.10780000000000001,3.599,TRUE,21.453,21.453,1e-5,0.4782,0.1032,4.632,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_H,g_M1,M1 \to H,2,FALSE,8.972,17.945,2e-4,0.6136,0.1602,3.83,TRUE,7.2,14.401,9.9e-4,0.5294,0.1546,3.423,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_H,g_M1,M1 \to H,3,FALSE,3.825,11.475,0.01104,0.6186,0.2268,2.727,TRUE,6.17,18.51,5.3e-4,0.7817,0.2082,3.755,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_H,g_M1,M1 \to H,4,FALSE,2.421,9.684,0.05046,0.4638,0.2682,1.729,FALSE,3.152,12.608,0.01574,0.6979,0.2554,2.733,TRUE,SIGNIFICANCE_GAINED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,g_H,H \to M1,1,TRUE,16.906,16.906,6e-5,0.2997,0.0729,4.112,TRUE,15.834,15.834,1e-4,0.2838,0.0713,3.979,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,g_H,H \to M1,2,FALSE,7.749,15.498,6e-4,0.4327,0.1127,3.841,TRUE,12.982,25.964,1e-5,0.5496,0.1084,5.069,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,g_H,H \to M1,3,FALSE,6.664,19.993,2.8e-4,0.5403,0.147,3.674,TRUE,5.166,15.498,0.00193,0.4676,0.1429,3.272,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,g_H,H \to M1,4,FALSE,5.695,22.779,2.6e-4,0.733,0.1861,3.939,TRUE,5.499,21.995,3.5e-4,0.7003,0.1784,3.925,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,pi_t,\pi \to M1,1,TRUE,4.36,4.36,0.03825,0.0997,0.0477,2.088,TRUE,14.322,14.322,2.1e-4,0.1709,0.0452,3.785,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,pi_t,\pi \to M1,2,FALSE,6.153,12.305,0.00263,0.1937,0.0582,3.328,TRUE,15.189,30.378,0,0.298,0.0556,5.363,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,pi_t,\pi \to M1,3,FALSE,6.76,20.281,2.5e-4,0.2924,0.0687,4.255,TRUE,8.948,26.843,2e-5,0.3232,0.0647,4.997,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),g_M1,pi_t,\pi \to M1,4,FALSE,7.471,29.883,1e-5,0.4211,0.0799,5.272,TRUE,8.17,32.679,0,0.4118,0.0744,5.535,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),pi_t,g_M1,M1 \to \pi,1,TRUE,5.06,5.06,0.02575,0.2559,0.1138,2.249,TRUE,14.004,14.004,2.5e-4,0.4015,0.1073,3.742,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),pi_t,g_M1,M1 \to \pi,2,FALSE,3.333,6.666,0.03803,0.3765,0.1458,2.582,TRUE,7.928,15.855,5.1e-4,0.5412,0.136,3.979,TRUE,UNCHANGED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),pi_t,g_M1,M1 \to \pi,3,FALSE,2.519,7.557,0.05984,0.4721,0.1834,2.574,FALSE,5.61,16.83,0.00108,0.6712,0.1663,4.035,TRUE,SIGNIFICANCE_GAINED,raw66,180
+Step 2: Banking Bifurcation A (Credit Lead),pi_t,g_M1,M1 \to \pi,4,FALSE,1.489,5.957,0.20775,0.4462,0.2097,2.128,FALSE,2.308,9.231,0.06015,0.5351,0.1902,2.813,FALSE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),pi_t,d_ln_m,m \to \pi,1,TRUE,0.255,0.255,0.61451,-0.0562,0.1114,-0.505,FALSE,0.338,0.338,0.56168,-0.0639,0.1099,-0.581,FALSE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),pi_t,d_ln_m,m \to \pi,2,FALSE,0.175,0.349,0.83996,-0.1059,0.1797,-0.589,FALSE,0.251,0.502,0.77814,-0.1232,0.1748,-0.704,FALSE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),pi_t,d_ln_m,m \to \pi,3,FALSE,0.121,0.362,0.94783,-0.0699,0.2446,-0.286,FALSE,0.145,0.434,0.93308,-0.1554,0.2362,-0.658,FALSE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),pi_t,d_ln_m,m \to \pi,4,FALSE,0.299,1.196,0.87828,-0.152,0.3132,-0.485,FALSE,0.422,1.689,0.7925,-0.2037,0.2935,-0.694,FALSE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),d_ln_m,pi_t,\pi \to m,1,TRUE,1.393,1.393,0.23954,-0.0589,0.0499,-1.18,FALSE,2.367,2.367,0.12569,-0.0698,0.0453,-1.539,FALSE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),d_ln_m,pi_t,\pi \to m,2,FALSE,0.258,0.515,0.77323,-0.0345,0.0576,-0.598,FALSE,1.916,3.831,0.15034,-0.1045,0.0536,-1.951,FALSE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),d_ln_m,pi_t,\pi \to m,3,FALSE,4.147,12.44,0.00727,-0.1927,0.0644,-2.992,TRUE,5.127,15.382,0.00203,-0.1891,0.056,-3.377,TRUE,UNCHANGED,raw66,180
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),d_ln_m,pi_t,\pi \to m,4,FALSE,4.015,16.059,0.00392,-0.2277,0.0704,-3.237,TRUE,4.134,16.537,0.00321,-0.207,0.0607,-3.411,TRUE,UNCHANGED,raw66,180
+Step 4: Unified Real Dual Economy,g_Manuf,g_H,g_H \to \text{Manuf},1,FALSE,0.932,0.932,0.33524,-0.1002,0.1038,-0.966,FALSE,0.663,0.663,0.41612,-0.0881,0.1082,-0.815,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,g_H,g_H \to \text{Manuf},2,TRUE,8.274,16.547,3.3e-4,-0.5101,0.1316,-3.875,TRUE,3.636,7.271,0.0278,-0.3332,0.1299,-2.564,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,g_H,g_H \to \text{Manuf},3,FALSE,7.001,21.004,1.6e-4,-0.304,0.145,-2.097,TRUE,7.149,21.446,1.3e-4,-0.1703,0.1374,-1.239,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,g_H,g_H \to \text{Manuf},4,FALSE,5.309,21.235,4.1e-4,-0.2753,0.1587,-1.735,TRUE,5.256,21.023,4.5e-4,-0.2172,0.1434,-1.515,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Manuf,\text{Manuf} \to g_H,1,FALSE,0.537,0.537,0.46431,-0.0256,0.035,-0.733,FALSE,1.828,1.828,0.17755,-0.0472,0.0349,-1.352,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Manuf,\text{Manuf} \to g_H,2,TRUE,1.801,3.602,0.16739,-0.0097,0.0625,-0.155,FALSE,2.306,4.612,0.10183,0.0348,0.0563,0.619,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Manuf,\text{Manuf} \to g_H,3,FALSE,3.462,10.386,0.01704,-0.0226,0.0957,-0.237,TRUE,2.77,8.31,0.04231,-0.0839,0.0857,-0.979,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Manuf,\text{Manuf} \to g_H,4,FALSE,2.864,11.457,0.02406,-0.0635,0.1348,-0.471,TRUE,3.595,14.379,0.00723,0.0498,0.1183,0.421,TRUE,SIGN_FLIP,full,251
+Step 4: Unified Real Dual Economy,g_Mining,g_H,g_H \to \text{Mining},1,FALSE,0.078,0.078,0.77991,0.0298,0.1067,0.28,FALSE,0.129,0.129,0.71952,0.0387,0.10780000000000001,0.36,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Mining,g_H,g_H \to \text{Mining},2,TRUE,0.079,0.157,0.92434,-0.0351,0.1385,-0.253,FALSE,0.042,0.084,0.959,0.0156,0.1333,0.117,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Mining,g_H,g_H \to \text{Mining},3,FALSE,0.664,1.992,0.57483,0.1775,0.1517,1.17,FALSE,0.4,1.201,0.75278,0.0755,0.1429,0.529,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Mining,g_H,g_H \to \text{Mining},4,FALSE,1.073,4.291,0.37059,-0.0562,0.1641,-0.342,FALSE,1.052,4.208,0.38107,-0.0118,0.1516,-0.078,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Mining,\text{Mining} \to g_H,1,FALSE,0.011,0.011,0.91647,-0.0037,0.0354,-0.105,FALSE,0.023,0.023,0.87948,-0.0052,0.034,-0.152,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Mining,\text{Mining} \to g_H,2,TRUE,0.867,1.734,0.42152,0.0677,0.0645,1.049,FALSE,0.214,0.428,0.80739,0.016,0.0586,0.274,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Mining,\text{Mining} \to g_H,3,FALSE,0.983,2.948,0.40155,0.1305,0.098,1.331,FALSE,1.361,4.082,0.25548,0.1385,0.0868,1.596,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_H,g_Mining,\text{Mining} \to g_H,4,FALSE,1.09,4.361,0.36202,0.1842,0.1298,1.419,FALSE,0.94,3.759,0.44153,0.1325,0.1204,1.1,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,d_theta,\Theta \to \text{Manuf},1,FALSE,3.051,3.051,0.08196,0.0275,0.0157,1.747,FALSE,3.422,3.422,0.06551,0.0275,0.0148,1.85,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,d_theta,\Theta \to \text{Manuf},2,TRUE,1.499,2.999,0.22535,0.0367,0.0305,1.203,FALSE,1.526,3.052,0.21947,0.0403,0.0268,1.503,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,d_theta,\Theta \to \text{Manuf},3,FALSE,2.174,6.523,0.09172,0.0079,0.0449,0.176,FALSE,1.099,3.296,0.35038,0.0354,0.0414,0.856,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,d_theta,\Theta \to \text{Manuf},4,FALSE,1.172,4.687,0.32391,0.0222,0.0602,0.369,FALSE,2.074,8.296,0.08492,-0.0209,0.0543,-0.384,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Manuf,\text{Manuf} \to \Theta,1,FALSE,0.629,0.629,0.42856,-0.1829,0.2306,-0.793,FALSE,2.122,2.122,0.14647,-0.3378,0.2319,-1.457,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Manuf,\text{Manuf} \to \Theta,2,TRUE,0.316,0.632,0.7294,0.0923,0.4043,0.228,FALSE,0.328,0.655,0.72099,-0.1984,0.3688,-0.538,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Manuf,\text{Manuf} \to \Theta,3,FALSE,1.78,5.34,0.15164,1.077,0.6068,1.775,FALSE,0.499,1.496,0.68365,0.3244,0.5503,0.589,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Manuf,\text{Manuf} \to \Theta,4,FALSE,3.008,12.032,0.01903,2.1996000000000002,0.8627,2.55,TRUE,2.255,9.02,0.0639,1.7383,0.7485,2.322,FALSE,SIGNIFICANCE_LOST,full,251
+Step 4: Unified Real Dual Economy,g_Mining,d_theta,\Theta \to \text{Mining},1,FALSE,0.118,0.118,0.73134,-0.0055,0.0161,-0.344,FALSE,0.02,0.02,0.88693,-0.0021,0.0149,-0.142,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Mining,d_theta,\Theta \to \text{Mining},2,TRUE,0.034,0.068,0.96663,-0.0035,0.0312,-0.113,FALSE,0.185,0.37,0.83122,-8e-4,0.0274,-0.03,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Mining,d_theta,\Theta \to \text{Mining},3,FALSE,0.037,0.112,0.99031,0.0037,0.0475,0.077,FALSE,0.023,0.069,0.99526,-0.0042,0.0423,-0.1,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Mining,d_theta,\Theta \to \text{Mining},4,FALSE,0.038,0.152,0.99723,0.0123,0.0628,0.196,FALSE,0.055,0.22,0.99432,0.0091,0.0574,0.159,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Mining,\text{Mining} \to \Theta,1,FALSE,1.714,1.714,0.19175,-0.3005,0.2295,-1.309,FALSE,2.079,2.079,0.15057,-0.3248,0.2252,-1.442,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Mining,\text{Mining} \to \Theta,2,TRUE,1.283,2.565,0.27919,-0.0615,0.4181,-0.147,FALSE,1.38,2.76,0.2536,-0.1971,0.3821,-0.516,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Mining,\text{Mining} \to \Theta,3,FALSE,1.067,3.2,0.36399,0.2547,0.6314,0.403,FALSE,1.034,3.101,0.37833,0.135,0.5625,0.24,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,d_theta,g_Mining,\text{Mining} \to \Theta,4,FALSE,0.668,2.674,0.6145,-0.2267,0.8386,-0.27,FALSE,0.8,3.2,0.5263,0.3629,0.7742,0.469,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,g_Mining,\text{Mining} \to \text{Manuf},1,FALSE,0.025,0.025,0.87543,0.0096,0.0611,0.157,FALSE,0.437,0.437,0.50941,0.0396,0.06,0.661,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,g_Mining,\text{Mining} \to \text{Manuf},2,TRUE,0.647,1.294,0.52442,0.0092,0.1096,0.084,FALSE,1.187,2.373,0.30697,-0.0732,0.1017,-0.721,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,g_Mining,\text{Mining} \to \text{Manuf},3,FALSE,1.099,3.297,0.35031,0.046,0.1608,0.286,FALSE,1.557,4.671,0.20052,0.1016,0.1473,0.69,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,g_Mining,\text{Mining} \to \text{Manuf},4,FALSE,1.107,4.428,0.35391,0.053900000000000003,0.2193,0.246,FALSE,1.186,4.746,0.31738,0.0037,0.1977,0.019,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,pi_t,g_Manuf,\text{Manuf} \to \pi,1,FALSE,12.6,12.6,4.6e-4,-0.1238,0.0349,-3.55,TRUE,10.022,10.022,0.00174,-0.1095,0.0346,-3.166,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,pi_t,g_Manuf,\text{Manuf} \to \pi,2,TRUE,7.14,14.28,9.7e-4,-0.2191,0.0609,-3.596,TRUE,7.103,14.206,0.001,-0.2013,0.0562,-3.585,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,pi_t,g_Manuf,\text{Manuf} \to \pi,3,FALSE,4.729,14.188,0.00318,-0.2895,0.0903,-3.206,TRUE,4.959,14.876,0.00234,-0.2492,0.084,-2.966,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,pi_t,g_Manuf,\text{Manuf} \to \pi,4,FALSE,2.96,11.839,0.02059,-0.365,0.1296,-2.817,TRUE,3.719,14.876,0.00588,-0.357,0.1113,-3.206,TRUE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,pi_t,\pi \to \text{Manuf},1,FALSE,0.34,0.34,0.5604,-0.0621,0.1064,-0.583,FALSE,0.134,0.134,0.71498,0.0359,0.0982,0.366,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,pi_t,\pi \to \text{Manuf},2,TRUE,0.813,1.627,0.44456,0.0924,0.1248,0.74,FALSE,0.434,0.867,0.64869,0.0349,0.10780000000000001,0.324,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,pi_t,\pi \to \text{Manuf},3,FALSE,0.867,2.601,0.45891,0.0654,0.1317,0.496,FALSE,1.272,3.815,0.28473,-0.0886,0.1134,-0.781,FALSE,UNCHANGED,full,251
+Step 4: Unified Real Dual Economy,g_Manuf,pi_t,\pi \to \text{Manuf},4,FALSE,3.318,13.271,0.01145,-0.3033,0.1445,-2.099,TRUE,3.402,13.609,0.00994,-0.2397,0.1126,-2.129,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_H,g_H \to \text{Gold},1,TRUE,2.86,2.86,0.09207,0.0805,0.0476,1.691,FALSE,2.913,2.913,0.08915,0.0812,0.0476,1.707,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_H,g_H \to \text{Gold},2,FALSE,1.843,3.686,0.16058,0.0955,0.0638,1.497,FALSE,1.487,2.974,0.22812,0.0793,0.0601,1.32,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_H,g_H \to \text{Gold},3,FALSE,1.126,3.378,0.33915,0.0473,0.0711,0.665,FALSE,1.234,3.701,0.29809,0.0586,0.0661,0.886,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_H,g_H \to \text{Gold},4,FALSE,0.93,3.721,0.44696,0.0501,0.0767,0.652,FALSE,0.94,3.76,0.44138,0.0676,0.071,0.953,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,pi_t,\pi \to \text{Gold},1,TRUE,2.09,2.09,0.14951,-0.0684,0.0473,-1.446,FALSE,0.489,0.489,0.48502,-0.0301,0.0431,-0.699,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,pi_t,\pi \to \text{Gold},2,FALSE,1.817,3.634,0.16475,0.0144,0.057,0.253,FALSE,2.027,4.053,0.13398,0.0221,0.0489,0.452,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,pi_t,\pi \to \text{Gold},3,FALSE,1.255,3.764,0.29069,-0.0399,0.063,-0.632,FALSE,1.313,3.939,0.27075,0.0262,0.0528,0.497,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,pi_t,\pi \to \text{Gold},4,FALSE,1.547,6.188,0.1894,0.0081,0.0698,0.116,FALSE,1.872,7.488,0.11603,0.0593,0.0551,1.077,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,d_theta,\Theta \to \text{Gold},1,TRUE,2.025,2.025,0.15605,0.0103,0.0072,1.423,FALSE,1.326,1.326,0.25064,0.0076,0.0066,1.151,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,d_theta,\Theta \to \text{Gold},2,FALSE,1.934,3.868,0.14679,0.0267,0.0142,1.878,FALSE,1.015,2.031,0.36377,0.0154,0.0123,1.251,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,d_theta,\Theta \to \text{Gold},3,FALSE,1.107,3.321,0.34697,0.0342,0.022,1.55,FALSE,1.549,4.646,0.20258,0.0389,0.0193,2.016,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,d_theta,\Theta \to \text{Gold},4,FALSE,1.364,5.457,0.24704,0.0216,0.0292,0.741,FALSE,1.174,4.698,0.32271,0.0309,0.0267,1.158,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_e,g_e \to \text{Gold},1,TRUE,3.068,3.068,0.08112,-0.0525,0.03,-1.751,FALSE,2.51,2.51,0.11439,-0.0475,0.03,-1.584,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_e,g_e \to \text{Gold},2,FALSE,1.882,3.764,0.15449,-0.0439,0.0394,-1.113,FALSE,1.579,3.158,0.20823,-0.0329,0.0379,-0.866,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_e,g_e \to \text{Gold},3,FALSE,1.332,3.997,0.26452,-0.0106,0.0446,-0.236,FALSE,1.533,4.6,0.2065,-0.0062,0.0425,-0.147,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_gold,g_e,g_e \to \text{Gold},4,FALSE,1.268,5.072,0.28325,-0.026,0.0525,-0.495,FALSE,1.062,4.249,0.37593,0.0021,0.0466,0.045,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_gold,\text{Gold} \to \pi,1,TRUE,0.519,0.519,0.47205,0.0594,0.0825,0.72,FALSE,0.218,0.218,0.6409,0.0362,0.0776,0.467,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_gold,\text{Gold} \to \pi,2,FALSE,0.642,1.284,0.5271,-0.0203,0.0906,-0.224,FALSE,0.259,0.519,0.77174,0.0363,0.0911,0.398,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_gold,\text{Gold} \to \pi,3,FALSE,0.587,1.762,0.62385,0.0868,0.1056,0.823,FALSE,2.089,6.267,0.10228,0.1838,0.1079,1.703,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_gold,\text{Gold} \to \pi,4,FALSE,4.172,16.687,0.00278,0.2933,0.116,2.529,TRUE,4.58,18.319,0.0014,0.3234,0.1138,2.841,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,g_H,g_H \to \Theta,1,TRUE,0.297,0.297,0.58646,-0.2178,0.3998,-0.545,FALSE,0.445,0.445,0.50534,-0.2765,0.4145,-0.667,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,g_H,g_H \to \Theta,2,FALSE,0.961,1.922,0.38389,-0.6871,0.5271,-1.304,FALSE,0.899,1.799,0.40813,-0.6484,0.4997,-1.298,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,g_H,g_H \to \Theta,3,FALSE,0.407,1.222,0.74781,-0.5281,0.5823,-0.907,FALSE,0.69,2.069,0.5591,-0.6621,0.5448,-1.215,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,g_H,g_H \to \Theta,4,FALSE,0.989,3.954,0.4145,-1.1422,0.6199,-1.842,FALSE,0.598,2.393,0.66424,-0.7904,0.5829,-1.356,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,d_theta,\Theta \to g_H,1,TRUE,1.443,1.443,0.23089,0.0111,0.0092,1.201,FALSE,0.692,0.692,0.40634,0.0072,0.0086,0.832,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,d_theta,\Theta \to g_H,2,FALSE,0.924,1.849,0.39821,0.0248,0.0183,1.356,FALSE,1.027,2.054,0.3597,0.0225,0.0157,1.433,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,d_theta,\Theta \to g_H,3,FALSE,0.641,1.923,0.58936,0.0168,0.0281,0.598,FALSE,0.691,2.074,0.55817,0.0276,0.0249,1.108,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,d_theta,\Theta \to g_H,4,FALSE,0.439,1.756,0.78043,0.0213,0.0365,0.584,FALSE,0.611,2.445,0.65487,0.0098,0.034,0.287,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,d_theta,\Theta \to \pi,1,TRUE,3.813,3.813,0.052,-0.0184,0.0094,-1.953,FALSE,5.113,5.113,0.02461,-0.0193,0.0086,-2.261,TRUE,SIGNIFICANCE_GAINED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,d_theta,\Theta \to \pi,2,FALSE,2.549,5.097,0.0803,-0.0351,0.018,-1.946,FALSE,1.917,3.834,0.14925,-0.0274,0.0158,-1.728,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,d_theta,\Theta \to \pi,3,FALSE,1.682,5.047,0.17142,-0.0421,0.0268,-1.572,FALSE,1.93,5.789,0.1254,-0.0497,0.0245,-2.032,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,d_theta,\Theta \to \pi,4,FALSE,1.733,6.931,0.14347,-0.0367,0.0354,-1.036,FALSE,1.323,5.292,0.26206,-0.0414,0.0324,-1.277,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,pi_t,\pi \to \Theta,1,TRUE,1.95,1.95,0.1639,-0.5621,0.4025,-1.396,FALSE,1.269,1.269,0.26111,-0.4208,0.3736,-1.126,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,pi_t,\pi \to \Theta,2,FALSE,1.359,2.719,0.25878,-0.6611,0.4732,-1.397,FALSE,1.104,2.207,0.3333,-0.4693,0.4095,-1.146,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,pi_t,\pi \to \Theta,3,FALSE,1.941,5.823,0.12364,-1.0897,0.5224,-2.086,FALSE,0.931,2.794,0.42624,-0.4865,0.4374,-1.112,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,d_theta,pi_t,\pi \to \Theta,4,FALSE,1.578,6.314,0.18078,-0.1425,0.566,-0.252,FALSE,1.761,7.044,0.13746,-0.2456,0.4537,-0.541,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_e,g_e \to \pi,1,TRUE,1.119,1.119,0.29118,-0.0685,0.0647,-1.058,FALSE,1.697,1.697,0.19391,-0.0856,0.0657,-1.303,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_e,g_e \to \pi,2,FALSE,0.951,1.901,0.3879,-0.1086,0.0933,-1.164,FALSE,0.606,1.211,0.54649,-0.0941,0.0955,-0.985,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_e,g_e \to \pi,3,FALSE,0.469,1.407,0.70426,-0.0767,0.091,-0.842,FALSE,1.699,5.098,0.16781,-0.2272,0.118,-1.926,FALSE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,pi_t,g_e,g_e \to \pi,4,FALSE,46.084,184.336,0,0.5666,0.0968,5.855,TRUE,37.025,148.1,0,0.5044,0.1075,4.693,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,pi_t,\pi \to g_e,1,TRUE,11.77,11.77,7.1e-4,0.5153,0.1502,3.431,TRUE,23.305,23.305,0,0.6893,0.1428,4.828,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,pi_t,\pi \to g_e,2,FALSE,9.78,19.559,8e-5,0.8611,0.1973,4.365,TRUE,12.325,24.65,1e-5,0.9327,0.1885,4.947,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,pi_t,\pi \to g_e,3,FALSE,9.305,27.916,1e-5,1.0489,0.2092,5.014,TRUE,9.243,27.728,1e-5,1.1894,0.2289,5.196,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,pi_t,\pi \to g_e,4,FALSE,19.294,77.175,0,0.0263,0.2316,0.113,TRUE,14.35,57.399,0,0.1854,0.2238,0.829,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,g_e,g_e \to g_H,1,TRUE,9.865,9.865,0.00189,0.1192,0.038,3.141,TRUE,17.037,17.037,5e-5,0.1614,0.0391,4.128,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,g_e,g_e \to g_H,2,FALSE,9.538,19.076,1e-4,0.221,0.0507,4.356,TRUE,12.052,24.103,1e-5,0.2512,0.0512,4.908,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,g_e,g_e \to g_H,3,FALSE,11.641,34.923,0,0.3568,0.0608,5.869,TRUE,12.802,38.407,0,0.3705,0.0601,6.169,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_H,g_e,g_e \to g_H,4,FALSE,8.375,33.501,0,0.4011,0.0732,5.483,TRUE,9.619,38.478,0,0.4247,0.0717,5.926,TRUE,UNCHANGED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,g_H,g_H \to g_e,1,TRUE,3.726,3.726,0.05472,0.1994,0.1033,1.93,FALSE,8.197,8.197,0.00456,0.2865,0.1001,2.863,TRUE,SIGNIFICANCE_GAINED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,g_H,g_H \to g_e,2,FALSE,1.491,2.982,0.22724,0.2522,0.1461,1.726,FALSE,3.37,6.74,0.03599,0.3489,0.1352,2.581,TRUE,SIGNIFICANCE_GAINED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,g_H,g_H \to g_e,3,FALSE,0.625,1.875,0.59941,0.0033,0.1594,0.021,FALSE,3.483,10.45,0.01655,0.4852,0.1583,3.066,TRUE,SIGNIFICANCE_GAINED,full,251
+Step 5: Unified External Cost-Push Belt,g_e,g_H,g_H \to g_e,4,FALSE,1.063,4.252,0.37559,0.1525,0.1832,0.832,FALSE,1.331,5.324,0.25903,0.1801,0.1696,1.062,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_H,g_SolvR_H,\text{SolvR}^H \to g_H,1,TRUE,0.07,0.07,0.79172,-0.0037,0.014,-0.264,FALSE,0.031,0.031,0.86053,0.0025,0.0139,0.176,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_H,g_SolvR_H,\text{SolvR}^H \to g_H,2,FALSE,0.17,0.34,0.8438,0.0127,0.0221,0.573,FALSE,0.959,1.918,0.38469,-0.023,0.0225,-1.019,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_H,g_SolvR_H,\text{SolvR}^H \to g_H,3,FALSE,9.326,27.979,1e-5,0.0823,0.0288,2.854,TRUE,11.149,33.448,0,0.0873,0.0288,3.036,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_H,g_SolvR_H,\text{SolvR}^H \to g_H,4,FALSE,10.129,40.516,0,0.0583,0.0319,1.827,TRUE,8.472,33.887,0,0.0701,0.0333,2.106,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_H,g_H \to \text{SolvR}^H,1,TRUE,0.474,0.474,0.49172,0.1906,0.2768,0.689,FALSE,0.162,0.162,0.68785,0.1091,0.2712,0.402,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_H,g_H \to \text{SolvR}^H,2,FALSE,1.287,2.574,0.27799,-0.3896,0.3622,-1.075,FALSE,0.686,1.373,0.50442,-0.1069,0.3463,-0.309,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_H,g_H \to \text{SolvR}^H,3,FALSE,2.322,6.967,0.07576,-0.0176,0.4026,-0.044,FALSE,2.447,7.34,0.06446,0.2695,0.3727,0.723,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_H,g_H \to \text{SolvR}^H,4,FALSE,2.504,10.018,0.043,0.6486,0.4371,1.484,TRUE,2.258,9.031,0.06361,0.4152,0.4018,1.033,FALSE,SIGNIFICANCE_LOST,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,pi_t,\pi \to \text{SolvR}^H,1,TRUE,6.468,6.468,0.0116,0.7059,0.2776,2.543,TRUE,8.336,8.336,0.00423,0.716,0.248,2.887,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,pi_t,\pi \to \text{SolvR}^H,2,FALSE,6.374,12.749,0.00201,1.1115,0.3329,3.339,TRUE,5.085,10.17,0.00686,0.8688,0.2932,2.963,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,pi_t,\pi \to \text{SolvR}^H,3,FALSE,4.596,13.789,0.00379,0.4631,0.3807,1.217,TRUE,4.39,13.171,0.00497,0.5041,0.3162,1.594,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,pi_t,\pi \to \text{SolvR}^H,4,FALSE,2.962,11.847,0.02052,0.2089,0.4087,0.511,TRUE,3.664,14.655,0.00645,0.4773,0.3284,1.454,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,pi_t,g_SolvR_H,\text{SolvR}^H \to \pi,1,TRUE,2.8,2.8,0.09554,-0.0247,0.0147,-1.673,FALSE,2.272,2.272,0.13298,-0.0216,0.0143,-1.507,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,pi_t,g_SolvR_H,\text{SolvR}^H \to \pi,2,FALSE,2.154,4.308,0.11824,-0.0502,0.0244,-2.054,FALSE,1.447,2.895,0.23722,-0.0368,0.024,-1.536,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,pi_t,g_SolvR_H,\text{SolvR}^H \to \pi,3,FALSE,1.686,5.058,0.17063,-0.0653,0.0312,-2.095,FALSE,2.489,7.466,0.06106,-0.0828,0.032,-2.586,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,pi_t,g_SolvR_H,\text{SolvR}^H \to \pi,4,FALSE,1.403,5.613,0.23359,-0.0457,0.0355,-1.286,FALSE,1.773,7.093,0.13489,-0.0499,0.0355,-1.406,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_e,g_SolvR_H,\text{SolvR}^H \to g_e,1,TRUE,0.325,0.325,0.56886,-0.0139,0.0244,-0.571,FALSE,0.262,0.262,0.60914,-0.0119,0.0233,-0.512,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_e,g_SolvR_H,\text{SolvR}^H \to g_e,2,FALSE,0.67,1.341,0.51249,-0.0486,0.042,-1.157,FALSE,0.164,0.328,0.84879,-0.0174,0.0399,-0.437,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_e,g_SolvR_H,\text{SolvR}^H \to g_e,3,FALSE,2.399,7.196,0.06865,-0.0611,0.0503,-1.215,FALSE,1.833,5.499,0.14174,-0.1048,0.0554,-1.893,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_e,g_SolvR_H,\text{SolvR}^H \to g_e,4,FALSE,2.33,9.322,0.05675,-0.0887,0.0568,-1.563,FALSE,1.799,7.196,0.12972,-0.0857,0.0569,-1.508,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_e,g_e \to \text{SolvR}^H,1,TRUE,8.519,8.519,0.00384,0.523,0.1792,2.919,TRUE,7.979,7.979,0.00512,0.5003,0.1771,2.825,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_e,g_e \to \text{SolvR}^H,2,FALSE,6.325,12.649,0.0021,0.7935,0.2391,3.318,TRUE,5.761,11.522,0.00359,0.7528,0.2344,3.212,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_e,g_e \to \text{SolvR}^H,3,FALSE,6.162,18.486,4.7e-4,0.0098,0.2751,0.036,TRUE,5.811,17.434,7.5e-4,0.2721,0.2668,1.02,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_e,g_e \to \text{SolvR}^H,4,FALSE,6.011,24.044,1.3e-4,0.2627,0.3106,0.846,TRUE,7.146,28.585,2e-5,0.5007,0.2802,1.787,TRUE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_gold,\text{Gold} \to \text{SolvR}^H,1,TRUE,0.085,0.085,0.77051,-0.1069,0.3662,-0.292,FALSE,0.001,0.001,0.97601,0.0102,0.3378,0.03,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_gold,\text{Gold} \to \text{SolvR}^H,2,FALSE,0.08,0.16,0.92325,0.1404,0.4112,0.342,FALSE,0.224,0.449,0.79925,0.1387,0.4048,0.343,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_gold,\text{Gold} \to \text{SolvR}^H,3,FALSE,0.263,0.79,0.85186,0.2956,0.5087,0.581,FALSE,0.299,0.896,0.8264,0.369,0.49,0.753,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_SolvR_H,g_gold,\text{Gold} \to \text{SolvR}^H,4,FALSE,0.277,1.109,0.89249,0.4241,0.5613,0.756,FALSE,0.401,1.602,0.80816,0.5721,0.5472,1.045,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_gold,g_SolvR_H,\text{SolvR}^H \to \text{Gold},1,TRUE,0.218,0.218,0.6408,-0.0051,0.011,-0.467,FALSE,0.106,0.106,0.74512,-0.0035,0.0107,-0.325,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_gold,g_SolvR_H,\text{SolvR}^H \to \text{Gold},2,FALSE,0.194,0.387,0.82411,-0.0114,0.0183,-0.622,FALSE,0.238,0.476,0.78851,-0.0119,0.0176,-0.677,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_gold,g_SolvR_H,\text{SolvR}^H \to \text{Gold},3,FALSE,0.215,0.645,0.88593,-0.006,0.0241,-0.251,FALSE,0.227,0.682,0.8773,-0.0076,0.0238,-0.32,FALSE,UNCHANGED,full,251
+Step 6: Unified Central Bank Solvency System,g_gold,g_SolvR_H,\text{SolvR}^H \to \text{Gold},4,FALSE,0.219,0.876,0.92772,-0.0017,0.0277,-0.061,FALSE,0.162,0.647,0.9575,-0.0041,0.0275,-0.151,FALSE,UNCHANGED,full,251

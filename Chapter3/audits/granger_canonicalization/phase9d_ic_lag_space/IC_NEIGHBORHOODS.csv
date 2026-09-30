@@ -1,0 +1,7 @@
+System,Admissible_Count,AIC_Min_k,BIC_Min_k,HQ_Min_k,F_AIC_20,F_BIC_20,F_HQ_20,Intersection_20,Union_20,Overlap_E_VAR
+Step 1: Master Nominal Core,9,4,4,4,"4,5","4,5","4,5","4,5","4,5","4,5"
+Step 2: Banking Bifurcation A (Credit Lead),6,3,3,3,"3,4","3,4","3,4","3,4","3,4","3,4"
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),7,3,3,3,"3,4","3,4","3,4","3,4","3,4","3,4"
+Step 4: Unified Real Dual Economy,0,NA,NA,NA,NONE,NONE,NONE,NONE,NONE,NONE
+Step 5: Unified External Cost-Push Belt,0,NA,NA,NA,NONE,NONE,NONE,NONE,NONE,NONE
+Step 6: Unified Central Bank Solvency System,0,NA,NA,NA,NONE,NONE,NONE,NONE,NONE,NONE

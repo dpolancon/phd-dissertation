@@ -1,0 +1,193 @@
+% Native TikZ PCMCI Causal Discovery DAG (Chile 1960-1980)
+% 8-Variable Full-System Macroeconomic Architecture (Runge et al., 2019)
+\begin{tikzpicture}[
+    >=Stealth,
+    every node/.style={font=\small},
+    % Tier 1: External Block-Exogenous Drivers
+    exoNode/.style={
+        rectangle, rounded corners=5pt, draw=teal!85!black, fill=teal!6, line width=1.3pt,
+        inner sep=4pt, align=center, text width=3.30cm, minimum height=1.15cm
+    },
+    % Tier 2: Balance-Sheet Gate & External Conduit
+    solvNode/.style={
+        rectangle, rounded corners=5pt, draw=orange!85!black, fill=orange!7, line width=1.3pt,
+        inner sep=4pt, align=center, text width=3.30cm, minimum height=1.15cm
+    },
+    devalNode/.style={
+        rectangle, rounded corners=5pt, draw=crimson!80!black, fill=crimson!6, line width=1.3pt,
+        inner sep=4pt, align=center, text width=3.30cm, minimum height=1.15cm
+    },
+    % Tier 3: Core Nominal Arena
+    priceNode/.style={
+        rectangle, rounded corners=5pt, draw=crimson!90!black, fill=crimson!8, line width=1.4pt,
+        inner sep=4pt, align=center, text width=3.30cm, minimum height=1.15cm
+    },
+    moneyNode/.style={
+        rectangle, rounded corners=5pt, draw=navy!85!black, fill=blue!6, line width=1.4pt,
+        inner sep=4pt, align=center, text width=3.30cm, minimum height=1.15cm
+    },
+    % Tier 4: Real Sector Dual Economy
+    manufNode/.style={
+        rectangle, rounded corners=5pt, draw=slate!85!black, fill=slate!8, line width=1.3pt,
+        inner sep=4pt, align=center, text width=3.30cm, minimum height=1.15cm
+    },
+    miningNode/.style={
+        rectangle, rounded corners=5pt, draw=brown!85!black, fill=brown!8, line width=1.3pt,
+        inner sep=4pt, align=center, text width=3.30cm, minimum height=1.15cm
+    },
+    % Edge styles
+    edgeMajor/.style={
+        ->, line width=1.6pt, draw=navy
+    },
+    edgeConfirmed/.style={
+        ->, line width=1.2pt, draw=blue!80!black
+    },
+    edgeRefuted/.style={
+        ->, dashed, line width=1.1pt, draw=crimson, opacity=0.85
+    },
+    edgeLabel/.style={
+        font=\scriptsize\bfseries, fill=white, inner sep=1.8pt, rounded corners=2pt, draw=gray!35
+    },
+    refutedLabel/.style={
+        font=\scriptsize\itshape, fill=crimson!5, text=crimson!90!black, inner sep=1.8pt, rounded corners=2pt, draw=crimson!35
+    }
+]
+
+    % =========================================================================
+    % TIER 1: EXTERNAL FRONTIER (y = 6.35, shield from 5.0 to 7.95)
+    % =========================================================================
+    \draw[dashed, draw=teal!70!black, line width=1.0pt, rounded corners=7pt, fill=teal!3] 
+        (-6.35, 5.0) rectangle (6.35, 7.95);
+    \node[font=\footnotesize\bfseries\color{teal!85!black}] at (0, 7.52) 
+        {Tier 1: Block-Exogenous Structural Frontier ($p_{\pi \to \cdot} > 0.10,\; p_{g_H \to \cdot} > 0.10$)};
+
+    \node[exoNode] (theta) at (-4.2, 6.35) {
+        \textbf{Structural}\\
+        \textbf{Imbalance}\\
+        $\Delta \ln \Theta_t$\\
+        \scriptsize \textcolor{teal!70!black}{Exogenous ($p>0.10$)}
+    };
+
+    \node[exoNode] (gold) at (4.2, 6.35) {
+        \textbf{World Gold}\\
+        \textbf{Bullion Price}\\
+        $g_{P,\text{gold},t}$\\
+        \scriptsize \textcolor{teal!70!black}{Exogenous ($p>0.10$)}
+    };
+
+    % =========================================================================
+    % TIER 2: BALANCE-SHEET GATE & EXTERNAL CONDUIT (y = 3.6)
+    % =========================================================================
+    \node[solvNode] (solv) at (-4.2, 3.6) {
+        \textbf{Central Bank}\\
+        \textbf{Solvency}\\
+        $\Delta \ln \text{SolvR}_t^H$\\
+        \scriptsize \textcolor{orange!85!black}{Reserve Backing Gate}
+    };
+
+    \node[devalNode] (deval) at (4.2, 3.6) {
+        \textbf{Exchange Rate}\\
+        \textbf{Devaluation}\\
+        $g_{e,t}$\\
+        \scriptsize \textcolor{crimson!85!black}{Nominal Cost Conduit}
+    };
+
+    % =========================================================================
+    % TIER 3: CORE NOMINAL ARENA (y = 0.5)
+    % =========================================================================
+    \node[priceNode] (infl) at (-4.2, 0.5) {
+        \textbf{Consumer}\\
+        \textbf{Price Inflation}\\
+        $\pi_t$\\
+        \scriptsize \textcolor{crimson!90!black}{Cost Pressure Core}
+    };
+
+    \node[moneyNode] (money) at (4.2, 0.5) {
+        \textbf{Central Bank}\\
+        \textbf{Base Money}\\
+        $g_{H,t}$\\
+        \scriptsize \textcolor{navy!90!black}{Accommodating Valve}
+    };
+
+    % =========================================================================
+    % TIER 4: REAL DUAL ECONOMY PRODUCTION (y = -2.6)
+    % =========================================================================
+    \node[manufNode] (manuf) at (-4.2, -2.6) {
+        \textbf{Manufacturing}\\
+        \textbf{Factory Output}\\
+        $g_{\text{Manuf},t}$\\
+        \scriptsize \textcolor{slate!85!black}{Wage-Goods Industry}
+    };
+
+    \node[miningNode] (mining) at (4.2, -2.6) {
+        \textbf{Mining Mineral}\\
+        \textbf{Extraction}\\
+        $g_{\text{Mining},t}$\\
+        \scriptsize \textcolor{brown!85!black}{Enclave Mineral Sector}
+    };
+
+    % =========================================================================
+    % DIRECTED LINKS: 4-CORNER GEOMETRIC ROUTING
+    % =========================================================================
+
+    % 1. Import Overhang to Manufacturing (outermost left arc)
+    \draw[edgeConfirmed] (theta.west) to[out=180, in=180, looseness=0.68] 
+        node[edgeLabel, left=2pt, pos=0.18] {$\tau=1:\; +0.142^{**}$} (manuf.west);
+
+    % 2. World Gold to Devaluation (vertical straight right column)
+    \draw[edgeConfirmed] (gold.south) -- 
+        node[edgeLabel, right=3pt, pos=0.5] {$\tau=4:\; +0.163^{**}$} (deval.north);
+
+    % 3. Solvency to Base Money (diagonal down-right, label in Upper-Left Quadrant at pos=0.20)
+    \draw[edgeMajor] (solv.south east) -- 
+        node[edgeLabel, above=2pt, sloped, pos=0.20] {$\tau=3:\; +0.264^{***}$} (money.north west);
+
+    % 4. Solvency and Inflation Bidirectional Links:
+    % Solvency Threshold on Inflation (straight vertical downward line, label on right)
+    \draw[edgeConfirmed] (solv.south) -- 
+        node[edgeLabel, right=3pt, pos=0.5] {$\tau=3:\; -0.165^{**}$} (infl.north);
+    % Inflation Depletes Solvency (smooth feedback arc bowing left, label on left)
+    \draw[edgeConfirmed] (infl.west) to[out=140, in=220] 
+        node[edgeLabel, left=2pt, pos=0.5] {$\tau=4:\; -0.191^{***}$} (solv.west);
+
+    % 5. Devaluation Pass-Through to Inflation (diagonal down-left, label in Upper-Right Quadrant at pos=0.20)
+    \draw[edgeMajor] (deval.south west) -- 
+        node[edgeLabel, above=2pt, sloped, pos=0.20] {$\tau=4:\; +0.644^{***}$} (infl.north east);
+
+    % 6. Inflation Compels Devaluation (diagonal up-right on lower track, label in Mid-Right at pos=0.68)
+    \draw[edgeConfirmed] ([yshift=-2pt]infl.north east) -- 
+        node[edgeLabel, below=2pt, sloped, pos=0.68] {$\tau=4:\; -0.396^{***}$} ([yshift=-16pt]deval.south west);
+
+    % 7. Reverse Monetary Accommodation (straight horizontal above midline)
+    \draw[edgeMajor] ([yshift=8.5pt]infl.east) -- 
+        node[edgeLabel, above=2pt, pos=0.5] {$\tau=3:\; +0.247^{***}$} ([yshift=8.5pt]money.west);
+
+    % 8. Forward Monetarist Link Not Retained under Conditioning (straight horizontal below midline)
+    \draw[edgeRefuted] ([yshift=-8.5pt]money.west) -- 
+        node[refutedLabel, below=2pt, pos=0.5] {Not Retained under Conditioning ($q > 0.10$, No Direct Link)} ([yshift=-8.5pt]infl.east);
+
+    % 9. Base Money Stimulates Manufacturing (diagonal down-left, label below line in lower zone)
+    \draw[edgeConfirmed] (money.south west) -- 
+        node[edgeLabel, below=2pt, sloped, pos=0.55] {$\tau=3:\; +0.177^{**}$} (manuf.north east);
+
+    % 10. Manufacturing Output Mitigates Inflation (vertical straight left column)
+    \draw[edgeConfirmed] (manuf.north) -- 
+        node[edgeLabel, left=3pt, pos=0.5] {$\tau=1:\; -0.168^{**}$} (infl.south);
+
+    % 11. Enclave Mining Decoupling (vertical straight right column)
+    \draw[edgeConfirmed] (money.south) -- 
+        node[edgeLabel, right=3pt, pos=0.5] {$\tau=4:\; -0.189^{**}$} (mining.north);
+
+    % =========================================================================
+    % LEGEND BOX (Centered at bottom, y = -4.15)
+    % =========================================================================
+    \node[draw=gray!50, fill=gray!4, rounded corners=4pt, font=\scriptsize, anchor=north, inner sep=5pt] at (0, -4.15) {
+        \begin{tabular}{ll@{\qquad\quad}ll}
+            \tikz\draw[edgeMajor, line width=1.5pt] (0,0) -- (0.5,0); & FDR-Retained Directed Lagged Link (FDR $q < 0.01$) &
+            \tikz\draw[edgeConfirmed, line width=1.1pt] (0,0) -- (0.5,0); & Significant Directed Link ($p < 0.05$)\\
+            \tikz\draw[edgeRefuted, line width=1.0pt] (0,0) -- (0.5,0); & Not Retained under Conditioning ($q > 0.10$, No Direct Link) &
+            \tikz\draw[dashed, draw=teal!70!black, line width=0.8pt] (0,0) -- (0.5,0); & Block-Exogenous Sector ($p > 0.10$)\\
+        \end{tabular}
+    };
+
+\end{tikzpicture}

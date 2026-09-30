@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Chapter3_Paper.aux
+The style file: apalike.bst
+Database file #1: references.bib
+Warning--there's a number but no volume in Arboleda2023
+You've used 132 entries,
+            1935 wiz_defined-function locations,
+            1276 strings with 25116 characters,
+and the built_in function-call counts, 45723 in all, are:
+= -- 4560
+> -- 1413
+< -- 136
++ -- 489
+- -- 430
+* -- 3421
+:= -- 8068
+add.period$ -- 426
+call.type$ -- 132
+change.case$ -- 819
+chr.to.int$ -- 131
+cite$ -- 133
+duplicate$ -- 1957
+empty$ -- 3442
+format.name$ -- 622
+if$ -- 9050
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 159
+newline$ -- 679
+num.names$ -- 417
+pop$ -- 755
+preamble$ -- 1
+purify$ -- 866
+quote$ -- 0
+skip$ -- 1502
+stack$ -- 0
+substring$ -- 3017
+swap$ -- 239
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 696
+warning$ -- 1
+while$ -- 397
+width$ -- 0
+write$ -- 1744
+(There was 1 warning)

@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.88}
+\caption{System Variable Specification and Definitions Across Sequential Testing Steps}
+\label{tab:system_definitions}
+\begin{tabularx}{\textwidth}{llc>{\RaggedRight}X}
+\toprule
+\textbf{Step} & \textbf{System Vector $Y^{(s)}_t$} & \textbf{$K$} & \textbf{Variable Definitions, Construction, and Historical Sample} \\
+\midrule
+\textbf{Step 1} & $[\pi_t, \; g_{H,t}]'$ & 2 & $\pi_t$: Monthly CPI inflation rate ($\Delta \ln \text{CPI}_t \times 100$). \newline $g_{H,t}$: Base money growth ($\Delta \ln H_t \times 100$). \newline Sample: 1960:01--1980:12 ($N=250$). \\
+\addlinespace[0.3em]
+\textbf{Step 2} & $[\pi_t, \; g_{M1,t}, \; g_{H,t}]'$ & 3 & $\pi_t$: CPI inflation rate. \newline $g_{M1,t}$: Official observed narrow money growth ($\Delta \ln M1_t \times 100$, un-spliced). \newline $g_{H,t}$: Base money growth. \newline Sample: 1966:01--1980:12 ($N=180$). \\
+\addlinespace[0.3em]
+\textbf{Step 3} & $[\pi_t, \; g_{H,t}, \; \Delta \ln m_t]'$ & 3 & $\pi_t$: CPI inflation rate. \newline $g_{H,t}$: Base money growth. \newline $\Delta \ln m_t$: Banking multiplier growth ($m_t \equiv M1_t / H_t$). \newline Sample: 1966:01--1980:12 ($N=180$). \\
+\addlinespace[0.3em]
+\textbf{Step 4} & $[\pi_t, \; g_{H,t}, \; \Delta \ln \Theta_t, \; g_{\text{Manuf},t}, \; g_{\text{Mining},t}]'$ & 5 & $\pi_t$: CPI inflation rate. \newline $g_{H,t}$: Base money growth. \newline $\Delta \ln \Theta_t$: Real Structural Imbalance growth ($\Theta_t \equiv \text{Imports}_t / M^{\text{cap}}_t \times 100$). \newline $g_{\text{Manuf},t}$: Manufacturing output growth ($\Delta \ln \text{Manuf}_t \times 100$). \newline $g_{\text{Mining},t}$: Enclave mining output growth ($\Delta \ln \text{Mining}_t \times 100$). \newline Sample: 1960:01--1980:12 ($N=250$). \\
+\addlinespace[0.3em]
+\textbf{Step 5} & $[g_{P,\text{gold},t}, \; g_{e,t}, \; \Delta \ln \Theta_t, \; g_{H,t}, \; \pi_t]'$ & 5 & $g_{P,\text{gold},t}$: World gold price growth ($\Delta \ln P^{\text{gold}}_t \times 100$, London bullion). \newline $g_{e,t}$: Nominal exchange rate growth ($\Delta \ln e_t \times 100$). \newline $\Delta \ln \Theta_t$: Real Structural Imbalance growth. \newline $g_{H,t}$: Base money growth. \newline $\pi_t$: CPI inflation rate. \newline Sample: 1960:01--1980:12 ($N=250$). \\
+\addlinespace[0.3em]
+\textbf{Step 6} & $[\Delta \ln \text{SolvR}_t^H, \; g_{P,\text{gold},t}, \; g_{e,t}, \; g_{H,t}, \; \pi_t]'$ & 5 & $\Delta \ln \text{SolvR}_t^H$: Central Bank Solvency Ratio growth based on Base Money ($\text{SolvR}_t^H \equiv [e_t \cdot \text{IR}_t] / [H_t \cdot 1000]$). \newline $g_{P,\text{gold},t}$: World gold price growth. \newline $g_{e,t}$: Nominal exchange rate growth. \newline $g_{H,t}$: Base money growth. \newline $\pi_t$: CPI inflation rate. \newline Sample: 1960:01--1980:12 ($N=250$). \\
+\bottomrule
+\end{tabularx}
+\begin{minipage}{\textwidth}
+\vspace{0.3em}
+\footnotesize \textit{Notes:} Monthly archival series from Central Bank of Chile (BCCh) historical databases and IMF International Financial Statistics. Prebisch Capacity to Import ($M^{\text{cap}}_t \equiv \text{Exports}_t \times \text{TOT}_t$) uses November 1970 as standard baseline ($1970:11 = 100$). Solvency Ratio based on Base Money ($\text{SolvR}_t^H$) provides complete coverage for all 250 months (1960--1980), correlating at $\rho = 0.974$ with the narrow-money metric while preserving the full historical sample for macro progressions. The customs strike distortion of April 1973 in import ledgers is resolved via linear interpolation between March and May 1973.
+\end{minipage}
+\end{table}

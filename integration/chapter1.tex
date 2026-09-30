@@ -1,0 +1,91 @@
+% =============================================================
+% integration/chapter1.tex
+% Integration wrapper for Chapter 1 (FROZEN SOURCE).
+%
+% This file adapts the standalone Chapter1/main.tex for inclusion
+% in the dissertation master document without modifying the frozen source.
+%
+% Frozen source: Chapter1/main.tex
+% Standalone commands suppressed: \documentclass, \begin{document},
+%   \maketitle, \end{document}
+% Chapter-opening material reproduced from frozen source content.
+%
+% INTEGRATION LEDGER: see docs/03_INTEGRATION_LEDGER.md
+% =============================================================
+
+% ---- Set graphics search path for this chapter --------------
+% \subimport changes the current dir, so figures referenced as
+% "figures/foo.pdf" will resolve to Chapter1/figures/foo.pdf
+\graphicspath{%
+  {Chapter1/}%
+  {Chapter1/figures/}%
+  {Chapter1/appendixA/figures/}%
+}
+
+% ---- Chapter opening (replaces standalone \maketitle) -------
+% Content extracted verbatim from Chapter1/main.tex title block.
+% Suppressed: \thanks{} footnotes for author affiliation and AI note
+%   (dissertation title page identifies the author globally).
+%   The AI disclosure note is preserved in the footnote below.
+
+\chapter[Essay 1 \textemdash{} Critical Replication of Shaikh's Capacity Utilization Measure]%
+  {Critical Replication of Shaikh's Capacity Utilization Measure}
+
+\vspace{0.8em}
+
+% Abstract (verbatim from frozen source)
+\begin{abstract}
+Identifying a productive capacity ceiling requires estimating an unobserved
+benchmark, a task that risks conflating technical engineering limits with the
+institutional realities of capitalist accumulation. This chapter critically
+replicates Anwar Shaikh's accounting-based capacity measure for the post-war
+US corporate sector (1947--2011), reinterpreting the long-run output--capital
+coefficient as a capacity transformation elasticity ($\theta$) under conditions
+of unbalanced growth. Testing this relation across a combinatorial grid of 500
+single-equation specifications and a system-level Vector Error Correction Model
+(VECM), we demonstrate that the standalone bivariate output-capital relation
+fails to cointegrate. System-level stability emerges exclusively when the rate
+of exploitation ($e_t$) enters the cointegrating vector, yielding an estimated
+transformation elasticity ($\hat{\theta} < 1$) indicative of structural
+overaccumulation. This evidence suggests that the productive ceiling is not a
+neutral engineering constraint. Rather, it is a contingent outcome of
+decentralized accumulation, structurally conditioned by the distributive
+conflict and the labor process within and beyond the workplace, which physically
+dictate the conversion of accumulated capital into active productive capacity.
+\end{abstract}
+
+\vspace{0.8em}
+
+\noindent\textbf{Keywords:} Capacity Utilization; Critical Replication; Shaikh;
+Transformation Elasticity; Cointegration; ARDL; VECM; Distribution.
+
+\noindent\textbf{JEL Codes:} B51; C32; E01; E22; E32; P16.
+
+\clearpage
+
+% ---- Chapter body (frozen source sections) ------------------
+% \subimport{Chapter1/}{file} sets current dir to Chapter1/ so that
+% any nested \input{} calls within section files resolve correctly.
+\subimport{Chapter1/}{section1}
+\subimport{Chapter1/}{section2}
+\subimport{Chapter1/}{section3}
+\subimport{Chapter1/}{section4}
+\subimport{Chapter1/}{section5}
+
+% ---- Chapter bibliography -----------------------------------
+\clearpage
+{\small
+\bibliographystyle{apalike}
+\bibliography{Chapter1/references}
+}
+
+% ---- Chapter appendices -------------------------------------
+\clearpage
+\begin{subappendices}
+% AppendixODE has no sub-inputs; either base dir works.
+\subimport{Chapter1/}{AppendixODE/AppendixODE}
+\clearpage
+% appendixA.tex uses \input{appendixA/tables/...}, so current dir
+% must be Chapter1/ (not Chapter1/appendixA/) for paths to resolve.
+\subimport{Chapter1/}{appendixA/appendixA}
+\end{subappendices}

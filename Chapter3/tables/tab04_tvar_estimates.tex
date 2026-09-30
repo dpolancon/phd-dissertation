@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.90}
+\caption{Regime-Dependent TVAR Parameter Estimates across Solvency Regimes (1960--1980)}
+\label{tab:tvar_estimates}
+\label{tab:tab04_tvar_estimates}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Lagged Regressor} & \multicolumn{5}{c}{\textbf{Dependent System Variables ($X_t$)}} \\
+\cmidrule(lr){2-6}
+ & \textbf{Gold ($g^{gold}_t$)} & \textbf{Imbalance ($\Delta \ln \Theta_t$)} & \textbf{Reserves ($g^F_t$)} & \textbf{Inflation ($\pi_{m,t}$)} & \textbf{Money ($g^H_t$)} \\
+\midrule
+\multicolumn{6}{l}{\textbf{Panel A: Adverse Solvency-Growth State} ($\Delta s_{t-1} \le -4.615\%$, $N_1 = 100$ months)} \\
+\midrule
+Constant & 0.636 & -3.720 & 3.388 & -0.300 & 1.893$^{*}$ \\
+World Gold Price ($g^{gold}_{t-1}$) & 0.625$^{***}$ & 0.378 & -0.494 & 0.197$^{**}$ & 0.151 \\
+Structural Imbalance ($\Delta \ln \Theta_{t-1}$) & --- & -0.188$^{*}$ & --- & 0.010 & --- \\
+Reserve Growth ($g^F_{t-1}$) & --- & --- & -0.181 & -0.016 & -0.042 \\
+CPI Inflation ($\pi_{m,t-1}$) & --- & --- & 0.512 & 0.684$^{***}$ & 0.581$^{***}$ \\
+Base Money Growth ($g^H_{t-1}$) & --- & --- & 0.938 & 0.166$^{***}$ & 0.058 \\
+Price Decontrol Dummy ($D_{oct73}$) & -1.225 & 62.520 & 111.026$^{***}$ & 76.213$^{***}$ & -2.775 \\
+\midrule
+\multicolumn{6}{l}{\textbf{Panel B: Non-Adverse Solvency-Growth State} ($\Delta s_{t-1} > -4.615\%$, $N_2 = 145$ months)} \\
+\midrule
+Constant & 0.579 & 1.836 & 1.848 & 2.218$^{***}$ & 3.300$^{***}$ \\
+World Gold Price ($g^{gold}_{t-1}$) & 0.339$^{***}$ & -1.128$^{**}$ & 0.312 & -0.013 & -0.034 \\
+Structural Imbalance ($\Delta \ln \Theta_{t-1}$) & --- & -0.629$^{***}$ & --- & -0.009 & --- \\
+Reserve Growth ($g^F_{t-1}$) & --- & --- & -0.355$^{***}$ & -0.014 & 0.006 \\
+CPI Inflation ($\pi_{m,t-1}$) & --- & --- & 1.114$^{***}$ & 0.275$^{***}$ & 0.236$^{***}$ \\
+Base Money Growth ($g^H_{t-1}$) & --- & --- & -0.173 & 0.240$^{***}$ & 0.115 \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{\textwidth}
+\vspace{0.4em}
+\footnotesize \textit{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$, effective sample $T=245$). Conditional Least Squares (CLS) estimates of the five-variable TVAR(1) conditioned on the predetermined Solvency Growth Gap $\Delta s_{t-1} \equiv g^F_{t-1} - g^H_{t-1}$ at the structural threshold $\hat{\gamma} = -4.615\%$. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. Dashes (---) denote structural exclusion restrictions: (i) world gold is block exogenous to domestic Chilean variables ($a_{12} = a_{13} = a_{14} = a_{15} = 0$); (ii) real structural imbalance ($\Delta \ln \Theta_t$) is exogenous to domestic feedback ($a_{23} = a_{24} = a_{25} = 0$); and (iii) lagged structural imbalance ($\Delta \ln \Theta_{t-1}$) is excluded from central bank solvency equations ($g^F_t$ and $g^H_t$, $a_{32} = a_{52} = 0$), in accordance with the institutional transmission structure and Latin American structuralist theory. The one-off price decontrol dummy $D_{oct73}$ (Decree Law 522) in Panel A controls for the October 1973 administrative price decontrol and foreign exchange revaluation shock.
+\end{minipage}
+\end{table}

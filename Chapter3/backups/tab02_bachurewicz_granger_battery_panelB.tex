@@ -1,0 +1,59 @@
+\begin{table}[htbp]
+\centering
+\fontsize{7.5pt}{8.6pt}\selectfont
+\renewcommand{\arraystretch}{0.68}
+\caption{Sequential Granger Causality Tournament: Macroeconomic Real and External Progressions (Steps 4--6)}
+\label{tab:granger_battery_panelB}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Dependent Variable (DV)} & \textbf{Regressor (INDV)} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$\chi^2$ (MWALD)} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Direction} \\
+\midrule
+\multicolumn{8}{l}{\textbf{Step 4: Unified Real Dual Economy}} \\[0.15em]
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 0.663 & 0.663 & 0.4161 & -0.088 & No \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 3 & 7.149$^{***}$ & 21.446 & 0.0001 & -0.170 & $g_H \to \text{Manuf}$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & 1 & 1.828 & 1.828 & 0.1776 & -0.047 & No \\
+Mining Extraction ($\Delta g_{\text{Mining},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 0.129 & 0.129 & 0.7195 & +0.039 & No \\
+Mining Extraction ($\Delta g_{\text{Mining},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 3 & 0.400 & 1.201 & 0.7528 & +0.076 & No \\
+Base Money Growth ($\Delta g_{H,t}$) & Mining Extraction ($\Delta g_{\text{Mining},t}$) & 1 & 0.023 & 0.023 & 0.8795 & -0.005 & No \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 4.364$^{**}$ & 4.364 & 0.0378 & -0.045 & $\Theta \to \text{Manuf}$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & 1 & 2.122 & 2.122 & 0.1465 & -0.338 & No \\
+Mining Extraction ($\Delta g_{\text{Mining},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 0.020 & 0.020 & 0.8869 & -0.002 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Mining Extraction ($\Delta g_{\text{Mining},t}$) & 1 & 2.079 & 2.079 & 0.1506 & -0.325 & $Mining \to \Theta$ \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Mining Extraction ($\Delta g_{\text{Mining},t}$) & 1 & 0.437 & 0.437 & 0.5094 & +0.040 & No \\
+Inflation ($\Delta \pi_t$) & Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & 1 & 10.022$^{***}$ & 10.022 & 0.0017 & -0.110 & $\text{Manuf} \to \pi$ \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Inflation ($\Delta \pi_t$) & 1 & 0.134 & 0.134 & 0.7150 & +0.036 & No \\
+\multicolumn{8}{l}{\textbf{Step 5: Unified External Cost-Push Belt}} \\[0.15em]
+World Gold Price ($g_{P,\text{gold},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 2 & 1.487 & 2.974 & 0.2281 & +0.079 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Inflation ($\Delta \pi_t$) & 2 & 2.027 & 4.053 & 0.1340 & +0.022 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.015 & 2.031 & 0.3638 & +0.015 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 2 & 1.579 & 3.158 & 0.2082 & -0.033 & No \\
+Inflation ($\Delta \pi_t$) & World Gold Price ($g_{P,\text{gold},t}$) & 2 & 0.259 & 0.519 & 0.7717 & +0.036 & $Gold \to \pi$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Base Money Growth ($\Delta g_{H,t}$) & 2 & 0.899 & 1.799 & 0.4081 & -0.648 & No \\
+Base Money Growth ($\Delta g_{H,t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.027 & 2.054 & 0.3597 & +0.022 & $\Theta \to g_H$ \\
+Inflation ($\Delta \pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 5.113$^{**}$ & 5.113 & 0.0246 & +0.082 & $\Theta \to \pi$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Inflation ($\Delta \pi_t$) & 1 & 1.269 & 1.269 & 0.2611 & -0.421 & No \\
+Inflation ($\Delta \pi_t$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 1 & 1.697 & 1.697 & 0.1939 & -0.086 & No \\
+Inflation ($\Delta \pi_t$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 4 & 37.025$^{***}$ & 148.100 & $< 0.0001$ & +0.504 & $g_e \to \pi$ \\
+Exchange Rate Growth ($\Delta g_{e,t}$) & Inflation ($\Delta \pi_t$) & 1 & 23.305$^{***}$ & 23.305 & $< 0.0001$ & +0.689 & $\pi \to g_e$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 1 & 17.037$^{***}$ & 17.037 & $< 0.0001$ & +0.161 & No \\
+Exchange Rate Growth ($\Delta g_{e,t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 8.197$^{***}$ & 8.197 & 0.0046 & +0.286 & No \\
+\multicolumn{8}{l}{\textbf{Step 6: Unified Central Bank Solvency System}} \\[0.15em]
+Base Money Growth ($\Delta g_{H,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 3 & 11.149$^{***}$ & 33.448 & $< 0.0001$ & -0.312 & $\text{SolvR}^H \to g_H$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 4 & 8.472$^{***}$ & 33.887 & $< 0.0001$ & -0.285 & $\text{SolvR}^H \to g_H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 0.162 & 0.162 & 0.6879 & +0.109 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Inflation ($\Delta \pi_t$) & 1 & 8.336$^{***}$ & 8.336 & 0.0042 & -0.716 & $\pi \to \text{SolvR}^H$ \\
+Inflation ($\Delta \pi_t$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 3 & 2.489$^{*}$ & 7.466 & 0.0611 & -0.083 & $\text{SolvR}^H \to \pi$ \\
+Exchange Rate Growth ($\Delta g_{e,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 1 & 0.262 & 0.262 & 0.6091 & -0.012 & No \\
+Exchange Rate Growth ($\Delta g_{e,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 2 & 0.164 & 0.328 & 0.8488 & -0.017 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Exchange Rate Growth ($\Delta g_{e,t}$) & 1 & 7.979$^{***}$ & 7.979 & 0.0051 & +0.500 & $g_e \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & World Gold Price ($g_{P,\text{gold},t}$) & 2 & 0.224 & 0.449 & 0.7992 & +0.139 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 2 & 0.238 & 0.476 & 0.7885 & -0.012 & No \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). Evaluated via Toda--Yamamoto ($k+d_{\max}$) augmented levels VAR under $d_{\max}=1$. Step 4 tests real dual sectoral output; Step 5 tests external cost-push and world gold block-exogeneity; Step 6 tests Central Bank foreign reserve solvency based on Base Money. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$.
+\end{minipage}
+\end{table}

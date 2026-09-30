@@ -1,0 +1,62 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Estimated TVAR Lag Coefficients and System Diagnostics Across Minskyan Regimes}
+\label{tab:tvar_parameters}
+\label{tab:tvar_parameter_estimates}
+\textbf{Panel A: Monthly Consumer Inflation Equation ($\Delta \pi_t$)}\\[0.3em]
+\begin{tabularx}{\textwidth}{lcccc}
+\toprule
+\textbf{Regressor} & \textbf{Hedge (SolvR $> 0.21$)} & \textbf{Speculative ($0.14 < \text{SolvR} \le 0.21$)} & \textbf{Forced Ponzi (SolvR $\le 0.14$)} \\
+\midrule
+Intercept & $-0.005$ $(0.242)$ & $-0.130$ $(0.351)$ & $+1.993$ $(1.847)$ \\
+World Gold Price ($g_{P,\text{gold},t-1}$) & $-0.018$ $(0.040)$ & $+0.897^{***}$ $(0.122)$ & $-0.161$ $(0.337)$ \\
+Structural Imbalance ($\Delta \ln \Theta_{t-1}$) & $-0.008$ $(0.005)$ & $-0.009$ $(0.008)$ & $-0.060$ $(0.040)$ \\
+Own Inflation ($\Delta \pi_{t-1}$) & $-0.028$ $(0.033)$ & $-1.069^{***}$ $(0.037)$ & $+0.113$ $(0.415)$ \\
+Base Money Growth ($\Delta g_{H,t-1}$) & $+0.056$ $(0.041)$ & $-0.018$ $(0.030)$ & $-0.036$ $(0.189)$ \\
+\midrule
+$R^2$ [Adj. $R^2$] & $0.050$ [$0.023$] & $0.944$ [$0.940$] & $0.061$ [$-0.033$] \\
+Equation $F$-Statistic & $1.82$ & $240.25^{***}$ & $0.65$ \\
+Residual Std. Error ($\hat{\sigma}_{\pi}$) & $2.82$ & $2.61$ & $11.44$ \\
+\bottomrule
+\end{tabularx}
+
+\vspace{0.6em}
+
+\textbf{Panel B: Central Bank Base Money Growth Equation ($\Delta g_{H,t}$)}\\[0.3em]
+\begin{tabularx}{\textwidth}{lcccc}
+\toprule
+\textbf{Regressor} & \textbf{Hedge (SolvR $> 0.21$)} & \textbf{Speculative ($0.14 < \text{SolvR} \le 0.21$)} & \textbf{Forced Ponzi (SolvR $\le 0.14$)} \\
+\midrule
+Intercept & $+0.179$ $(0.447)$ & $-1.042$ $(1.026)$ & $+1.787$ $(1.424)$ \\
+World Gold Price ($g_{P,\text{gold},t-1}$) & $-0.095$ $(0.074)$ & $-0.106$ $(0.356)$ & $-0.003$ $(0.259)$ \\
+Structural Imbalance ($\Delta \ln \Theta_{t-1}$) & $+0.024^{***}$ $(0.009)$ & $-0.035$ $(0.025)$ & $+0.017$ $(0.031)$ \\
+Consumer Inflation ($\Delta \pi_{t-1}$) & $-0.128^{**}$ $(0.061)$ & $+0.120$ $(0.107)$ & $-0.086$ $(0.320)$ \\
+Own Money Growth ($\Delta g_{H,t-1}$) & $-0.412^{***}$ $(0.075)$ & $-0.744^{***}$ $(0.087)$ & $-0.478^{***}$ $(0.146)$ \\
+\midrule
+$R^2$ [Adj. $R^2$] & $0.233$ [$0.211$] & $0.567$ [$0.537$] & $0.216$ [$0.138$] \\
+Equation $F$-Statistic & $10.40^{***}$ & $18.69^{***}$ & $2.75^{**}$ \\
+Residual Std. Error ($\hat{\sigma}_{g_H}$) & $5.20$ & $7.62$ & $8.82$ \\
+\bottomrule
+\end{tabularx}
+
+\vspace{0.6em}
+
+\textbf{Panel C: System Covariance Structure and Parameter Constancy Tests}\\[0.3em]
+\begin{tabularx}{\textwidth}{lcccc}
+\toprule
+\textbf{Diagnostic / Test Metric} & \textbf{Hedge Regime} & \textbf{Speculative Regime} & \textbf{Forced Ponzi Regime} & \textbf{System Joint Test} \\
+\midrule
+Effective Observations ($T_m$) & $142$ ($57.0\%$) & $62$ ($24.9\%$) & $45$ ($18.1\%$) & $N = 249$ \\
+Covariance Determinant ($|\hat{\Sigma}_m|$) & $1.12 \times 10^4$ & $4.85 \times 10^4$ & $2.71 \times 10^5$ & $24.2\times$ Variance Jump \\
+Max Companion Root (Stability) & $0.621$ & $0.784$ & $0.712$ & All Moduli $< 1$ \\
+\midrule
+\multicolumn{4}{l}{\textbf{Cross-Regime Parameter Constancy Test} ($H_0: \mathbf{\Phi}_{\text{Hedge}} = \mathbf{\Phi}_{\text{Spec}} = \mathbf{\Phi}_{\text{Ponzi}}$)} & \textbf{LR Stat:} $146.38^{***}$ \\
+\multicolumn{4}{l}{Degrees of Freedom: $\text{df} = 40$, Asymptotic $p$-value: $p < 0.0001$} & \textbf{Decision:} Reject Equality \\
+\bottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{X}
+\footnotesize \textbf{Notes:} Conditional Least Squares (CLS) estimates of the 3-regime TVAR(1) across Minskyan solvency regimes partitioned by lagged Central Bank solvency ($\text{SolvR}_{t-1} \equiv e_{t-1} IR_{t-1} / M_{1,t-1}$). Endogenous system vector: $[g_{P,\text{gold},t}, \Delta \ln \Theta_t, \Delta \pi_t, \Delta g_{H,t}]'$. Panels~A and B display the focal behavioral equations governing forward monetary pass-through and defensive reverse accommodation. Standard errors reported in parentheses. $^{*} p < 0.10$, $^{**} p < 0.05$, $^{***} p < 0.01$. In the Hedge regime, base money expansion exerts a statistically insignificant effect on consumer inflation ($\beta = +0.056, t = 1.38, p = 0.170$), confirming that money creation does not accelerate inflation when foreign reserve backing is preserved. In the Speculative regime, international gold price inflation passes aggressively into domestic inflation ($\beta = +0.897, t = 7.36, p < 0.0001$), with equation $R^2 = 0.944$. In the Forced Ponzi regime, structural price volatility explodes (residual standard error $\hat{\sigma}_{\pi} = 11.44$, compared to $2.82$ in Hedge), expanding the generalized residual variance $|\hat{\Sigma}|$ by $24.2$-fold. Panel~C reports companion system diagnostics and a Likelihood Ratio test of cross-regime parameter constancy, decisively rejecting the linear null hypothesis ($p < 0.0001$). Primary data from Central Bank of Chile (BCCh), INE, and London Bullion Market (1960:03--1980:12).
+\end{tabularx}
+\end{table}

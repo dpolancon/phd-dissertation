@@ -1,0 +1,16 @@
+System,Relation,Lag_k,Is_Admissible,F_stat,p_value,Sum_Beta,Sign,Signif_Class,Stability_Class
+Step 4: Unified Real Dual Economy,Base Money -> Manufacturing,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 4: Unified Real Dual Economy,Manufacturing -> Base Money,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 4: Unified Real Dual Economy,Base Money -> Mining,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 4: Unified Real Dual Economy,Mining -> Base Money,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 4: Unified Real Dual Economy,Manufacturing -> CPI Inflation,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 4: Unified Real Dual Economy,Import Imbalance -> Manufacturing,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 5: Unified External Cost-Push Belt,Inflation -> World Gold,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 5: Unified External Cost-Push Belt,Base Money -> World Gold,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 5: Unified External Cost-Push Belt,Import Imbalance -> CPI Inflation,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 5: Unified External Cost-Push Belt,Exchange Rate -> CPI Inflation,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 5: Unified External Cost-Push Belt,CPI Inflation -> Exchange Rate,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 5: Unified External Cost-Push Belt,Exchange Rate -> Base Money,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 6: Unified Central Bank Solvency System,Solvency Depletion -> Base Money,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 6: Unified Central Bank Solvency System,Base Money -> Solvency,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE
+Step 6: Unified Central Bank Solvency System,CPI Inflation -> Solvency,NA,FALSE,NA,NA,NA,NA,NOT_EVALUABLE,NOT_EVALUABLE

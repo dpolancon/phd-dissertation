@@ -1,0 +1,169 @@
+\section{Stylized Facts, Empirical Puzzle \& Tournament Architecture}
+\label{sec:empirical_strategy}
+
+\subsection{Descriptive Grounding and the Four Stylized Facts}
+\label{sec:stylized_facts}
+
+\textbf{4.1} Before submitting rival theories to formal econometric testing, we establish the physical and macroeconomic baseline of the Unidad Popular (1970--1973). Following Stephen Marglin's pedagogical framework, Table~\ref{tab:marglin_grounding} reports the raw macroeconomic and sectoral trajectory across the four distinct historical phases of the UP administration: the transition (1970 Q4), the wage-led reactivation (1971 Q4), the balance-of-payments crisis and bosses' lockout (1972 Q4), and the hyperinflationary breakdown prior to the coup (1973 Q3).
+
+\input{tables/tab01_marglin_grounding.tex}
+
+\textbf{4.2} The descriptive baseline in Table~\ref{tab:marglin_grounding} exposes four empirical regularities. For each stylized fact, we contrast the superficial correlation that seduces orthodox accounts into an illusion of causality \citep{BlancoMatute2018} with the structural anomaly that points toward balance-sheet financial subordination:
+
+\begin{itemize}[leftmargin=2em]
+	\item \textbf{Stylized Fact 1: The Money--Inflation Coincidence vs. LLR Accommodation.} In high-frequency monthly data, base money growth ($g_{H,m}$) and inflation ($\pi_m$) accelerate together in 1972--1973. Mainstream accounts \citep{Edwards2024} treat this co-movement as proof of unforced fiscal printing ($g_H \to \pi$). However, monthly temporal tracking reveals that base money expansion consistently lagged currency depreciation on the parallel market ($e_m$) and physical supply breakdowns. The Central Bank was not initiating money creation; it acted as the Lender of Last Resort (LLR), forced to inject emergency liquidity to prevent systemic firm insolvencies caused by foreign exchange exhaustion.
+	\item \textbf{Stylized Fact 2: The 1971 Expansion---Capacity Reactivation vs. Austrian Malinvestment.} Real manufacturing output surged $+31.3\%$ in 1971 before collapsing in 1972--1973. While \citet{EspinosaVejar2025} interpret this expansion as an Austrian artificial credit boom that distorted capital roundaboutness, national accounts data refutes the premise: fixed machinery investment contracted by $-2.3\%$ in 1971, while industrial capacity utilization surged to $98.44\%$ \citep{Braun2000}. The 1971 boom was a wage-led reactivation of existing idle plant capacity, not a capital-deepening boom.
+	\item \textbf{Stylized Fact 3: The Reserve Drain Amidst a Copper Boom.} Central Bank dollar reserves collapsed by over $80\%$ between November 1970 and late 1972 despite historically elevated world copper prices (\$0.47/lb in 1970--1971, rising to \$0.88/lb in 1973). Mainstream claims that reserves were drained by frivolous consumer imports \citep{DornbuschEdwards1990} ignore the structural \textbf{import composition chokehold ($R_m$)}: the U.S. credit blockade forced the UP to pay cash dollars for all food, fuel, and replacement machinery imports, draining reserves regardless of copper earnings.
+	\item \textbf{Stylized Fact 4: The Minskian Ponzi Descent.} As foreign exchange reserves depleted and transport strikes paralyzed distribution in October 1972, the central bank was forced to monetize enterprise deficits. The Solvency Ratio ($\text{SolvR}_m \equiv \frac{e_m \cdot IR_m}{M_m}$) breached its critical threshold ($\hat{\gamma}_2 = 0.28$), plunging the macro-system into Foley's (2003) \textbf{Ponzi regime}, where unbacked liquidity passes directly into price acceleration.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.62, every node/.style={transform shape}]
+\draw[->, thick] (0,0) -- (6.5,0) node[right] {\footnotesize Time (1970--73)};
+\draw[->, thick] (0,0) -- (0,4.2) node[above] {\footnotesize Index ($1970=100$)};
+\draw[very thick, BrickRed] (0,1) -- (2,1.2) -- (3.5,2.2) -- (5,4.0) node[above left, font=\scriptsize] {$e_{\text{par}} / e_{\text{off}}$ Gap};
+\draw[thick, Cerulean, dashed] (0,1) -- (2,1.1) -- (3.5,1.6) -- (5,3.2) node[below right, font=\scriptsize] {Base Money $H_m$};
+\node[font=\tiny, fill=white, draw=gray] at (3.2,0.4) {Exchange leads Money};
+\end{tikzpicture}
+\caption{Fact 1: Exchange Rate leads Money}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.62, every node/.style={transform shape}]
+\draw[->, thick] (0,0) -- (6.5,0) node[right] {\footnotesize Time (1970--73)};
+\draw[->, thick] (0,0) -- (0,4.2) node[above] {\footnotesize Level / Growth (\%)};
+\draw[very thick, ForestGreen] (0,2.5) -- (2,3.8) -- (3.5,3.2) -- (5,2.0) node[right, font=\scriptsize] {Capacity $u_t$ ($98.4\%$)};
+\draw[thick, BrickRed, dotted] (0,2.0) -- (2,1.4) -- (3.5,1.0) -- (5,0.6) node[right, font=\scriptsize] {Investment $\Delta K$ ($-2.3\%$)};
+\node[font=\tiny, fill=white, draw=gray] at (3.2,0.4) {Reactivation, not Deepening};
+\end{tikzpicture}
+\caption{Fact 2: Capacity Peak vs. Negative GFCF}
+\end{subfigure}
+\vspace{0.3cm}
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.62, every node/.style={transform shape}]
+\draw[->, thick] (0,0) -- (6.5,0) node[right] {\footnotesize Time (1970--73)};
+\draw[->, thick] (0,0) -- (0,4.2) node[above] {\footnotesize USD Millions / Price};
+\draw[very thick, DarkOrchid] (0,2.0) -- (2,2.0) -- (3.5,2.1) -- (5,3.8) node[right, font=\scriptsize] {Copper Price $P^{\text{Cu}}$};
+\draw[thick, BrickRed] (0,3.5) -- (2,2.0) -- (3.5,0.8) -- (5,0.3) node[right, font=\scriptsize] {Reserves $IR_t$ ($-80\%$)};
+\node[font=\tiny, fill=white, draw=gray] at (3.2,0.4) {Import Chokehold $R_m$};
+\end{tikzpicture}
+\caption{Fact 3: Copper Boom vs. Reserve Drain}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.62, every node/.style={transform shape}]
+\draw[->, thick] (0,0) -- (6.5,0) node[right] {\footnotesize Time (1970--73)};
+\draw[->, thick] (0,0) -- (0,4.2) node[above] {\footnotesize Solvency Ratio ($\text{SolvR}$)};
+\draw[dashed, gray] (0,2.5) -- (6,2.5) node[right, font=\tiny] {$\gamma_1 = 0.62$};
+\draw[dashed, BrickRed] (0,1.2) -- (6,1.2) node[right, font=\tiny] {$\gamma_2 = 0.28$ (Ponzi)};
+\draw[very thick, Cerulean] (0,3.6) -- (2,2.1) -- (3.5,0.7) -- (5,0.2);
+\node[font=\tiny, fill=white, draw=gray] at (3.2,3.2) {Ponzi Descent in 1972};
+\end{tikzpicture}
+\caption{Fact 4: Central Bank Solvency Trajectory}
+\end{subfigure}
+\caption{Visual-First Stylized Facts of the Unidad Popular Macroeconomic Trajectory (1970--1973).}
+\label{fig:stylized_facts_2x2}
+\end{figure}
+
+\subsection{Neo-Lakatosian Tournament Design and Competing Causal Orderings}
+\label{sec:tournament_design}
+
+\textbf{4.6} Following \citet{KingSznajder2006}, we operationalize the three rival traditions as competing causal structures characterized by distinct zero restrictions on temporal precedence:
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.75, every node/.style={transform shape, font=\footnotesize}]
+\node[draw, rectangle, rounded corners, fill=panel, align=center] (def) at (0,3) {Fiscal\\Deficit};
+\node[draw, rectangle, rounded corners, fill=panel, align=center] (gm) at (0,1.5) {Money\\Growth ($g_M$)};
+\node[draw, rectangle, rounded corners, fill=panel, align=center] (pi) at (0,0) {Inflation\\($\pi$)};
+\draw[-{Latex[length=2mm]}, thick] (def) -- (gm);
+\draw[-{Latex[length=2mm]}, thick] (gm) -- (pi);
+\end{tikzpicture}
+\caption{$H_1$: Monetarist}
+\end{subfigure}
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.75, every node/.style={transform shape, font=\footnotesize}]
+\node[draw, rectangle, rounded corners, fill=panel, align=center] (cr) at (0,3) {Artificial\\Credit};
+\node[draw, rectangle, rounded corners, fill=panel, align=center] (inv) at (0,1.5) {Malinvestment\\($\Delta K \gg 0$)};
+\node[draw, rectangle, rounded corners, fill=panel, align=center] (bust) at (0,0) {Bust / Velocity\\Collapse ($v$)};
+\draw[-{Latex[length=2mm]}, thick] (cr) -- (inv);
+\draw[-{Latex[length=2mm]}, thick] (inv) -- (bust);
+\end{tikzpicture}
+\caption{$H_2$: Austrian ABCT}
+\end{subfigure}
+\begin{subfigure}[b]{0.34\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.75, every node/.style={transform shape, font=\footnotesize}]
+\node[draw, rectangle, rounded corners, fill=panelb, align=center] (ext) at (-1.2,3) {World Money\\Shocks ($g_e, g_{IR}$)};
+\node[draw, rectangle, rounded corners, fill=panelb, align=center] (dist) at (1.2,3) {Distributive\\Conflict ($\omega$)};
+\node[draw, rectangle, rounded corners, fill=panelc, align=center] (solv) at (-1.2,1.5) {Solvency\\$\text{SolvR}_t \le \gamma_S$};
+\node[draw, rectangle, rounded corners, fill=panelc, align=center] (gm3) at (1.2,1.5) {LLR Money\\Accom. ($g_M$)};
+\node[draw, rectangle, rounded corners, fill=stress, align=center] (pi3) at (0,0) {Regime Inflation\\$\pi_t(\text{SolvR})$};
+\draw[-{Latex[length=2mm]}, thick] (ext) -- (solv);
+\draw[-{Latex[length=2mm]}, thick] (dist) -- (gm3);
+\draw[-{Latex[length=2mm]}, thick] (solv) -- (pi3);
+\draw[-{Latex[length=2mm]}, thick] (gm3) -- (pi3);
+\draw[-{Latex[length=2mm]}, dashed] (pi3) to [bend right=45] (gm3);
+\end{tikzpicture}
+\caption{$H_3$: Structural-Dependency}
+\end{subfigure}
+\caption{Causal Directed Acyclic Graphs (DAGs) of the Competing Research Traditions.}
+\label{fig:causal_dags}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Hypothesis Tournament Zero Restrictions and Empirical Decision Rules}
+\label{tab:tournament_restrictions}
+\begin{tabular}{p{3.2cm}p{3.8cm}p{3.8cm}p{3.8cm}}
+\toprule
+\textbf{Dimension} & \textbf{$H_1$: Monetarist \citep{Edwards2024}} & \textbf{$H_2$: Austrian \citep{EspinosaVejar2025}} & \textbf{$H_3$: Structural-Dependency (Ours)} \\
+\midrule
+\textbf{Hard Core} & Exogenous money printing; quantity theory pass-through. & Artificial credit causes malinvestment; inevitable bust. & Endogenous money accommodation under world-money constraint. \\
+\textbf{Accommodation Restriction} & $H_0: \pi_{t-1} \to g_M = 0$ (Money is not accommodated). & $H_0: \pi_{t-1} \to g_M = 0$ (Credit is uncaused driver). & \textbf{Reject $H_0$}: $\pi_{t-1} \to g_M > 0$ ($p < 0.001$, central bank accommodates). \\
+\textbf{Transmission Speed} & Fast 1-year pass-through: $g_{M,t-1} \to \pi_t > 0$. & Fast credit transmission into prices and capital. & \textbf{Delayed}: $g_{M,t-1}$ inert; transmission delayed to lag 2 ($p = 0.008$). \\
+\textbf{Capital Deepening} & Output boom is short-run monetary illusion. & \textbf{Requires}: Gross fixed investment spikes ($\Delta K \gg 0$). & \textbf{Idle capacity}: $\Delta K \le 0$ while capacity utilization $u \uparrow 98.44\%$. \\
+\textbf{Threshold Non-Linearity} & Linear pass-through across all reserve levels ($\beta_1 = \beta_2$). & Linear price distortion driven by credit and velocity. & \textbf{Regime shift}: $\beta_{\text{Ponzi}} \gg \beta_{\text{Hedge}} \approx 0$ at $\text{SolvR}_t \le \gamma_S$. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Econometric Methodology: The Monthly Threshold VAR Specification}
+\label{sec:tvar_methodology}
+
+\textbf{4.7} To evaluate the non-linear regime-switching dynamics of $H_3$, we implement a Threshold Vector Autoregressive model (TVAR) following the econometric framework of \citet{ClavijoCortesKappesRochon2025}. High-frequency monthly data ($N \approx 240$, 1960--1980) provides the degrees of freedom required to estimate multi-regime models without cell-size collapse under standard sample trimming ($\epsilon = 0.15$).
+
+\textbf{4.8} The monthly TVAR system is specified as:
+\begin{equation}
+y_m = \sum_{k=1}^K \left[\Pi_{c,k} + \sum_{j=1}^p \Pi_{j,k} y_{m-j} + e_{m,k}\right] I\{\gamma_{k-1} < \text{SolvR}_{m-d} \le \gamma_k\}
+\label{eq:tvar_model}
+\end{equation}
+where:
+\begin{itemize}[leftmargin=2em]
+	\item $y_m = [\text{CapImp}_m,\; \text{FiscalDeficit}_m,\; g_{H,m},\; \pi_m]'$ is the endogenous vector containing import capacity growth, fiscal deficit share, base money growth, and CPI inflation.
+	\item $\text{SolvR}_{m-d} \equiv \frac{e_{m-d} \cdot IR_{m-d}}{M_{m-d}}$ is the lagged threshold variable governing regime transitions.
+	\item $K \in \{1, 2, 3\}$ allows nested testing of a \textbf{3-Regime TVAR} (Hedge vs. Speculative vs. Ponzi) against a \textbf{2-Regime TVAR} (Solvent vs. Insolvent) and the \textbf{1-Regime Linear Null}.
+	\item $\Pi_{c,k}$ and $\Pi_{j,k}$ are regime-specific constant vectors and lag coefficient matrices.
+	\item $e_{m,k} \sim \mathcal{N}(0, \Sigma_k)$ captures heteroscedastic covariance structures across regimes.
+\end{itemize}
+
+\textbf{4.9} Identification of structural shocks is achieved through a recursive Cholesky decomposition ordering:
+\begin{equation}
+\text{Import Capacity } (\text{CapImp}_m) \longrightarrow \text{Fiscal Deficit } (\text{Def}_m) \longrightarrow \text{Base Money } (g_{H,m}) \longrightarrow \text{CPI Inflation } (\pi_m)
+\end{equation}
+This ordering reflects the structural political economy sequence: external import bottlenecks and fiscal constraints are determined first, the central bank adjusts liquidity ($g_H$) as an intermediate accommodation instrument, and prices ($\pi$) register the final systemic response.
+
+\textbf{4.10} Following \citet{Koop1996} and \citet{ClavijoCortesKappesRochon2025}, we compute regime-dependent Generalized Impulse Response Functions (GIRFs) to trace how a monetary or external shock transmits conditionally when the economy resides in Hedge, Speculative, or Ponzi states.
+
+
+\textbf{4.11} All nominal series pre-1975 are normalized across currency re-denominations ($1,000\text{ Old Pesos} \to 1\text{ Escudo}$ in 1960; $1,000\text{ Escudos} \to 1\text{ Modern Peso}$ in 1975). This multi-frequency dataset provides the empirical foundation for testing the tournament hypotheses.

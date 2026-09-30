@@ -1,0 +1,25 @@
+System,Lag_k,Is_K_Star,SBIC,Sys_BG_pval,Sys_BG_pass,All_Eqs_pass,Min_Eq_pval,Max_Root,Stability,Obs_Eff,Total_Params,Resid_DF
+Step 1: Master Nominal Core,1,FALSE,7.3826,0,FALSE,FALSE,0,0.5598,STABLE,250,6,247
+Step 1: Master Nominal Core,2,FALSE,7.2965,0,FALSE,FALSE,0,0.8122,STABLE,249,10,244
+Step 1: Master Nominal Core,3,TRUE,7.2504,0.1074,TRUE,FALSE,0.0024,0.8971,STABLE,248,14,241
+Step 1: Master Nominal Core,4,FALSE,7.264,0.7891,TRUE,TRUE,0.2008,0.9391,STABLE,247,18,238
+Step 2: Banking Bifurcation A (Credit Lead),1,TRUE,10.2883,0,FALSE,FALSE,0,0.6543,STABLE,179,12,175
+Step 2: Banking Bifurcation A (Credit Lead),2,FALSE,10.3214,6e-4,FALSE,FALSE,4e-4,0.8427,STABLE,178,21,171
+Step 2: Banking Bifurcation A (Credit Lead),3,FALSE,10.304,0.1939,TRUE,TRUE,0.1054,0.9193,STABLE,177,30,167
+Step 2: Banking Bifurcation A (Credit Lead),4,FALSE,10.4823,0.0808,TRUE,TRUE,0.1925,0.9473,STABLE,176,39,163
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),1,TRUE,10.2883,0,FALSE,FALSE,2e-4,0.6543,STABLE,179,12,175
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),2,FALSE,10.3214,6e-4,FALSE,FALSE,4e-4,0.8427,STABLE,178,21,171
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,FALSE,10.304,0.1939,TRUE,TRUE,0.1054,0.9193,STABLE,177,30,167
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),4,FALSE,10.4823,0.0808,TRUE,FALSE,0.032,0.9473,STABLE,176,39,163
+Step 4: Unified Real Dual Economy,1,FALSE,24.8432,0,FALSE,FALSE,0,0.5843,STABLE,250,30,244
+Step 4: Unified Real Dual Economy,2,TRUE,24.8285,0,FALSE,FALSE,0,0.8198,STABLE,249,55,238
+Step 4: Unified Real Dual Economy,3,FALSE,24.9573,0,FALSE,FALSE,1e-4,0.8959,STABLE,248,80,232
+Step 4: Unified Real Dual Economy,4,FALSE,25.1667,0.0033,FALSE,FALSE,0.0011,0.9428,STABLE,247,105,226
+Step 5: Unified External Cost-Push Belt,1,TRUE,22.1091,0,FALSE,FALSE,0,0.5752,STABLE,250,30,244
+Step 5: Unified External Cost-Push Belt,2,FALSE,22.2263,0,FALSE,FALSE,0,0.8118,STABLE,249,55,238
+Step 5: Unified External Cost-Push Belt,3,FALSE,22.4797,0,FALSE,FALSE,0,0.9082,STABLE,248,80,232
+Step 5: Unified External Cost-Push Belt,4,FALSE,22.2918,0,FALSE,FALSE,0,0.9165,STABLE,247,105,226
+Step 6: Unified Central Bank Solvency System,1,TRUE,21.1919,0,FALSE,FALSE,0,0.5707,STABLE,250,30,244
+Step 6: Unified Central Bank Solvency System,2,FALSE,21.3319,0,FALSE,FALSE,0,0.82,STABLE,249,55,238
+Step 6: Unified Central Bank Solvency System,3,FALSE,21.5111,0,FALSE,FALSE,0,0.9083,STABLE,248,80,232
+Step 6: Unified Central Bank Solvency System,4,FALSE,21.3263,0,FALSE,FALSE,0,0.9102,STABLE,247,105,226

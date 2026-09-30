@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.92}
+\caption{Integration Order Diagnostics for Central Bank Solvency Variables (1960:01--1980:12)}
+\label{tab:solvency_unit_root}
+\label{tab:tab03_solvency_unit_root}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccr}
+\toprule
+\textbf{Variable / Series} & \multicolumn{2}{c}{\textbf{ADF Test}} & \multicolumn{2}{c}{\textbf{Phillips--Perron}} & \multicolumn{2}{c}{\textbf{KPSS Test}} & \textbf{Order / Classification} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+ & \textbf{Stat.} & \textbf{$p$-val} & \textbf{Stat.} & \textbf{$p$-val} & \textbf{Level} & \textbf{Trend} & \\
+\midrule
+Solvency Ratio ($S_t$, levels) & -0.564 & 0.978 & -1.291 & 0.983 & 1.726$^{***}$ & 0.494$^{***}$ & $I(1)$ (Non-stationary) \\
+Solvency Growth Gap ($\Delta s_t$, diff.) & -4.941$^{***}$ & $<0.01$ & -14.011$^{***}$ & $<0.01$ & 0.570$^{*}$ & 0.082 & $I(0)$ (Stationary) \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{\textwidth}
+\vspace{0.4em}
+\footnotesize \textit{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). The level solvency ratio is defined as $S_t \equiv (e_t \cdot IR_t) / (H_t \cdot 1000)$. The Solvency Growth Gap is defined as the exact log difference $\Delta s_t \equiv g^F_t - g^H_t = \Delta \ln S_t \times 100$. Augmented Dickey--Fuller (ADF) tests estimated with constant drift; lag orders selected via Schwarz Bayesian Information Criterion (SBIC). Phillips--Perron (PP) tests employ Newey--West Bartlett kernel bandwidth. For ADF and PP, the null hypothesis is a unit root ($I(1)$); for KPSS, the null hypothesis is stationarity ($I(0)$). Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. The test battery indicates that the level stock $S_t$ contains a stochastic trend (failing to reject the unit-root null and rejecting KPSS stationarity), whereas the flow growth gap $\Delta s_t$ rejects the unit root and fails to reject trend stationarity, providing evidence consistent with covariance stationarity ($I(0)$) and satisfying the ergodicity preconditions for \citet{Hansen1997,Hansen2000} threshold estimation.
+\end{minipage}
+\end{table}

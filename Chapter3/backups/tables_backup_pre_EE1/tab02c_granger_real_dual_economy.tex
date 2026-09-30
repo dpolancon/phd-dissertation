@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.92}
+\caption{Toda--Yamamoto Granger Causality: Real Sector Dual Economy (Manufacturing vs.\ Enclave Mining, $N=250$)}
+\label{tab:granger_real_dual_economy}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Dependent Variable (DV)} & \textbf{Regressor (INDV)} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$\chi^2$ (MWALD)} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Direction} \\
+\midrule
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 0.663 & 0.663 & 0.4161 & -0.088 & No \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 3 & 7.149$^{***}$ & 21.446 & 0.0001 & -0.170 & $g_H \to \text{Manuf}$ \\
+Base Money Growth ($\Delta g_{H,t}$) & Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & 1 & 1.828 & 1.828 & 0.1776 & -0.047 & No \\
+Mining Extraction ($\Delta g_{\text{Mining},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 1 & 0.129 & 0.129 & 0.7195 & +0.039 & No \\
+Mining Extraction ($\Delta g_{\text{Mining},t}$) & Base Money Growth ($\Delta g_{H,t}$) & 3 & 0.400 & 1.201 & 0.7528 & +0.076 & No \\
+Base Money Growth ($\Delta g_{H,t}$) & Mining Extraction ($\Delta g_{\text{Mining},t}$) & 1 & 0.023 & 0.023 & 0.8795 & -0.005 & No \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 4.364$^{**}$ & 4.364 & 0.0378 & -0.045 & $\Theta \to \text{Manuf}$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & 1 & 2.122 & 2.122 & 0.1465 & -0.338 & No \\
+Mining Extraction ($\Delta g_{\text{Mining},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 0.020 & 0.020 & 0.8869 & -0.002 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Mining Extraction ($\Delta g_{\text{Mining},t}$) & 1 & 2.079 & 2.079 & 0.1506 & -0.325 & $Mining \to \Theta$ \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Mining Extraction ($\Delta g_{\text{Mining},t}$) & 1 & 0.437 & 0.437 & 0.5094 & +0.040 & No \\
+Inflation ($\Delta \pi_t$) & Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & 1 & 10.022$^{***}$ & 10.022 & 0.0017 & -0.110 & $\text{Manuf} \to \pi$ \\
+Manufacturing Output ($\Delta g_{\text{Manuf},t}$) & Inflation ($\Delta \pi_t$) & 1 & 0.134 & 0.134 & 0.7150 & +0.036 & No \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). 5-variable system $[\pi_t, g_{H,t}, \Delta \ln \Theta_t, g_{\text{Manuf},t}, g_{\text{Mining},t}]'$ evaluated via Toda--Yamamoto ($k+d_{\max}$) augmented levels VAR ($d_{\max}=1$). Base money creation reactivated light manufacturing idle capacity ($g_H \to \text{Manuf}$, $F = 7.149, p = 0.0001$ at lag 3), while enclave mining remained completely decoupled ($p = 0.72$). Real structural trade imbalances throttled factory output ($\Theta \to \text{Manuf}$, $F = 4.364, p = 0.0378$), and manufacturing expansion dampened domestic inflation ($\text{Manuf} \to \pi$, $F = 10.022, p = 0.0017$). Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$.
+\end{minipage}
+\end{table}

@@ -1,0 +1,4 @@
+System,Full_Adm_Count,Full_Adm_Lags,Pre73_Adm_Count,Pre73_Adm_Lags,Post73_Adm_Count,Post73_Adm_Lags,Classification
+Step 4: Unified Real Dual Economy,0,NONE,0,NONE,0,NONE,PERSISTENCE_REMAINS_BOTH_SIDES
+Step 5: Unified External Cost-Push Belt,0,NONE,0,NONE,0,NONE,PERSISTENCE_REMAINS_BOTH_SIDES
+Step 6: Unified Central Bank Solvency System,0,NONE,1,3,0,NONE,PERSISTENCE_DISAPPEARS_PRE73

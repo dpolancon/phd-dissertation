@@ -1,0 +1,113 @@
+% =============================================================
+% config/style.tex
+% Dissertation-level presentation settings.
+% Philosophy: configuration, not templating.
+% Goal: look like the frozen working papers placed into a volume.
+% =============================================================
+
+% ---- Abstract environment (not defined in book class) ---------
+% The frozen chapters use \begin{abstract}...\end{abstract}.
+% Replicate the article-class abstract style: indented, smaller text.
+\newenvironment{abstract}{%
+  \small
+  \begin{center}{\bfseries Abstract}\end{center}%
+  \begin{quotation}\noindent
+}{%
+  \end{quotation}%
+  \normalsize
+}
+
+% ---- Chapter heading hierarchy --------------------------------
+% Opening hierarchy:
+%   Essay \thechapter
+%   [Title]
+% For unnumbered chapters (e.g. Introduction):
+%   [Title] directly without label.
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries}
+  {Essay \thechapter}
+  {0.5ex}
+  {\LARGE\bfseries}
+  []
+
+\titlespacing*{\chapter}
+  {0pt}          % left
+  {2.5ex}        % before-sep
+  {2ex}          % after-sep
+
+\titleformat{name=\chapter,numberless}[block]
+  {\normalfont\LARGE\bfseries}
+  {}
+  {0pt}
+  {}
+  []
+
+\titlespacing*{name=\chapter,numberless}
+  {0pt}
+  {2.5ex}
+  {2ex}
+
+% ---- Table of Contents Chapter formatting --------------------
+% Format chapter entries cleanly as:
+%   Introduction ............................ p
+%   Essay 1 — Title ......................... p
+% without redundant duplicate number boxes.
+\titlecontents{chapter}[0pt]
+  {\addvspace{1.2ex}\bfseries}
+  {}
+  {}
+  {\hfill\contentspage}
+
+% ---- Hyperref / Subappendices anchor restore hook ------------
+% Fix appendix.sty leak in subappendices with hyperref:
+% appendix.sty sets \Hy@chapapp to \Hy@appendixstring in subappendices,
+% but never restores it to "chapter" when the environment ends.
+\makeatletter
+\AddToHook{env/subappendices/after}{%
+  \gdef\Hy@chapapp{chapter}%
+  \gdef\theHchapter{\arabic{chapter}}%
+  \gdef\theHsection{\theHchapter.\arabic{section}}%
+}
+\makeatother
+
+% ---- Section heading style (standard, inherited by all chapters) --
+% Do not override \section format — let each chapter's sections
+% use standard article-style weights, which is what the frozen papers use.
+
+% ---- TOC depth -----------------------------------------------
+\setcounter{tocdepth}{2}      % show chapters, sections, subsections
+\setcounter{secnumdepth}{3}   % number down to subsubsections
+
+% ---- Page geometry (already set in packages.tex) --------------
+% No additional geometry overrides needed.
+
+% ---- Paragraph behavior --------------------------------------
+% Ch1 and Ch2 use setspace+indent (LaTeX default indented paragraphs).
+% Ch3 overrides to parskip+noindent within its integration scope.
+% Dissertation default: standard LaTeX paragraph behavior.
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt plus 0.5pt}
+
+% ---- Page numbering ------------------------------------------
+% Front matter: roman (controlled in dissertation.tex)
+% Chapters: arabic (controlled in dissertation.tex)
+% This file does not set numbering; dissertation.tex manages the switch.
+
+% ---- Headers & footers ---------------------------------------
+% Plain: page number centered in footer, no running headers.
+% Keeps the volume looking like a working paper.
+\pagestyle{plain}
+
+% ---- Figure numbering: chapter-prefixed ----------------------
+% Standard book class behavior: figures numbered as Figure 1.1, 1.2, etc.
+% No override needed — book class provides this automatically.
+
+% ---- Caption style -------------------------------------------
+% Inherit from caption package defaults (compact, no bold label override).
+\captionsetup{font=small, labelfont=bf, labelsep=period}
+
+% ---- Hyperref bookmark depth ---------------------------------
+\hypersetup{bookmarksdepth=3}
+
+% ---- List spacing (tighten slightly to match paper style) ----
+\setlist{noitemsep, topsep=4pt}

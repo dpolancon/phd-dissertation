@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.92}
+\caption{Admissible Linear Granger Directional Precedence and Evidence Hierarchy}
+\label{tab:core_granger_evidence}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Direction Tested} & \textbf{Information Set / Regressors} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Diagnostic Status} & \textbf{Evidence Hierarchy} \\
+\midrule
+\multicolumn{8}{l}{\textbf{Panel A: System 1 --- Nominal Core (Full Sample, 1960:01--1980:12, $N=250$, $N_{\text{eff}}=247$)}} \\
+\midrule
+$\pi_t \longrightarrow g_{H,t}$ & $\{\pi_t, g_{H,t}\}$ & 4 & 15.004$^{***}$ & $< 0.0001$ & $+0.680$ & Pass (Sys BG $p=0.548$; Eq $p=0.467$) & \textsc{Robust Linear Result} \\
+$g_{H,t} \longrightarrow \pi_t$ & $\{\pi_t, g_{H,t}\}$ & 4 & 2.718$^{**}$ & 0.0305 & $+0.380$ & Pass (Sys BG $p=0.548$; Eq $p=0.467$) & \textsc{Robust Linear Result} \\
+\midrule
+\multicolumn{8}{l}{\textbf{Panel B: System 2 --- Commercial Banking (M1 Window, 1966:01--1980:12, $N=180$, $N_{\text{eff}}=177$)}} \\
+\midrule
+$g_{M1,t} \longrightarrow g_{H,t}$ & $\{\pi_t, g_{M1,t}, g_{H,t}\}$ & 3 & 3.654$^{**}$ & 0.0138 & $+0.510$ & Pass (Sys BG $p=0.428$; Eq $p=0.289$) & \textsc{Qualified Linear Result} \\
+$g_{H,t} \longrightarrow g_{M1,t}$ & $\{\pi_t, g_{M1,t}, g_{H,t}\}$ & 3 & 3.239$^{**}$ & 0.0236 & $+0.333$ & Pass (Sys BG $p=0.428$; Eq $p=0.289$) & \textsc{Qualified Linear Result} \\
+$\pi_t \longrightarrow g_{M1,t}$ & $\{\pi_t, g_{M1,t}, g_{H,t}\}$ & 3 & 6.842$^{***}$ & 0.0002 & $+0.284$ & Pass (Sys BG $p=0.428$; Eq $p=0.289$) & \textsc{Qualified Linear Result} \\
+$g_{M1,t} \longrightarrow \pi_t$ & $\{\pi_t, g_{M1,t}, g_{H,t}\}$ & 3 & 1.004 & 0.3927 & $+0.444$ & Pass (Sys BG $p=0.428$; Eq $p=0.289$) & Fail to reject ($p > 0.10$) \\
+\midrule
+\multicolumn{8}{l}{\textbf{Panel C: System 6 --- Central Bank Solvency Dynamics (Pre-October 1973 Partition, 1960:02--1973:09, $N_{\text{eff}}=161$)}} \\
+\midrule
+$g_{\text{SolvR\_H},t} \longrightarrow g_{H,t}$ & $\{g_{\text{SolvR\_H}}, g_{P,\text{gold}}, g_e, g_H, \pi\}$ & 3 & 6.983$^{***}$ & 0.0002 & $+0.015$ & Pass (Sys BG $p=0.126$; Min Eq $p=0.056$) & \textsc{Qualified Linear Result} \\
+$g_{H,t} \longrightarrow g_{\text{SolvR\_H},t}$ & $\{g_{\text{SolvR\_H}}, g_{P,\text{gold}}, g_e, g_H, \pi\}$ & 3 & 2.951$^{**}$ & 0.0347 & $-0.837$ & Pass (Sys BG $p=0.126$; Min Eq $p=0.056$) & \textsc{Qualified Linear Result} \\
+$g_{\text{SolvR\_H},t} \longrightarrow g_{e,t}$ & $\{g_{\text{SolvR\_H}}, g_{P,\text{gold}}, g_e, g_H, \pi\}$ & 3 & 3.073$^{**}$ & 0.0297 & $+0.129$ & Pass (Sys BG $p=0.126$; Min Eq $p=0.056$) & \textsc{Qualified Linear Result} \\
+$\pi_t \longrightarrow g_{\text{SolvR\_H},t}$ & $\{g_{\text{SolvR\_H}}, g_{P,\text{gold}}, g_e, g_H, \pi\}$ & 3 & 0.686 & 0.5618 & $+0.667$ & Pass (Sys BG $p=0.126$; Min Eq $p=0.056$) & No predictive relation ($p>0.10$) \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.98\textwidth}
+\vspace{0.4em}
+\footnotesize \textbf{Notes:} Evaluated via standard Granger joint $F$-tests within stationary vector autoregressions on stationary transformed series ($I(0)$). 
+Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. Diagnostic pass requires system-level Breusch--Godfrey residual whitening ($p > 0.05$), minimum equation-level Breusch--Godfrey ($p > 0.05$), and modulus stability ($\max |\lambda| < 1$).
+Each panel reports a single unambiguous inferential lag order selected to ensure residual whitening:
+Panel~A reports the Nominal Core at $k=4$, where residual autocorrelation is fully resolved (at the SBIC lag $k^*=3$, results are qualitatively identical: $\pi \to g_H$ has $F = 20.318, p < 0.0001$ and $g_H \to \pi$ has $F = 5.544, p = 0.0011$).
+Panel~B reports Commercial Banking on un-spliced $M1$ data at $k=3$ within the conditional trivariate VAR(3) $\{\pi_t, g_{M1,t}, g_{H,t}\}$, the lag order achieving residual whitening. At lag $k=3$, narrow-money and base-money growth exhibit bidirectional predictive feedback ($p = 0.0138$ and $p = 0.0236$) and inflation predicts narrow money ($p = 0.0002$), while narrow money does not predict inflation once base money is included in the conditioning set ($F = 1.004, p = 0.3927$). (At SBIC lag $k^*=1$, pairwise estimations yielded $g_{M1} \to g_H: F = 21.453, p < 0.0001$; $g_H \to g_{M1}: F = 15.834, p = 0.0001$; $\pi \to g_{M1}: F = 14.322, p = 0.0002$; $g_{M1} \to \pi: F = 14.004, p = 0.0002$).
+Panel~C reports Central Bank Solvency exclusively for the pre-October 1973 subperiod at $k=3$, which is the unique serial-admissible specification across all tested sample partitions (full-sample linear models exhibit persistent residual autocorrelation and are not used for directional inference; see Appendix~\ref{app:linear_var_diagnostics}). In Panel~C, the positive predictive link $g_{\text{SolvR\_H}} \to g_H$ is driven by lag 3 ($\hat{\beta}_3 = +0.057, p = 0.0033$), while base money growth predictively drains the solvency ratio at lag 2 ($\hat{\beta}_2 = -0.978, p = 0.0074$).
+In accordance with the causal-language contract, Granger causality denotes incremental predictive precedence within a specified stationary information set and does not establish structural causal identification.
+\end{minipage}
+\end{table}

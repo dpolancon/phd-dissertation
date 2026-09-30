@@ -1,0 +1,26 @@
+\section[Monthly Recursive SVAR Event-Study Atlas (1960--1973)]{Monthly Recursive SVAR Event-Study Atlas\\and Discrete Multipliers (1960--1973)}
+\label{app:annual_svar}
+\label{app:recursive_svar}
+
+\textbf{B.1} To evaluate structural parameter stability across historical turning points and trace the dynamic transmission mechanism without the confounding distortions of temporal aggregation, Table~\ref{tab:svar_event_comparison} documents the recursive Structural Vector Autoregression (SVAR) impulse response matrix across four expanding estimation windows extended to a 12-month horizon ($h = 0 \dots 12$), accompanied by the Forecast Error Variance Decomposition (FEVD) of monthly inflation.
+
+\textbf{B.2} Following \citet{ChenFangLiu2021}, \citet{Wright2012}, and \citet{KilianLutkepohl2017}, conventional event-study designs relying on static dummy regressions ($y_t = \alpha + \sum \gamma_j D_{j,t} + \varepsilon_t$) suffer from confounding simultaneous policy shocks, anticipatory leakages, and static truncation. In contrast, under the moving average representation of an SVAR ($y_{t+h} - y_{t-1} = \alpha_h + \theta_h u_t + \dots$), projecting identified structural innovations across event-anchored historical windows isolates exogenous external shocks and captures dynamic multi-period propagation. The structural state vector is specified on stationary monthly series:
+\begin{equation}
+	\mathbf{Y}_t = \big[ \Delta \ln \Theta_t,\; g_{\text{Manuf},t},\; g_{M0,t},\; \pi_t \big]'
+	\label{eq:app_b_svar_vector}
+\end{equation}
+where $\Delta \ln \Theta_t$ is the monthly growth rate of the Real Structural Imbalance ($\Theta_t \equiv M_t / M^{\text{cap}}_t \times 100$, Appendix~\ref{app:archival_codebook}), $g_{\text{Manuf},t}$ is manufacturing output growth, $g_{M0,t}$ is Central Bank base money growth, and $\pi_t$ is monthly consumer inflation. The structural VAR system is formulated as:
+\begin{equation}
+	\mathbf{A}_0 \mathbf{Y}_t = \mathbf{c} + \sum_{j=1}^p \mathbf{A}_j \mathbf{Y}_{t-j} + \mathbf{u}_t, \quad \mathbf{u}_t \sim \mathcal{N}(0, \mathbf{D})
+	\label{eq:app_b_svar_system}
+\end{equation}
+where $\mathbf{D} = \text{diag}(\sigma_1^2, \sigma_2^2, \sigma_3^2, \sigma_4^2)$ is strictly diagonal, guaranteeing that structural innovations $\mathbf{u}_t$ are mutually orthogonal. Contemporaneous interactions are governed by the structural matrix:
+\begin{equation}
+	\mathbf{A}_0 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ -a_{21} & 1 & 0 & 0 \\ -a_{31} & -a_{32} & 1 & 0 \\ -a_{41} & -a_{42} & -a_{43} & 1 \end{bmatrix}
+	\label{eq:app_b_a0_matrix}
+\end{equation}
+The zero contemporaneous restrictions ($a_{12} = a_{13} = a_{14} = a_{23} = a_{24} = a_{34} = 0$) are not arbitrary conventions: they are the exact empirical properties verified by the non-parametric Momentary Conditional Independence (MCI) tests of the Peter-Clark Momentary Conditional Independence (PCMCI) algorithm \citep{Runge2019} in Appendix~\ref{app:causal_pcmci} (Table~\ref{tab:pcmci_monthly_gate} and Figure~\ref{fig:dag_pcmci_monthly_gate}). Because the discovered contemporaneous Directed Acyclic Graph (DAG) is strictly lower-triangular and acyclic, the recursive Cholesky factorization $\mathbf{\Sigma} = \mathbf{P} \mathbf{P}'$ (where $\mathbf{P} = \mathbf{A}_0^{-1} \mathbf{D}^{1/2}$) represents the unique data-certified identification of structural innovations. Structural parameters are estimated recursively across four expanding institutional windows: (i) Expansion (up to Dec 1971, $N=143$), (ii) Pre-Lockout (up to Sep 1972, $N=152$), (iii) Bosses' Lockout (up to Aug 1973, $N=163$), and (iv) Coup and Price Deregulation (up to Dec 1973, $N=167$).
+
+\textbf{B.3} The empirical findings in Table~\ref{tab:svar_event_comparison} establish four key results, with statistical significance evaluated via 68\% bootstrap confidence intervals ($B=500$ replications, \citealp{SimsZha1999}): (1) \textbf{Falsification of Monetarism ($H_1$):} in Window 1, base money explains only $0.11\%$ of inflation variance at $h=1$ and $2.81\%$ at $h=12$, while manufacturing ($5.84\%$) and structural imbalance ($4.88\%$) dominate; (2) \textbf{Emergence of Pass-Through (The External Switch):} structural imbalance shocks produce statistically zero price impact in Window 1 ($-0.0549\%$ at $h=0$, 68\% CI $[-0.20\%, +0.07\%]$, zero contained; and $+0.0009\%$ at $h=12$). Under reserve exhaustion in Windows 2--3, the response flips strictly positive and statistically significant: $+0.2337\%$ at $h=0$ (68\% CI $[+0.01\%, +0.43\%]$, zero excluded) in Window 2, and $+0.2685\%$ at $h=0$ (68\% CI $[+0.04\%, +0.48\%]$, zero excluded), persisting at $h=3$ ($+0.1627\%$, 68\% CI $[+0.04\%, +0.25\%]$) and $h=6$ ($+0.0780\%$, 68\% CI $[+0.01\%, +0.13\%]$) in Window 3; (3) \textbf{Defensive Liquidity Surge ($H_3$):} base money expansion accommodates output growth across all windows ($+0.4331\%$, $+0.3221\%$, $+0.2550\%$, $+0.3264\%$ at $h=0$), with variance explanation reaching $8.19\%$ at $h=12$ in Window 3 as the Central Bank refinanced enterprise payrolls under distribution sabotage; and (4) \textbf{6-Month Stabilization Law:} information propagation stabilizes by month 6 across all windows ($\Delta \text{FEVD}_{12-6} < 0.70\%$), while own-price variance accounts for $97.48\%$ in Window 4 under Decree Law 522 decontrol.
+
+\input{tables/svar_regime_comparison_table.tex}

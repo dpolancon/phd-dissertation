@@ -1,0 +1,25 @@
+System,K,Lag_k,Is_K_Star,BG_stat,BG_df,BG_pval,BG_pass_5pct
+Step 1: Master Nominal Core,2,1,FALSE,85.541,16,0,FALSE
+Step 1: Master Nominal Core,2,2,FALSE,51.533,16,0,FALSE
+Step 1: Master Nominal Core,2,3,TRUE,23.242,16,0.1074,TRUE
+Step 1: Master Nominal Core,2,4,FALSE,11.324,16,0.7891,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),3,1,TRUE,101.328,36,0,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),3,2,FALSE,69.879,36,6e-4,FALSE
+Step 2: Banking Bifurcation A (Credit Lead),3,3,FALSE,43.091,36,0.1939,TRUE
+Step 2: Banking Bifurcation A (Credit Lead),3,4,FALSE,48.424,36,0.0808,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,1,TRUE,101.328,36,0,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,2,FALSE,69.879,36,6e-4,FALSE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,3,FALSE,43.091,36,0.1939,TRUE
+Step 3: Banking Bifurcation B (Multiplier Deconstruction),3,4,FALSE,48.424,36,0.0808,TRUE
+Step 4: Unified Real Dual Economy,5,1,FALSE,309.773,100,0,FALSE
+Step 4: Unified Real Dual Economy,5,2,TRUE,228.74,100,0,FALSE
+Step 4: Unified Real Dual Economy,5,3,FALSE,185.842,100,0,FALSE
+Step 4: Unified Real Dual Economy,5,4,FALSE,142.693,100,0.0033,FALSE
+Step 5: Unified External Cost-Push Belt,5,1,TRUE,310.163,100,0,FALSE
+Step 5: Unified External Cost-Push Belt,5,2,FALSE,265.969,100,0,FALSE
+Step 5: Unified External Cost-Push Belt,5,3,FALSE,247.077,100,0,FALSE
+Step 5: Unified External Cost-Push Belt,5,4,FALSE,165.719,100,0,FALSE
+Step 6: Unified Central Bank Solvency System,5,1,TRUE,314.3,100,0,FALSE
+Step 6: Unified Central Bank Solvency System,5,2,FALSE,283.681,100,0,FALSE
+Step 6: Unified Central Bank Solvency System,5,3,FALSE,243.203,100,0,FALSE
+Step 6: Unified Central Bank Solvency System,5,4,FALSE,182.89,100,0,FALSE
