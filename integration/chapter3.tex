@@ -28,6 +28,25 @@
 \setlength{\parskip}{0.55em}
 \setlength{\parindent}{0pt}
 
+% Keep oversized standalone floats inside the dissertation page.
+% Scale the completed float only when it exceeds the text height; retain
+% every source row, panel, caption and note. Scoped to this essay.
+\newsavebox{\DissertationFloatBox}
+\makeatletter
+\let\dissertation@endfloatbox\@endfloatbox
+\def\@endfloatbox{%
+  \dissertation@endfloatbox
+  \ifdim\dimexpr\ht\@currbox+\dp\@currbox\relax>\textheight
+    \typeout{DISSERTATION: fitting oversized float to page height}%
+    \setbox\DissertationFloatBox\box\@currbox
+    \global\setbox\@currbox\vbox{%
+      \hbox to\columnwidth{\hfil
+        \resizebox*{!}{0.98\textheight}{\usebox{\DissertationFloatBox}}%
+      \hfil}}%
+  \fi
+}
+\makeatother
+
 % ---- Chapter opening (replaces standalone \begin{titlepage}) ----
 \chapter[Essay 3 \textemdash{} Re-visiting the Political Economy of the Rise and Fall of the Unidad Popular: Towards a Global Political Economy Approach]%
   {Re-visiting the Political Economy of the Rise\\

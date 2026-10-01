@@ -34,12 +34,13 @@
 \frontmatter
 \pagenumbering{roman}
 
-% Working title page (temporary — see frontmatter/working-title.tex)
+% Advisor-review title page; institutional approval pages remain deferred.
 \input{frontmatter/working-title}
+
+\input{frontmatter/abstract}
 
 % ============================================================
 % FUTURE FRONT MATTER
-% Abstract
 % Dedication
 % Acknowledgments
 % Institutional pages (committee, copyright, approval/signatures)
@@ -54,12 +55,15 @@
 \clearpage
 \listoffigures
 
-% NOTE on List of Tables:
-% The three chapters contain a substantial number of tables (estimated 40+
-% across all chapters). A \listoftables would be useful and is recommended
-% for the next pass. It is not included in this minimal integration pass
-% because the chapter table captions use varied formats; a review pass
-% to ensure consistent caption formatting is preferable before adding it.
+% ---- List of Tables -----------------------------------------
+\clearpage
+\begingroup
+\makeatletter
+\renewcommand{\@pnumwidth}{2.5em}
+\renewcommand{\@tocrmarg}{3.5em}
+\makeatother
+\listoftables
+\endgroup
 
 % ---- MAIN MATTER -------------------------------------------
 \mainmatter
@@ -77,8 +81,7 @@
 % ---- Essay 3 -----------------------------------------------
 \include{integration/chapter3}
 
-% ============================================================
-% FUTURE CONSOLIDATED DISCUSSION / CONCLUSION
-% ============================================================
+% ---- Consolidated dissertation synthesis --------------------
+\include{backmatter/conclusion}
 
 \end{document}
