@@ -1,0 +1,48 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Multi-Frequency Empirical Dataset Architecture and Archival Provenance}
+\label{tab:multi_frequency_data_inventory}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllllcc}
+\toprule
+\textbf{Frequency Tier} & \textbf{Macroeconomic Domain} & \textbf{Key Variable Code} & \textbf{Archival Source / Repository} & \textbf{Primary Unit} & \textbf{Estimation Span} & \textbf{Order} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Tier 1: High-Frequency Monthly Panel ($N = 156$ Core Estimation Sample, 1966:01--1978:12; Full Span 1900--2026)}} \\[0.2em]
+Monthly & Prices \& Inflation & \texttt{ipc\_monthly\_var\_pct} & Central Bank REST API (\texttt{SieteRestWS}) & \% MoM & 1928:03--2026:07 & $I(0)$ \\
+Monthly & Monetary Base & \texttt{monetary\_base\_emision} & Central Bank REST API (\texttt{SieteRestWS}) & Thousands CLP & 1960:01--2026:07 & $I(1)$ \\
+Monthly & Broad Money ($M1$) & \texttt{m1\_money\_supply} & Central Bank REST API (\texttt{SieteRestWS}) & Thousands CLP & 1965:12--2026:07 & $I(1)$ \\
+Monthly & Exchange Rate & \texttt{usd\_exchange\_rate\_obs} & Central Bank REST API (\texttt{SieteRestWS}) & Escudos / USD & 1960:01--2026:07 & $I(1)$ \\
+Monthly & External Liquidity & \texttt{IR\_usd} (Reserves) & IMF IFS (\texttt{CHL.TRGNV\_REVS.USD.M}) & USD Millions & 1960:01--2026:07 & $I(1)$ \\
+Monthly & World Copper Price & \texttt{copper\_price\_bml} & London Metal Exchange / Central Bank & USD / lb & 1960:01--2026:07 & $I(1)$ \\
+Monthly & World Gold Price & \texttt{gold\_price\_usd} & LBMA / FRED (\texttt{GOLDPMGBD228NLBM}) & USD / oz & 1960:01--2026:07 & $I(1)$ \\
+Monthly & Manufacturing Output & \texttt{manuf} & \textit{Estadística Chilena} / Díaz-Bahamonde & Nov 1970 = 100 & 1927:01--2021:12 & $I(1)$ \\
+Monthly & Mining Production & \texttt{mining} & \textit{Estadística Chilena} / Díaz-Bahamonde & Nov 1970 = 100 & 1927:01--1990:06 & $I(1)$ \\
+Monthly & Real Trade Activity & \texttt{exports}, \texttt{imports} & Central Bank Customs / Díaz-Bahamonde & Real Index & 1927:01--1990:09 & $I(1)$ \\
+Monthly & Capacity to Import & \texttt{import\_capacity\_idx} & Prebisch-ECLAC Purchasing Power Formula & Nov 1970 = 100 & 1966:01--1978:12 & $I(0)$ \\
+Monthly & Structural Imbalance & \texttt{structural\_imbalance\_idx} & Relative Price Wedge ($P^{\text{CL}} / [e \cdot P^{\text{US}}_W]$) & Nov 1970 = 100 & 1966:01--1978:12 & $I(0)$ \\
+Monthly & US Wholesale Prices & \texttt{us\_ppi\_all\_commodities} & BLS / FRED (\texttt{PPIACO}) / BCCh API & Nov 1970 = 100 & 1913:01--2026:07 & $I(1)$ \\
+Monthly & Equities (Santiago) & \texttt{igpa\_idx} & Central Bank \textit{Boletín} / Girardi-Bowles & Aug 1970 = 100 & 1970:01--2026:07 & $I(1)$ \\
+Monthly & Equities (US Dow) & \texttt{us\_dow\_jones\_idx} & Dow Jones / FRED & Aug 1970 = 100 & 1900:01--2026:07 & $I(1)$ \\
+\midrule
+\multicolumn{7}{l}{\textbf{Tier 2: Annual Structural, Investment, and Balance-Sheet Panel ($N = 91$, 1920--2010; Core 1960--1980)}} \\[0.2em]
+Annual & Capacity Utilization & \texttt{capacity\_utilization} ($\mu_t$) & \citet{Polanco2026} Model (\texttt{Capacity-Utilization}) & Share ($0$ to $1$) & 1943--2010 & $I(0)$ \\
+Annual & Machinery Investment & \texttt{I\_ME\_harm} & \citet{Polanco2026} Harmonized K-Stock Dataset & Real 2003 CLP & 1900--2024 & $I(1)$ \\
+Annual & Non-Res. Construction & \texttt{I\_NRC\_harm} & \citet{Polanco2026} Harmonized K-Stock Dataset & Real 2003 CLP & 1900--2024 & $I(1)$ \\
+Annual & Residential Housing & \texttt{I\_RC\_harm} & \citet{Polanco2026} Harmonized K-Stock Dataset & Real 2003 CLP & 1900--2024 & $I(1)$ \\
+Annual & Capital Deflator & \texttt{Pk\_capital\_deflator} & \citet{Polanco2026} Harmonized K-Stock Dataset & Index (2003=1) & 1940--2024 & $I(1)$ \\
+Annual & Machinery Capital ($K^g, K^n$) & \texttt{Kg\_ME}, \texttt{Kn\_ME} & \citet{Polanco2026} Harmonized K-Stock Dataset & Real 2003 CLP & 1900--2024 & $I(1)$ \\
+Annual & Structures Capital ($K^g, K^n$) & \texttt{Kg\_NR}, \texttt{Kn\_NR} & \citet{Polanco2026} Harmonized K-Stock Dataset & Real 2003 CLP & 1900--2024 & $I(1)$ \\
+Annual & Current Account ($CA$) & \texttt{bop\_ca\_usd} & Central Bank Historical Balance of Payments & USD Millions & 1960--1979 & $I(0)$ \\
+Annual & Capital Account ($KA$) & \texttt{bop\_ka\_usd} & Central Bank Historical Balance of Payments & USD Millions & 1960--1979 & $I(0)$ \\
+Annual & Global Current Account & \texttt{wbop\_current\_account\_gdp} & World Historical BOP (\citealt{NievasPiketty2025}) & \% of GDP & 1800--2025 & $I(0)$ \\
+Annual & Net Foreign Wealth (NIIP) & \texttt{wbop\_niip\_gdp} & World Historical BOP (\citealt{NievasPiketty2025}) & \% of GDP & 1800--2025 & $I(0)$ \\
+Annual & Real CIF Imports & \texttt{M\_CIF} & ClioLab PUC (\texttt{W05\_Comercio.xlsx}) & Real 2003 CLP & 1920--2010 & $I(1)$ \\
+Annual & BoP Binding Index & \texttt{bop\_binding\_index} & \citet{Polanco2026} Error-Correction Panel & Index ($0$ to $1$) & 1921--2010 & $I(0)$ \\
+Annual & Fiscal Deficit & \texttt{Fiscal\_Deficit\_gdp} & ClioLab PUC (\texttt{W03\_Ctas\_Fiscales}) & \% of GDP & 1920--2010 & $I(0)$ \\
+Annual & Wage Share & \texttt{wage\_share} ($W/Y$) & \citet{Astorga2023} & Share ($0$ to $1$) & 1920--2010 & $I(0)$ \\
+\bottomrule
+\multicolumn{7}{p{16.5cm}}{\footnotesize \textbf{Notes:} High-frequency monthly series are sourced directly from the Central Bank of Chile (BCCh) REST API (\texttt{SieteRestWS}), IMF International Financial Statistics (\texttt{CHL.TRGNV\_REVS.USD.M}), and \citet{DiazBahamonde2023}. Following the empirical design, the composite monthly activity index (\texttt{iaec-imacec-emp}) is explicitly demoted in favor of its four inner physical volume indices: industrial manufacturing (\texttt{manuf}), mining (\texttt{mining}), real exports (\texttt{exports}), and real imports (\texttt{imports}). Annual structural series integrate the structural capacity utilization estimations from \citet{Polanco2026} (\texttt{Capacity-Utilization-US\_Chile}), and the harmonized capital stock series across 5 asset classes, income distribution solely from \citet{Astorga2023}, and official BCCh and WBOP balance-of-payments accounting.} \\
+\end{tabular}%
+}
+\end{table}

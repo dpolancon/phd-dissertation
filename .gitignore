@@ -69,6 +69,17 @@ Chapter3/*.toc
 !Chapter3/Chapter3_Paper.pdf
 !Chapter3/Chapter3_Paper_compiled.pdf
 
+# Working papers compilation artifacts
+workingpapers/**/*.aux
+workingpapers/**/*.bbl
+workingpapers/**/*.blg
+workingpapers/**/*.fdb_latexmk
+workingpapers/**/*.fls
+workingpapers/**/*.log
+workingpapers/**/*.out
+workingpapers/**/*.synctex.gz
+workingpapers/**/*.toc
+
 # Python cache
 __pycache__/
 *.pyc

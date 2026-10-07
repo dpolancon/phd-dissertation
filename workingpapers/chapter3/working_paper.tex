@@ -1,0 +1,190 @@
+\documentclass[11pt]{article}
+
+% ==============================================================================
+% WORKING PAPER: Re-visiting the Political Economy of the Rise and Fall of the Unidad Popular
+% Exported from PhD Dissertation source of truth (University of Massachusetts Amherst)
+% Mirrored layout engine: Letterpaper, 1.05 stretch, microtype, float auto-scaler
+% ==============================================================================
+
+% ---- Language & encoding ----
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ---- Layout & Spacing (Dissertation Main Engine) ----
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+
+% ---- Microtypography ----
+\usepackage{microtype}
+
+% ---- Math & Theorems ----
+\usepackage{amsmath,amssymb,bm}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+
+% ---- Figures & Floats ----
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{pdflscape}
+
+% ---- Tables (Dissertation Main Engine) ----
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{threeparttable}
+\usepackage{siunitx}
+\sisetup{group-separator={,}, group-minimum-digits=4}
+
+% ---- Captions ----
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{font=small, labelfont=bf, labelsep=period}
+
+% ---- Lists ----
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=4pt}
+
+% ---- Math & Text Helpers ----
+\usepackage{xfrac}
+\usepackage{ragged2e}
+
+% ---- Color Palette ----
+\usepackage[dvipsnames]{xcolor}
+\colorlet{ink}{black}
+\colorlet{subink}{black!72}
+\colorlet{lightink}{black!45}
+\colorlet{guide}{black!28}
+\colorlet{panel}{black!4}
+\colorlet{panelb}{black!7}
+\colorlet{panelc}{black!10}
+\colorlet{stress}{black!12}
+\definecolor{navy}{HTML}{1D3557}
+\definecolor{crimson}{HTML}{9E2A2B}
+\definecolor{amber}{HTML}{E76F51}
+\definecolor{darkgreen}{HTML}{2A9D8F}
+\definecolor{slate}{HTML}{4A4E69}
+\definecolor{darkblue}{rgb}{0,0,0.8}
+
+% ---- TikZ ----
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix}
+
+% ---- Column Types ----
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% ---- Appendix & Bibliography ----
+\usepackage{titlesec}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage[authoryear]{natbib}
+
+% ---- Hyperref & Cleveref ----
+\usepackage[
+  colorlinks  = true,
+  linkcolor   = darkblue,
+  citecolor   = darkblue,
+  urlcolor    = darkblue,
+  bookmarksnumbered = true,
+  pdfauthor   = {Diego Polanco}
+]{hyperref}
+\usepackage{cleveref}
+
+% ---- Float Autoscaler Hook (Mirrored from Dissertation Main integration) ----
+% Dynamically rescales completed floats only when exceeding text height,
+% guaranteeing that large tables and stacked panels fit on a single page.
+\newsavebox{\WorkingPaperFloatBox}
+\makeatletter
+\let\wp@endfloatbox\@endfloatbox
+\def\@endfloatbox{%
+  \wp@endfloatbox
+  \ifdim\dimexpr\ht\@currbox+\dp\@currbox\relax>\textheight
+    \typeout{WORKING PAPER: fitting oversized float to page height}%
+    \setbox\WorkingPaperFloatBox\box\@currbox
+    \global\setbox\@currbox\vbox{%
+      \hbox to\columnwidth{\hfil
+        \resizebox*{!}{0.98\textheight}{\usebox{\WorkingPaperFloatBox}}%
+      \hfil}}%
+  \fi
+}
+\makeatother
+
+% ---- Paragraph Rhythm ----
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+
+% ---- Graphicspath ----
+\graphicspath{{figures/}{appendix/}{sections/}}
+
+% ---- Working Paper Metadata ----
+\title{\textbf{Re-visiting the Political Economy of the Rise and Fall of the Unidad Popular: Towards a Global Political Economy Approach}\thanks{Doctoral Candidate in Economics, Department of Economics, University of Massachusetts Amherst. Email: \texttt{dpolanconeco@umass.edu}. This working paper draws upon and extends research from the author's Ph.D.\ dissertation at the University of Massachusetts Amherst \citep{Polanco2026}. The author thanks the dissertation committee members for invaluable comments and guidance. All analytical arguments, historical interpretations, and remaining errors are the author's sole responsibility.}}
+
+\author{\textbf{Diego Polanco}\thanks{Department of Economics, University of Massachusetts Amherst.} \\
+Department of Economics, University of Massachusetts Amherst}
+
+\date{October 2026 \\ \vspace{0.5em} \small\textbf{Working Paper}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Did domestic money creation drive the inflation of Chile's Unidad Popular
+(1970--1973), or accommodate external bottlenecks and distributive conflict?
+This paper argues that the transmission of domestic liquidity was governed by
+the central bank's command over foreign exchange. Grounding dependency theory
+in open-economy balance sheets, I formalize the Central Bank of Chile's balance
+sheet as an asymmetric structure: domestic currency liabilities it could issue
+against international reserve assets it could not. Using monthly central-bank
+and IMF series for 1960--1980, I estimate Granger-precedence tests and a
+Threshold Vector Autoregression conditioned on the reserve-coverage growth gap.
+Across the sample, reverse accommodation dominates forward transmission: price
+shocks predict subsequent base-money growth four times more strongly than base
+money predicts inflation. The external reserve buffer governs international
+pass-through: world price shocks exert no statistically significant effect on
+domestic inflation when reserve backing is maintained, but generate 6.5
+percentage points of cumulative inflation once money outgrows reserves. The
+evidence indicates that domestic monetary expansion operated primarily as an
+endogenous accommodation valve under acute balance-of-payments distress.
+\end{abstract}
+
+\vspace{0.8em}
+\noindent\textbf{Keywords:} Unidad Popular, Balance of Payments, Financial
+Subordination, Solvency Ratio, Endogenous Money, Threshold Vector
+Autoregression, International Currency Hierarchy, Dependency Theory.
+
+\vspace{0.4em}
+\noindent\textbf{JEL Codes:} B51, C32, E58, F33, N16.
+
+\clearpage
+
+% ── Manuscript Sections ────────────────────────────────────────────────────────
+\input{sections/01_introduction}
+\input{sections/02_literature_review}
+\input{sections/03_macro_framework}
+\input{sections/04_data_architecture}
+\input{sections/05_historical_empirical_results}
+\input{sections/06_discussion_conclusion}
+
+\clearpage
+\begingroup
+\setlength{\bibsep}{2.5pt}
+\bibliographystyle{apalike}
+\bibliography{references}
+\endgroup
+
+\clearpage
+\begin{appendices}
+\input{appendix/appendix_bop_levr}
+\input{appendix/appendix_archival_codebook}
+\input{appendix/appendix_causal_pcmci_ee1}
+\input{appendix/appendix_tvar_girf_atlas}
+\input{appendix/appendix_linear_var_diagnostics}
+\end{appendices}
+
+\end{document}

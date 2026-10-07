@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.88}
+\caption{Univariate Augmented Dickey--Fuller Tests and Order of Integration}
+\label{tab:adf_order_integration}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Variable / Series} & \multicolumn{2}{c}{\textbf{Series in Levels ($z_t$)}} & \multicolumn{2}{c}{\textbf{First Difference ($\Delta z_t$)}} & \textbf{Order} & \textbf{Stationarity Decision} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & \textbf{$t$-ADF} & \textbf{5\% Crit.} & \textbf{$t$-ADF} & \textbf{5\% Crit.} & & \\
+\midrule
+CPI Inflation ($\pi_t$) & -3.372 & -2.87 & -13.619$^{***}$ & -2.87 & I(0) & Stationary in transformed series ($I(0)$) \\
+Base Money Growth ($g_{H,t}$) & -3.751 & -2.87 & -12.484$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+Narrow Money Growth ($g_{M1,t}$) & -4.059 & -2.88 & -17.812$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+Multiplier Growth ($\Delta \ln m_t$) & -12.791 & -2.88 & -11.957$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & -14.105 & -2.87 & -19.409$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+Mining Extraction ($g_{\text{Mining},t}$) & -14.910 & -2.87 & -13.947$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & -14.512 & -2.87 & -17.171$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+World Gold Price Growth ($g_{P,\text{gold},t}$) & -10.559 & -2.87 & -17.959$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+Nominal Exchange Rate Growth ($g_{e,t}$) & -3.777 & -2.87 & -21.142$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & -8.726 & -2.87 & -14.011$^{***}$ & -2.88 & I(0) & Stationary in transformed series ($I(0)$) \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.95\textwidth}
+\vspace{0.3em}
+\footnotesize \textit{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$, with official un-spliced narrow money $M1$ and multiplier $m$ spanning 1966:01--1980:12, $N=180$). Augmented Dickey--Fuller (ADF) tests estimated with constant drift; lag orders selected via Schwarz Bayesian Information Criterion (SBIC) up to $p=4$. Critical values correspond to MacKinnon (1996) finite-sample distributions. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. All entered macroeconomic and institutional variables reject the unit-root null at conventional significance levels, providing evidence consistent with covariance stationarity ($I(0)$) of the difference-transformed empirical system.
+\end{minipage}
+\end{table}

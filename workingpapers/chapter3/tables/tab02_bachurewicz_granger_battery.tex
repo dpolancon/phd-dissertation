@@ -1,0 +1,184 @@
+\begin{table}[p]
+\centering
+\fontsize{7pt}{8.2pt}\selectfont
+\renewcommand{\arraystretch}{0.65}
+\caption{Sequential High-Frequency Granger Causality and Directional Precedence Battery (Chile, 1960--1980)}
+\label{tab:bachurewicz_granger_battery}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Dependent Variable (DV)} & \textbf{Regressor (INDV)} & \textbf{Lag ($k$)} & \textbf{$F$-Statistic} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Direction} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Step 1: Master Nominal Core}} \\[0.15em]
+Base Money Growth ($g_{H,t}$) & Inflation ($\pi_t$) & 1 & 28.324$^{***}$ & $< 0.0001$ & +0.298 & $\pi \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Inflation ($\pi_t$) & 2 & 18.515$^{***}$ & $< 0.0001$ & +0.408 & $\pi \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Inflation ($\pi_t$) & 3$^a$ & 20.318$^{***}$ & $< 0.0001$ & +0.595 & $\pi \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Inflation ($\pi_t$) & 4 & 15.004$^{***}$ & $< 0.0001$ & +0.680 & $\pi \to g_H$ \\
+Inflation ($\pi_t$) & Base Money Growth ($g_{H,t}$) & 1 & 14.557$^{***}$ & 0.0002 & +0.243 & $g_H \to \pi$ \\
+Inflation ($\pi_t$) & Base Money Growth ($g_{H,t}$) & 2 & 9.284$^{***}$ & 0.0001 & +0.374 & $g_H \to \pi$ \\
+Inflation ($\pi_t$) & Base Money Growth ($g_{H,t}$) & 3$^a$ & 5.544$^{***}$ & 0.0011 & +0.421 & $g_H \to \pi$ \\
+Inflation ($\pi_t$) & Base Money Growth ($g_{H,t}$) & 4 & 2.718$^{**}$ & 0.0305 & +0.380 & $g_H \to \pi$ \\
+\multicolumn{7}{l}{\textbf{Step 2: Banking Bifurcation A (Credit Lead)}} \\[0.15em]
+Base Money Growth ($g_{H,t}$) & Narrow Money Growth ($g_{M1,t}$) & 1$^a$ & 21.453$^{***}$ & $< 0.0001$ & +0.478 & $M1 \to H$ \\
+Base Money Growth ($g_{H,t}$) & Narrow Money Growth ($g_{M1,t}$) & 2 & 7.200$^{***}$ & 0.0010 & +0.529 & $M1 \to H$ \\
+Base Money Growth ($g_{H,t}$) & Narrow Money Growth ($g_{M1,t}$) & 3 & 6.170$^{***}$ & 0.0005 & +0.782 & $M1 \to H$ \\
+Base Money Growth ($g_{H,t}$) & Narrow Money Growth ($g_{M1,t}$) & 4 & 3.152$^{**}$ & 0.0157 & +0.698 & $M1 \to H$ \\
+Narrow Money Growth ($g_{M1,t}$) & Base Money Growth ($g_{H,t}$) & 1$^a$ & 15.834$^{***}$ & 0.0001 & +0.284 & $H \to M1$ \\
+Narrow Money Growth ($g_{M1,t}$) & Base Money Growth ($g_{H,t}$) & 2 & 12.982$^{***}$ & $< 0.0001$ & +0.550 & $H \to M1$ \\
+Narrow Money Growth ($g_{M1,t}$) & Base Money Growth ($g_{H,t}$) & 3 & 5.166$^{***}$ & 0.0019 & +0.468 & $H \to M1$ \\
+Narrow Money Growth ($g_{M1,t}$) & Base Money Growth ($g_{H,t}$) & 4 & 5.499$^{***}$ & 0.0003 & +0.700 & $H \to M1$ \\
+Narrow Money Growth ($g_{M1,t}$) & Inflation ($\pi_t$) & 1$^a$ & 14.322$^{***}$ & 0.0002 & +0.171 & $\pi \to M1$ \\
+Narrow Money Growth ($g_{M1,t}$) & Inflation ($\pi_t$) & 2 & 15.189$^{***}$ & $< 0.0001$ & +0.298 & $\pi \to M1$ \\
+Narrow Money Growth ($g_{M1,t}$) & Inflation ($\pi_t$) & 3 & 8.948$^{***}$ & $< 0.0001$ & +0.323 & $\pi \to M1$ \\
+Narrow Money Growth ($g_{M1,t}$) & Inflation ($\pi_t$) & 4 & 8.170$^{***}$ & $< 0.0001$ & +0.412 & $\pi \to M1$ \\
+Inflation ($\pi_t$) & Narrow Money Growth ($g_{M1,t}$) & 1$^a$ & 14.004$^{***}$ & 0.0002 & +0.401 & $M1 \to \pi$ \\
+Inflation ($\pi_t$) & Narrow Money Growth ($g_{M1,t}$) & 2 & 7.928$^{***}$ & 0.0005 & +0.541 & $M1 \to \pi$ \\
+Inflation ($\pi_t$) & Narrow Money Growth ($g_{M1,t}$) & 3 & 5.610$^{***}$ & 0.0011 & +0.671 & $M1 \to \pi$ \\
+Inflation ($\pi_t$) & Narrow Money Growth ($g_{M1,t}$) & 4 & 2.308$^{*}$ & 0.0602 & +0.535 & $Marginal$ \\
+\multicolumn{7}{l}{\textbf{Step 3: Banking Bifurcation B (Multiplier Deconstruction)}} \\[0.15em]
+Inflation ($\pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 1$^a$ & 0.338 & 0.5617 & -0.064 & No \\
+Inflation ($\pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 2 & 0.251 & 0.7781 & -0.123 & No \\
+Inflation ($\pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 3 & 0.145 & 0.9331 & -0.155 & No \\
+Inflation ($\pi_t$) & Multiplier Growth ($\Delta \ln m_t$) & 4 & 0.422 & 0.7925 & -0.204 & No \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\pi_t$) & 1$^a$ & 2.367 & 0.1257 & -0.070 & No \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\pi_t$) & 2 & 1.916 & 0.1503 & -0.105 & No \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\pi_t$) & 3 & 5.127$^{***}$ & 0.0020 & -0.189 & $\pi \to m$ \\
+Multiplier Growth ($\Delta \ln m_t$) & Inflation ($\pi_t$) & 4 & 4.134$^{***}$ & 0.0032 & -0.207 & $\pi \to m$ \\
+\multicolumn{7}{l}{\textbf{Step 4: Unified Real Dual Economy}} \\[0.15em]
+Manufacturing Output ($g_{\text{Manuf},t}$) & Base Money Growth ($g_{H,t}$) & 1 & 0.663 & 0.4161 & -0.088 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Base Money Growth ($g_{H,t}$) & 2$^a$ & 3.636$^{**}$ & 0.0278 & -0.333 & $g_H \to \text{Manuf}$ \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Base Money Growth ($g_{H,t}$) & 3 & 7.149$^{***}$ & 0.0001 & -0.170 & $g_H \to \text{Manuf}$ \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Base Money Growth ($g_{H,t}$) & 4 & 5.256$^{***}$ & 0.0004 & -0.217 & $g_H \to \text{Manuf}$ \\
+Base Money Growth ($g_{H,t}$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 1 & 1.828 & 0.1776 & -0.047 & No \\
+Base Money Growth ($g_{H,t}$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2$^a$ & 2.306 & 0.1018 & +0.035 & No \\
+Base Money Growth ($g_{H,t}$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 3 & 2.770$^{**}$ & 0.0423 & -0.084 & $\text{Manuf} \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 4 & 3.595$^{***}$ & 0.0072 & +0.050 & $\text{Manuf} \to g_H$ \\
+Mining Extraction ($g_{\text{Mining},t}$) & Base Money Growth ($g_{H,t}$) & 1 & 0.129 & 0.7195 & +0.039 & No \\
+Mining Extraction ($g_{\text{Mining},t}$) & Base Money Growth ($g_{H,t}$) & 2$^a$ & 0.042 & 0.9590 & +0.016 & No \\
+Mining Extraction ($g_{\text{Mining},t}$) & Base Money Growth ($g_{H,t}$) & 3 & 0.400 & 0.7528 & +0.076 & No \\
+Mining Extraction ($g_{\text{Mining},t}$) & Base Money Growth ($g_{H,t}$) & 4 & 1.052 & 0.3811 & -0.012 & No \\
+Base Money Growth ($g_{H,t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 1 & 0.023 & 0.8795 & -0.005 & No \\
+Base Money Growth ($g_{H,t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 2$^a$ & 0.214 & 0.8074 & +0.016 & No \\
+Base Money Growth ($g_{H,t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 3 & 1.361 & 0.2555 & +0.138 & No \\
+Base Money Growth ($g_{H,t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 4 & 0.940 & 0.4415 & +0.132 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 3.422$^{*}$ & 0.0655 & +0.027 & $Marginal$ \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2$^a$ & 1.526 & 0.2195 & +0.040 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 3 & 1.099 & 0.3504 & +0.035 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 4 & 2.074$^{*}$ & 0.0849 & -0.021 & $Marginal$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 1 & 2.122 & 0.1465 & -0.338 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2$^a$ & 0.328 & 0.7210 & -0.198 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 3 & 0.499 & 0.6837 & +0.324 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 4 & 2.255$^{*}$ & 0.0639 & +1.738 & $Marginal$ \\
+Mining Extraction ($g_{\text{Mining},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 0.020 & 0.8869 & -0.002 & No \\
+Mining Extraction ($g_{\text{Mining},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2$^a$ & 0.185 & 0.8312 & -0.001 & No \\
+Mining Extraction ($g_{\text{Mining},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 3 & 0.023 & 0.9953 & -0.004 & No \\
+Mining Extraction ($g_{\text{Mining},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 4 & 0.055 & 0.9943 & +0.009 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Mining Extraction ($g_{\text{Mining},t}$) & 1 & 2.079 & 0.1506 & -0.325 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Mining Extraction ($g_{\text{Mining},t}$) & 2$^a$ & 1.380 & 0.2536 & -0.197 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Mining Extraction ($g_{\text{Mining},t}$) & 3 & 1.034 & 0.3783 & +0.135 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Mining Extraction ($g_{\text{Mining},t}$) & 4 & 0.800 & 0.5263 & +0.363 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 1 & 0.437 & 0.5094 & +0.040 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 2$^a$ & 1.187 & 0.3070 & -0.073 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 3 & 1.557 & 0.2005 & +0.102 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Mining Extraction ($g_{\text{Mining},t}$) & 4 & 1.186 & 0.3174 & +0.004 & No \\
+Inflation ($\pi_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 1 & 10.022$^{***}$ & 0.0017 & -0.110 & $\text{Manuf} \to \pi$ \\
+Inflation ($\pi_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 2$^a$ & 7.103$^{***}$ & 0.0010 & -0.201 & $\text{Manuf} \to \pi$ \\
+Inflation ($\pi_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 3 & 4.959$^{***}$ & 0.0023 & -0.249 & $\text{Manuf} \to \pi$ \\
+Inflation ($\pi_t$) & Manufacturing Output ($g_{\text{Manuf},t}$) & 4 & 3.719$^{***}$ & 0.0059 & -0.357 & $\text{Manuf} \to \pi$ \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Inflation ($\pi_t$) & 1 & 0.134 & 0.7150 & +0.036 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Inflation ($\pi_t$) & 2$^a$ & 0.434 & 0.6487 & +0.035 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Inflation ($\pi_t$) & 3 & 1.272 & 0.2847 & -0.089 & No \\
+Manufacturing Output ($g_{\text{Manuf},t}$) & Inflation ($\pi_t$) & 4 & 3.402$^{***}$ & 0.0099 & -0.240 & $\pi \to \text{Manuf}$ \\
+\multicolumn{7}{l}{\textbf{Step 5: Unified External Cost-Push Belt}} \\[0.15em]
+World Gold Price ($g_{P,\text{gold},t}$) & Base Money Growth ($g_{H,t}$) & 1$^a$ & 2.913$^{*}$ & 0.0892 & +0.081 & $Marginal$ \\
+World Gold Price ($g_{P,\text{gold},t}$) & Base Money Growth ($g_{H,t}$) & 2 & 1.487 & 0.2281 & +0.079 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Base Money Growth ($g_{H,t}$) & 3 & 1.234 & 0.2981 & +0.059 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Base Money Growth ($g_{H,t}$) & 4 & 0.940 & 0.4414 & +0.068 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Inflation ($\pi_t$) & 1$^a$ & 0.489 & 0.4850 & -0.030 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Inflation ($\pi_t$) & 2 & 2.027 & 0.1340 & +0.022 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Inflation ($\pi_t$) & 3 & 1.313 & 0.2707 & +0.026 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Inflation ($\pi_t$) & 4 & 1.872 & 0.1160 & +0.059 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1$^a$ & 1.326 & 0.2506 & +0.008 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.015 & 0.3638 & +0.015 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 3 & 1.549 & 0.2026 & +0.039 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 4 & 1.174 & 0.3227 & +0.031 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Exchange Rate Growth ($g_{e,t}$) & 1$^a$ & 2.510 & 0.1144 & -0.048 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Exchange Rate Growth ($g_{e,t}$) & 2 & 1.579 & 0.2082 & -0.033 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Exchange Rate Growth ($g_{e,t}$) & 3 & 1.533 & 0.2065 & -0.006 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Exchange Rate Growth ($g_{e,t}$) & 4 & 1.062 & 0.3759 & +0.002 & No \\
+Inflation ($\pi_t$) & World Gold Price ($g_{P,\text{gold},t}$) & 1$^a$ & 0.218 & 0.6409 & +0.036 & No \\
+Inflation ($\pi_t$) & World Gold Price ($g_{P,\text{gold},t}$) & 2 & 0.259 & 0.7717 & +0.036 & No \\
+Inflation ($\pi_t$) & World Gold Price ($g_{P,\text{gold},t}$) & 3 & 2.089 & 0.1023 & +0.184 & No \\
+Inflation ($\pi_t$) & World Gold Price ($g_{P,\text{gold},t}$) & 4 & 4.580$^{***}$ & 0.0014 & +0.323 & $\text{Gold} \to \pi$ \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Base Money Growth ($g_{H,t}$) & 1$^a$ & 0.445 & 0.5053 & -0.276 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Base Money Growth ($g_{H,t}$) & 2 & 0.899 & 0.4081 & -0.648 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Base Money Growth ($g_{H,t}$) & 3 & 0.690 & 0.5591 & -0.662 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Base Money Growth ($g_{H,t}$) & 4 & 0.598 & 0.6642 & -0.790 & No \\
+Base Money Growth ($g_{H,t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1$^a$ & 0.692 & 0.4063 & +0.007 & No \\
+Base Money Growth ($g_{H,t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.027 & 0.3597 & +0.022 & No \\
+Base Money Growth ($g_{H,t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 3 & 0.691 & 0.5582 & +0.028 & No \\
+Base Money Growth ($g_{H,t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 4 & 0.611 & 0.6549 & +0.010 & No \\
+Inflation ($\pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1$^a$ & 5.113$^{**}$ & 0.0246 & -0.019 & $\Theta \to \pi$ \\
+Inflation ($\pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 2 & 1.917 & 0.1492 & -0.027 & No \\
+Inflation ($\pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 3 & 1.930 & 0.1254 & -0.050 & No \\
+Inflation ($\pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 4 & 1.323 & 0.2621 & -0.041 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Inflation ($\pi_t$) & 1$^a$ & 1.269 & 0.2611 & -0.421 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Inflation ($\pi_t$) & 2 & 1.104 & 0.3333 & -0.469 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Inflation ($\pi_t$) & 3 & 0.931 & 0.4262 & -0.487 & No \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Inflation ($\pi_t$) & 4 & 1.761 & 0.1375 & -0.246 & No \\
+Inflation ($\pi_t$) & Exchange Rate Growth ($g_{e,t}$) & 1$^a$ & 1.697 & 0.1939 & -0.086 & No \\
+Inflation ($\pi_t$) & Exchange Rate Growth ($g_{e,t}$) & 2 & 0.606 & 0.5465 & -0.094 & No \\
+Inflation ($\pi_t$) & Exchange Rate Growth ($g_{e,t}$) & 3 & 1.699 & 0.1678 & -0.227 & No \\
+Inflation ($\pi_t$) & Exchange Rate Growth ($g_{e,t}$) & 4 & 37.025$^{***}$ & $< 0.0001$ & +0.504 & $g_e \to \pi$ \\
+Exchange Rate Growth ($g_{e,t}$) & Inflation ($\pi_t$) & 1$^a$ & 23.305$^{***}$ & $< 0.0001$ & +0.689 & $\pi \to g_e$ \\
+Exchange Rate Growth ($g_{e,t}$) & Inflation ($\pi_t$) & 2 & 12.325$^{***}$ & $< 0.0001$ & +0.933 & $\pi \to g_e$ \\
+Exchange Rate Growth ($g_{e,t}$) & Inflation ($\pi_t$) & 3 & 9.243$^{***}$ & $< 0.0001$ & +1.189 & $\pi \to g_e$ \\
+Exchange Rate Growth ($g_{e,t}$) & Inflation ($\pi_t$) & 4 & 14.350$^{***}$ & $< 0.0001$ & +0.185 & $\pi \to g_e$ \\
+Base Money Growth ($g_{H,t}$) & Exchange Rate Growth ($g_{e,t}$) & 1$^a$ & 17.037$^{***}$ & $< 0.0001$ & +0.161 & $g_e \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Exchange Rate Growth ($g_{e,t}$) & 2 & 12.052$^{***}$ & $< 0.0001$ & +0.251 & $g_e \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Exchange Rate Growth ($g_{e,t}$) & 3 & 12.802$^{***}$ & $< 0.0001$ & +0.371 & $g_e \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Exchange Rate Growth ($g_{e,t}$) & 4 & 9.619$^{***}$ & $< 0.0001$ & +0.425 & $g_e \to g_H$ \\
+Exchange Rate Growth ($g_{e,t}$) & Base Money Growth ($g_{H,t}$) & 1$^a$ & 8.197$^{***}$ & 0.0046 & +0.286 & $g_H \to g_e$ \\
+Exchange Rate Growth ($g_{e,t}$) & Base Money Growth ($g_{H,t}$) & 2 & 3.370$^{**}$ & 0.0360 & +0.349 & $g_H \to g_e$ \\
+Exchange Rate Growth ($g_{e,t}$) & Base Money Growth ($g_{H,t}$) & 3 & 3.483$^{**}$ & 0.0166 & +0.485 & $g_H \to g_e$ \\
+Exchange Rate Growth ($g_{e,t}$) & Base Money Growth ($g_{H,t}$) & 4 & 1.331 & 0.2590 & +0.180 & No \\
+\multicolumn{7}{l}{\textbf{Step 6: Unified Central Bank Solvency System}} \\[0.15em]
+Base Money Growth ($g_{H,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 1$^a$ & 0.031 & 0.8605 & +0.002 & No \\
+Base Money Growth ($g_{H,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 2 & 0.959 & 0.3847 & -0.023 & No \\
+Base Money Growth ($g_{H,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 3 & 11.149$^{***}$ & $< 0.0001$ & +0.087 & $\text{SolvR}^H \to g_H$ \\
+Base Money Growth ($g_{H,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 4 & 8.472$^{***}$ & $< 0.0001$ & +0.070 & $\text{SolvR}^H \to g_H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Base Money Growth ($g_{H,t}$) & 1$^a$ & 0.162 & 0.6879 & +0.109 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Base Money Growth ($g_{H,t}$) & 2 & 0.686 & 0.5044 & -0.107 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Base Money Growth ($g_{H,t}$) & 3 & 2.447$^{*}$ & 0.0645 & +0.269 & $Marginal$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Base Money Growth ($g_{H,t}$) & 4 & 2.258$^{*}$ & 0.0636 & +0.415 & $Marginal$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Inflation ($\pi_t$) & 1$^a$ & 8.336$^{***}$ & 0.0042 & +0.716 & $\pi \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Inflation ($\pi_t$) & 2 & 5.085$^{***}$ & 0.0069 & +0.869 & $\pi \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Inflation ($\pi_t$) & 3 & 4.390$^{***}$ & 0.0050 & +0.504 & $\pi \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Inflation ($\pi_t$) & 4 & 3.664$^{***}$ & 0.0065 & +0.477 & $\pi \to \text{SolvR}^H$ \\
+Inflation ($\pi_t$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 1$^a$ & 2.272 & 0.1330 & -0.022 & No \\
+Inflation ($\pi_t$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 2 & 1.447 & 0.2372 & -0.037 & No \\
+Inflation ($\pi_t$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 3 & 2.489$^{*}$ & 0.0611 & -0.083 & $Marginal$ \\
+Inflation ($\pi_t$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 4 & 1.773 & 0.1349 & -0.050 & No \\
+Exchange Rate Growth ($g_{e,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 1$^a$ & 0.262 & 0.6091 & -0.012 & No \\
+Exchange Rate Growth ($g_{e,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 2 & 0.164 & 0.8488 & -0.017 & No \\
+Exchange Rate Growth ($g_{e,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 3 & 1.833 & 0.1417 & -0.105 & No \\
+Exchange Rate Growth ($g_{e,t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 4 & 1.799 & 0.1297 & -0.086 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Exchange Rate Growth ($g_{e,t}$) & 1$^a$ & 7.979$^{***}$ & 0.0051 & +0.500 & $g_e \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Exchange Rate Growth ($g_{e,t}$) & 2 & 5.761$^{***}$ & 0.0036 & +0.753 & $g_e \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Exchange Rate Growth ($g_{e,t}$) & 3 & 5.811$^{***}$ & 0.0008 & +0.272 & $g_e \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & Exchange Rate Growth ($g_{e,t}$) & 4 & 7.146$^{***}$ & $< 0.0001$ & +0.501 & $g_e \to \text{SolvR}^H$ \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & World Gold Price ($g_{P,\text{gold},t}$) & 1$^a$ & 0.001 & 0.9760 & +0.010 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & World Gold Price ($g_{P,\text{gold},t}$) & 2 & 0.224 & 0.7992 & +0.139 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & World Gold Price ($g_{P,\text{gold},t}$) & 3 & 0.299 & 0.8264 & +0.369 & No \\
+Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & World Gold Price ($g_{P,\text{gold},t}$) & 4 & 0.401 & 0.8082 & +0.572 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 1$^a$ & 0.106 & 0.7451 & -0.003 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 2 & 0.238 & 0.7885 & -0.012 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 3 & 0.227 & 0.8773 & -0.008 & No \\
+World Gold Price ($g_{P,\text{gold},t}$) & Solvency Ratio Growth ($\Delta \ln \text{SolvR}_t^H$) & 4 & 0.162 & 0.9575 & -0.004 & No \\
+\bottomrule
+\end{tabular}%
+}
+\begin{tabular}{p{0.95\textwidth}}
+\fontsize{6pt}{6.8pt}\selectfont \textbf{Notes:} Monthly empirical series spanning 1960:01--1980:12 ($N=250$), and un-spliced observed narrow money subsample (1966:01--1980:12, $N=180$). Directional precedence evaluated via standard Granger causality tests in stationary VAR($k$) specifications following the applied blueprint of \citet{Bachurewicz2019}. All variables evaluated in stationary percentage growth rates or log differences. $F$-statistics evaluate the null hypothesis of zero incremental predictive precedence ($H_0: \beta_1 = \dots = \beta_k = 0$). $\sum \hat{\beta}_i$ reports the sum of lag coefficients indicating dynamic direction and sign. $^a$ Denotes the optimal lag ($k^*$) selected by SBIC. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$.
+\end{tabular}
+\end{table}

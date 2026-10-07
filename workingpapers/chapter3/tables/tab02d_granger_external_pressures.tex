@@ -1,0 +1,52 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{0.90}
+\caption{Granger Directional Precedence: External Sector and Balance-of-Payments Pressures ($N=250$)}
+\label{tab:granger_external_pressures}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+\multicolumn{7}{l}{\textbf{Panel A: Primary Baseline at SBIC-Selected Lag ($k^*$)}} \\
+\midrule
+\textbf{Dependent Variable (DV)} & \textbf{Predictor (INDV)} & \textbf{Lag ($k^*$)} & \textbf{$F$-Statistic} & \textbf{$p$-value} & \textbf{$\sum \hat{\beta}_i$} & \textbf{Granger Conclusion} \\
+\midrule
+World Gold Price ($g_{P,\text{gold},t}$) & Base Money Growth ($g_{H,t}$) & 1 & 2.913$^{*}$ & 0.0892 & +0.081 & Marginal predictive evidence \\
+World Gold Price ($g_{P,\text{gold},t}$) & Inflation ($\pi_t$) & 1 & 0.489 & 0.4850 & -0.030 & Fail to reject non-causality \\
+World Gold Price ($g_{P,\text{gold},t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 1.326 & 0.2506 & +0.008 & Fail to reject non-causality \\
+World Gold Price ($g_{P,\text{gold},t}$) & Exchange Rate Growth ($g_{e,t}$) & 1 & 2.510 & 0.1144 & -0.048 & Fail to reject non-causality \\
+Inflation ($\pi_t$) & World Gold Price ($g_{P,\text{gold},t}$) & 1 & 0.218 & 0.6409 & +0.036 & Fail to reject non-causality \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Base Money Growth ($g_{H,t}$) & 1 & 0.445 & 0.5053 & -0.276 & Fail to reject non-causality \\
+Base Money Growth ($g_{H,t}$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 0.692 & 0.4063 & +0.007 & Fail to reject non-causality \\
+Inflation ($\pi_t$) & Structural Imbalance ($\Delta \ln \Theta_t$) & 1 & 5.113$^{**}$ & 0.0246 & -0.019 & $\Theta \to \pi$ detected \\
+Structural Imbalance ($\Delta \ln \Theta_t$) & Inflation ($\pi_t$) & 1 & 1.269 & 0.2611 & -0.421 & Fail to reject non-causality \\
+Inflation ($\pi_t$) & Exchange Rate Growth ($g_{e,t}$) & 1 & 1.697 & 0.1939 & -0.086 & Fail to reject non-causality \\
+Exchange Rate Growth ($g_{e,t}$) & Inflation ($\pi_t$) & 1 & 23.305$^{***}$ & $< 0.0001$ & +0.689 & $\pi \to g_e$ detected \\
+Base Money Growth ($g_{H,t}$) & Exchange Rate Growth ($g_{e,t}$) & 1 & 17.037$^{***}$ & $< 0.0001$ & +0.161 & $g_e \to g_H$ detected \\
+Exchange Rate Growth ($g_{e,t}$) & Base Money Growth ($g_{H,t}$) & 1 & 8.197$^{***}$ & 0.0046 & +0.286 & $g_H \to g_e$ detected \\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel B: Lag Sensitivity and Horizon Persistence ($k = 1, \dots, 4$)}} \\
+\midrule
+\textbf{Hypothesis / Direction} & \textbf{$k = 1$} & \textbf{$k = 2$} & \textbf{$k = 3$} & \textbf{$k = 4$} & \multicolumn{2}{c}{\textbf{Persistence Summary}} \\
+\midrule
+Base Money Growth ($g_{H,t}$) $\to$ World Gold Price ($g_{P,\text{gold},t}$) & 2.91$^{*}$$^a$ & 1.49 & 1.23 & 0.94 & \multicolumn{2}{c}{No predictive causality} \\
+Inflation ($\pi_t$) $\to$ World Gold Price ($g_{P,\text{gold},t}$) & 0.49$^a$ & 2.03 & 1.31 & 1.87 & \multicolumn{2}{c}{No predictive causality} \\
+Structural Imbalance ($\Delta \ln \Theta_t$) $\to$ World Gold Price ($g_{P,\text{gold},t}$) & 1.33$^a$ & 1.01 & 1.55 & 1.17 & \multicolumn{2}{c}{No predictive causality} \\
+Exchange Rate Growth ($g_{e,t}$) $\to$ World Gold Price ($g_{P,\text{gold},t}$) & 2.51$^a$ & 1.58 & 1.53 & 1.06 & \multicolumn{2}{c}{No predictive causality} \\
+World Gold Price ($g_{P,\text{gold},t}$) $\to$ Inflation ($\pi_t$) & 0.22$^a$ & 0.26 & 2.09 & 4.58$^{***}$ & \multicolumn{2}{c}{Lag-specific predictive link} \\
+Base Money Growth ($g_{H,t}$) $\to$ Structural Imbalance ($\Delta \ln \Theta_t$) & 0.45$^a$ & 0.90 & 0.69 & 0.60 & \multicolumn{2}{c}{No predictive causality} \\
+Structural Imbalance ($\Delta \ln \Theta_t$) $\to$ Base Money Growth ($g_{H,t}$) & 0.69$^a$ & 1.03 & 0.69 & 0.61 & \multicolumn{2}{c}{No predictive causality} \\
+Structural Imbalance ($\Delta \ln \Theta_t$) $\to$ Inflation ($\pi_t$) & 5.11$^{**}$$^a$ & 1.92 & 1.93 & 1.32 & \multicolumn{2}{c}{Lag-specific predictive link} \\
+Inflation ($\pi_t$) $\to$ Structural Imbalance ($\Delta \ln \Theta_t$) & 1.27$^a$ & 1.10 & 0.93 & 1.76 & \multicolumn{2}{c}{No predictive causality} \\
+Exchange Rate Growth ($g_{e,t}$) $\to$ Inflation ($\pi_t$) & 1.70$^a$ & 0.61 & 1.70 & 37.02$^{***}$ & \multicolumn{2}{c}{Lag-specific predictive link} \\
+Inflation ($\pi_t$) $\to$ Exchange Rate Growth ($g_{e,t}$) & 23.30$^{***}$$^a$ & 12.32$^{***}$ & 9.24$^{***}$ & 14.35$^{***}$ & \multicolumn{2}{c}{Robust at all horizons ($p < 0.05$)} \\
+Exchange Rate Growth ($g_{e,t}$) $\to$ Base Money Growth ($g_{H,t}$) & 17.04$^{***}$$^a$ & 12.05$^{***}$ & 12.80$^{***}$ & 9.62$^{***}$ & \multicolumn{2}{c}{Robust at all horizons ($p < 0.05$)} \\
+Base Money Growth ($g_{H,t}$) $\to$ Exchange Rate Growth ($g_{e,t}$) & 8.20$^{***}$$^a$ & 3.37$^{**}$ & 3.48$^{**}$ & 1.33 & \multicolumn{2}{c}{Significant at 3/4 horizons} \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.96\textwidth}
+\vspace{0.3em}
+\footnotesize \textbf{Notes:} Monthly series spanning 1960:01--1980:12 ($N=250$). 5-variable system $[g_{P,\text{gold},t}, g_{e,t}, \Delta \ln \Theta_t, g_{H,t}, \pi_t]'$ evaluated via standard Granger causality tests in stationary VAR($k$) specifications. No statistically significant Granger feedback is detected between world gold prices and the tested domestic variables at conventional levels ($p > 0.08$). Prebisch structural trade imbalance predicts domestic inflation ($\Theta \to \pi$, $F = 5.113, p = 0.0246$), while nominal exchange rate adjustments Granger-cause inflation at longer horizons ($g_e \to \pi$, $F = 37.025, p < 0.0001$ at lag 4). Panel~A reports the primary baseline at the SBIC-selected optimal lag ($k^*$, denoted by $^a$). Panel~B reports finite-sample $F$-statistics across tested horizons $k = 1, \dots, 4$. Significance: $^{***} p < 0.01$, $^{**} p < 0.05$, $^{*} p < 0.10$. In accordance with the paper's methodological contract, Granger causality denotes incremental predictive precedence within a stationary VAR and does not by itself establish structural causal identification.
+\end{minipage}
+\end{table}

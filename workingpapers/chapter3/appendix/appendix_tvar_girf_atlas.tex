@@ -1,0 +1,203 @@
+% ==============================================================================
+% Appendix D: Threshold Vector Autoregression: Specification, Multiplier Differentials,
+% and Complete Dynamic GIRF Functions
+% ==============================================================================
+\section{Threshold Vector Autoregression: Specification, Multiplier Differentials, and Dynamic Impulse Responses}
+\label{app:tvar_girf_atlas}
+
+\subsection{Econometric Specification and Simulation Protocol}
+To evaluate how macroeconomic transmission shifts across balance-sheet environments, Section~\ref{sec:tvar_solvency_regimes} specifies a five-variable Threshold Vector Autoregression (TVAR). The system partitions variables into an international forcing block and a domestic macroeconomic block:
+\begin{equation}
+    X_t = \begin{bmatrix} g^{gold}_t & \Delta \ln \Theta_t & g^F_t & \pi_{m,t} & g^H_t \end{bmatrix}'.
+    \label{eq:app_d_vector}
+\end{equation}
+Here $g^{gold}_t$ denotes the monthly growth rate of the London gold bullion price in US dollars. The term $\Delta \ln \Theta_t$ tracks the logarithmic change in the real structural trade imbalance. The variable $g^F_t$ represents the monthly growth rate of domestic-currency international reserves. Domestic inflation is denoted by $\pi_{m,t}$, and $g^H_t$ is Central Bank base money growth ($N=250$, 1960:01--1980:12).
+
+The transition mechanism is governed by the predetermined Solvency Growth Gap:
+\begin{equation}
+    \Delta s_t \equiv g^F_t - g^H_t = \Delta \ln S_t \times 100.
+    \label{eq:app_d_solvency_gap}
+\end{equation}
+A concentrated least squares grid search isolates a global structural threshold at $\hat{\gamma} = -4.615\%$. The \citet{Hansen1999} Supremum Likelihood Ratio test decisively rejects the linear null hypothesis ($\text{Sup-LR} = 112.10$, bootstrap $p = 0.0010$). This partitions the historical sample into two operational regimes. The non-adverse solvency-growth state contains $N=145$ monthly observations ($\Delta s_{t-1} > -4.615\%$). The adverse solvency-growth state (reflecting conditions of central-bank insolvency) contains $N=100$ monthly observations ($\Delta s_{t-1} \le -4.615\%$).
+
+Standard linear impulse responses impose time-invariant parameters and history independence. Frozen-regime nonlinear impulse responses divide the sample but lock the system into a single regime over the projection horizon. That assumption ignores that domestic credit emission ($g^H$) and reserve flows ($g^F$) actively update the solvency gap and induce regime transitions. Following \citet{KoopPesaranPotter1996}, I compute Generalized Impulse Response Functions (GIRFs):
+\begin{equation}
+    \text{GIRF}_X(h, \nu_t, \Omega_{t-1}) = \mathbb{E}\left[ X_{t+h} \mid \nu_t, \Omega_{t-1} \right] - \mathbb{E}\left[ X_{t+h} \mid \Omega_{t-1} \right],
+    \label{eq:app_d_girf_def}
+\end{equation}
+where $h = 0, 1, \dots, 12$ months. Estimation follows a fixed-design residual bootstrap with $B = 500$ outer bootstrap resamples and $R = 1{,}000$ inner Monte Carlo draws. A static Common Random Numbers matrix of dimension $1000 \times 13$ eliminates simulation variance between baseline and perturbed paths. In each step, the Solvency Growth Gap updates endogenously. Trajectories cross the threshold $\hat{\gamma} = -4.615\%$ dynamically as liquidity expands and reserves deplete.
+
+\subsection{Point-Wise Multiplier Differences Across Solvency Regimes}
+To test whether shock transmission differs significantly between regimes, Table~\ref{tab:app_d01_girf_differences} reports the point-wise dynamic multiplier difference across forecast horizons:
+\begin{equation}
+    \Delta_{i,j}(h) \equiv \text{GIRF}_{i,j}^{\text{Adverse}}(h) - \text{GIRF}_{i,j}^{\text{Non-Adverse}}(h).
+    \label{eq:app_d_diff_test}
+\end{equation}
+Asterisks denote horizons where the 90\% empirical bootstrap confidence interval strictly excludes zero.
+
+\input{tables/tab_app_d01_girf_differences}
+
+The multiplier differences establish four systematic structural asymmetries:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item \textbf{World price pass-through:} A world gold price shock generates an inflation differential ($\Delta_{g^{gold} \to \pi_m}$) that is strictly positive and statistically significant across 10 consecutive months ($h=3$ to $12$). The differential peaks at $+0.999$ percentage points at month 3. Liquid reserves buffer international price shocks in non-adverse times. In the adverse solvency-growth state (reflecting conditions of central-bank insolvency), that insulation mechanism dissolves.
+    \item \textbf{Reverse accommodation dominance:} The low-minus-high accommodation differential ($\Delta_{\pi_m \to g^H}$) remains positive and statistically significant across nine consecutive months ($h=2$ to $10$). It peaks at $+0.837$ percentage points at month 2. Distributive price pressures and enterprise payroll demands force sustained base money expansion.
+    \item \textbf{Cost-push inflation inertia:} Domestic price shocks generate an inflation persistence differential ($\Delta_{\pi_m \to \pi_m}$) peaking at $+1.048$ percentage points at month 2. Statistical significance lasts for nine consecutive months ($h=2$ to $10$).
+    \item \textbf{Real trade imbalance divergence:} Shocks to the real structural trade gap ($\Delta\ln\Theta \to \Delta\ln\Theta$) do not decay monotonically under insolvency. The regime differential peaks at $+15.364$ percentage points at month 1 and sustains statistical significance across nine consecutive months ($h=1$ to $9$). This divergence reflects physical shortages of imported haul-truck tires and replacement machinery parts.
+\end{enumerate}
+
+\subsection{Dynamic Multipliers and Cumulative Trajectories}
+Table~\ref{tab:app_d02_girf_metrics} documents impact responses, peak months, and cumulative multipliers at the 6-month and 12-month forecast horizons across both regimes. 
+
+\input{tables/tab_app_d02_girf_metrics}
+
+Comparing cumulative multipliers highlights the quantitative scale of the transmission breakdown. In the non-adverse state, base money emission ($g^H \to \pi_m$) yields a cumulative 12-month inflation impact of $2.294$ percentage points. In the adverse solvency-growth state, that cumulative impact rises to $3.898$ percentage points. In contrast, reverse accommodation ($\pi_m \to g^H$) expands cumulative high-powered money by $6.996$ percentage points under the adverse state. Reverse accommodation outstrips forward monetary transmission by a factor of 1.8. 
+
+\paragraph{Note on Simulation Metric Concordance.}
+The cumulative 12-month metrics in Table~\ref{tab:app_d02_girf_metrics} ($3.898$ percentage points for forward transmission and $6.996$ percentage points for reverse accommodation) are evaluated by summing the conditional expectation over the complete Monte Carlo simulation grid. In Section~\ref{sec:tvar_girf_multipliers}, the main text reports cumulative trajectories evaluated along the point-wise median bootstrap path ($3.550$ percentage points for $g^H \to \pi_m$ and $6.537$ percentage points for $\pi_m \to g^H$). Both metrics are derived from the identical underlying bootstrap simulation ($B=500, R=1{,}000$) and capture the same structural phenomenon: reverse accommodation dominates forward transmission by roughly 1.8 times in cumulative magnitude. The small numerical difference reflects the standard distinction between cumulative integration of the Monte Carlo conditional mean versus accumulation of point-wise median responses. 
+
+\subsection{Endogenous Regime Switching Probabilities and State Persistence}
+Table~\ref{tab:app_d03_regime_switching} reports the change in the simulated probability of occupying the adverse solvency-growth state:
+\begin{equation}
+    \Delta P(\Delta s_{t+h-1} \le \gamma) \equiv P(\Delta s_{t+h-1}^{\text{shocked}} \le \gamma) - P(\Delta s_{t+h-1}^{\text{baseline}} \le \gamma).
+    \label{eq:app_d_switch_prob}
+\end{equation}
+Figure~\ref{fig:app_d04_switching} plots these transition probabilities across horizons.
+
+\input{tables/tab_app_d03_regime_switching}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_switching_F_crisis.pdf}
+    \caption{Reserve Flow Shock ($g^F$)}
+    \label{fig:tvar_switch_F}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_switching_money_crisis.pdf}
+    \caption{Base Money Shock ($g^H$)}
+    \label{fig:tvar_switch_money}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_switching_gold_crisis.pdf}
+    \caption{World Gold Shock ($g^{gold}$)}
+    \label{fig:tvar_switch_gold}
+\end{subfigure}
+\caption{Endogenous Regime Switching Probabilities from the Adverse Solvency-Growth State ($\Delta P(\Delta s_{t+h-1} \le \gamma)$)}
+\label{fig:app_d04_switching}
+\begin{minipage}{\textwidth}
+    \vspace{0.3em}
+    \footnotesize \textbf{Notes:} Simulated change in the probability of remaining in the adverse solvency-growth state ($\Delta s_{t-1} \le -4.615\%$, reflecting conditions of central-bank insolvency) following a one-standard-deviation structural innovation ($u_t$). Solid lines represent median bootstrap trajectories; dashed crimson lines denote 90\% empirical bootstrap confidence intervals ($B=500, R=1{,}000$). The horizontal line marks zero change in transition probability.
+\end{minipage}
+\end{figure}
+
+The transition curves uncover two core empirical dynamics:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item \textbf{Buffer stock resilience in non-adverse times:} Starting from the non-adverse state, standard one-standard-deviation monthly shocks produce probability shifts near zero ($\Delta P \in [-0.4\%, +0.1\%]$). A transitory monthly disturbance cannot independently breach the $-4.615\%$ threshold. Entering the adverse solvency-growth state required the cumulative drainage of foreign exchange reserves over five consecutive quarters (late 1970 through late 1971). That exhaustion was driven by international credit line cancellations and import surges for capital equipment and food.
+    \item \textbf{State persistence under adverse conditions:} Once the lagged Solvency Growth Gap enters the adverse state ($\Delta s_{t-1} \le -4.615\%$, reflecting conditions of central-bank insolvency), favorable commodity price shocks fail to reduce the simulated probability of remaining in that state ($\Delta P = -0.35\%$ at month 12, with confidence intervals spanning zero). In this dynamic simulation, the system exhibits substantial state persistence rather than rapid self-correction.
+\end{enumerate}
+
+\subsection{Secondary Structural Pathway Trajectories}
+Figures~\ref{fig:app_d01_reserves}, \ref{fig:app_d02_imbalance}, and \ref{fig:app_d03_persistence} document the secondary transmission pathways in the Threshold VAR.
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_reserve_flow_insolv.pdf}
+    \caption{Reserve Persistence ($g^F \to g^F$)}
+    \label{fig:app_d_reserve_persistence}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_reserve_to_money_insolv.pdf}
+    \caption{Reserve to Money ($g^F \to g^H$)}
+    \label{fig:app_d_reserve_money}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_reserve_to_inflation_insolv.pdf}
+    \caption{Reserve to Inflation ($g^F \to \pi_m$)}
+    \label{fig:app_d_reserve_inflation}
+\end{subfigure}
+\caption{Dynamic GIRF Multipliers for Foreign Reserve Shocks in the Adverse Solvency-Growth State}
+\label{fig:app_d01_reserves}
+\begin{minipage}{\textwidth}
+    \vspace{0.3em}
+    \footnotesize \textbf{Notes:} Generalized Impulse Response Functions over a 12-month horizon in the adverse solvency-growth state ($\Delta s_{t-1} \le -4.615\%$, reflecting conditions of central-bank insolvency). Solid black lines represent median bootstrap responses to a one-standard-deviation reserve flow innovation; dashed crimson lines depict 90\% empirical bootstrap confidence intervals. The horizontal line marks zero.
+\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_theta_persistence_insolv.pdf}
+    \caption{Imbalance Persistence ($\Theta \to \Theta$)}
+    \label{fig:app_d_theta_persistence}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_theta_difference.pdf}
+    \caption{Regime Difference ($\Delta_{\Theta \to \Theta}$)}
+    \label{fig:app_d_theta_diff}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_theta_to_inflation_insolv.pdf}
+    \caption{Imbalance to Prices ($\Theta \to \pi_m$)}
+    \label{fig:app_d_theta_inflation}
+\end{subfigure}
+\caption{Dynamic GIRF Multipliers for Real Structural Imbalance Shocks}
+\label{fig:app_d02_imbalance}
+\begin{minipage}{\textwidth}
+    \vspace{0.3em}
+    \footnotesize \textbf{Notes:} Generalized Impulse Response Functions over a 12-month horizon following a one-standard-deviation real structural trade imbalance shock ($\Delta\ln\Theta$). Solid black lines trace median bootstrap responses; dashed crimson lines denote 90\% empirical bootstrap confidence intervals.
+\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_money_persistence_insolv.pdf}
+    \caption{Money Persistence ($g^H \to g^H$)}
+    \label{fig:app_d_money_persistence}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_inflation_persistence_insolv.pdf}
+    \caption{Inflation Persistence ($\pi_m \to \pi_m$)}
+    \label{fig:app_d_inflation_persistence}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/tvar_girf_inflation_difference.pdf}
+    \caption{Regime Difference ($\Delta_{\pi_m \to \pi_m}$)}
+    \label{fig:app_d_inflation_diff}
+\end{subfigure}
+\caption{Dynamic GIRF Multipliers for Domestic Liquidity and Cost-Push Inertia}
+\label{fig:app_d03_persistence}
+\begin{minipage}{\textwidth}
+    \vspace{0.3em}
+    \footnotesize \textbf{Notes:} Generalized Impulse Response Functions over a 12-month horizon in the adverse solvency-growth state ($\Delta s_{t-1} \le -4.615\%$, reflecting conditions of central-bank insolvency). Solid black lines trace median bootstrap responses; dashed crimson lines denote 90\% empirical bootstrap confidence intervals.
+\end{minipage}
+\end{figure}
+
+\subsection{Diagnostics for Block-Exogeneity and Structural Exclusion Restrictions}
+Table~\ref{tab:app_d01_girf_differences} reports diagnostics for the nine block-exogenous and structurally excluded pathways:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item \textbf{World gold price exogeneity diagnostics:} Innovations to domestic international reserves ($g^F$), consumer price inflation ($\pi_m$), Central Bank base money ($g^H$), and the real trade gap ($\Delta\ln\Theta$) produce no statistically significant response in world gold prices across all 12 forecast horizons. Duration of significance is zero months throughout, with point estimates below $0.055$ percentage points. The data do not provide evidence against treating Chile as a price taker in international gold and hard-currency markets.
+    \item \textbf{Structural trade imbalance exogeneity diagnostics:} Domestic nominal shocks to money and inflation produce no statistically significant response in the real structural trade imbalance ($\Delta\ln\Theta$). The trade gap was governed by external terms of trade and historical intermediate import requirements for copper mining equipment and industrial fuels.
+    \item \textbf{Direct reserve and credit exclusions:} Imposing the restriction that the real trade gap ($\Delta\ln\Theta$) does not enter directly into contemporaneous reserve flow ($g^F$) or base money creation ($g^H$) equations results in exact impact neutrality ($h_0 = 0.000$). This restriction aligns with the directional Granger tests. Structural trade gaps operated sequentially through import bottlenecks and price adjustments ($\Delta\ln\Theta \to \pi_m$). The Central Bank then accommodated these price increases defensively ($\pi_m \to g^H$) to keep factories operating and workers paid.
+\end{enumerate}

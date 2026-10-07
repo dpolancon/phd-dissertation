@@ -1,0 +1,108 @@
+\section{Historical Background, Stylized Facts, and Empirical Results}
+\label{sec:historical_empirical_results}
+\label{sec:empirical_tournament}
+\label{sec:empirical_results}
+
+\subsection{Historical Background: The Rise of the Unidad Popular}
+\label{sec:historical_background}
+\input{sections/05_1_historical_background}
+
+
+\subsection{Stylized Facts of Peripheral Accumulation, Distribution, and External Constraints}
+\label{sec:stylized_facts}
+\input{sections/05_2_stylized_facts}
+
+
+\subsection{Empirical Exercise 1: Directional Precedence and Monetary Accommodation in Stationary Vector Autoregressions}
+\label{sec:granger_tournament}
+\label{sec:granger_linear}
+
+\subsubsection{Econometric Framework and Evidential Standard}
+\label{sec:granger_methodology}
+\label{sec:granger_unit_root}
+\label{sec:granger_tournament_setup}
+
+The stylized facts documented in Section~\ref{sec:stylized_facts} leave open a central empirical question: did domestic monetary expansion precede price acceleration as an autonomous impulse, or did it accommodate price pressures, enterprise working-capital requirements, and external balance-of-payments constraints? Standard monetarist accounts treat money creation as an autonomous driver, implying that high-powered reserve money ($g_{H,t}$) and narrow transactions balances ($g_{M1,t}$) should expand without predictive feedback from consumer prices ($\pi_t$) or external shocks:
+\begin{equation}
+    \mathcal{H}_0^{\text{Exogenous}}: \quad \pi_{t-k} \not\longrightarrow g_{M,t} \quad \text{and} \quad \text{External Shock}_{t-k} \not\longrightarrow g_{M,t} \quad \forall k \ge 1.
+    \label{eq:null_exogeneity}
+\end{equation}
+In contrast, structuralist and endogenous-money frameworks view money creation as an accommodating response to enterprise cost pressures and balance-of-payments disruptions. When enterprises face escalating nominal costs under price controls and supply bottlenecks, working-capital requirements expand. If the monetary authority accommodates these demands to prevent illiquidity and payroll defaults, temporal predictive precedence should flow from inflation and foreign reserve depletion to domestic money growth ($\pi \to g_H$, $\text{SolvR}^H \to g_H$).
+
+To evaluate these competing temporal sequences, I estimate standard Granger-causality tests within stationary vector autoregressions \citep{Hamilton1994,Lutkepohl2005}. Let $Y_t$ denote a $K \times 1$ vector of stationary transformed macroeconomic series ($I(0)$). An unrestricted vector autoregression of order $k$, $\text{VAR}(k)$, is specified:
+\begin{equation}
+    Y_t = c + \sum_{i=1}^k A_i Y_{t-i} + \varepsilon_t, \label{eq:var_spec}
+\end{equation}
+where $c$ is a vector of constants, $A_i$ are $K \times K$ coefficient matrices, and $\varepsilon_t$ is a vector of white-noise disturbances. In a bivariate representation for $(y_t, x_t)$, the system reduces to:
+\begin{align}
+    y_t &= \alpha_0 + \sum_{i=1}^k \alpha_{i} y_{t-i} + \sum_{i=1}^k \delta_{i} x_{t-i} + \varepsilon_{1t}, \label{eq:granger_spec1} \\
+    x_t &= \beta_0 + \sum_{i=1}^k \beta_{i} x_{t-i} + \sum_{i=1}^k \phi_{i} y_{t-i} + \varepsilon_{2t}. \label{eq:granger_spec2}
+\end{align}
+The null hypothesis that $x_t$ does not Granger-cause $y_t$ corresponds to the joint exclusion restriction on the lagged coefficients of $x$:
+\begin{equation}
+    H_0: \quad \delta_{1} = \dots = \delta_{k} = 0.
+\end{equation}
+Because the entered series are stationary ($I(0)$, as established by the Augmented Dickey--Fuller tests in Table~\ref{tab:adf_order_integration}), this restriction is tested using standard finite-sample $F$-tests:
+\begin{equation}
+    F = \frac{(\text{RSS}_R - \text{RSS}_U) / k}{\text{RSS}_U / (T - Kk - 1)} \sim F(k, T - Kk - 1),
+\end{equation}
+where $\text{RSS}_R$ and $\text{RSS}_U$ denote the residual sums of squares from the restricted and unrestricted models, respectively. Rejecting $H_0$ indicates that lagged values of $x_t$ contain incremental predictive information for $y_t$ beyond what is captured by the remaining lagged variables in the system. 
+
+In accordance with the paper's causal-language contract, Granger causality denotes incremental predictive precedence within a specified stationary information set; it does not by itself establish structural causal identification or policy invariance. Empirical admission to the main text is governed by three diagnostic criteria: (1)~modulus stability ($\max |\lambda_i| < 1$); (2)~system-level residual whitening via the multivariate Breusch--Godfrey Lagrange Multiplier test ($p > 0.05$); and (3)~equation-level residual whitening ($p > 0.05$). Specifications that fail these diagnostic standards are not used for directional inference in the main text.
+
+Table~\ref{tab:system_definitions} defines the system variable vectors, mathematical transformations, sample coverage, and evidence status across the empirical systems.
+\input{tables/tab00_system_variable_definitions}
+
+\subsubsection{Nominal Accommodation: Money and Inflation}
+\label{sec:granger_nominal_core}
+
+System 1 evaluates dynamic feedback between consumer price inflation ($\pi_t$) and high-powered base money growth ($g_{H,t}$) over the full monthly sample (1960:01--1980:12, $N=250$, usable $N_{\text{eff}}=247$ at lag 4). At lag order $k=4$, the system satisfies all diagnostic admissibility criteria: companion matrix eigenvalues confirm stability ($\max |\lambda| = 0.730$), the system Breusch--Godfrey test indicates an absence of residual autocorrelation ($\chi^2 = 3.06, p = 0.548$), and equation-level Breusch--Godfrey tests confirm whitening in both the base money equation ($p = 0.467$) and the inflation equation ($p = 0.284$).
+
+As reported in Panel~A of Table~\ref{tab:core_granger_evidence}, Granger causality between inflation and base money growth is bidirectional at $k=4$. The null that inflation does not Granger-cause base money growth is rejected at the 0.1\% level ($F = 15.004, p < 0.0001$), with a positive sum of lag coefficients ($\sum \hat{\beta}_i = +0.680$). In the forward direction, base money growth also Granger-causes inflation ($F = 2.718, p = 0.0305, \sum \hat{\beta}_i = +0.380$). Evaluating results across alternative lag lengths confirms that reverse accommodation ($\pi \to g_H$) commands substantially larger test statistics ($F \in [15.00, 28.32], p < 0.0001$ across $k=1,\dots,4$) and maintains unbroken statistical significance at all horizons. Forward money growth ($g_H \to \pi$) predicts inflation strongly at short horizons ($F = 14.557, p = 0.0002$ at $k=1$; $F = 9.284, p = 0.0001$ at $k=2$), but attenuates as lag length increases (at the SBIC-selected lag $k^*=3$, $\pi \to g_H$ yields $F = 20.318, p < 0.0001$ while $g_H \to \pi$ yields $F = 5.544, p = 0.0011$).
+
+This pattern provides evidence consistent with defensive monetary accommodation under acute price pressures. While high-powered money growth contributed to subsequent price acceleration at short horizons, consumer price inflation exerted strong and persistent predictive feedback on base money creation. The bidirectional finding is difficult to reconcile with the strict monetarist premise of unidirectional money exogeneity, while demonstrating that nominal transmission operated as a reciprocal spiral. System 1 is classified as a \textsc{Robust Linear Result}.
+
+\subsubsection{Commercial Banking and Multiplier Sensitivity}
+\label{sec:granger_banking}
+
+System 2 evaluates the commercial banking sector using official un-spliced narrow money balances ($M1$), high-powered base money ($H$), and consumer price inflation over the post-1966 banking window (1966:01--1980:12, $N=180$, usable $N_{\text{eff}}=177$ at $k=3$). At lag $k=3$, the three-variable system satisfies the diagnostic admissibility criteria: the system is stable ($\max |\lambda| = 0.817$), the system Breusch--Godfrey test fails to reject white-noise residuals ($p = 0.428$), and equation-level tests indicate no serial correlation ($p = 0.289$ in the base money equation).
+
+As shown in Panel~B of Table~\ref{tab:core_granger_evidence}, in the diagnostically admissible trivariate VAR(3), narrow-money and base-money growth contain predictive information for one another after conditioning on inflation. Commercial narrow-money growth predicts base-money expansion ($g_{M1} \to g_H$: $F = 3.654, p = 0.0138, \sum \hat{\beta}_i = +0.510$), while base-money growth also predicts narrow money ($g_H \to g_{M1}$: $F = 3.239, p = 0.0236, \sum \hat{\beta}_i = +0.333$). Inflation also predicts subsequent narrow-money growth ($\pi \to g_{M1}$: $F = 6.842, p = 0.0002, \sum \hat{\beta}_i = +0.284$). The reverse relation is not detected once base-money growth is included in the information set: the null that narrow-money growth does not Granger-cause inflation cannot be rejected ($g_{M1} \to \pi$: $F = 1.004, p = 0.3927, \sum \hat{\beta}_i = +0.444$). The banking specification therefore supports predictive interaction between narrow and base money, while the pairwise relation from narrow-money growth to inflation does not survive conditioning on the monetary base. This bilateral dynamic is consistent with an endogenous reserve response to commercial-bank transactions balances, though predictive relations between broad monetary aggregates do not structurally identify credit supply from credit demand. System 2 is classified as a \textsc{Qualified Linear Result}.
+
+\paragraph{Sensitivity Note: Money Multiplier Deconstruction (System 3).}
+Deconstructing narrow money into base money and the banking multiplier ($m_t \equiv M1_t / H_t$) evaluates whether multiplier expansion autonomously preceded inflation. In bivariate pairwise tests ($k=1$), multiplier growth displays no predictive information for price inflation ($F = 0.338, p = 0.5617$). When estimated within a conditional VAR(1) containing base money growth, the predictive link $\Delta \ln m \to \pi$ shifts to marginal statistical significance ($F = 3.896, p = 0.0484$). The multiplier result is sensitive to the conditioning set. Because multiplier growth is algebraically related to narrow-money and base-money growth ($\Delta \ln m_t \equiv g_{M1,t} - g_{H,t}$), conditioning on base money growth mathematically incorporates narrow money dynamics, closely reflecting the commercial credit interaction documented in System~2. This specification is therefore treated as a sensitivity check on the banking representation rather than as an independent empirical result, and is classified as \textsc{Specification-Sensitive}.
+
+\subsubsection{Central Bank Solvency Dynamics Before October 1973}
+\label{sec:granger_solvency_pre73}
+
+System 6 examines the dynamic interaction between the central bank's foreign solvency backing and domestic macroeconomic aggregates. The system specifies the five-variable vector $Y^{(6)}_t = [g_{\text{SolvR\_H},t}, g_{P,\text{gold},t}, g_{e,t}, g_{H,t}, \pi_t]'$, where $g_{\text{SolvR\_H},t} \equiv \Delta \ln \text{SolvR}^H_t \times 100$ tracks the monthly growth rate of the Solvency Ratio ($\text{SolvR}^H_t \equiv [e_t \cdot \text{IR}_t] / [H_t \cdot 1000]$).
+
+In the full sample (1960:01--1980:12, $N=250$), System 6 fails residual whitening across all tested lag lengths $k \in \{1, \dots, 4\}$ ($p < 0.0001$). Under the paper's admissibility criteria, the full-sample linear system is not used for directional inference. However, partitioning the sample at the October 1973 institutional break reveals that residual autocorrelation is concentrated in the post-1973 crawling-peg era. In the pre-October 1973 subperiod (1960:02--1973:09, $N_{\text{eff}} = 161$), extending the specification to $k=3$ resolves residual persistence. The pre-1973 conditional VAR(3) is the unique specification across all tested sample partitions that satisfies all serial-admissibility criteria: the companion matrix is stable ($\max |\lambda| = 0.8817$), the system Breusch--Godfrey test indicates white-noise residuals ($\chi^2 = 116.35, df=100, p = 0.1262$), the minimum equation-level Breusch--Godfrey test is satisfied ($p = 0.0557$ in the base money equation), and the 12-month Portmanteau test confirms absence of residual correlation ($p = 0.0754$).
+
+Panel~C of Table~\ref{tab:core_granger_evidence} reports the conditional Granger causality results for this admissible pre-1973 model. Solvency ratio growth predictively Granger-causes base money growth ($F = 6.983, p = 0.0002$), driven by a statistically significant positive coefficient at lag 3 ($\hat{\beta}_3 = +0.0568, p = 0.0033$; sum $\sum \hat{\beta}_i = +0.0153$). In the reverse direction, base money growth predictively Granger-causes solvency ratio growth ($F = 2.951, p = 0.0347$), with a large negative coefficient concentrated at lag 2 ($\hat{\beta}_2 = -0.9775, p = 0.0074$; sum $\sum \hat{\beta}_i = -0.8365$). Because high-powered money enters directly into the denominator of $\text{SolvR}^H_t$, this negative predictive lag is consistent with subsequent deterioration in reserve backing, partly reflecting the mechanical denominator relation rather than offsetting reserve accumulation. Solvency ratio growth also contains predictive information for nominal exchange-rate adjustments ($g_{\text{SolvR\_H}} \to g_e$: $F = 3.073, p = 0.0297, \sum \hat{\beta}_i = +0.129$). Consumer price inflation does not predict solvency growth in this conditional specification ($F = 0.686, p = 0.5618$).
+
+These findings establish a qualified empirical result: prior to October 1973, domestic base money creation predicts a decline in the central bank's foreign solvency ratio (partly reflecting the denominator relation), while foreign solvency dynamics exerted lagged predictive feedback on monetary emission. Because this relationship cleared diagnostic standards only within the pre-October 1973 subperiod and cannot be established as a time-invariant linear law across the full sample, System 6 is classified as a \textsc{Qualified Linear Result (Pre-October 1973 Only)}. The linear specification does not determine whether these predictive relationships vary with the inherited solvency state. Section~\ref{sec:tvar_solvency_regimes} examines that possibility directly.
+
+\input{tables/tab02_core_granger_evidence}
+
+\subsubsection{Limits of the Linear Exercise and Unresolved Specifications}
+\label{sec:granger_limits}
+\label{sec:sign_tournament_synthesis}
+\label{sec:granger_diagnostics}
+
+Additional real-sector (System 4: manufacturing and mining) and external-sector (System 5: world gold, exchange rates, and structural trade imbalances) vector autoregressions were estimated as part of the broader empirical battery. Because no specification within lag-length selection over $k \in \{1, \dots, 12\}$, the October 1973 historical partition, or month-of-year seasonal controls satisfied the paper's residual-admissibility criteria, these models are not admitted to the main text's inferential core. Their exploratory estimates, residual autocorrelation profiles, and complete diagnostic records are preserved for transparency in Appendix~\ref{app:linear_var_diagnostics}.
+
+\subsubsection{Transition to Non-Linear Analysis}
+\label{sec:granger_transition}
+\label{sec:granger_discussion}
+
+The admissible linear vector autoregressive results establish two key findings: domestic monetary emission operated as an accommodative response to nominal price pressures and commercial-bank credit demand, and external solvency backing interacted with domestic base money prior to October 1973. However, constant-parameter linear models impose time-invariant transmission across fundamentally distinct historical regimes. In a financially subordinate open economy lacking international currency status, the macroeconomic impact of price and credit shocks is likely to differ depending on whether foreign exchange reserves are available to buffer imports or whether the central bank faces reserve exhaustion. The linear results establish selected predictive relationships but do not determine whether their magnitude or persistence varies with inherited external solvency; Section~\ref{sec:tvar_solvency_regimes} examines that question with a threshold specification.
+
+In accordance with the paper's methodological discipline, this transition is motivated by balance-sheet theory and historical regime sensitivity; the failure of linear specifications to whiten residuals in some systems is treated as an empirical limitation of linear modeling, not as econometric validation of the threshold mechanism. The non-linear model stands entirely on its own balance-sheet derivation, concentrated least squares threshold identification, and bootstrap inference.
+
+
+
+\subsection{Empirical Exercise 2: Non-Linear Dynamics under Peripheral Central Bank Solvency Regimes: A Threshold VAR Approach}
+\label{sec:tvar_solvency_regimes}
+\input{sections/05_4_threshold_var}
+

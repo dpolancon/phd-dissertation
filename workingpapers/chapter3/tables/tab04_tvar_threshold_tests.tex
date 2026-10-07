@@ -1,0 +1,51 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Threshold Linearity Tests, Model Adequacy, and Historical Regime Windows (1960--1980)}
+\label{tab:tvar_tests}
+\label{tab:tvar_threshold_tests}
+\label{tab:regime_chronology}
+\textbf{Panel A: Sequential Linearity and Model Adequacy Tests \citep{Hansen1999}}\\[0.3em]
+\begin{tabularx}{\textwidth}{llcc>{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Null Hypothesis ($H_0$)} & \textbf{Alternative ($H_1$)} & \textbf{SupLR Stat.} & \textbf{$p$-value} & \textbf{Model Selection Decision} \\
+\midrule
+Linear VAR ($m=1$) & 2-Regime TVAR ($m=2$) & $44.82$ & $<0.001^{***}$ & Reject linearity ($m=2$ preferred over linear) \\
+2-Regime TVAR ($m=2$) & 3-Regime TVAR ($m=3$) & $26.34$ & $0.004^{***}$ & Reject 2-regime model ($m=3$ preferred) \\
+3-Regime TVAR ($m=3$) & 4-Regime TVAR ($m=4$) & $8.12$ & $0.412$ & Fail to reject null (3 regimes adequate) \\
+\midrule
+\multicolumn{5}{l}{\textbf{Selected Specification:} 3-Regime TVAR with estimated thresholds $\hat{\gamma}_1 = 0.14$ and $\hat{\gamma}_2 = 0.21$} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{0.6em}
+
+\textbf{Panel B: Endogenous Regime Chronology and Sample Windows (1960--1980, $N=250$)}\\[0.3em]
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.1cm}>{\centering\arraybackslash}p{1.4cm}>{\raggedright\arraybackslash}p{4.1cm}>{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Solvency Regime} & \textbf{Threshold Rule} & \textbf{Obs. (\%)} & \textbf{Primary Historical Windows} & \textbf{Macroeconomic Dynamics} \\
+\midrule
+\textbf{Hedge}\newline(Low Stress) & $\text{SolvR}_{t-1} > 0.21$ & 143\newline(57.2\%) & 
+\textbf{Sep 1968--Jul 1971} (UP Initial Expansion / Vuskovic Boom);\newline
+Mar 1974--Dec 1980 (Post-reform);\newline
+Mar--Aug 1960; Jan--Jul 1967 & 
+Adequate external reserves ($\text{SolvR}$ avg $0.41$). Monetary expansion smoothly absorbed without price acceleration ($\Delta \pi$ avg $1.2\%$; $\Delta g_H \to \Delta \pi$ $+0.056$, n.s.). \\
+\addlinespace
+\textbf{Speculative}\newline(Intermediate) & $0.14 < \text{SolvR}_{t-1} \le 0.21$ & 62\newline(24.8\%) & 
+\textbf{Aug 1971--Oct 1971} (Nixon Shock Transition);\newline
+May 1963--Mar 1964 (Alessandri pinch);\newline
+Feb--Sep 1966; Nov 1973 & 
+Reserve buffers erode. International gold price shocks pass into domestic consumer inflation ($\beta = +0.897^{***}$; $\Delta \pi$ avg $3.8\%$). \\
+\addlinespace
+\textbf{Forced Ponzi}\newline(High Stress) & $\text{SolvR}_{t-1} \le 0.14$ & 45\newline(18.0\%) & 
+\textbf{Nov 1971--Oct 1973} (24 continuous months: Acute UP Blockade, Lockout, \& Coup);\newline
+Feb--Dec 1962 (Alessandri FX crisis);\newline
+Nov--Dec 1961; Nov--Dec 1967 & 
+Liquid reserves depleted ($IR < \$30\text{M}$). Volatility explodes ($|\hat{\Sigma}|$ rises 24-fold); discontinuous price acceleration ($\Delta \pi$ avg $15.4\%$) and defensive credit accommodation ($\Delta \pi \to \Delta g_H$). \\
+\bottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{X}
+\footnotesize \textbf{Notes:} Sequential SupLR linearity and regime count tests in Panel~A are estimated via \citet{Hansen1996,Hansen1999} and \citet{Stigler2019}. Because the threshold parameter is unidentified under the null of linearity (the Davies 1977, 1987 nuisance parameter problem), $p$-values are generated using 1,000 residual bootstrap replications over the trimmed grid $\Gamma = [\tau, 1-\tau]$ with trimming parameter $\tau = 0.15$. $^{***} p < 0.01$. The tests decisively reject linearity and select the 3-regime TVAR, corresponding to \citet{Foley2003}'s open-economy Minskian solvency postures. The predetermined delay parameter $d=1$ ($\text{SolvR}_{t-1}$) prevents contemporaneous simultaneity between structural innovations and regime assignment. All three regimes satisfy the degrees-of-freedom requirement ($T_j \ge k \cdot p + c + 1$) and comfortably exceed the asymptotic breakdown threshold ($T_j \ge 40$): Hedge ($T_1=143, 57.2\%$), Speculative ($T_2=62, 24.8\%$), and Forced Ponzi ($T_3=45, 18.0\%$). Panel~B details the complete empirical distribution of the 250 monthly observations (1960:03--1980:12) across the endogenous threshold variable (lagged Central Bank Solvency Ratio, $\text{SolvR}_{t-1} \equiv e_{t-1} IR_{t-1} / M_{1,t-1}$). Data sources: Central Bank of Chile (BCCh) and IMF International Financial Statistics.
+\end{tabularx}
+\end{table}

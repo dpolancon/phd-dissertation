@@ -1,0 +1,53 @@
+\section{Archival Data Provenance, Variable Dictionary, and Splicing Protocols}
+\label{app:archival_codebook}
+\label{app:codebook}
+
+This appendix provides the complete archival provenance, source documentation, codebook identifiers, and historical splicing protocols for the multi-frequency dataset compiled for this paper. The empirical design coordinates two distinct frequency tiers:
+\begin{enumerate}[leftmargin=2em]
+	\item \textbf{Monthly High-Frequency Panel (1960:01--1980:12, $N=252$ months):} Compiled from the Central Bank of Chile REST API (\texttt{SieteRestWS}) for monetary aggregates, exchange rates, and official consumer prices, the physical production and customs trade volume series from \citet{DiazBahamonde2023}, the International Monetary Fund's \textit{International Financial Statistics} (IFS), and the U.S. Bureau of Labor Statistics (BLS).
+	\item \textbf{Annual Secular Panel (1920--2010, $T=91$ years):} Compiled from Clio-Lab PUC, \citet{Braun2000}, income distribution solely from \citet{Astorga2023} (distributive wage share), \citet{DiazLudersWagner2016} (annual Terms of Trade), the World Historical Balance of Payments database (\citealt{NievasPiketty2025}, WBOP), and Polanco's \citeyearpar{Polanco2026} Cointegrating Multivariate Polynomial Regression (CMPR IM-OLS) capacity utilization and harmonized capital stock frameworks (explicitly distinct from Wharton or peak-to-peak trend-through-peaks methods).
+\end{enumerate}
+
+\subsection{Monthly High-Frequency Variable Ledger}
+\label{app:monthly_ledger}
+
+Table~\ref{tab:app_monthly_codebook} catalogs the complete monthly variable ledger, detailing archival provenance, original units, and base conversions.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Monthly High-Frequency Variable Ledger and Archival Provenance (1960--1980)}
+\label{tab:app_monthly_codebook}
+\begin{tabularx}{\textwidth}{p{2.2cm}p{3.0cm}p{2.6cm}X}
+\toprule
+\textbf{Variable} & \textbf{Economic Concept} & \textbf{Archival Source} & \textbf{Harmonization / Splicing Protocol} \\
+\midrule
+$IR_m$ & Gross International Reserves & IMF IFS Line 1l.d; BCCh & Denominated in Millions of USD. Spliced across gold-revaluation breaks. \\
+$e_m$ & Official Nominal Exchange Rate & BCCh \textit{Boletín Mensual} & Expressed in Escudos per USD ($E^\circ/\$$). Re-denominated uniformly across 1975 peso return. \\
+$M0_m$ & High-Powered Monetary Base & BCCh Line \texttt{Emisión} & Notes and coin in circulation plus commercial bank reserve deposits at BCCh. \\
+$M1_m$ & Narrow Money Stock & BCCh \textit{Boletín Mensual} & Currency in circulation plus private demand deposits in commercial banks. \\
+$P^{\text{CL}}_m$ & Consumer Price Index & BCCh (\texttt{SieteRestWS}) & Harmonized to Nov 1970 = 100. Official spliced CPI series published by BCCh. \\
+$P^{\text{US}}_{W, m}$ & U.S. Wholesale Price Index & BLS / FRED (\texttt{PPIACO}) & U.S. Producer Price Index for all commodities, base Nov 1970 = 100. \\
+$P^{\text{Cu}}_m$ & London Copper Price & LME / BCCh & Cash settlement price, Grade A electrolytic copper, USD per pound. \\
+$P^{\text{Gold}}_m$ & London Gold Price & Bullion Market / FRED & London 3:00 PM fix, USD per troy ounce. \\
+$Q^{\text{Manuf}}_m$ & Manufacturing Production & \citet{DiazBahamonde2023} & Index of physical volume of manufacturing production, Nov 1970 = 100. \\
+$Q^{\text{Mining}}_m$ & Mining Physical Production & \citet{DiazBahamonde2023} & Physical extraction volume of copper, iron, and nitrates, Nov 1970 = 100. \\
+$\text{Exports}_m$ & Customs Real Export Activity & \citet{DiazBahamonde2023} & Monthly physical trade volume index compiled from \textit{Estadística Chilena} (DGE/INE) and BCCh \textit{Boletín Mensual} (constant USD, Nov 1970 = 100). \\
+$\text{Imports}^*_m$ & Adjusted Real Import Activity & \citet{DiazBahamonde2023} & Monthly physical trade volume index from \textit{Estadística Chilena} and BCCh; adjusted for the April 1973 customs registration lag. \\
+$M^{\text{cap}}_m$ & Capacity to Import Index & Prebisch-ECLAC & Operationalized via Prebisch-ECLAC purchasing power formula: $M^{\text{cap}}_m \equiv \text{Exports}_m \times [(P^{\text{Cu}}_m / P^{\text{Cu}}_{70:11}) / (P^{\text{US}}_{W,m} / P^{\text{US}}_{W,70:11})] \times 100$, using monthly trade volume series from \citet{DiazBahamonde2023}. \\
+$\Theta_m$ & Real Structural Imbalance Index & ECLAC / BCCh balance & Ratio of effective physical imports to real capacity to import: $\Theta_m \equiv (\text{Imports}^*_m / M^{\text{cap}}_m) \times 100$, capturing physical import chokeholds in the Prebisch-ECLAC tradition. \\
+$\Omega_m$ & Relative Price Disparity Index & Relative price derivation & $\Omega_m \equiv (P^{\text{CL}}_m / P^{\text{CL}}_{70:11}) / [(e_m / e_{70:11}) \cdot (P^{\text{US}}_{W,m} / P^{\text{US}}_{W,70:11})] \times 100$, tracking cost wedges between domestic CPI and imported wholesale prices. \\
+$\text{SolvR}_m$ & Central Bank Solvency Ratio & Central Bank balance & $\text{SolvR}_m \equiv (e_m \cdot IR_m) / M1_m$, external liquidity backing of narrow money liabilities. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Monetary Reform Conversions and Splicing Mechanics}
+\label{app:monetary_reforms}
+
+Chile experienced two currency re-denominations during the twentieth century:
+\begin{enumerate}[leftmargin=2em]
+	\item \textbf{January 1, 1960:} The Escudo ($E^\circ$) was introduced to replace the old Peso at a conversion rate of $1\,E^\circ = 1,000\text{ old pesos}$.
+	\item \textbf{September 29, 1975:} Decree Law 1,123 reintroduced the Peso (\$ CLP) to replace the Escudo at a conversion rate of $1\text{ new peso} = 1,000\,E^\circ$.
+\end{enumerate}
+All monetary and price series in both the monthly and annual panels are converted into uniform currency equivalents, ensuring that growth rates ($\Delta \ln X_t$ and simple discrete percentage changes) are algebraically continuous across reform dates.
