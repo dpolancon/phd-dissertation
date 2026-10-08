@@ -1,0 +1,170 @@
+\documentclass[11pt]{article}
+
+% ==============================================================================
+% WORKING PAPER: Productive Capacity as an Institutional Settlement
+% Critical Replication and Distributional Extension of Shaikh's Capacity Measure
+% Exported from PhD Dissertation source of truth (University of Massachusetts Amherst)
+% Mirrored layout engine: Letterpaper, 1.05 stretch, microtype, float auto-scaler
+% ==============================================================================
+
+% ---- Language & encoding ----
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ---- Layout & Spacing (Dissertation Main Engine) ----
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+
+% ---- Microtypography ----
+\usepackage{microtype}
+
+% ---- Math & Theorems ----
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+
+% ---- Figures & Floats ----
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{pdflscape}
+
+% ---- Tables (Dissertation Main Engine) ----
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{threeparttable}
+\usepackage{siunitx}
+\sisetup{group-separator={,}, group-minimum-digits=4}
+
+% ---- Captions ----
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{font=small, labelfont=bf, labelsep=period}
+
+% ---- Lists ----
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=4pt}
+
+% ---- Math & Text Helpers ----
+\usepackage{xfrac}
+\usepackage{ragged2e}
+
+% ---- Color Palette ----
+\usepackage[dvipsnames]{xcolor}
+\colorlet{ink}{black}
+\colorlet{subink}{black!72}
+\colorlet{lightink}{black!45}
+\colorlet{guide}{black!28}
+\colorlet{panel}{black!4}
+\colorlet{panelb}{black!7}
+\colorlet{panelc}{black!10}
+\colorlet{stress}{black!12}
+\definecolor{navy}{HTML}{1D3557}
+\definecolor{crimson}{HTML}{9E2A2B}
+\definecolor{amber}{HTML}{E76F51}
+\definecolor{darkgreen}{HTML}{2A9D8F}
+\definecolor{slate}{HTML}{4A4E69}
+\definecolor{darkblue}{rgb}{0,0,0.8}
+
+% ---- TikZ ----
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix}
+
+% ---- Column Types ----
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% ---- Appendix & Bibliography ----
+\usepackage{titlesec}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage[authoryear]{natbib}
+
+% ---- Hyperref & Cleveref ----
+\usepackage[
+  colorlinks  = true,
+  linkcolor   = darkblue,
+  citecolor   = darkblue,
+  urlcolor    = darkblue,
+  bookmarksnumbered = true,
+  pdfauthor   = {Diego Polanco}
+]{hyperref}
+\usepackage{cleveref}
+
+% ---- Float Autoscaler Hook (Mirrored from Dissertation Main integration) ----
+% Dynamically rescales completed floats only when exceeding text height,
+% guaranteeing that large tables and stacked panels fit on a single page.
+\newsavebox{\WorkingPaperFloatBox}
+\makeatletter
+\let\wp@endfloatbox\@endfloatbox
+\def\@endfloatbox{%
+  \wp@endfloatbox
+  \ifdim\dimexpr\ht\@currbox+\dp\@currbox\relax>\textheight
+    \typeout{WORKING PAPER: fitting oversized float to page height}%
+    \setbox\WorkingPaperFloatBox\box\@currbox
+    \global\setbox\@currbox\vbox{%
+      \hbox to\columnwidth{\hfil
+        \resizebox*{!}{0.98\textheight}{\usebox{\WorkingPaperFloatBox}}%
+      \hfil}}%
+  \fi
+}
+\makeatother
+
+% ---- Paragraph Rhythm ----
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+
+% ---- Graphicspath ----
+\graphicspath{{figures/}{appendixA/figures/}{../../Chapter1/figures/}{../../Chapter1/appendixA/figures/}}
+
+% ---- Working Paper Metadata ----
+\title{\textbf{Replicating Shaikh's Capacity Utilization Measure: Specification Sensitivity and Distribution}\thanks{Doctoral Candidate in Economics, Department of Economics, University of Massachusetts Amherst. Email: \texttt{dpolanconeco@umass.edu}. This working paper draws upon and extends research from the author's doctoral dissertation at the University of Massachusetts Amherst. The author thanks the dissertation committee members for invaluable comments and guidance. All analytical arguments, empirical results, and remaining errors are the author's sole responsibility.}}
+
+\author{\textbf{Diego Polanco}\thanks{Department of Economics, University of Massachusetts Amherst.} \\
+Department of Economics, University of Massachusetts Amherst}
+
+\date{October 2026 \\ \vspace{0.5em} \small\textbf{Working Paper}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper critically replicates Anwar Shaikh's (2016) capacity utilization measure for the post-war US corporate sector (1947--2011), evaluating the long-run output--capital coefficient as a capacity transformation elasticity ($\theta$). A faithful single-equation ARDL reconstruction reproduces the baseline parameter within canonical data bounds ($\hat{\theta} \approx 0.72$). However, expanding the specification space across a 500-model ARDL lattice reveals substantial sensitivity ($\hat{\theta} \in [0.65, 0.95]$), demonstrating that single-equation capacity paths are non-unique. Moving to a system framework, I find that the bivariate output--capital relation fails to cointegrate across all 48 attempted VECM specifications. Long-run system stability becomes recoverable only when the rate of exploitation enters the state vector alongside historical shock controls. In the focal trivariate VECM, the exploitation parameter is identified with high precision, yielding a focal elasticity point estimate of $\hat{\theta} \approx 0.73$ alongside substantial estimation uncertainty. Productive capacity is therefore not an insulated engineering constant, but a macro-structural outcome conditioned by institutional settlements governing distribution.
+\end{abstract}
+
+\vspace{0.8em}
+\noindent\textbf{Keywords:} Capacity Utilization, Critical Replication, Transformation Elasticity, Cointegration, ARDL, VECM, Distributional Conflict, Exploitation Rate.
+
+\vspace{0.4em}
+\noindent\textbf{JEL Codes:} B51, C32, E01, E22, E32, P16.
+
+\clearpage
+
+% ── Manuscript Sections ────────────────────────────────────────────────────────
+\input{sections/01_introduction}
+\input{sections/02_historical_trace}
+\input{sections/03_conceptual_framework}
+\input{sections/04_econometric_replication}
+\input{sections/05_discussion_conclusion}
+
+\clearpage
+\begingroup
+\setlength{\bibsep}{2.5pt}
+\bibliographystyle{apalike}
+\bibliography{references}
+\endgroup
+
+\clearpage
+\begin{appendices}
+\input{appendices/appendix_A_ODE}
+\clearpage
+\input{appendices/appendix_B_data_diagnostics}
+\end{appendices}
+
+\end{document}
