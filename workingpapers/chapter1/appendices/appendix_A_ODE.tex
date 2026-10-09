@@ -1,12 +1,12 @@
 \section{Derivation of Accumulation Dynamics under Unbalanced Growth}
 \label{app:acc_dynamics}
 
-This appendix provides the derivation of the dynamical equations summarized in \S\ref{subsec:balanced_unbalanced_growth} and \S\ref{subsec:trend_stabilized_closure}. All results follow from three components: the accounting identity $\hat{k} + \delta = \phi^p B$, the unbalanced growth closure $g_{Y^p} = \theta g_K$, and the investment-savings closure $\phi^p = s$.
+This appendix provides the derivation of the dynamical equations summarized in \S\ref{subsec:balanced_unbalanced_growth} and \S\ref{subsec:trend_stabilized_closure}. All results follow from four components: the net growth rate of the capital stock $\hat{k} \equiv \dot{K}/K$, the gross investment accounting identity $\hat{k} + \delta = I/K = \phi^p B$, the unbalanced growth closure $g_{Y^p} = \theta g_K$, and the investment-savings closure $\phi^p = s$.
 
 \subsection{The Unbalanced Growth Closure: Derivation of the Bernoulli ODE}
 \label{app:bernoulli}
 
-The accounting identity under the investment-savings closure is:
+With $\hat{k} \equiv \dot{K}/K$ representing the net growth rate of the capital stock, the gross investment rate is $I/K = \hat{k} + \delta$. Under the investment-savings closure $\phi^p = s$, the accounting identity is:
 \begin{equation}\label{eq:app_identity}
     \hat{k} + \delta = s \, B.
 \end{equation}
@@ -26,7 +26,7 @@ Recall that capital productivity is $B \equiv Y^p / K$, which in growth rates im
 \begin{equation}\label{eq:app_bernoulli}
     \boxed{\frac{d\hat{k}}{dt} = (\theta - 1) \, \hat{k} \, (\hat{k} + \delta)}, \quad \text{where } \hat{k} \text{ and } \delta \text{ are expressed in consistent temporal and physical units}.
 \end{equation}
-This is a Bernoulli equation of order 2 in $\hat{k}$, where the nonlinearity arises from the product $\hat{k}(\hat{k} + \delta)$.
+This is a first-order Bernoulli equation with exponent $n=2$, where the nonlinearity arises from the product $\hat{k}(\hat{k} + \delta)$.
 
 \subsection{Analytical Solution}
 \label{app:solution}
@@ -51,10 +51,18 @@ Inverting $v(t)$ yields the explicit path for the net accumulation rate:
 \subsection{Equilibria and Stability Analysis}
 \label{app:stability}
 
-The equilibria $\hat{k}^*$ are defined by $(\theta - 1)\,\hat{k}\,(\hat{k} + \delta) = 0$. For $\theta \neq 1$, the roots are $\hat{k}_1^* = 0$ (stationary net capital) and $\hat{k}_2^* = -\delta$ (zero gross investment). Linearizing around $\hat{k}^* = 0$ via the Jacobian $f'(\hat{k}) = (\theta - 1)(2\hat{k} + \delta)$ yields:
+The equilibria $\hat{k}^*$ are defined by $(\theta - 1)\,\hat{k}\,(\hat{k} + \delta) = 0$. For $\theta \neq 1$, the roots are $\hat{k}_1^* = 0$ (stationary net capital) and $\hat{k}_2^* = -\delta$ (zero gross investment). Linearizing via the Jacobian $f'(\hat{k}) = (\theta - 1)(2\hat{k} + \delta)$ yields:
 \begin{itemize}
-    \item Over-accumulation ($\theta < 1$): $f'(0) < 0$ --- the stagnation equilibrium is locally stable.
-    \item Under-accumulation ($\theta > 1$): $f'(0) > 0$ --- the stagnation equilibrium is unstable.
+    \item Over-accumulation ($\theta < 1$):
+    \begin{itemize}
+        \item At $\hat{k}_1^* = 0$: $f'(0) = (\theta - 1)\delta < 0$ --- the stagnation equilibrium is a locally stable attractor.
+        \item At $\hat{k}_2^* = -\delta$: $f'(-\delta) = (1 - \theta)\delta > 0$ --- the zero gross investment boundary is an unstable repeller. Trajectories initialized in $\hat{k}_0 > -\delta$ converge to $\hat{k}^* = 0$.
+    \end{itemize}
+    \item Under-accumulation ($\theta > 1$):
+    \begin{itemize}
+        \item At $\hat{k}_1^* = 0$: $f'(0) = (\theta - 1)\delta > 0$ --- the stationary point is unstable, inducing explosive acceleration for $\hat{k} > 0$.
+        \item At $\hat{k}_2^* = -\delta$: $f'(-\delta) = (1 - \theta)\delta < 0$ --- the boundary is locally stable for $\hat{k} < 0$.
+    \end{itemize}
 \end{itemize}
 
 \subsection{The Trend-Stabilized Closure: Derivation of the Quadratic ODE}

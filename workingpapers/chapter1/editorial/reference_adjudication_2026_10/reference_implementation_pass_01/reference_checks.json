@@ -1,0 +1,106 @@
+{
+  "pass": "reference_implementation_pass_01",
+  "overall": "PASS",
+  "checks": {
+    "RA01": {
+      "status": "PASS",
+      "evidence": [
+        "Herndon and Ash absent from potential-output filtering sentence in sections/02_historical_trace.tex",
+        "Herndon et al. 2014 and Ash et al. 2017 present with distinct forensic replication and robustness roles in sections/04_econometric_replication.tex"
+      ]
+    },
+    "RA02": {
+      "status": "PASS",
+      "evidence": [
+        "Eliminated joint citation phrase '(2020, 2022) argue'",
+        "Differentiated Gahn and Gonzalez 2020 as comment on Nikiforos, Gahn and Gonzalez 2022 as cross-country mean-reversion econometrics, and Nikiforos 2020 as reply"
+      ]
+    },
+    "RA03": {
+      "status": "PASS",
+      "evidence": [
+        "Felipe & McCombie 2005 attributed to accounting-identity critique of production functions",
+        "Author explicitly owns application of identification concern to Shaikh capacity regression"
+      ]
+    },
+    "RA05_06": {
+      "status": "PASS",
+      "evidence": [
+        "Okishio 2022 and Basu 2022 attached strictly to interdepartmental reproduction benchmarks",
+        "Author explicitly owns translation to single-sector scalar theta framework",
+        "No sentence attributes theta = 1, theta != 1, or ODE accumulation dynamics to Okishio or Basu"
+      ]
+    },
+    "RA07": {
+      "status": "PASS",
+      "evidence": [
+        "Butler 1958 and Phillips 1963 attached to survey measurement reporting",
+        "Munroe 2007 attached to McGraw-Hill corporate information infrastructure",
+        "Baran & Sweezy 1988 attached to monopoly-capital environment of Fordist era",
+        "Author explicitly owns interpretive synthesis of corporate integration"
+      ]
+    },
+    "RA08A": {
+      "status": "PASS",
+      "evidence": [
+        "Corrected Kurz 1986 title to ''Normal' Positions and Capital Utilisation'",
+        "Confirmed journal Political Economy, volume 2, issue 1, pages 37--54",
+        "Erroneous title 'Classical and neoclassical theories of output and employment' purged"
+      ]
+    },
+    "RA08B": {
+      "status": "PASS",
+      "evidence": [
+        "Replaced 'distributive conflict' with 'distribution' in local choice-of-technique sentence citing Kurz 1986 in sections/03_conceptual_framework.tex"
+      ]
+    },
+    "RA11": {
+      "status": "PASS",
+      "evidence": [
+        "Replaced 'factor costs' and 'machine speeds' with 'operating choices, including operating intensity and shift arrangements'",
+        "Preserved non-causal calibration statement ('VECM does not identify that mechanism causally')",
+        "Check F4 remains passing without regression"
+      ]
+    },
+    "RA_CIC_A": {
+      "status": "PASS",
+      "evidence": [
+        "Distinguished Kurz normal utilization (cost-minimizing technique) from Ciccone ex ante plant sizing under fluctuating demand",
+        "Old compressed sentence eliminated from sections/02_historical_trace.tex"
+      ]
+    },
+    "RA_CIC_B": {
+      "status": "PASS",
+      "evidence": [
+        "Verified Ciccone 1986 bibliographic entry in Political Economy: Studies in the Surplus Approach",
+        "Confirmed volume 2, issue 1, pages 17--36"
+      ]
+    }
+  },
+  "frozen_items": {
+    "RA09": "UNCHANGED",
+    "RA10": "UNCHANGED",
+    "FOLEY": "NOT_RESTORED",
+    "PATTERSON": "RETAINED"
+  },
+  "final_pass_v12": {
+    "overall": "PASS",
+    "exit_code": 0,
+    "checks_passed": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "G1",
+      "G2",
+      "G3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "overall": "PASS",
+  "timestamp": "2026-10-08T20:50:14.709416",
+  "pdf": "C:\\ReposGitHub\\phd-dissertation\\workingpapers\\chapter1\\working_paper.pdf",
+  "checks": {
+    "F1": {
+      "source": "PASS",
+      "rendered": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: No forbidden \\hat{k} \\equiv \\dot{K}/K - \\delta definition found.",
+          "PASS: Governing definition \\hat{k} \\equiv \\dot{K}/K present in both Section 3.3 and Appendix A.",
+          "PASS: Gross investment identity I/K = \\hat{k} + \\delta preserved."
+        ],
+        "rendered": [
+          "PASS: Rendered text contains 'acceleration of the net growth rate of the capital stock'.",
+          "PASS: Rendered text does not contain '- delta' in capital growth definition.",
+          "PASS: Figure 1 identifies k* = 0 as stable stagnation attractor."
+        ]
+      }
+    },
+    "F2": {
+      "source": "PASS",
+      "rendered": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Absolved from forbidden phrase 'models omitting these controls yield nonstationary residuals'",
+          "PASS: Absolved from forbidden phrase 'restoring stationary errors requires these step controls'",
+          "PASS: Acknowledges 8 no-dummy Case-II surviving models."
+        ],
+        "rendered": [
+          "PASS: Rendered text quantifies eight no-dummy Case-II specifications.",
+          "PASS: Rendered text purged of absolute nonstationarity claims."
+        ]
+      }
+    },
+    "F3": {
+      "source": "PASS",
+      "rendered": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Abstract does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Intro does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Replication does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Conclusion does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Abstract distinguishes 48 attempted and 36 successfully estimated.",
+          "PASS: Conclusion distinguishes 48 attempted and 36 successfully estimated."
+        ],
+        "rendered": [
+          "PASS: Abstract does not contain uncalibrated 'fails across all 48 attempted'.",
+          "PASS: Abstract explicitly distinguishes 48 attempted and 36 successfully estimated.",
+          "PASS: Conclusion explicitly distinguishes 48 attempted and 36 successfully estimated."
+        ]
+      }
+    },
+    "F4": {
+      "source": "PASS",
+      "rendered": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged forbidden causal phrase: 'causing bivariate cointegration tests to fail'",
+          "PASS: Purged forbidden causal phrase: 'accounts for these distributionally mediated shifts'",
+          "PASS: Purged forbidden causal phrase: 'causing bivariate cointegration to break down'",
+          "PASS: Calibrated non-causal qualification present in Section 4.6 and Discussion."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'causing bivariate cointegration tests to fail'.",
+          "PASS: Rendered text does not contain 'accounts for these distributionally mediated shifts'.",
+          "PASS: Rendered text confirms calibrated non-causal mechanism language."
+        ]
+      }
+    },
+    "F5": {
+      "source": "PASS",
+      "rendered": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged forbidden causal sample phrase: 'causes bivariate cointegration to break down'",
+          "PASS: Purged forbidden causal sample phrase: 'adding the four years of the great recession (2008--2011) disrupts this relation'",
+          "PASS: Purged forbidden causal sample phrase: 'adding the great recession breaks the relation'",
+          "PASS: Frame pre-2008 contrast as sample sensitivity and historical coincidence."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'causes bivariate cointegration to break down'.",
+          "PASS: Rendered text does not contain 'adding the four years of the great recession'.",
+          "PASS: Rendered text does not contain 'disrupts this relation'.",
+          "PASS: Rendered text confirms sample sensitivity / coincidence framing."
+        ]
+      }
+    },
+    "F6": {
+      "source": "PASS",
+      "rendered": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Figure 21 vector source does not contain D_56/D_74/D_80.",
+          "PASS: Figure 21 vector source contains correct P_56, P_74, P_80 legend labels."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain D_56/D_74/D_80.",
+          "PASS: Rendered text / OCR confirms P_56, P_74, P_80 legend labels on page."
+        ]
+      }
+    }
+  },
+  "failed_checks": [],
+  "indeterminate_checks": [],
+  "next_action": "PROCEED_TO_INDEPENDENT_READER_SCREEN"
+}

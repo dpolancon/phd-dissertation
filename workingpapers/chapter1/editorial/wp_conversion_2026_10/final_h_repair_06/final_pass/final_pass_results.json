@@ -1,0 +1,553 @@
+{
+  "verifier_version": "1.2",
+  "check_set": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "G1",
+    "G2",
+    "G3",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5"
+  ],
+  "overall": "PASS",
+  "timestamp": "2026-10-09T12:11:30.879496",
+  "pdf": "C:\\ReposGitHub\\phd-dissertation\\workingpapers\\chapter1\\working_paper.pdf",
+  "checks": {
+    "F1": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: No forbidden \\hat{k} \\equiv \\dot{K}/K - \\delta definition found.",
+          "PASS: Governing definition \\hat{k} \\equiv \\dot{K}/K present in both Section 3.3 and Appendix A.",
+          "PASS: Gross investment identity I/K = \\hat{k} + \\delta preserved."
+        ],
+        "rendered": [
+          "PASS: Rendered text contains 'acceleration of the net growth rate of the capital stock'.",
+          "PASS: Rendered text does not contain '- delta' in capital growth definition.",
+          "PASS: Figure 1 identifies k* = 0 as stable stagnation attractor."
+        ],
+        "sections": [
+          "Section 3.3",
+          "Appendix A"
+        ],
+        "matched_required": [
+          "\\hat{k} \\equiv \\dot{K}/K",
+          "I/K = \\hat{k} + \\delta",
+          "acceleration of the net growth rate of the capital stock",
+          "k* = 0 stable stagnation attractor"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          9,
+          10
+        ]
+      }
+    },
+    "F2": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Absolved from forbidden phrase 'models omitting these controls yield nonstationary residuals'",
+          "PASS: Absolved from forbidden phrase 'restoring stationary errors requires these step controls'",
+          "PASS: Acknowledges 8 no-dummy Case-II surviving models."
+        ],
+        "rendered": [
+          "PASS: Rendered text quantifies eight no-dummy Case-II specifications.",
+          "PASS: Rendered text purged of absolute nonstationarity claims."
+        ],
+        "sections": [
+          "Section 4.5"
+        ],
+        "matched_required": [
+          "eight no-dummy Case-II specifications",
+          "eight no-dummy Case-II specifications"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          26
+        ]
+      }
+    },
+    "F3": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Abstract does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Intro does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Replication does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Conclusion does not contain 'fails to cointegrate across all 48 attempted'.",
+          "PASS: Abstract distinguishes 48 attempted and 36 successfully estimated.",
+          "PASS: Conclusion distinguishes 48 attempted and 36 successfully estimated."
+        ],
+        "rendered": [
+          "PASS: Abstract does not contain uncalibrated 'fails across all 48 attempted'.",
+          "PASS: Abstract explicitly distinguishes 48 attempted and 36 successfully estimated.",
+          "PASS: Conclusion explicitly distinguishes 48 attempted and 36 successfully estimated."
+        ],
+        "sections": [
+          "Abstract",
+          "Introduction",
+          "Section 4.6",
+          "Conclusion"
+        ],
+        "matched_required": [
+          "Abstract: 48 attempted / 36 estimated",
+          "Conclusion: 48 attempted / 36 estimated",
+          "Abstract: 48 attempted / 36 estimated",
+          "Conclusion: 48 attempted / 36 estimated"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          1,
+          37
+        ]
+      }
+    },
+    "F4": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged forbidden causal phrase: 'causing bivariate cointegration tests to fail'",
+          "PASS: Purged forbidden causal phrase: 'accounts for these distributionally mediated shifts'",
+          "PASS: Purged forbidden causal phrase: 'causing bivariate cointegration to break down'",
+          "PASS: Calibrated non-causal qualification present in Section 4.6 and Discussion."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'causing bivariate cointegration tests to fail'.",
+          "PASS: Rendered text does not contain 'accounts for these distributionally mediated shifts'.",
+          "PASS: Rendered text confirms calibrated non-causal mechanism language."
+        ],
+        "sections": [
+          "Section 4.6",
+          "Discussion"
+        ],
+        "matched_required": [
+          "does not identify that mechanism causally",
+          "does not identify that mechanism causally"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          34
+        ]
+      }
+    },
+    "F5": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged forbidden causal sample phrase: 'causes bivariate cointegration to break down'",
+          "PASS: Purged forbidden causal sample phrase: 'adding the four years of the great recession (2008--2011) disrupts this relation'",
+          "PASS: Purged forbidden causal sample phrase: 'adding the great recession breaks the relation'",
+          "PASS: Frame pre-2008 contrast as sample sensitivity and historical coincidence."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'causes bivariate cointegration to break down'.",
+          "PASS: Rendered text does not contain 'adding the four years of the great recession (2008--2011) disrupts this relation'.",
+          "PASS: Rendered text does not contain 'adding the great recession breaks the relation'.",
+          "PASS: Rendered text frames pre-2008 contrast as sample sensitivity."
+        ],
+        "sections": [
+          "Section 4.7",
+          "Discussion"
+        ],
+        "matched_required": [
+          "sample sensitivity / coincidence framing",
+          "pre-2008 sample sensitivity"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          35
+        ]
+      }
+    },
+    "F6": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Figure 21 vector source does not contain D_56/D_74/D_80.",
+          "PASS: Figure 21 vector source contains correct P_56, P_74, P_80 legend labels."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain D_56/D_74/D_80.",
+          "PASS: Rendered text / OCR confirms P_56, P_74, P_80 legend labels on page."
+        ],
+        "sections": [
+          "Appendix A Figure 21"
+        ],
+        "matched_required": [
+          "P_56, P_74, P_80 in fig_A5_dummies_residuals.pdf",
+          "P_56, P_74, P_80 legend labels confirmed"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          56
+        ]
+      }
+    },
+    "G1": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Abstract qualifies system stability claim with 'Within the tested full-sample system grid'.",
+          "PASS: Introduction qualifies bivariate non-self-sufficiency claim.",
+          "PASS: Introduction qualifies system stability claim with 'Within the tested full-sample system grid'.",
+          "PASS: Section 4.1 qualifies trivariate stability claim with 'Within the tested full-sample system grid'.",
+          "PASS: Table 2 qualifies S2 Trivariate interpretive cell with 'within the tested system grid'.",
+          "PASS: Section 4.6 qualifies capital accumulation trajectory and system stability in S2 opening.",
+          "PASS: Section 4.6 qualifies step controls necessity with 'Within the tested trivariate models'.",
+          "PASS: Discussion qualifies system stability with 'within the tested full-sample system grid'.",
+          "PASS: Conclusion qualifies cointegration recoverability with 'Within the tested full-sample system grid'.",
+          "PASS: Absolved from unqualified phrase 'survives exclusively when distribution enters expl...'.",
+          "PASS: Absolved from unqualified phrase 'Historical step controls ($S_{1956}, S_{1974}, S_{...'."
+        ],
+        "rendered": [
+          "PASS: Rendered Abstract contains 'Within the tested full-sample system grid'.",
+          "PASS: Rendered Introduction contains 'Within the tested bivariate specifications'.",
+          "PASS: Rendered Introduction contains 'Within the tested full-sample system grid'.",
+          "PASS: Rendered Table 2 contains 'within the tested system grid'.",
+          "PASS: Rendered Section 4.6 contains 'Within the tested specification space / In the tested system grid'.",
+          "PASS: Rendered Section 4.6 contains 'Within the tested trivariate models'.",
+          "PASS: Rendered Discussion contains 'within the tested full-sample system grid'.",
+          "PASS: Rendered Conclusion contains 'Within the tested full-sample system grid'."
+        ],
+        "sections": [
+          "Abstract",
+          "Introduction",
+          "Section 4.1",
+          "Table 2",
+          "Section 4.6",
+          "Discussion",
+          "Conclusion"
+        ],
+        "matched_required": [
+          "Abstract: Within the tested full-sample system grid",
+          "Intro: Within the tested bivariate specifications",
+          "Intro: Within the tested full-sample system grid",
+          "Section 4.1: Within the tested full-sample system grid",
+          "Table 2: within the tested system grid",
+          "Section 4.6 opening: Within the tested specification space / In the tested system grid",
+          "Section 4.6: Within the tested trivariate models",
+          "Discussion: within the tested full-sample system grid",
+          "Conclusion: Within the tested full-sample system grid",
+          "Abstract: Within the tested full-sample system grid",
+          "Intro: Within the tested bivariate specifications",
+          "Intro: Within the tested full-sample system grid",
+          "Table 2: within the tested system grid",
+          "Section 4.6: Within the tested specification space / In the tested system grid",
+          "Section 4.6: Within the tested trivariate models",
+          "Discussion: within the tested full-sample system grid",
+          "Conclusion: Within the tested full-sample system grid"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          1,
+          2,
+          12,
+          13,
+          29,
+          32,
+          36,
+          37
+        ]
+      }
+    },
+    "G2": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Absolved from direct causal reserve-army claims.",
+          "PASS: Absolved from direct causal reserve-army claims.",
+          "PASS: Renormalized coefficient -0.050 explicitly stated.",
+          "PASS: Interpretive framing 'consistent with a reserve-army mechanism' present.",
+          "PASS: Causal boundary 'VECM does not identify that causal mechanism directly' present."
+        ],
+        "rendered": [
+          "PASS: Rendered text purged of direct 'reflects a reserve-army feedback'.",
+          "PASS: Rendered text purged of unhedged causal bargaining assertions.",
+          "PASS: Rendered text confirms 'consistent with a reserve-army mechanism'.",
+          "PASS: Rendered text confirms 'VECM does not identify that causal mechanism directly'."
+        ],
+        "sections": [
+          "Section 4.6"
+        ],
+        "matched_required": [
+          "Renormalizing on ln e_t yields a coefficient of -0.050",
+          "consistent with a reserve-army mechanism",
+          "VECM does not identify that causal mechanism directly",
+          "consistent with a reserve-army mechanism",
+          "does not identify that causal mechanism directly"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          31
+        ]
+      }
+    },
+    "G3": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged forbidden overstatement 'does not invalidate the superconsistent Johansen ML estimates'.",
+          "PASS: BG LM(4) = 60.81 (p=0.006) reports residual serial dependence at lag 4.",
+          "PASS: BG LM(4) calibrated as finite-sample diagnostic limitation without overturning rank-one result.",
+          "PASS: Absolved from imprecise residual nonstationarity claim 'Residuals remain non-stationary ($I(1)$)'.",
+          "PASS: Precise statement that none of 36 estimated bivariate systems identifies a stationary cointegrating vector under Johansen rank tests."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not overstate superconsistency.",
+          "PASS: Rendered text confirms BG LM(4) = 60.81 and residual serial dependence at lag 4.",
+          "PASS: Rendered text confirms diagnostic limitation weakens conventional finite-sample inference.",
+          "PASS: Rendered text does not contain imprecise residual nonstationarity claim.",
+          "PASS: Rendered text confirms precise statement that none of 36 bivariate systems identifies stationary cointegrating vector."
+        ],
+        "sections": [
+          "Section 4.6"
+        ],
+        "matched_required": [
+          "BG LM(4) = 60.81 (p=0.006) residual serial dependence",
+          "diagnostic limitation / weakens conventional finite-sample inference",
+          "36 estimated bivariate systems fail stationary cointegrating vector under Johansen",
+          "BG LM(4) = 60.81 residual serial dependence at lag 4",
+          "weakens conventional finite-sample inference",
+          "none of 36 bivariate systems identifies stationary cointegrating vector"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          30
+        ]
+      }
+    },
+    "H1": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Source purged of 'the residuals remain nonstationary ($i(1...'.",
+          "PASS: Source purged of 'confirming that the output--capital rela...'.",
+          "PASS: Source purged of 'an admissible specification is one that ...'.",
+          "PASS: Source purged of 'its residuals contain a unit root...'.",
+          "PASS: Found required levels-relationship phrasing 'does not provide sufficient evidence of a long-run levels relationship'.",
+          "PASS: Found required levels-relationship phrasing 'null of no long-run levels relationship is rejected'.",
+          "PASS: Found required levels-relationship phrasing 'establishes a statistically confirmed long-run levels relationship'.",
+          "PASS: Found required levels-relationship phrasing 'without a long-run restoring attractor'."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'the residuals remain nonstationary (i(1))'.",
+          "PASS: Rendered text does not contain 'yields stationary residuals'.",
+          "PASS: Rendered text does not contain 'an admissible specification is one that produces stationary residuals'.",
+          "PASS: Rendered text does not contain 'its residuals contain a unit root'.",
+          "PASS: Rendered text confirms required levels-relationship phrasing: 'does not provide sufficient evidence of a long-run levels relationship'.",
+          "PASS: Rendered text confirms required levels-relationship phrasing: 'null of no long-run levels relationship is rejected'.",
+          "PASS: Rendered text confirms required levels-relationship phrasing: 'establishes a statistically confirmed long-run levels relationship'.",
+          "PASS: Rendered text confirms required levels-relationship phrasing: 'without a long-run restoring attractor'."
+        ],
+        "sections": [
+          "Section 4.1",
+          "Section 4.3"
+        ],
+        "matched_required": [
+          "does not provide sufficient evidence of a long-run levels relationship",
+          "null of no long-run levels relationship is rejected",
+          "establishes a statistically confirmed long-run levels relationship",
+          "without a long-run restoring attractor",
+          "does not provide sufficient evidence of a long-run levels relationship",
+          "null of no long-run levels relationship is rejected",
+          "establishes a statistically confirmed long-run levels relationship",
+          "without a long-run restoring attractor"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          14,
+          21,
+          32
+        ]
+      }
+    },
+    "H2": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged forbidden VECM residual phrasing 'residuals exhibit persistent non-stationary drift'.",
+          "PASS: Purged forbidden VECM residual phrasing 'bivariate system yields non-stationary residuals'.",
+          "PASS: Introduction confirms 'no stationary long-run cointegrating combination is identified'.",
+          "PASS: Section 4.6 confirms 'Because no stationary bivariate cointegrating vector is identified'."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'residuals exhibit persistent non-stationary drift'.",
+          "PASS: Rendered text does not contain 'bivariate system yields non-stationary residuals'.",
+          "PASS: Rendered Introduction confirms 'no stationary long-run cointegrating combination is identified'.",
+          "PASS: Rendered Section 4.6 confirms 'Because no stationary bivariate cointegrating vector is identified'."
+        ],
+        "sections": [
+          "Introduction",
+          "Section 4.6"
+        ],
+        "matched_required": [
+          "Intro: no stationary long-run cointegrating combination is identified",
+          "Section 4.6: Because no stationary bivariate cointegrating vector is identified",
+          "Intro: no stationary long-run cointegrating combination is identified",
+          "Section 4.6: Because no stationary bivariate cointegrating vector is identified"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          1,
+          2,
+          12,
+          29,
+          36,
+          37
+        ]
+      }
+    },
+    "H3": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged unhedged capital non-adjustment phrasing 'indicating that capital accumulation doe...'.",
+          "PASS: Purged unhedged capital non-adjustment phrasing 'the finding that capital accumulation do...'.",
+          "PASS: Found calibrated alpha_k adjustment statement 'providing no statistically detectable evidenc...'.",
+          "PASS: Found calibrated alpha_k adjustment statement 'estimated error correction is heavily concent...'.",
+          "PASS: Found calibrated alpha_k adjustment statement 'absence of statistically detectable error-cor...'."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'indicating that capital accumulation doe...'.",
+          "PASS: Rendered text does not contain 'the finding that capital accumulation do...'.",
+          "PASS: Rendered text confirms calibrated alpha_k phrasing: 'providing no statistically detectable ev...'.",
+          "PASS: Rendered text confirms calibrated alpha_k phrasing: 'estimated error correction is heavily co...'.",
+          "PASS: Rendered text confirms calibrated alpha_k phrasing: 'absence of statistically detectable erro...'."
+        ],
+        "sections": [
+          "Section 4.6",
+          "Discussion"
+        ],
+        "matched_required": [
+          "providing no statistically detectable evidence of error-correction adjustment through the capital equation",
+          "estimated error correction is heavily concentrated in the exploitation equation",
+          "absence of statistically detectable error-correction adjustment in capital accumulation",
+          "providing no statistically detectable evidence of error-correction adjustment",
+          "estimated error correction is heavily concentrated in the exploitation equation",
+          "absence of statistically detectable error-correction adjustment in capital accumulation"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          31,
+          37
+        ]
+      }
+    },
+    "H4": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "NOT_REQUIRED",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged flawed excess capacity offset assertion 'tolerating chronic excess capacity...'.",
+          "PASS: Purged flawed excess capacity offset assertion 'counteracted by intensifying exploitatio...'.",
+          "PASS: Found harmonized decomposition statement 'placing downward pressure on $y^p_t / k_t$ an...'.",
+          "PASS: Found harmonized decomposition statement 'a higher profit share ($\\pi_t$) can partly of...'.",
+          "PASS: Found harmonized decomposition statement 'utilization below normal capacity ($\\mu_t < 1...'."
+        ],
+        "rendered": [
+          "PASS: Rendered text does not contain 'tolerating chronic excess capacity'.",
+          "PASS: Rendered text confirms downward pressure on capacity-capital ratio and potential profitability.",
+          "PASS: Rendered text confirms higher profit share can partly offset pressure.",
+          "PASS: Rendered text confirms utilization below normal capacity further depresses realized profitability."
+        ],
+        "sections": [
+          "Discussion"
+        ],
+        "matched_required": [
+          "placing downward pressure on $y^p_t / k_t$ and, conditional on distribution, on potential profitability",
+          "a higher profit share ($\\pi_t$) can partly offset this pressure in the realized profit rate",
+          "utilization below normal capacity ($\\mu_t < 1$) further depresses realized profitability",
+          "downward pressure on capacity-capital ratio and potential profitability",
+          "higher profit share partly offset",
+          "utilization below normal capacity further depresses"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          36
+        ]
+      }
+    },
+    "H5": {
+      "source_semantic": "PASS",
+      "rendered_text": "PASS",
+      "rendered_visual": "PASS",
+      "overall": "PASS",
+      "evidence": {
+        "source": [
+          "PASS: Purged ambiguous Figure 14 caption.",
+          "PASS: Appendix B Figure 14 caption confirms 'solid horizontal line indicates the corporate retirement rate'.",
+          "PASS: Appendix B Figure 14 caption confirms 'dashed horizontal line marks the critical depletion threshold'.",
+          "PASS: Appendix B Figure 14 caption confirms '\\rho_{\\text{corp}} = 1/35 \\approx 2.86\\%'.",
+          "PASS: Appendix B Figure 14 caption confirms 'z^* \\approx 3.29\\%'."
+        ],
+        "rendered": [
+          "PASS: Rendered Figure 14 does not contain ambiguous single-line caption.",
+          "PASS: Rendered Figure 14 caption distinguishes corporate retirement rate (2.86%) and critical depletion threshold (3.29%)."
+        ],
+        "sections": [
+          "Appendix B Figure 14"
+        ],
+        "matched_required": [
+          "solid horizontal line indicates the corporate retirement rate",
+          "dashed horizontal line marks the critical depletion threshold",
+          "\\rho_{\\text{corp}} = 1/35 \\approx 2.86\\%",
+          "z^* \\approx 3.29\\%",
+          "Figure 14 caption: 2.86% retirement rate and 3.29% depletion threshold"
+        ],
+        "forbidden_matches": [],
+        "page_numbers": [
+          49
+        ]
+      }
+    }
+  },
+  "failed_checks": [],
+  "indeterminate_checks": [],
+  "next_action": "PROCEED_TO_INDEPENDENT_READER_SCREEN"
+}
